@@ -1803,3 +1803,15 @@ body.is-preload #footer {
 .mainIconNavigation--panel a{
   border-bottom: 0;
 }
+
+.mainIconNavigation--link--icon i {
+  font-size: 1.75rem;
+}
+
+.mainIconNavigation--link--decription {
+  line-height: 40px;
+}
+
+.boldText{
+  font-weight: bold;
+}

@@ -30,12 +30,9 @@
               Web o <strong>Cirkulární ekonomice</strong> v obcích České republiky.
             </p>
             <p>
-			  Cirkulární ekonomika představuje inovativní přístup, <br />
-			  jak lépe nakládat se zdroji a chránit také životní prostředí. <br />
-			  Cirkulární ekonomika vede k nejdelšímu uchování <br />
-			  přidané hodnoty produktů v ekonomickém systému <br />
-			  při současném snižování objemu odpadu <br />
-              a negativních dopadů na <strong>životní i sociální prostředí</strong>.
+			  Cirkulární ekonomika (CE) je inovativní přístup, jak lépe nakládat se zdroji. <br />
+			  CE vede k nejdelšímu uchování přidané hodnoty produktů v ekonomickém systému <br />
+			  při současném snižování objemu odpadu a negativních dopadů na <strong>životní i sociální prostředí</strong>.
 			</p>
 			
 			<div class="mainIconNavigation--panel">
@@ -46,7 +43,7 @@
 							<i class="fas fa-user-alt"></i>
 						</div>
 						<div class="mainIconNavigation--link--decription">
-							<span>Jsem občan</span>
+							<span class="boldText">Jsem občan</span>
 						</div>
 					</div>	
 				</a>
@@ -57,7 +54,7 @@
 							<i class="fas fa-user-shield"></i>
 						</div>
 						<div class="mainIconNavigation--link--decription">
-							<span>Jsem starosta</span>
+							<span class="boldText">Jsem starosta</span>
 						</div>
 					</div>	
 				</a>
@@ -68,7 +65,7 @@
 							<i class="fas fa-info-circle"></i>
 						</div>
 						<div class="mainIconNavigation--link--decription">
-							<span>Chci informace</span>
+							<span class="boldText">Chci informace</span>
 						</div>
 					</div>	
 				</a>
@@ -79,7 +76,7 @@
 							<i class="fas fa-chart-pie"></i>
 						</div>
 						<div class="mainIconNavigation--link--decription">
-							<span>Chci porovnávat</span>
+							<span class="boldText">Chci porovnávat</span>
 						</div>
 					</div>	
 				</a>
