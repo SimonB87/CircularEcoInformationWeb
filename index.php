@@ -6,14 +6,11 @@
 -->
 <html>
   <head>
-    <title>ObceVkruhu.cz | Web o Cirkulární ekonomice v obcích ČR</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+
+  <?php
+	include("includes/mainsitehead.php");
+  ?>
+
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -54,7 +51,7 @@
             <li>
               <a href="#ocirkularni">O cirkulární <br />ekonomice</a>
             </li>
-	    <li><a href="metodika.html">Metodika CE</a></li>
+	    <li><a href="metodika.php">Metodika CE</a></li>
             <li><a href="#pohledeu">Pohled EU na CE</a></li>
             <li><a href="#ceacr">CE a ČR</a></li>
             <li><a href="#principyvyroby">Principy CE ve výrobě</a></li>
@@ -534,15 +531,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</article> -->
       </div>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">
-          &copy; ŠIMON BURYAN 2020. Design: <a href="https://html5up.net">HTML5 UP</a>.
-		</p>
-		<p class="copyright">
-			Ecotrend + VŠE + TAČR
-		</p>	
-      </footer>
+	  <!-- Footer -->
+	  <?php
+	  include("includes/mainsitefooter.php");
+  	  ?>
+
     </div>
 
     <!-- BG -->

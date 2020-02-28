@@ -6,14 +6,11 @@
 -->
 <html>
   <head>
-    <title>ObceVkruhu.cz | Web o Cirkulární ekonomice v obcích ČR</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+	  
+  <?php
+	include("includes/mainsitehead.php");
+  ?>
+
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -45,18 +42,6 @@
               <strong>Vysoká škola ekonomická v Praze.</strong>
             </p>
 
-            <!--
-            <p>
-              Cirkulární ekonomika představuje nejnovější politiku Evropské Unie
-              zaměřenou na <br />
-              účinnější <strong>využívání přírodních zdrojů</strong> na základě
-              co nejdelšího uchování <br />
-              přidané hodnoty produktů v ekonomickém systému při současném
-              snižování objemu odpadu <br />
-              a negativních dopadů na
-              <strong>životní i sociální prostředí</strong>.
-			</p>
-			-->
             <a href="#krok_A" class="button primary small">Projít metodiku</a>
           </div>
         </div>
@@ -64,7 +49,7 @@
         <nav>
           <ul>
             <li>
-              <a href="index.html">O cirkulární <br />ekonomice</a>
+              <a href="index.php">O cirkulární <br />ekonomice</a>
             </li>
             <li><a href="#ometodice">O metodice</a></li>
             <li><a href="#krok_A">Projít metodiku</a></li>
@@ -107,7 +92,7 @@
           </p>
 
           <p style="text-align: center;">
-            <a href="metodika.html" class="button primary small">Zpět </a>
+            <a href="metodika.php" class="button primary small">Zpět </a>
           </p>
         </article>
 
@@ -1329,16 +1314,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       </div>
 
       <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">
-          &copy; ŠIMON BURYAN 2020. Design:
-          <a href="https://html5up.net">HTML5 UP</a>.
-        </p>
+	  
+      <?php
+      include("includes/mainsitehead.php");
+      ?>
+  
 
-        <p class="copyright">
-          Ecotrend + VŠE + TAČR
-        </p>
-      </footer>
     </div>
 
     <!-- BG -->
