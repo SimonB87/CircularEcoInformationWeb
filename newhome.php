@@ -31,8 +31,7 @@
             </p>
             <p>
 			  Cirkulární ekonomika (CE) je inovativní přístup, jak lépe nakládat se zdroji. <br />
-			  CE vede k nejdelšímu uchování přidané hodnoty produktů v ekonomickém systému <br />
-			  při současném snižování objemu odpadu a negativních dopadů na <strong>životní i sociální prostředí</strong>.
+			  CE vede k snižování objemu odpadu a negativních dopadů na <strong>životní i sociální prostředí</strong>.
 			</p>
 			
 			<div class="mainIconNavigation--panel">
