@@ -1794,3 +1794,12 @@ body.is-preload #footer {
 #main article a.button.small {
     margin: 0.5rem 1rem;
 }
+
+.mainIconNavigation--panel {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mainIconNavigation--panel a{
+  border-bottom: 0;
+}
