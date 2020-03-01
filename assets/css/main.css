@@ -1790,30 +1790,97 @@ body.is-preload #footer {
   opacity: 0;
 }
 
-/* Simon Stzles Edits 2020 */
-
+/* Simon Styles Edits 2020 */
 
 #main article a.button.small {
-    margin: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .mainIconNavigation--panel {
-  display: flex;
-  justify-content: space-evenly;
+display: flex;
+justify-content: space-evenly;
 }
 
 .mainIconNavigation--panel a{
-  border-bottom: 0;
+border-bottom: 0;
 }
 
 .mainIconNavigation--link--icon i {
-  font-size: 1.75rem;
+font-size: 2.5rem;
 }
 
 .mainIconNavigation--link--decription {
-  line-height: 40px;
+line-height: 40px;
 }
 
 .boldText{
   font-weight: bold;
 }
+
+/* -- navigation icons -- */
+.mainIconNavigation--panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.width_xl_6 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mainIconNavigation--link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainIconNavigation--link--icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px dotted #fff;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+i.fas.fa-user-shield {
+  transform: translateX(5px);
+}
+
+a.big:hover .mainIconNavigation--link--icon {
+  border-color: orange;
+}
+
+a.big:hover .mainIconNavigation--link--icon i {
+  color: orange;
+}
+
+a.big:hover .mainIconNavigation--link--decription span {
+  color: orange;
+}
+
+@media screen and (max-width: 736px) {
+  .mainIconNavigation--panel a.big {
+    margin: 0 auto;
+  }
+  .width_md_12{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header .content .inner.newHomePage{
+    max-height: 65rem;
+  }
+  .mainIconNavigation--panel {
+    flex-direction: column;
+  }
+  .width_sm_12 {
+    margin: 0 auto;
+  }
+}
+
