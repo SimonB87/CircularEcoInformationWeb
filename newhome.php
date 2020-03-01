@@ -25,7 +25,7 @@
         <div class="content">
           <div class="inner newHomePage">
             <h3>Vítejte na webu</h3>
-            	<h1 class="mainTitle">
+            	<h1 class="mainTitle"> 
 					<span class="mainTitle--description">
 						www.<span class="mainTitle--description--name">Obce</span>V<span class="mainTitle--description--name">Kruhu</span>.cz
 					</span>
@@ -35,7 +35,7 @@
             </p>
             <p>
 			  Pomáháme Vám lépe nakládat se zdroji a snižovat objem odpadu <br />
-			  a negativní dopady na <strong>životní i sociální prostředí</strong><i class="fab fa-envira"></i>.
+			  a negativní dopady na <strong>životní i sociální prostředí</strong> &nbsp; <i class="fab fa-envira"></i>.
 			</p>
 			
 			<div class="mainIconNavigation--panel">
