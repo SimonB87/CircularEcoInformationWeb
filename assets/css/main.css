@@ -7,6 +7,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+  --opposite-color: #e5b896;
+}
+
 html,
 body,
 div,
@@ -1792,6 +1796,55 @@ body.is-preload #footer {
 
 /* Simon Styles Edits 2020 */
 
+#header .content p {
+  font-size: 0.95rem;
+}
+
+.mainTitle {
+  height: 3rem;
+  min-height: 3rem;
+}
+
+.mainTitle .mainTitle--description {
+  height: 3rem;
+  min-height: 3rem;
+}
+
+.mainTitle .mainTitle--description {
+  animation: biggerFont 5s infinite;
+}
+
+.mainTitle .mainTitle--description--name {
+  animation: colorFont 5s infinite;
+}
+
+@keyframes colorFont {
+  0% {
+    color: #fff;
+  }
+  30% {
+    color: var(--opposite-color);
+  }
+  60% {
+    color: var(--opposite-color);
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes biggerFont {
+  0% {
+    font-size: 100%;
+  }
+  60% {
+    font-size: 112%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+
 #main article a.button.small {
   margin: 0.5rem 1rem;
 }
@@ -1847,16 +1900,24 @@ body.is-preload #footer {
   width: 7rem;
 }
 
+a.big .mainIconNavigation--link--icon,
+a.big .mainIconNavigation--link--icon i,
+a.big .mainIconNavigation--link--decription span {
+  transition: all 1s linear 0.1s;
+}
+
 a.big:hover .mainIconNavigation--link--icon {
-  border-color: orange;
+  border-color: var(--opposite-color);
 }
 
 a.big:hover .mainIconNavigation--link--icon i {
-  color: orange;
+  color: var(--opposite-color);
+  font-size: 3.5rem;
 }
 
 a.big:hover .mainIconNavigation--link--decription span {
-  color: orange;
+  color: var(--opposite-color);
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 736px) {
