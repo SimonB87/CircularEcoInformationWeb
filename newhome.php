@@ -106,8 +106,10 @@
             <li><a href="#ceacr">CE a ČR</a></li>
 			<li><a href="#principyvyroby">Principy CE ve výrobě</a></li>
 			-->
-			<li><a href="#odpadzdrojem">Odpad <br />zdrojem</a></li>
+			<li><a href="#oprojektu">O projektu</a></li>
+			<li><a href="0demo/register.php">Přihlásit se</a></li>
 			<li><a href="#contact">Kontaktujte <br />nás</a></li>
+
           </ul>
 		</nav>
 	
@@ -387,6 +389,9 @@
 
 		  <p>
 			  	<ol class="list">
+					  <li>Původní informační <span style="color:var(--theme-color);">
+						<a href="index.php">webová stránka <i class="fas fa-location-arrow"></i></a></span> &nbsp; řešeného projektu s podporou TAČR.
+					  </li>
 					  <li>Katalog typových řešení Vás může inspirovat k vlastní aktivitě (je složen z osmi tematických oblastí) <br>
 						  <span style="color:var(--theme-color);"><a href="#">PDF Katalog <i class="fas fa-location-arrow"></i></a></span>
 					  </li>
@@ -450,18 +455,49 @@
 			Podpora těchto postupů ze strany Evropské unie jsou realizovány prostřednictvím programu pro financování výzkumu a inovací Horizont 2020 a prostřednictvím fondů politiky soudržnosti a dále zahrne pokyny týkající se osvědčených postupů v oblasti nakládání s odpady a účinného využívání zdrojů v průmyslových odvětvích do referenčních dokumentů o nejlepších dostupných technikách (Best available techniques Reference, BREF) a vydá pokyny a bude podporovat osvědčené postupy v oblasti odpadů z těžebního průmyslu (Evropská komise 2015).</p>			
         </article>
 
-        <!-- Odpad zdrojem -->
-        <article id="odpadzdrojem">
-          <h2 class="major">Odpad zdrojem</h2>
+        <!-- O projektu -->
+        <article id="oprojektu">
+          <h2 class="major">O projektu</h2>
 		  <span class="image main"><img src="images/pic03.jpg" alt=""/></span>
 		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
-          <p>Nahlížení na odpady jako na zdroj je klíčovým aspektem oběhového hospodářství, stejně tak jako právní vymezení skutečnosti, kdy je materiál odpadem, a kdy se stává druhotnou surovinou, pro zajištění rovných a jasných podmínek v rámci trhu s těmito materiály. Posílení trhu s druhotnými surovinami, stejně tak jako opětovné využívání vody, která je základní podmínkou pro udržení kvality našeho života tak, jak jej známe, je totiž nezbytnou podmínkou udržitelného rozvoje jak na lokální, tak na globální úrovni. S ohledem na surovinovou politiku je využívání druhotných surovin spojeno se zajištěním bezpečnosti dodávek potřebných materiálů, které mohou být obchodovány nebo přepravovány stejně jako primární suroviny z tradičních surovinových zdrojů, přesto využívání druhotných surovin představuje v současné době jen malou část materiálů, a jejich využívání čelí mnoha překážkám, zejména v oblasti jejich proměnlivé kvality a nehomogenity (Evropská komise 2015). Výjimkou je opakované využití železného šrotu a papíru, kde je míra recyklace vysoká (Evropská komise 2015). </p><p>
-			Otázkami nejisté kvality druhotných surovin vhodných k dalšímu využití v mnoha průmyslových odvětvích se Evropská unie cíleně zabývá. Po nezbytných analýzách spojených s problémy jednotlivých druhů materiálů navrhne normy, které umožní posoudit stupně nečistot nebo vhodnost pro vysoce kvalitní recyklaci jednotlivých typů materiálů, jejichž zavedení má za cíl zejména zvýšit důvěru v druhotné suroviny a recykláty a posílit trh s těmito materiály (Evropská komise 2015). </p><p>
-			Jednou ze zásadních surovin, pro které je třeba vypracovat výše popsané normy kvality a revidovat konkrétní opatření a podmínky opakovaného využití, je fosfor, který patří mezi kritické suroviny (Evropská komise 2017), a který je přítomen zejména v organickém odpadu. Udržitelné využívání organických odpadů v zemědělství přitom snižuje potřebu minerálních hnojiv, jejichž výroba má negativní dopad na životní prostředí a závislost na dovozu fosfátů. </p><p>
-			Opětovné využívání vody, které bylo zmíněno již v úvodu této kapitoly, nabývá v posledních letech na významu s ohledem na sucho, jehož dopady zasahují negativně jak hospodářství, tak působí škody v oblasti životního prostředí. Kromě opatření ke zvýšení účinnosti využití vody např. v z dešťových srážek, představuje mimořádně cenný, avšak málo využívaný způsob zvyšování dodávek vody a zmírňování tlaku na nadměrné využívání vodních zdrojů  opětovné využívání upravené odpadní vody v bezpečných a nákladově efektivních podmínkách v souladu s principy oběhového hospodářství (Evropská komise 2015). Využívání odpadních vod v zemědělství významně přispívá k recyklaci živin a má potenciál nahradit průmyslová hnojiva s benefity, které jsou popsány výše. Opětovné využívání upravené odpadní vody je proto v popředí zájmu Evropské unie, kdy budou připravena opatření na jeho podporu, a to včetně právních předpisů o minimálních požadavcích na tuto vodu (Evropská komise 2015). </p><p>
-			Překážkou při využívání odpadních vod, ale i v případě dalších druhotných surovin, je potenciální přítomnost látek ohrožujících zdraví nebo životní prostředí, na které se vztahují omezení nebo zákazy plynoucí s evropské legislativy. Opatření na podporu rozvoje trhu s druhotnými surovinami je tak nezbytné sladit s příslušnou legislativou o chemických látkách, zejména s přihlédnutím k faktu, že do odpadních toků vstupují výrobky na konci svého životního cyklu, které prokazatelně obsahují nebezpečné chemické látky, avšak byly uvedeny na trh ještě v době, kdy žádná podobná omezení nebyla v platnosti (Evropská komise 2015). Protože odhalování i následné odstraňování těchto látek je nákladné a vytváří překážky zejména pro malé provozovatele recyklace, je nezbytné analyzovat a následně usnadnit sledovatelnost a řízení rizik chemických látek v procesu recyklace a materiálového využití při současném zachování vysoké úrovně ochrany lidského zdraví a životního prostředí (Evropská unie 2013). </p><p>
-			V neposlední řadě je zcela klíčové, mít dostatek informací o materiálových tocích druhotných surovin, protože obecně lze říci, že detailní informace o přeshraničním pohybu druhotných surovin jak v rámci Evropské unie, tak v globálním měřítku, nejsou dostatečné (Smil 2017). Za tímto účelem bude Evropská unie rozvíjet informační systém o druhotných surovinách, který zlepší dostupnost údajů o jednotlivých materiálech (Evropská komise 2015). </p><p>
-			Zatímco papír nebo kovy jsou poptávanou druhotnou surovinou, uplatnění pro jiné materiály hledá  průmysl i soukromý sektor zatím obtížně, přesto se již řada hospodářských subjektů veřejně zavázala k zajištění určité úrovně obsahu recyklovaných materiálů ve výrobcích, které uvádí na trh, a to jak z důvodu udržitelnosti, tak z ekonomických důvodů (Evropská komise 2015). Takové jednání komerčních subjektů je při dosahování cílů s ohledem na principy oběhového hospodářství klíčové, obdobně jako poptávka po výrobcích z recyklovaných materiálů ze strany státní správy či samospráv prostřednictvím zadávání veřejných zakázek (Evropská komise 2015). </p>
+          <p>
+		  	Metodika vznikla jako hlavní výsledek řešení výzkumného projektu číslo TL01000217 s názvem Obce v
+			kruhu cirkulární ekonomiky, řešeného partnery: ECO trend Research centre s.r.o. a Vysoká škola
+			ekonomická v Praze. Spolu s interaktivní webovou aplikací pro zástupce obcí a měst, by měla pomoci
+			s řešením konkrétních a běžných problémů v principech cirkulární ekonomiky/oběhového
+			hospodářství – v oblasti nakupování produktů a služeb, nakládání s odpady, dopravy, údržby zeleně,
+			nakládání s vodami, podnikatelské činnosti atd. Metodika a aplikace uživatele postupně provede
+			realizací dlouhodobých konsenzů v obcích, principy oceněním jednotlivých způsobů řešení a
+			zapracováním potřeb do veřejných zakázek, resp. dodavatelského řešení. Součástí aplikace bude
+			sociální síť přístupná online, která podpoří principy CE. Aplikace bude uživatelům plně přístupná po
+			skončení projektu a následně bude spravována aplikačním garantem.
+		  </p>
+		  <p>
+		 	Oběhové hospodářství (circular economy, CE) je přirozený systém fungování přírodních a donedávna
+			i antropogenních systémů, na rozdíl od aktuálního, lineárního způsobu hospodaření. CE představuje
+			nejnovější politiku EU zaměřenou na účinnější využívání přírodních zdrojů na základě co nejdelšího
+			uchování přidané hodnoty produktů v ekonomickém systému při současném snižování objemu
+			odpadu a negativních dopadů na životní i sociální prostředí.
+		  </p>	
+		  <p>
+		  	Projekt vznikl na základě definovaných potřeb obcí, propojí problematiku CE s běžnou praxí obcí a
+			tvorbou dlouhodobých strategií na jejich úrovni. Zlepší podmínky pro obce dostupností nejnovějších
+			informací a metodik k zavádění CE, včetně aplikace v rámci veřejných zakázek, a tvorbě
+			dlouhodobého konsenzu v rámci obce.
+		  </p>	
+		  <h2>
+		  	Další informace o projektu:
+		  </h2>	
+		  <p>
+		  	<strong> Úplný název projektu: </strong>Obce v kruhu cirkulární ekonomiky;<br>
+			<strong>Číslo projektu: </strong>TL01000217<br>
+			<strong>Program: </strong>Program na podporu aplikovaného společenskovědního a humanitního výzkumu, experimentálního vývoje a inovací ÉTA<br>
+			<strong>Příjemce projektu:</strong> ECO trend Research centre s.r.o.<br>
+			<strong>Spolupříjemce projektu:</strong> VYSOKÁ ŠKOLA EKONOMICKÁ V PRAZE - Fakulta mezinárodních vztahů<br>
+			<strong>Celkové náklady projektu:</strong> 6 359 tis. Kč<br>
+			<strong>Doba řešení projektu:</strong> 01/2018 - 12/2020<br>
+		  </p>
+
 			<a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
         </article>
 
