@@ -819,8 +819,8 @@ input[type="radio"] + label:before {
   width: 100%;
 }
 
-.image.main img.metodikaImg{
-    height: 140px;
+.image.main img.metodikaImg {
+  height: 140px;
 }
 
 @media screen and (max-width: 736px) {
@@ -1797,23 +1797,23 @@ body.is-preload #footer {
 }
 
 .mainIconNavigation--panel {
-display: flex;
-justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.mainIconNavigation--panel a{
-border-bottom: 0;
+.mainIconNavigation--panel a {
+  border-bottom: 0;
 }
 
 .mainIconNavigation--link--icon i {
-font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .mainIconNavigation--link--decription {
-line-height: 40px;
+  line-height: 40px;
 }
 
-.boldText{
+.boldText {
   font-weight: bold;
 }
 
@@ -1847,10 +1847,6 @@ line-height: 40px;
   width: 7rem;
 }
 
-i.fas.fa-user-shield {
-  transform: translateX(5px);
-}
-
 a.big:hover .mainIconNavigation--link--icon {
   border-color: orange;
 }
@@ -1867,13 +1863,13 @@ a.big:hover .mainIconNavigation--link--decription span {
   .mainIconNavigation--panel a.big {
     margin: 0 auto;
   }
-  .width_md_12{
+  .width_md_12 {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #header .content .inner.newHomePage{
+  #header .content .inner.newHomePage {
     max-height: 65rem;
   }
   .mainIconNavigation--panel {
@@ -1883,4 +1879,3 @@ a.big:hover .mainIconNavigation--link--decription span {
     margin: 0 auto;
   }
 }
-

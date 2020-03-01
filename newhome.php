@@ -51,7 +51,7 @@
 					<a href="#" class="big"> 
 						<div class="mainIconNavigation--link">
 							<div class="mainIconNavigation--link--icon">
-								<i class="fas fa-user-shield"></i>
+								<i class="fas fa-users"></i>
 							</div>
 							<div class="mainIconNavigation--link--decription">
 								<span class="boldText">Jsem starosta</span>
