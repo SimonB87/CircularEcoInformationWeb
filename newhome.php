@@ -41,7 +41,7 @@
 			<div class="mainIconNavigation--panel">
 				<div class="width_xl_6 width_md_12 width_sm_12">
 
-					<a href="#" class="big"> 
+					<a href="#jsemObcan" class="big"> 
 						<div class="mainIconNavigation--link">
 							<div class="mainIconNavigation--link--icon">
 								<i class="fas fa-user-alt"></i>
@@ -52,7 +52,7 @@
 						</div>	
 					</a>
 
-					<a href="#" class="big"> 
+					<a href="#jsemStarosta" class="big"> 
 						<div class="mainIconNavigation--link">
 							<div class="mainIconNavigation--link--icon">
 								<i class="fas fa-users"></i>
@@ -67,7 +67,7 @@
 
 				<div class="width_xl_6 width_md_12 width_sm_12">
 
-					<a href="#" class="big"> 
+					<a href="#chciInformace" class="big"> 
 						<div class="mainIconNavigation--link ">
 							<div class="mainIconNavigation--link--icon">
 								<i class="fas fa-info-circle"></i>
@@ -165,95 +165,253 @@
 		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
         </article>
 
-        <!-- Pohled EU na CE -->
-        <article id="pohledeu">
-          <h2 class="major">
-            Pohled Evropské Unie<br />
-            na Cirkulární Ekonomiku
-          </h2>
-		  <span class="image main"><img src="images/circular_economy_closing_the_loop.png" alt="Cirkulární Ekonomika v EU"/></span>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
-          <p>
-            Při přechodu na oběhového hospodářství hrají klíčovou roli
-            hospodářské subjekty a spotřebitelé, zatímco úkolem orgánů státní
-            správy na místní, regionální i národní úrovni, stejně tak jako na
-            úrovni EU, je plnění podpůrné funkce, která spočívá zejména v
-            zavedení řádného regulačního rámce pro rozvoj oběhového hospodářství
-            na jednotném trhu, a následné komunikaci klíčových principů CE
-            směrem k podnikům i široké veřejnosti, a to zejména v oblasti
-            dalšího směřování prostřednictvím dlouhodobých cílů Akčního plánu EU
-            pro oběhové hospodářství a dalších opatření, která mají být
-            realizována do roku 2020 (Evropská komise 2015).
-          </p>
-          <p>
-            Na úrovni Evropské unie jsou v rámci tohoto akčního plánu nastavena
-            opatření, jejichž cílem je podpora investic a vytvoření rovných
-            podmínek, odstraní překážek plynoucích z evropských právních
-            předpisů nebo jejich nedostatečného prosazování, prohloubení
-            podmínek jednotného trhu a zajištění příznivých podmínek pro inovace
-            a zapojení všech zúčastněných stran (Evropská komise 2015).
-            Legislativní návrhy týkající se odpadu přijaté společně s Akčním
-            plánem pro oběhové hospodářství zahrnují dlouhodobé cíle na snížení
-            skládkování a posílení přípravy pro další využití a recyklaci
-            klíčových toků odpadu, od komunálního - zejména obalů-, až po odpady
-            ze stavebnictví. Tyto cíle by měly vést k tomu, aby členské státy
-            postupně používaly stejné osvědčené postupy a podporovaly potřebné
-            investice v oblasti nakládání s odpady (Evropská komise 2015).
-            Navržena je také řada dalších opatření, která mají vést k jasnějšímu
-            a jednoduššímu provádění, podporovat hospodářské pobídky a zlepšit
-            systémy rozšířené odpovědnosti výrobce.
-          </p>
-          <p>
-            Akční plán pro oběhové hospodářství dále představuje také modely a
-            postupy udržitelných činností v klíčových odvětvích hospodářství i
-            pro nové obchodní příležitosti, a to zejména s ohledem na potenciál
-            v oblasti růstu a zaměstnanosti (Evropská komise 2015). Závazkům a
-            opatřením uvedeným v tomto akčním plánu, které se týkají ekodesignu,
-            rozvoji strategických přístupů pro plasty a chemické látky,
-            financování inovačních projektů v rámci výzkumného programu Evropské
-            unie Horizont 2020 a dalších cílených opatření zaměřených na
-            prioritní oblasti zahrnující
-            <strong
-              >plasty, plýtvání potravinami, kritické suroviny, stavební a
-              demoliční odpad, a biomasu a výrobky z biologického
-              materiálu</strong
-            >, dále problematiku výroby a spotřeby či zadávání veřejných zakázek
-            a inovacím, bude věnována pozornost v následujících kapitolách.
-            Legislativní část přijetí principů oběhového hospodářství tak
-            spočívá aktuálně ve změnách směrnic v oblasti odpadů, obalů,
-            skládkování a výrobků s ukončenou životností, konkrétně směrnice o
-            odpadech, směrnice o skládkách, směrnice o obalech, směrnice o WEEE,
-            směrnice o bateriích a akumulátorech a směrnice o vozidlech s
-            ukončenou životností (MPO 2018). V současné době jsou také
-            připravovány legislativní návrhy týkající se hnojiv a opětovného
-            využívání vody (Evropská komise 2015).
-          </p>
-          <p>
-            Opatření navrhovaná v tomto akčním plánu na úrovni Evropské unie
-            podporují oběhové hospodářství v každé fázi hodnotového řetězce – od
-            výroby po spotřebu, opravy a repase, nakládání s odpady a druhotné
-            suroviny, které se vracejí zpět do hospodářství, vždy s ohledem na s
-            vysokou přidanou hodnotou takových opatření (Evropská komise 2015).
-          </p>
-          <p>
-            Hlavním předpokladem k tomu, aby se cirkulární ekonomika stala
-            nedílnou součástí našich životů, je dlouhodobé zapojení aktérů
-            napříč všemi úrovněmi vládnutí - jednotlivých členských států
-            Evropské unie, regionů, měst a municipalit, podniků i občanů. Jen
-            díky takovému přístupu je možné principy tohoto konceptu prosazovat
-            také na globální úrovni, jak už bylo popsáno v úvodu. Dalším
-            předpokladem pro úspěšné prosazování cílů uvedených v Akčním plánu
-            oběhového hospodářství je přirozeně jeho podpora ze strany členských
-            států Evropské unie a návazná národní opatření a legislativa, stejně
-            tak jako soudržnost politik v rámci těchto států, kdy je očekáván
-            vzájemně se posilující účinek plynoucí z provádění souhrnných
-            závazků přijatých Unií a členskými státy EU, zejména v rámci Agendy
-            pro udržitelný rozvoj 2030 organizace OSN (zejména ve vztahu k bodu
-            12 - zajistit udržitelné vzorce spotřeby a výroby) a plánu skupiny
-            G7 o účinném využívání zdrojů (Evropská komise 2015).
+        <!-- jsemObcan 1 -->
+        <article id="jsemObcan">
+			<h2 class="major">
+            Jsem občan a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
+		  	</h2>
+		  
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  
+		  <p></p>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-globe-europe"></i> </div>
+
+		  <div>
+			  <h3 class=""> Chcete chránit životní prostředí ve Vaší obci? </h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-dumpster"></i> </div>
+		  
+		  <div>
+		    <h3 class=""> Vadí vám zbytečné odpady a obaly?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-recycle"></i></div>
+
+		  <div>
+		    <h3 class=""> Myslíte, že by šly staré věci a odpad ještě využít?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fab fa-envira"></i> </div>
+		  
+		  <div>
+			<h3 class=""> Chcete snížit svou uhlíkovou stopu?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-fan"></i> </div>
+		  
+		  <div>
+		    <h3 class=""> Chcete bojovat proti změně klimatu bez demonstrování?</h3> <br>
+		  </div>
+
+		  <div>
+		  	<h2 class="">Jste zde správně...</h2> 
+		  </div>
+		  <div class="userquestionsIcon"> <i class="far fa-smile-beam"></i></div>
+		  <p></p>
+		  <p>
+		  V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný:
 		  </p>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
+		  
+		  <a href="#jsemObcanDalsi" class="button primary small">Jít dále...</a>
+		</article>
+		
+        <!-- jsemObcan 2 -->
+        <article id="jsemObcanDalsi">
+          <h2 class="major">
+            Jsem občan a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
+		  </h2>
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <p></p>
+
+		  <h3> V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný: </h3>
+
+		  <p>
+			  	<ol class="list">
+					  <li>Vznik námětu – buď můžete mít svůj, nebo přejděte na náš výběr témat, která Vás zajímají.</li>
+					  <li> Po zvolení témat obdržíte výpis z katalogu typových řešení, který odpovídá Vašemu zájmu. Z něj si vyberete vhodný námět.</li>
+					  <li>Následně Vás provedeme procesem jeho zpracování a realizace.</li>
+				</ol>
+		  </p>
+
+		  <p> 
+			<a target="_blank" href="http://obcevkruhu.cz/0demo/tableprojects.php" class="button primary small"> Vyberte téma <span style="color:var(--theme-color);">(#projekty)</span></a>
+		  </p>
+		  
+          <p></p>
+        </article>		
+
+		
+        <!-- jsemStarosta 1 -->
+        <article id="jsemStarosta">
+			<h2 class="major">
+            Jsem starosta a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
+		  	</h2>
+		  
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  
+		  <p></p>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-globe-europe"></i> </div>
+
+		  <div>
+			  <h3 class=""> Chcete šetřit náklady na odpadové hospodářství? </h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-dumpster"></i> </div>
+		  
+		  <div>
+		    <h3 class=""> Chcete motivovat obyvatele, aby lépe třídili a využívali odpady?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-recycle"></i></div>
+
+		  <div>
+		    <h3 class=""> Máte zájem být na špičce v ochraně životního prostředí?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fab fa-envira"></i> </div>
+		  
+		  <div>
+			<h3 class=""> Chcete soběstačnější obec?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-fan"></i> </div>
+		  
+		  <div>
+		    <h3 class=""> Umíte dobře využívat vodu, místní produkty, iniciativu občanů?</h3> <br>
+		  </div>
+
+		  <div>
+		  	<h2 class="">Jste zde správně...</h2> 
+		  </div>
+		  <div class="userquestionsIcon"> <i class="far fa-smile-beam"></i></div>
+		  <p></p>
+		  <p>
+		  V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný:
+		  </p>
+		  
+		  <a href="#jsemStarostaDalsi" class="button primary small">Jít dále...</a>
+		</article>
+		
+        <!-- jsemStarosta 2 -->
+        <article id="jsemStarostaDalsi">
+          <h2 class="major">
+            Jsem starosta a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
+		  </h2>
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <p></p>
+
+		  <h3> V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný: </h3>
+
+		  <p>
+			  	<ol class="list">
+					  <li>Vznik námětu – buď můžete mít svůj, nebo přejděte na náš výběr témat, která Vás zajímají.
+						  Můžete také využít metodu screeningu popsanou v naší
+						  <span style="color:var(--theme-color);"><a href="#">metodice v PDF <i class="fas fa-location-arrow"></i> </a></span></li>
+					  <li>Po zvolení témat obdržíte výpis z katalogu typových řešení, který odpovídá Vašemu zájmu. Z něj si vyberete vhodný námět.</li>
+					  <li>Následně Vás provedeme procesem jeho zpracování a realizace.</li>
+				</ol>
+		  </p>
+
+		  <p> 
+			<a target="_blank" href="http://obcevkruhu.cz/0demo/tableprojects.php" class="button primary small"> Vyberte téma 
+				<span style="color:var(--theme-color);">(#projekty)</span>
+				<i class="fas fa-location-arrow"></i>
+			</a>
+		  </p>
+		  
+          <p></p>
         </article>
+
+
+        <!-- chciInfromace 1 -->
+        <article id="chciInformace">
+			<h2 class="major">
+            Chci informace <br>o Cirkulární Ekonomice
+		  	</h2>
+		  
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  
+		  <p></p>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-globe-europe"></i> </div>
+
+		  <div>
+			  <h3 class=""> Chcete šetřit zdroje a životní prostředí? </h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-recycle"></i>  </div>
+		  
+		  <div>
+		    <h3 class=""> Víte, co je cirkulární ekonomika?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fab fa-envira"></i></div>
+
+		  <div>
+		    <h3 class=""> Tušíte, jak každodenně a jednoduše zlepšovat životní prostředí?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"><i class="far fa-lightbulb"></i> </div>
+		  
+		  <div>
+			<h3 class=""> Máte jasno v tom, co lze s použitými věcmi a odpady ještě dělat?</h3> <br>
+		  </div>
+
+		  <div class="userquestionsIcon"> <i class="fas fa-fan"></i> </div>
+
+
+		  <div>
+		  	<h2 class="">Pokud ne, podívejte se na výstupy našeho projektu ...</h2> 
+		  </div>
+		  <div class="userquestionsIcon"> <i class="far fa-smile-beam"></i></div>
+		  <p></p>
+		  <p>
+		  Předkládáme Vám řadu praktických námětů a návodů v oblasti oběhového hospodářství:
+		  </p>
+		  
+		  <a href="#chciInformaceDalsi" class="button primary small">Jít dále...</a>
+		</article>
+		
+        <!-- jsemStarosta 2 -->
+        <article id="chciInformaceDalsi">
+          <h2 class="major">
+		  	Chci informace <br>o Cirkulární Ekonomice
+		  </h2>
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <p></p>
+
+		  <h3> Předkládáme Vám řadu praktických námětů a návodů v oblasti oběhového hospodářství: </h3>
+
+		  <p>
+			  	<ol class="list">
+					  <li>Katalog typových řešení Vás může inspirovat k vlastní aktivitě (je složen z osmi tematických oblastí) <br>
+						  <span style="color:var(--theme-color);"><a href="#">PDF Katalog <i class="fas fa-location-arrow"></i></a></span>
+					  </li>
+					  <li>Metodika oběhového hospodářství měst a obcí Vám prozradí obecné základy cirkulární ekonomiky 
+						  a  provede Vás procesem vzniku, zpracování a realizace záměru, který přispěje k omezení vzniku odpadů 
+						  a ke zvýšení soběstačnosti Vaší obce, komunity či domácnosti:<br>
+						  <span style="color:var(--theme-color);"><a href="#">PDF Metodika <i class="fas fa-location-arrow"></i></a></span>
+					  </li>
+					  <li>V rámci projektu jsme uskutečnili workshopy a semináře – zde jsou prezentace k nahlédnutí:<br>
+					  	  <span style="color:var(--theme-color);"><a href="#">více PDF prezentací <i class="fas fa-location-arrow"></i> </a></span>
+					  </li>
+					  <li>Další informace k cirkulární ekonomice se dozvíte například na těchto webových stránkách:<br>
+						  <span style="color:var(--theme-color);"><a href="#">Incien <i class="fas fa-location-arrow"></i> </a></span><br>
+						  <span style="color:var(--theme-color);"><a href="#">Čaobh <i class="fas fa-location-arrow"></i> </a></span><br>
+					  </li>
+				</ol>
+		  </p>
+
+		  <p> 
+			<a target="_blank" href="http://obcevkruhu.cz/0demo/tableprojects.php" class="button primary small"> Vyberte téma <span style="color:var(--theme-color);">(#projekty)</span></a>
+		  </p>
+		  
+          <p></p>
+        </article>		
+
 
         <!-- CE a ČR -->
         <article id="ceacr">
