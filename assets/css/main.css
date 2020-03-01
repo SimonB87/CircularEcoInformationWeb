@@ -1949,6 +1949,26 @@ a.big:hover .mainIconNavigation--link--decription span {
   .width_sm_12 {
     margin: 0 auto;
   }
+  @keyframes biggerFont {
+    0% {
+      font-size: 90%;
+    }
+    5% {
+      font-size: 90%;
+    }
+    30% {
+      font-size: 105%;
+    }
+    60% {
+      font-size: 80%;
+    }
+    90% {
+      font-size: 90%;
+    }
+    100% {
+      font-size: 90%;
+    }
+  }
 }
 
 /* styles of messages for users */
