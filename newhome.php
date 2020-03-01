@@ -23,7 +23,7 @@
           <span class="icon fa" style="font-size:2.5rem; transform:translateY(6px);">&#xf1b8;</span>
         </div>
         <div class="content">
-          <div class="inner">
+          <div class="inner newHomePage">
             <h3>Vítejte na webu</h3>
             <h1>www.ObceVkruhu.cz</h1>
             <p>
@@ -35,50 +35,57 @@
 			</p>
 			
 			<div class="mainIconNavigation--panel">
+				<div class="width_xl_6 width_md_12 width_sm_12">
 
-				<a href="#" class="big"> 
-					<div class="mainIconNavigation--link logo">
-						<div class="mainIconNavigation--link--icon">
-							<i class="fas fa-user-alt"></i>
-						</div>
-						<div class="mainIconNavigation--link--decription">
-							<span class="boldText">Jsem občan</span>
-						</div>
-					</div>	
-				</a>
+					<a href="#" class="big"> 
+						<div class="mainIconNavigation--link">
+							<div class="mainIconNavigation--link--icon">
+								<i class="fas fa-user-alt"></i>
+							</div>
+							<div class="mainIconNavigation--link--decription">
+								<span class="boldText">Jsem občan</span>
+							</div>
+						</div>	
+					</a>
 
-				<a href="#" class="big"> 
-					<div class="mainIconNavigation--link logo">
-						<div class="mainIconNavigation--link--icon">
-							<i class="fas fa-user-shield"></i>
-						</div>
-						<div class="mainIconNavigation--link--decription">
-							<span class="boldText">Jsem starosta</span>
-						</div>
-					</div>	
-				</a>
-				
-				<a href="#" class="big"> 
-					<div class="mainIconNavigation--link logo">
-						<div class="mainIconNavigation--link--icon">
-							<i class="fas fa-info-circle"></i>
-						</div>
-						<div class="mainIconNavigation--link--decription">
-							<span class="boldText">Chci informace</span>
-						</div>
-					</div>	
-				</a>
+					<a href="#" class="big"> 
+						<div class="mainIconNavigation--link">
+							<div class="mainIconNavigation--link--icon">
+								<i class="fas fa-user-shield"></i>
+							</div>
+							<div class="mainIconNavigation--link--decription">
+								<span class="boldText">Jsem starosta</span>
+							</div>
+						</div>	
+					</a>
 
-				<a href="#" class="big"> 
-					<div class="mainIconNavigation--link logo">
-						<div class="mainIconNavigation--link--icon">
-							<i class="fas fa-chart-pie"></i>
-						</div>
-						<div class="mainIconNavigation--link--decription">
-							<span class="boldText">Chci porovnávat</span>
-						</div>
-					</div>	
-				</a>
+				</div>
+
+				<div class="width_xl_6 width_md_12 width_sm_12">
+
+					<a href="#" class="big"> 
+						<div class="mainIconNavigation--link ">
+							<div class="mainIconNavigation--link--icon">
+								<i class="fas fa-info-circle"></i>
+							</div>
+							<div class="mainIconNavigation--link--decription">
+								<span class="boldText">Chci informace</span>
+							</div>
+						</div>	
+					</a>
+
+					<a href="#" class="big"> 
+						<div class="mainIconNavigation--link">
+							<div class="mainIconNavigation--link--icon">
+								<i class="fas fa-chart-pie"></i>
+							</div>
+							<div class="mainIconNavigation--link--decription">
+								<span class="boldText">Chci porovnávat</span>
+							</div>
+						</div>	
+					</a>
+
+				</div>	
 
 			</div>	
 
@@ -89,10 +96,12 @@
             <li>
               <a href="#ocirkularni">O cirkulární <br />ekonomice</a>
             </li>
-	    <li><a href="metodika.php">Metodika CE</a></li>
+		<li><a href="metodika.php">Metodika CE</a></li>
+			<!--
             <li><a href="#pohledeu">Pohled EU na CE</a></li>
             <li><a href="#ceacr">CE a ČR</a></li>
-            <li><a href="#principyvyroby">Principy CE ve výrobě</a></li>
+			<li><a href="#principyvyroby">Principy CE ve výrobě</a></li>
+			-->
 			<li><a href="#odpadzdrojem">Odpad zdrojem</a></li>
 			<li><a href="#contact">Kontaktujte nás</a></li>
           </ul>
