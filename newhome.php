@@ -25,13 +25,17 @@
         <div class="content">
           <div class="inner newHomePage">
             <h3>Vítejte na webu</h3>
-            <h1>www.ObceVkruhu.cz</h1>
+            	<h1 class="mainTitle">
+					<span class="mainTitle--description">
+						www.<span class="mainTitle--description--name">Obce</span>V<span class="mainTitle--description--name">Kruhu</span>.cz
+					</span>
+				</h1>
             <p>
-              Web o <strong>Cirkulární ekonomice</strong> v obcích České republiky.
+              Web o <strong><a href="#ocirkularni">Cirkulární ekonomice</a></strong> v obcích České republiky.
             </p>
             <p>
-			  Cirkulární ekonomika (CE) je inovativní přístup, jak lépe nakládat se zdroji. <br />
-			  CE vede k snižování objemu odpadu a negativních dopadů na <strong>životní i sociální prostředí</strong>.
+			  Pomáháme Vám lépe nakládat se zdroji a snižovat objem odpadu <br />
+			  a negativní dopady na <strong>životní i sociální prostředí</strong><i class="fab fa-envira"></i>.
 			</p>
 			
 			<div class="mainIconNavigation--panel">
@@ -96,14 +100,14 @@
             <li>
               <a href="#ocirkularni">O cirkulární <br />ekonomice</a>
             </li>
-		<li><a href="metodika.php">Metodika CE</a></li>
+		<li><a href="metodika.php">Metodika</a></li>
 			<!--
             <li><a href="#pohledeu">Pohled EU na CE</a></li>
             <li><a href="#ceacr">CE a ČR</a></li>
 			<li><a href="#principyvyroby">Principy CE ve výrobě</a></li>
 			-->
-			<li><a href="#odpadzdrojem">Odpad zdrojem</a></li>
-			<li><a href="#contact">Kontaktujte nás</a></li>
+			<li><a href="#odpadzdrojem">Odpad <br />zdrojem</a></li>
+			<li><a href="#contact">Kontaktujte <br />nás</a></li>
           </ul>
 		</nav>
 	
