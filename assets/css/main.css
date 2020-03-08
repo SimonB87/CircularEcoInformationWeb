@@ -2000,3 +2000,24 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 .list li {
   font-size: 1.25rem;
 }
+
+/* CSS for the form */
+
+.fieldsForm {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fieldsForm .field.half {
+  width: 50%;
+  padding: 0.5rem 0;
+}
+
+.fieldsForm .field.half:nth-child(odd) {
+  padding-right: 0.25rem;
+}
+
+.fieldsForm .field.half:nth-child(even) {
+  padding-left: 0.25rem;
+}
