@@ -73,18 +73,18 @@
 								<i class="fas fa-info-circle"></i>
 							</div>
 							<div class="mainIconNavigation--link--decription">
-								<span class="boldText">Chci informace</span>
+								<span class="boldText">Chci informace </span>
 							</div>
 						</div>	
 					</a>
 
 					<a href="#" class="big"> 
 						<div class="mainIconNavigation--link">
-							<div class="mainIconNavigation--link--icon">
-								<i class="fas fa-chart-pie"></i>
+							<div class="mainIconNavigation--link--icon unfinished">
+								<i class="fas fa-chart-pie unfinished"></i>
 							</div>
 							<div class="mainIconNavigation--link--decription">
-								<span class="boldText">Chci porovnávat</span>
+								<span class="boldText unfinished">Chci porovnávat <br>*nedostupné*</span>
 							</div>
 						</div>	
 					</a>

@@ -172,8 +172,8 @@
 			<h2 class="major">
             Jsem občan a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
 		  	</h2>
-		  
-		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <!-- 
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span> -->
 		  
 		  <p></p>
 
@@ -224,7 +224,9 @@
           <h2 class="major">
             Jsem občan a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
 		  </h2>
+			<!--
 		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+			 -->
 		  <p></p>
 
 		  <h3> V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný: </h3>
@@ -251,7 +253,7 @@
             Jsem starosta a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
 		  	</h2>
 		  
-		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <!-- <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span> -->
 		  
 		  <p></p>
 
@@ -302,7 +304,7 @@
           <h2 class="major">
             Jsem starosta a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
 		  </h2>
-		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <!-- <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span> -->
 		  <p></p>
 
 		  <h3> V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný: </h3>
@@ -334,7 +336,7 @@
             Chci informace <br>o Cirkulární Ekonomice
 		  	</h2>
 		  
-		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <!-- <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span> -->
 		  
 		  <p></p>
 
@@ -382,7 +384,7 @@
           <h2 class="major">
 		  	Chci informace <br>o Cirkulární Ekonomice
 		  </h2>
-		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+		  <!-- <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span> -->
 		  <p></p>
 
 		  <h3> Předkládáme Vám řadu praktických námětů a návodů v oblasti oběhového hospodářství: </h3>

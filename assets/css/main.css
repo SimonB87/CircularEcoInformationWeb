@@ -1930,6 +1930,18 @@ a.big:hover .mainIconNavigation--link--decription span {
   font-size: 1.1rem;
 }
 
+a.big:hover .mainIconNavigation--link--icon i.unfinished {
+  color: red;
+}
+
+a.big:hover .mainIconNavigation--link--decription span.unfinished {
+  color: red;
+}
+
+a.big:hover .mainIconNavigation--link--icon.unfinished {
+  border-color: red;
+}
+
 @media screen and (max-width: 736px) {
   .mainIconNavigation--panel a.big {
     margin: 0 auto;
@@ -1950,24 +1962,24 @@ a.big:hover .mainIconNavigation--link--decription span {
     margin: 0 auto;
   }
   @keyframes biggerFont {
-    	0% {
-    	  font-size: 1.25rem;
-	}
-	5% {
-    	  font-size: 1.25rem;
-	}
-	30% {
-    	  font-size: 1.5rem;
-	}
-	60% {
-    	  font-size: 1.0rem;
-	}
-	90% {
-    	  font-size: 1.25rem;
-	}
-	100% {
-    	  font-size: 1.25rem;
-	}
+    0% {
+      font-size: 1.25rem;
+    }
+    5% {
+      font-size: 1.25rem;
+    }
+    30% {
+      font-size: 1.5rem;
+    }
+    60% {
+      font-size: 1rem;
+    }
+    90% {
+      font-size: 1.25rem;
+    }
+    100% {
+      font-size: 1.25rem;
+    }
   }
 }
 
