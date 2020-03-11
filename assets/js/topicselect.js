@@ -2,45 +2,56 @@
   let counterCheckbox = 0;
   $(".checkbox_target").click(function() {
     let value = $(this).attr("data-value");
-    let history = $("#submitresults").attr("data-selected");
-    let isValueNew;
+    let selectionHistory = $("#submitresults").attr("data-selected");
+    let isValueNew = selectionHistory.indexOf(value);
+    let editedSelectionHistory;
+    let selectedTopicString;
 
-    // //
-    /*
-    console.log("value:: " + value);
-    console.log("history:: " + history);
-    */
-    // //
+    if ($("#submitresults").attr("data-selected") == "") {
+      counterCheckbox = 0;
+    }
 
     if ($(this).attr("status-checked") == "false") {
       $(this).attr("status-checked", "true");
-      isValueNew = history.indexOf(value);
     } else {
       $(this).attr("status-checked", "false");
+
+      if (isValueNew == selectionHistory.length - 2) {
+        value = "," + value;
+      } else if (isValueNew >= 0) {
+        value = value + ",";
+      }
+      editedSelectionHistory = selectionHistory.replace(value, "");
+
+      $("#submitresults").attr("data-selected", editedSelectionHistory);
+
+      if ($(".checkbox_target[status-checked=true]").length == 0) {
+        $("#submitresults").attr("data-selected", "");
+      }
     }
 
-    console.log("isValueNew:: " + isValueNew);
-
-    if ((isValueNew = -1)) {
+    if (isValueNew == -1) {
       if ($(this).attr("status-checked") == "true") {
         if (counterCheckbox > 0) {
-          $("#submitresults").attr("data-selected", history + "," + value);
+          $("#submitresults").attr(
+            "data-selected",
+            selectionHistory + "," + value
+          );
         } else {
-          $("#submitresults").attr("data-selected", history + value);
+          $("#submitresults").attr("data-selected", selectionHistory + value);
         }
         counterCheckbox++;
       }
     }
 
-    // //
-    /*
-    let stringText = $("#submitresults").attr("data-selected");
-    let stringResult = stringText.indexOf("1");
-    console.log("stringResult:: " + stringResult);
-    
-    console.log("finale:: " + history);
-    */
-    // //
+    selectedTopicString = $("#submitresults").attr("data-selected");
+    selectedTopicString =
+      "3demo_testtabulka/index.php?searchstring=[" + selectedTopicString + "]";
+    $("#submitresults").attr("href", selectedTopicString);
+
+    if ($(".checkbox_target[status-checked=true]").length == 0) {
+      $("#submitresults").attr("href", "vyvoj_index.php#vyberTemata");
+    }
   });
 
   $("#resetSelection").click(function() {

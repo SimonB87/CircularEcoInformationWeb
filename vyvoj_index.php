@@ -443,47 +443,47 @@
 
 			  	<div class="field half">
 					<input type="checkbox" id="podkate_Trideni_odpadu" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Trideni_odpadu" data-value="1" status-checked="false">Třídění odpadu</label>
+					<label class="checkbox_target" for="podkate_Trideni_odpadu" data-value="01" status-checked="false">Třídění odpadu</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Snizeni_nakladu_OH" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Snizeni_nakladu_OH" data-value="2" status-checked="false">Snížení nákladů na odpadové hospodářství</label>
+					<label class="checkbox_target" for="podkate_Snizeni_nakladu_OH" data-value="02" status-checked="false">Snížení nákladů na odpadové hospodářství</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Vyuziti_bio_odpadu" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Vyuziti_bio_odpadu" data-value="3" status-checked="false">Využití biologického odpadu</label>
+					<label class="checkbox_target" for="podkate_Vyuziti_bio_odpadu" data-value="03" status-checked="false">Využití biologického odpadu</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Nebezpecny_odpad" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Nebezpecny_odpad" data-value="4" status-checked="false">Omezení nebezpečných odpadů</label>
+					<label class="checkbox_target" for="podkate_Nebezpecny_odpad" data-value="04" status-checked="false">Omezení nebezpečných odpadů</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Kompostovani" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Kompostovani" data-value="5" status-checked="false">Kompostování</label>
+					<label class="checkbox_target" for="podkate_Kompostovani" data-value="05" status-checked="false">Kompostování</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Nakladani_vodou" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Nakladani_vodou" data-value="6" status-checked="false">Lepší nakládání s vodou</label>
+					<label class="checkbox_target" for="podkate_Nakladani_vodou" data-value="06" status-checked="false">Lepší nakládání s vodou</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Zadej_verejne_zakazky" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Zadej_verejne_zakazky" data-value="7" status-checked="false">Zadávání veřejných zakázek</label>
+					<label class="checkbox_target" for="podkate_Zadej_verejne_zakazky" data-value="07" status-checked="false">Zadávání veřejných zakázek</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Podpora_lokalpodnikani" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Podpora_lokalpodnikani" data-value="8" status-checked="false">Podpora lokálního podnikání</label>
+					<label class="checkbox_target" for="podkate_Podpora_lokalpodnikani" data-value="08" status-checked="false">Podpora lokálního podnikání</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Pece_verejny_prostor" name="demo-priority">
-					<label class="checkbox_target" for="podkate_Pece_verejny_prostor" data-value="9" status-checked="false">Péče o veřejný prostor</label>
+					<label class="checkbox_target" for="podkate_Pece_verejny_prostor" data-value="09" status-checked="false">Péče o veřejný prostor</label>
 				</div>
 
 				<div class="field half">
