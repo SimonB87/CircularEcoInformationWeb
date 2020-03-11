@@ -240,7 +240,7 @@
 		  </p>
 
 		  <p> 
-			<a target="_blank" href="http://obcevkruhu.cz/0demo/tableprojects.php" class="button primary small"> Vyberte téma <span style="color:var(--theme-color);">(#projekty)</span></a>
+			<a target="_blank" href="3demo_testtabulka/index.php" class="button primary small"> Vyberte téma <span style="color:var(--theme-color);">(#projekty)</span></a>
 		  </p>
 		  
           <p></p>
@@ -320,7 +320,7 @@
 		  </p>
 
 		  <p> 
-			<a target="_blank" href="http://obcevkruhu.cz/0demo/tableprojects.php" class="button primary small"> Vyberte téma 
+			<a target="_blank" href="3demo_testtabulka/index.php" class="button primary small"> Vyberte téma 
 				<span style="color:var(--theme-color);">(#projekty)</span>
 				<i class="fas fa-location-arrow"></i>
 			</a>
@@ -395,7 +395,7 @@
 						<a href="info.php">webová stránka <i class="fas fa-location-arrow"></i></a></span> &nbsp; řešeného projektu s podporou TAČR.
 					  </li>
 					  <li>Katalog typových řešení Vás může inspirovat k vlastní aktivitě (je složen z osmi tematických oblastí) <br>
-						  <span style="color:var(--theme-color);"><a href="#">PDF Katalog <i class="fas fa-location-arrow"></i></a></span>
+						  <span style="color:var(--theme-color);"><a href="3demo_testtabulka/index.php" target="_blank">Katalog typových řešení<i class="fas fa-location-arrow"></i></a></span>
 					  </li>
 					  <li>Metodika oběhového hospodářství měst a obcí Vám prozradí obecné základy cirkulární ekonomiky 
 						  a  provede Vás procesem vzniku, zpracování a realizace záměru, který přispěje k omezení vzniku odpadů 
