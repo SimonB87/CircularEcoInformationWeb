@@ -416,7 +416,7 @@
 
 		<!-- Vyber temat typovych řešení -->
         <article id="vyberTemata">
-          <h2 class="major">
+          <h2 id="topHeading" class="major">
             Vyběr téma typových řešení
 		  </h2>
 			<!--
@@ -426,9 +426,15 @@
 
 		  <h3> Katalog typových řešení </h3>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-atlas"></i> </div>
-
-		  <p> Náš katalog typových řešení obsahuje řadu typových řešení, které nabízejí řešení v rámci cirkulární ekonomiky do Vaší obce.</p>
+		  <div class="infoTextWithIcon"> 
+		  	<div class="infoTextWithIcon--icon"> 
+			  <i class="fas fa-atlas"></i>
+			</div>
+			<div class="infoTextWithIcon--text"> 
+				<p> Náš katalog typových řešení obsahuje řadu typových řešení, které nabízejí řešení v rámci cirkulární ekonomiky do Vaší obce.</p>
+			</div>
+		  </div>
+		  
 
 		  <h3> Vyberte témata, které chce najít v katalogu </h3>
 
@@ -437,117 +443,117 @@
 
 			  	<div class="field half">
 					<input type="checkbox" id="podkate_Trideni_odpadu" name="demo-priority">
-					<label for="podkate_Trideni_odpadu">Třídění odpadu</label>
+					<label class="checkbox_target" for="podkate_Trideni_odpadu" data-value="1" status-checked="false">Třídění odpadu</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Snizeni_nakladu_OH" name="demo-priority">
-					<label for="podkate_Snizeni_nakladu_OH">Snížení nákladů na odpadové hospodářství</label>
+					<label class="checkbox_target" for="podkate_Snizeni_nakladu_OH" data-value="2" status-checked="false">Snížení nákladů na odpadové hospodářství</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Vyuziti_bio_odpadu" name="demo-priority">
-					<label for="podkate_Vyuziti_bio_odpadu">Využití biologického odpadu</label>
+					<label class="checkbox_target" for="podkate_Vyuziti_bio_odpadu" data-value="3" status-checked="false">Využití biologického odpadu</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Nebezpecny_odpad" name="demo-priority">
-					<label for="podkate_Nebezpecny_odpad">Omezení nebezpečných odpadů</label>
+					<label class="checkbox_target" for="podkate_Nebezpecny_odpad" data-value="4" status-checked="false">Omezení nebezpečných odpadů</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Kompostovani" name="demo-priority">
-					<label for="podkate_Kompostovani">Kompostování</label>
+					<label class="checkbox_target" for="podkate_Kompostovani" data-value="5" status-checked="false">Kompostování</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Nakladani_vodou" name="demo-priority">
-					<label for="podkate_Nakladani_vodou">Lepší nakládání s vodou</label>
+					<label class="checkbox_target" for="podkate_Nakladani_vodou" data-value="6" status-checked="false">Lepší nakládání s vodou</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Zadej_verejne_zakazky" name="demo-priority">
-					<label for="podkate_Zadej_verejne_zakazky">Zadávání veřejných zakázek</label>
+					<label class="checkbox_target" for="podkate_Zadej_verejne_zakazky" data-value="7" status-checked="false">Zadávání veřejných zakázek</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Podpora_lokalpodnikani" name="demo-priority">
-					<label for="podkate_Podpora_lokalpodnikani">Podpora lokálního podnikání</label>
+					<label class="checkbox_target" for="podkate_Podpora_lokalpodnikani" data-value="8" status-checked="false">Podpora lokálního podnikání</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Pece_verejny_prostor" name="demo-priority">
-					<label for="podkate_Pece_verejny_prostor">Péče o veřejný prostor</label>
+					<label class="checkbox_target" for="podkate_Pece_verejny_prostor" data-value="9" status-checked="false">Péče o veřejný prostor</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Udrzitelna_doprava" name="demo-priority">
-					<label for="podkate_Udrzitelna_doprava">Udržitelná doprava</label>
+					<label class="checkbox_target" for="podkate_Udrzitelna_doprava" data-value="10" status-checked="false">Udržitelná doprava</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Sber_odpadu" name="demo-priority">
-					<label for="podkate_Sber_odpadu">Sběr odpadu</label>
+					<label class="checkbox_target" for="podkate_Sber_odpadu" data-value="11" status-checked="false">Sběr odpadu</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Vzniku_odpadu" name="demo-priority">
-					<label for="podkate_Vzniku_odpadu">Předcházení vzniku odpadu</label>
+					<label class="checkbox_target" for="podkate_Vzniku_odpadu" data-value="12" status-checked="false">Předcházení vzniku odpadu</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Zelene_uradovani" name="demo-priority">
-					<label for="podkate_Zelene_uradovani">Zelené úřadování</label>
+					<label class="checkbox_target" for="podkate_Zelene_uradovani" data-value="13" status-checked="false">Zelené úřadování</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Inovativni_reseni" name="demo-priority">
-					<label for="podkate_Inovativni_reseni">Inovativní řešení</label>
+					<label class="checkbox_target" for="podkate_Inovativni_reseni" data-value="14" status-checked="false">Inovativní řešení</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Obecni_akce" name="demo-priority">
-					<label for="podkate_Obecni_akce">Obecní akce</label>
+					<label class="checkbox_target" for="podkate_Obecni_akce" data-value="15" status-checked="false">Obecní akce</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Recyklace_odpadu" name="demo-priority">
-					<label for="podkate_Recyklace_odpadu">Recyklace či využití odpadů</label>
+					<label class="checkbox_target" for="podkate_Recyklace_odpadu" data-value="16" status-checked="false">Recyklace či využití odpadů</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Zpetny_odber" name="demo-priority">
-					<label for="podkate_Zpetny_odber">Sběrný dvůr či zpětný odběr</label>
+					<label class="checkbox_target" for="podkate_Zpetny_odber" data-value="17" status-checked="false">Sběrný dvůr či zpětný odběr</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_ObecniMajetek_aPodnikani" name="demo-priority">
-					<label for="podkate_ObecniMajetek_aPodnikani">Obecní majetek a podnikání</label>
+					<label class="checkbox_target" for="podkate_ObecniMajetek_aPodnikani" data-value="18" status-checked="false">Obecní majetek a podnikání</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Vzdelavani" name="demo-priority">
-					<label for="podkate_Vzdelavani">Vzdělávání a výchova</label>
+					<label class="checkbox_target" for="podkate_Vzdelavani" data-value="19" status-checked="false">Vzdělávání a výchova</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Cerne_skladky" name="demo-priority">
-					<label for="podkate_Cerne_skladky">Černé skládky</label>
+					<label class="checkbox_target" for="podkate_Cerne_skladky" data-value="20" status-checked="false">Černé skládky</label>
 				</div>				
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Omezeni_obalu" name="demo-priority">
-					<label for="podkate_Omezeni_obalu">Omezení obalů</label>
+					<label class="checkbox_target" for="podkate_Omezeni_obalu" data-value="21" status-checked="false">Omezení obalů</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Energeticka_biomasa" name="demo-priority">
-					<label for="podkate_Energeticka_biomasa">Energetická biomasa</label>
+					<label class="checkbox_target" for="podkate_Energeticka_biomasa" data-value="22" status-checked="false">Energetická biomasa</label>
 				</div>
 
 				<div class="field half">
 					<input type="checkbox" id="podkate_Sdileni" name="demo-priority">
-					<label for="podkate_Sdileni">Sdílení</label>
+					<label class="checkbox_target" for="podkate_Sdileni" data-value="23" status-checked="false">Sdílení</label>
 				</div>
 
 			  </div>
@@ -555,8 +561,14 @@
 			  <p style="color:red;"> Pozn: Probíhá stále vývoj formuláře ! Funcionalita není plná !!!</p>
 
 			  <ul class="actions">
-				<li><input type="submit" value="Ukázat výsledky" class="primary"></li>
-				<li><input type="reset" value="Vynulovat"></li>
+				<li> 
+					<a id="submitresults" href="#" data-selected=""> 
+						<input type="submit" value="Ukázat výsledky" class="primary">
+					</a>
+				</li>
+				<li>
+					<input id="resetSelection" type="reset" value="Vynulovat">
+				</li>
 			  </ul>
 
 		  </section>
@@ -940,5 +952,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+	<script src="assets/js/topicselect.js"></script>
   </body>
 </html>
