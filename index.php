@@ -100,12 +100,7 @@
             <li>
               <a href="#ocirkularni">O cirkulární <br />ekonomice</a>
             </li>
-		<li><a href="metodika.php">Metodika</a></li>
-			<!--
-            <li><a href="#pohledeu">Pohled EU na CE</a></li>
-            <li><a href="#ceacr">CE a ČR</a></li>
-			<li><a href="#principyvyroby">Principy CE ve výrobě</a></li>
-			-->
+			<li><a href="metodika.php">Metodika</a></li>
 			<li><a href="#oprojektu">O projektu</a></li>
 			<li><a href="0demo/register.php">Přihlásit se</a></li>
 			<li><a href="#contact">Kontaktujte <br />nás</a></li>
@@ -240,7 +235,7 @@
 		  </p>
 
 		  <p> 
-			<a target="_blank" href="3demo_testtabulka/index.php" class="button primary small"> Vyberte téma <span style="color:var(--theme-color);">(#projekty)</span></a>
+		    <a href="#vyberTemata" class="button primary small"> Vyberte téma <i class="fas fa-location-arrow" style="color:var(--theme-color);"></i> </a>
 		  </p>
 		  
           <p></p>
@@ -313,24 +308,21 @@
 			  	<ol class="list">
 					  <li>Vznik námětu – buď můžete mít svůj, nebo přejděte na náš výběr témat, která Vás zajímají.
 						  Můžete také využít metodu screeningu popsanou v naší
-						  <span style="color:var(--theme-color);"><a href="#">metodice v PDF <i class="fas fa-location-arrow"></i> </a></span></li>
+						  <span style="color:var(--theme-color);"><a href="#">metodice <i class="fas fa-location-arrow"></i> </a></span></li>
 					  <li>Po zvolení témat obdržíte výpis z katalogu typových řešení, který odpovídá Vašemu zájmu. Z něj si vyberete vhodný námět.</li>
 					  <li>Následně Vás provedeme procesem jeho zpracování a realizace.</li>
 				</ol>
 		  </p>
 
 		  <p> 
-			<a target="_blank" href="3demo_testtabulka/index.php" class="button primary small"> Vyberte téma 
-				<span style="color:var(--theme-color);">(#projekty)</span>
-				<i class="fas fa-location-arrow"></i>
-			</a>
+     	    <a href="#vyberTemata" class="button primary small"> Vyberte téma <i class="fas fa-location-arrow" style="color:var(--theme-color);"></i> </a>
 		  </p>
 		  
           <p></p>
         </article>
 
 
-        <!-- chciInfromace 1 -->
+        <!-- chciInformace 1 -->
         <article id="chciInformace">
 			<h2 class="major">
             Chci informace <br>o Cirkulární Ekonomice
@@ -395,7 +387,7 @@
 						<a href="info.php">webová stránka <i class="fas fa-location-arrow"></i></a></span> &nbsp; řešeného projektu s podporou TAČR.
 					  </li>
 					  <li>Katalog typových řešení Vás může inspirovat k vlastní aktivitě (je složen z osmi tematických oblastí) <br>
-						  <span style="color:var(--theme-color);"><a href="3demo_testtabulka/index.php" target="_blank">Katalog typových řešení<i class="fas fa-location-arrow"></i></a></span>
+						  <span style="color:var(--theme-color);"><a href="#">PDF Katalog <i class="fas fa-location-arrow"></i></a></span>
 					  </li>
 					  <li>Metodika oběhového hospodářství měst a obcí Vám prozradí obecné základy cirkulární ekonomiky 
 						  a  provede Vás procesem vzniku, zpracování a realizace záměru, který přispěje k omezení vzniku odpadů 
@@ -413,11 +405,171 @@
 		  </p>
 
 		  <p> 
-			<a target="_blank" href="http://obcevkruhu.cz/0demo/tableprojects.php" class="button primary small"> Vyberte téma <span style="color:var(--theme-color);">(#projekty)</span></a>
+			<a href="#vyberTemata" class="button primary small"> Vyberte téma</a>
 		  </p>
 		  
           <p></p>
-        </article>		
+        </article>	
+
+		<!-- Vyber temat typovych řešení -->
+        <article id="vyberTemata">
+          <h2 id="topHeading" class="major">
+            Vyběr téma typových řešení
+		  </h2>
+			<!--
+		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
+			 -->
+		  <p></p>
+
+		  <h3> Katalog typových řešení </h3>
+
+		  <div class="infoTextWithIcon"> 
+		  	<div class="infoTextWithIcon--icon"> 
+			  <i class="fas fa-atlas"></i>
+			</div>
+			<div class="infoTextWithIcon--text"> 
+				<p> Náš katalog typových řešení obsahuje řadu typových řešení, které nabízejí řešení v rámci cirkulární ekonomiky do Vaší obce.</p>
+			</div>
+		  </div>
+		  
+
+		  <h3> Vyberte témata, které chce najít v katalogu </h3>
+
+		  <section>
+			  <div class="fieldsForm">
+
+			  	<div class="field half">
+					<input type="checkbox" id="podkate_Trideni_odpadu" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Trideni_odpadu" data-value="01" status-checked="false">Třídění odpadu</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Snizeni_nakladu_OH" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Snizeni_nakladu_OH" data-value="02" status-checked="false">Snížení nákladů na odpadové hospodářství</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Vyuziti_bio_odpadu" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Vyuziti_bio_odpadu" data-value="03" status-checked="false">Využití biologického odpadu</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Nebezpecny_odpad" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Nebezpecny_odpad" data-value="04" status-checked="false">Omezení nebezpečných odpadů</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Kompostovani" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Kompostovani" data-value="05" status-checked="false">Kompostování</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Nakladani_vodou" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Nakladani_vodou" data-value="06" status-checked="false">Lepší nakládání s vodou</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Zadej_verejne_zakazky" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Zadej_verejne_zakazky" data-value="07" status-checked="false">Zadávání veřejných zakázek</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Podpora_lokalpodnikani" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Podpora_lokalpodnikani" data-value="08" status-checked="false">Podpora lokálního podnikání</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Pece_verejny_prostor" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Pece_verejny_prostor" data-value="09" status-checked="false">Péče o veřejný prostor</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Udrzitelna_doprava" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Udrzitelna_doprava" data-value="10" status-checked="false">Udržitelná doprava</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Sber_odpadu" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Sber_odpadu" data-value="11" status-checked="false">Sběr odpadu</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Vzniku_odpadu" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Vzniku_odpadu" data-value="12" status-checked="false">Předcházení vzniku odpadu</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Zelene_uradovani" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Zelene_uradovani" data-value="13" status-checked="false">Zelené úřadování</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Inovativni_reseni" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Inovativni_reseni" data-value="14" status-checked="false">Inovativní řešení</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Obecni_akce" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Obecni_akce" data-value="15" status-checked="false">Obecní akce</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Recyklace_odpadu" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Recyklace_odpadu" data-value="16" status-checked="false">Recyklace či využití odpadů</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Zpetny_odber" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Zpetny_odber" data-value="17" status-checked="false">Sběrný dvůr či zpětný odběr</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_ObecniMajetek_aPodnikani" name="demo-priority">
+					<label class="checkbox_target" for="podkate_ObecniMajetek_aPodnikani" data-value="18" status-checked="false">Obecní majetek a podnikání</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Vzdelavani" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Vzdelavani" data-value="19" status-checked="false">Vzdělávání a výchova</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Cerne_skladky" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Cerne_skladky" data-value="20" status-checked="false">Černé skládky</label>
+				</div>				
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Omezeni_obalu" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Omezeni_obalu" data-value="21" status-checked="false">Omezení obalů</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Energeticka_biomasa" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Energeticka_biomasa" data-value="22" status-checked="false">Energetická biomasa</label>
+				</div>
+
+				<div class="field half">
+					<input type="checkbox" id="podkate_Sdileni" name="demo-priority">
+					<label class="checkbox_target" for="podkate_Sdileni" data-value="23" status-checked="false">Sdílení</label>
+				</div>
+
+			  </div>
+
+			  <ul class="actions">
+				<li> 
+					<a id="submitresults" href="#" data-selected=""> 
+						<input type="submit" value="Ukázat výsledky" class="primary">
+					</a>
+				</li>
+				<li>
+					<input id="resetSelection" type="reset" value="Vynulovat">
+				</li>
+			  </ul>
+
+		  </section>
+		  
+          <p></p>
+        </article>	
 
 
         <!-- CE a ČR -->
@@ -536,25 +688,25 @@
 						
         <!-- Elements -->
         <!--
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+		<article id="elements">
+			<h2 class="major">Elements</h2>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+			<section>
+				<h3 class="major">Text</h3>
+				<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+				This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+				This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+				<hr />
+				<h2>Heading Level 2</h2>
+				<h3>Heading Level 3</h3>
+				<h4>Heading Level 4</h4>
+				<h5>Heading Level 5</h5>
+				<h6>Heading Level 6</h6>
+				<hr />
+				<h4>Blockquote</h4>
+				<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+				<h4>Preformatted</h4>
+				<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -563,220 +715,221 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+	</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+	<section>
+		<h3 class="major">Lists</h3>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+		<h4>Unordered</h4>
+		<ul>
+			<li>Dolor pulvinar etiam.</li>
+			<li>Sagittis adipiscing.</li>
+			<li>Felis enim feugiat.</li>
+		</ul>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+		<h4>Alternate</h4>
+		<ul class="alt">
+			<li>Dolor pulvinar etiam.</li>
+			<li>Sagittis adipiscing.</li>
+			<li>Felis enim feugiat.</li>
+		</ul>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+		<h4>Ordered</h4>
+		<ol>
+			<li>Dolor pulvinar etiam.</li>
+			<li>Etiam vel felis viverra.</li>
+			<li>Felis enim feugiat.</li>
+			<li>Dolor pulvinar etiam.</li>
+			<li>Etiam vel felis lorem.</li>
+			<li>Felis enim et feugiat.</li>
+		</ol>
+		<h4>Icons</h4>
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+		</ul>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+		<h4>Actions</h4>
+		<ul class="actions">
+			<li><a href="#" class="button primary">Default</a></li>
+			<li><a href="#" class="button">Default</a></li>
+		</ul>
+		<ul class="actions stacked">
+			<li><a href="#" class="button primary">Default</a></li>
+			<li><a href="#" class="button">Default</a></li>
+		</ul>
+	</section>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+	<section>
+		<h3 class="major">Table</h3>
+		<h4>Default</h4>
+		<div class="table-wrapper">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Item One</td>
+						<td>Ante turpis integer aliquet porttitor.</td>
+						<td>29.99</td>
+					</tr>
+					<tr>
+						<td>Item Two</td>
+						<td>Vis ac commodo adipiscing arcu aliquet.</td>
+						<td>19.99</td>
+					</tr>
+					<tr>
+						<td>Item Three</td>
+						<td> Morbi faucibus arcu accumsan lorem.</td>
+						<td>29.99</td>
+					</tr>
+					<tr>
+						<td>Item Four</td>
+						<td>Vitae integer tempus condimentum.</td>
+						<td>19.99</td>
+					</tr>
+					<tr>
+						<td>Item Five</td>
+						<td>Ante turpis integer aliquet porttitor.</td>
+						<td>29.99</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2"></td>
+						<td>100.00</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+		<h4>Alternate</h4>
+		<div class="table-wrapper">
+			<table class="alt">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Item One</td>
+						<td>Ante turpis integer aliquet porttitor.</td>
+						<td>29.99</td>
+					</tr>
+					<tr>
+						<td>Item Two</td>
+						<td>Vis ac commodo adipiscing arcu aliquet.</td>
+						<td>19.99</td>
+					</tr>
+					<tr>
+						<td>Item Three</td>
+						<td> Morbi faucibus arcu accumsan lorem.</td>
+						<td>29.99</td>
+					</tr>
+					<tr>
+						<td>Item Four</td>
+						<td>Vitae integer tempus condimentum.</td>
+						<td>19.99</td>
+					</tr>
+					<tr>
+						<td>Item Five</td>
+						<td>Ante turpis integer aliquet porttitor.</td>
+						<td>29.99</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2"></td>
+						<td>100.00</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</section>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+	<section>
+		<h3 class="major">Buttons</h3>
+		<ul class="actions">
+			<li><a href="#" class="button primary">Primary</a></li>
+			<li><a href="#" class="button">Default</a></li>
+		</ul>
+		<ul class="actions">
+			<li><a href="#" class="button">Default</a></li>
+			<li><a href="#" class="button small">Small</a></li>
+		</ul>
+		<ul class="actions">
+			<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+			<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+		</ul>
+		<ul class="actions">
+			<li><span class="button primary disabled">Disabled</span></li>
+			<li><span class="button disabled">Disabled</span></li>
+		</ul>
+	</section>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+	<section>
+		<h3 class="major">Form</h3>
+		<form method="post" action="#">
+			<div class="fields">
+				<div class="field half">
+					<label for="demo-name">Name</label>
+					<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+				</div>
+				<div class="field half">
+					<label for="demo-email">Email</label>
+					<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+				</div>
+				<div class="field">
+					<label for="demo-category">Category</label>
+					<select name="demo-category" id="demo-category">
+						<option value="">-</option>
+						<option value="1">Manufacturing</option>
+						<option value="1">Shipping</option>
+						<option value="1">Administration</option>
+						<option value="1">Human Resources</option>
+					</select>
+				</div>
+				<div class="field half">
+					<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+					<label for="demo-priority-low">Low</label>
+				</div>
+				<div class="field half">
+					<input type="radio" id="demo-priority-high" name="demo-priority">
+					<label for="demo-priority-high">High</label>
+				</div>
+				<div class="field half">
+					<input type="checkbox" id="demo-copy" name="demo-copy">
+					<label for="demo-copy">Email me a copy</label>
+				</div>
+				<div class="field half">
+					<input type="checkbox" id="demo-human" name="demo-human" checked>
+					<label for="demo-human">Not a robot</label>
+				</div>
+				<div class="field">
+					<label for="demo-message">Message</label>
+					<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+				</div>
+			</div>
+			<ul class="actions">
+				<li><input type="submit" value="Send Message" class="primary" /></li>
+				<li><input type="reset" value="Reset" /></li>
+			</ul>
+		</form>
+	</section>
 
-							</article> -->
-      </div>
+  </article> 
+  -->
+ </div>
 
 	  <!-- Footer -->
 	  <?php
@@ -794,5 +947,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+	<script src="assets/js/topicselect.js"></script>
   </body>
 </html>
