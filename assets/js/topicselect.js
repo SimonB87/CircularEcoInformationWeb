@@ -1,4 +1,11 @@
 (function($) {
+  setTimeout(function() {
+    $("#vyberTemata .fieldsForm input[type='checkbox']:checked").prop(
+      "checked",
+      false
+    );
+  }, 200);
+
   let counterCheckbox = 0;
   $(".checkbox_target").click(function() {
     let value = $(this).attr("data-value");
