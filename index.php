@@ -172,40 +172,60 @@
 		  
 		  <p></p>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-globe-europe"></i> </div>
+		  	<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-globe-europe"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete chránit životní prostředí ve Vaší obci?</p> <!--  text -->
+				</div>
+			</div>
 
-		  <div>
-			  <h3 class=""> Chcete chránit životní prostředí ve Vaší obci? </h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-dumpster"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Vadí vám zbytečné odpady a obaly?</p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-dumpster"></i> </div>
-		  
-		  <div>
-		    <h3 class=""> Vadí vám zbytečné odpady a obaly?</h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-recycle"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Myslíte, že by šly staré věci a odpad ještě využít?</p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-recycle"></i></div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fab fa-envira"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete snížit svou uhlíkovou stopu?</p> <!--  text -->
+				</div>
+			</div>
 
-		  <div>
-		    <h3 class=""> Myslíte, že by šly staré věci a odpad ještě využít?</h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-fan"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete bojovat proti změně klimatu bez demonstrování?</p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"> <i class="fab fa-envira"></i> </div>
-		  
-		  <div>
-			<h3 class=""> Chcete snížit svou uhlíkovou stopu?</h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="far fa-smile-beam"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Jste zde správně...</p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-fan"></i> </div>
-		  
-		  <div>
-		    <h3 class=""> Chcete bojovat proti změně klimatu bez demonstrování?</h3> <br>
-		  </div>
-
-		  <div>
-		  	<h2 class="">Jste zde správně...</h2> 
-		  </div>
-		  <div class="userquestionsIcon"> <i class="far fa-smile-beam"></i></div>
 		  <p></p>
 		  <p>
 		  V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný:
@@ -249,44 +269,65 @@
 		  	</h2>
 		  
 		  <!-- <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span> -->
-		  
+		  	<p></p>
+		  	<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-globe-europe"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete šetřit náklady na odpadové hospodářství? </p> <!--  text -->
+				</div>
+			</div>
+
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-dumpster"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete motivovat obyvatele, aby lépe třídili a využívali odpady? </p> <!--  text -->
+				</div>
+			</div>
+
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-recycle"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Máte zájem být na špičce v ochraně životního prostředí? </p> <!--  text -->
+				</div>
+			</div>
+
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fab fa-envira"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete soběstačnější obec? </p> <!--  text -->
+				</div>
+			</div>
+
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-fan"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Umíte dobře využívat vodu, místní produkty, iniciativu občanů? </p> <!--  text -->
+				</div>
+			</div>
+
+			<p></p>
+
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="far fa-smile-beam"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Jste zde správně... </p> <!--  text -->
+				</div>
+			</div>
+
 		  <p></p>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-globe-europe"></i> </div>
-
-		  <div>
-			  <h3 class=""> Chcete šetřit náklady na odpadové hospodářství? </h3> <br>
-		  </div>
-
-		  <div class="userquestionsIcon"> <i class="fas fa-dumpster"></i> </div>
-		  
-		  <div>
-		    <h3 class=""> Chcete motivovat obyvatele, aby lépe třídili a využívali odpady?</h3> <br>
-		  </div>
-
-		  <div class="userquestionsIcon"> <i class="fas fa-recycle"></i></div>
-
-		  <div>
-		    <h3 class=""> Máte zájem být na špičce v ochraně životního prostředí?</h3> <br>
-		  </div>
-
-		  <div class="userquestionsIcon"> <i class="fab fa-envira"></i> </div>
-		  
-		  <div>
-			<h3 class=""> Chcete soběstačnější obec?</h3> <br>
-		  </div>
-
-		  <div class="userquestionsIcon"> <i class="fas fa-fan"></i> </div>
-		  
-		  <div>
-		    <h3 class=""> Umíte dobře využívat vodu, místní produkty, iniciativu občanů?</h3> <br>
-		  </div>
-
-		  <div>
-		  	<h2 class="">Jste zde správně...</h2> 
-		  </div>
-		  <div class="userquestionsIcon"> <i class="far fa-smile-beam"></i></div>
-		  <p></p>
 		  <p>
 		  V několika krocích Vás provedeme procesem vzniku a realizace záměru, který by Vám mohl být užitečný:
 		  </p>
@@ -332,38 +373,55 @@
 		  
 		  <p></p>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-globe-europe"></i> </div>
+		  	<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-globe-europe"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Chcete šetřit zdroje a životní prostředí? </p> <!--  text -->
+				</div>
+			</div>
 
-		  <div>
-			  <h3 class=""> Chcete šetřit zdroje a životní prostředí? </h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-recycle"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Víte, co je cirkulární ekonomika? </p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"> <i class="fas fa-recycle"></i>  </div>
-		  
-		  <div>
-		    <h3 class=""> Víte, co je cirkulární ekonomika?</h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fab fa-envira"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Tušíte, jak každodenně a jednoduše zlepšovat životní prostředí? </p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"> <i class="fab fa-envira"></i></div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="far fa-lightbulb"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Máte jasno v tom, co lze s použitými věcmi a odpady ještě dělat? </p> <!--  text -->
+				</div>
+			</div>
+			
+			<p></p>
 
-		  <div>
-		    <h3 class=""> Tušíte, jak každodenně a jednoduše zlepšovat životní prostředí?</h3> <br>
-		  </div>
+			<div class="infoTextWithIcon"> 
+				<div class="infoTextWithIcon--icon"> 
+					<i class="fas fa-fa"></i> <!-- icon -->
+				</div>
+				<div class="infoTextWithIcon--text"> 
+					<p> Pokud ne, podívejte se na výstupy našeho projektu ... </p> <!--  text -->
+				</div>
+			</div>
 
-		  <div class="userquestionsIcon"><i class="far fa-lightbulb"></i> </div>
-		  
-		  <div>
-			<h3 class=""> Máte jasno v tom, co lze s použitými věcmi a odpady ještě dělat?</h3> <br>
-		  </div>
-
-		  <div class="userquestionsIcon"> <i class="fas fa-fan"></i> </div>
-
-
-		  <div>
-		  	<h2 class="">Pokud ne, podívejte se na výstupy našeho projektu ...</h2> 
-		  </div>
-		  <div class="userquestionsIcon"> <i class="far fa-smile-beam"></i></div>
 		  <p></p>
+
 		  <p>
 		  Předkládáme Vám řadu praktických námětů a návodů v oblasti oběhového hospodářství:
 		  </p>
@@ -387,7 +445,7 @@
 						<a href="info.php">webová stránka <i class="fas fa-location-arrow"></i></a></span> &nbsp; řešeného projektu s podporou TAČR.
 					  </li>
 					  <li>Katalog typových řešení Vás může inspirovat k vlastní aktivitě (je složen z osmi tematických oblastí) <br>
-						  <span style="color:var(--theme-color);"><a href="#">PDF Katalog <i class="fas fa-location-arrow"></i></a></span>
+						  <span style="color:var(--theme-color);"><a href="3demo_testtabulka/allresults.php">Katalog <i class="fas fa-location-arrow"></i></a></span>
 					  </li>
 					  <li>Metodika oběhového hospodářství měst a obcí Vám prozradí obecné základy cirkulární ekonomiky 
 						  a  provede Vás procesem vzniku, zpracování a realizace záměru, který přispěje k omezení vzniku odpadů 
@@ -569,8 +627,19 @@
 		  </section>
 		  
           <p></p>
-        </article>	
+        </article>
 
+		<article id="jakNaTo_obcan">
+			<?php
+				include("includes/jaknatotextobcan.php");
+			?>
+		</article>
+
+		<article id="jakNaTo_starosta">
+			<?php
+				include("includes/jaknatotextstarosta.php");
+			?>
+		</article>
 
         <!-- CE a ČR -->
         <article id="ceacr">

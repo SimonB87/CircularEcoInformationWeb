@@ -29,7 +29,7 @@
         <div class="content">
           <div class="inner">
             <h3>Právě procházíte</h3>
-            <h1>MEOTODIKU</h1>
+            <h1>METODIKU</h1>
             <h2>Obce v kruhu cirkulární ekonomiky</h2>
             <p>
               Metodika vznikla jako hlavní výsledek řešení výzkumného projektu
@@ -49,7 +49,7 @@
         <nav>
           <ul>
             <li>
-              <a href="index.php">O cirkulární <br />ekonomice</a>
+              <a href="index.php">Domů</a>
             </li>
             <li><a href="#ometodice">O metodice</a></li>
             <li><a href="#krok_A">Projít metodiku</a></li>
@@ -735,7 +735,7 @@
           <span class="image main">
             <img class="metodikaImg" src="images/picPurple.jpg" alt="obrázek"
           /></span>
-          <a href="#krok_F" class="button primary small">Krok zpět</a>
+          <a href="#krok_I" class="button primary small">Krok zpět</a>
           <p></p>
           <h3 style="text-align: center;">
             Bude obec záměr/projekt CEO realizovat?
@@ -919,7 +919,6 @@
             <strong>Krok I </strong> <i class="fas fa-chevron-right"></i>
             <strong>Krok J </strong> <i class="fas fa-chevron-right"></i>
             <strong>Krok K </strong> <i class="fas fa-chevron-right"></i>
-            <i class="fas fa-chevron-right"></i>
             <strong>Konec </strong>
           </p>
           <h2 class="major" style="margin: 0 auto;">
