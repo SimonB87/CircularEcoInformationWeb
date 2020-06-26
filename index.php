@@ -78,13 +78,13 @@
 						</div>	
 					</a>
 
-					<a href="#" class="big"> 
+					<a href="#calc_input" class="big"> 
 						<div class="mainIconNavigation--link">
 							<div class="mainIconNavigation--link--icon unfinished">
 								<i class="fas fa-chart-pie unfinished"></i>
 							</div>
 							<div class="mainIconNavigation--link--decription">
-								<span class="boldText unfinished">Chci porovnávat <br>*nedostupné*</span>
+								<span class="boldText">Chci porovnávat </span>
 							</div>
 						</div>	
 					</a>
@@ -234,10 +234,10 @@
 		  <a href="#jsemObcanDalsi" class="button primary small">Jít dále...</a>
 		</article>
 		
-        <!-- jsemObcan 2 -->
-        <article id="jsemObcanDalsi">
-          <h2 class="major">
-            Jsem občan a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
+		<!-- jsemObcan 2 -->
+		<article id="jsemObcanDalsi">
+			<h2 class="major">
+				Jsem občan a chci přivézt <br>Cirkulární Ekonomiku <br>do mé obce
 		  </h2>
 			<!--
 		  <span class="image main"><img src="images/pic03.jpg" alt="Picture 03"/></span>
@@ -724,37 +724,88 @@
 			<a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
         </article>
 
+				<article id="calc_input"> 
+				  <h2 class="major">Odpadová kalkulačka</h2>
+
+					<form method="post" action="#">
+						<div class="fields">
+
+							<div class="field half">
+								<label for="naklady_oh">Náklady na OH <br>(Kč/obyvatele)</label>
+								<input type="text" name="naklady_oh" id="naklady_oh" />
+							</div>
+							<div class="field half">
+								<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
+								<input type="text" name="prijmy_oh" id="prijmy_oh" />
+							</div>
+							<div class="field half">
+								<label for="naklady_oh">Náklady na tříděný sběr <br>(Kč/t)</label>
+								<input type="text" name="naklady_oh" id="naklady_oh" />
+							</div>
+							<div class="field half">
+								<label for="prijmy_oh">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
+								<input type="text" name="prijmy_oh" id="prijmy_oh" />
+							</div>
+							<div class="field half">
+								<label for="prijmy_oh">Náklady za SKO <br>(Kč/t)</label>
+								<input type="text" name="prijmy_oh" id="prijmy_oh" />
+							</div>
+							<div class="field half">
+								<label for="naklady_oh">Náklady za SKO <br>(Kč/obyvatele)</label>
+								<input type="text" name="naklady_oh" id="naklady_oh" />
+							</div>
+							<div class="field half">
+								<label for="prijmy_oh">Produkce odpadů - celková <br>(kg/obyvatele)</label>
+								<input type="text" name="prijmy_oh" id="prijmy_oh" />
+							</div>
+							<div class="field half">
+								<label for="prijmy_oh">Produkce O odpadů  <br>(kg/obyvatele)</label>
+								<input type="text" name="prijmy_oh" id="prijmy_oh" />
+							</div>
+<!-- 							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div> -->
+
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+
+				</article>
         
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-						
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</article>
+
         <!-- Elements -->
         <!--
 		<article id="elements">
