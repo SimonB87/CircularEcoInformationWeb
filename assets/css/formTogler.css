@@ -14,10 +14,16 @@ ul.formToglerControls__itemNumbers {
   margin: 0 0.5rem;
   border: 2px solid #fff;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .formToglerControls__itemNumber.active {
   color: #000;
   background-color: #fff;
   border-color: #000;
+}
+
+.formTogler_panel2,
+.formTogler_panel3 {
+  display: none;
 }
