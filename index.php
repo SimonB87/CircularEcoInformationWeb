@@ -729,40 +729,82 @@
 
 					<form method="post" action="#">
 						<div class="fields">
+							<div class="field half">
+								<label for="region_cr">Kraj ČR </label>
+								<select name="region_cr" id="region_cr">
+									<option value="Vyberte ...">Vyberte ...</option>
+									<option value="Jihomoravský">Jihomoravský</option>
+									<option value="Královéhradecký">Královéhradecký</option>
+									<option value="Moravskoslezský">Moravskoslezský</option>
+								</select>
+							</div>
+							<div class="field half">
+								<label for="town_name">Název obce </label>
+								<input type="text" name="town_name" id="town_name" />
+							</div>
+						
 
-							<div class="field half">
-								<label for="naklady_oh">Náklady na OH <br>(Kč/obyvatele)</label>
-								<input type="text" name="naklady_oh" id="naklady_oh" />
+							<div class="formToglerControls"> 
+								<ul class="formToglerControls__itemNumbers">
+									<li class="formToglerControls__itemNumber itemNumber1 active">1
+									</li>
+									<li class="formToglerControls__itemNumber itemNumber2">2
+									</li>
+									<li class="formToglerControls__itemNumber itemNumber3">3
+									</li>
+								</ul>
 							</div>
-							<div class="field half">
-								<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
-								<input type="text" name="prijmy_oh" id="prijmy_oh" />
-							</div>
-							<div class="field half">
-								<label for="naklady_oh">Náklady na tříděný sběr <br>(Kč/t)</label>
-								<input type="text" name="naklady_oh" id="naklady_oh" />
-							</div>
-							<div class="field half">
-								<label for="prijmy_oh">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
-								<input type="text" name="prijmy_oh" id="prijmy_oh" />
-							</div>
-							<div class="field half">
-								<label for="prijmy_oh">Náklady za SKO <br>(Kč/t)</label>
-								<input type="text" name="prijmy_oh" id="prijmy_oh" />
-							</div>
-							<div class="field half">
-								<label for="naklady_oh">Náklady za SKO <br>(Kč/obyvatele)</label>
-								<input type="text" name="naklady_oh" id="naklady_oh" />
-							</div>
-							<div class="field half">
-								<label for="prijmy_oh">Produkce odpadů - celková <br>(kg/obyvatele)</label>
-								<input type="text" name="prijmy_oh" id="prijmy_oh" />
-							</div>
-							<div class="field half">
-								<label for="prijmy_oh">Produkce O odpadů  <br>(kg/obyvatele)</label>
-								<input type="text" name="prijmy_oh" id="prijmy_oh" />
-							</div>
-<!-- 							<div class="field">
+
+							<!-- <section class="formToghlerPanel itemPanel1">  --><!-- first part of the form -->
+							 
+								<div class="field half">
+									<label for="naklady_oh">Náklady na OH <br>(Kč/obyvatele)</label>
+									<input type="text" name="naklady_oh" id="naklady_oh" />
+								</div>
+								<div class="field half">
+									<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
+									<input type="text" name="prijmy_oh" id="prijmy_oh" />
+								</div>
+								<div class="field half">
+									<label for="naklady_tridenySber_tuny">Náklady na tříděný sběr <br>(Kč/t)</label>
+									<input type="text" name="naklady_tridenySber_tuny" id="naklady_tridenySber_tuny" />
+								</div>
+								<div class="field half">
+									<label for="naklady_tridenySber_perCapita">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
+									<input type="text" name="naklady_tridenySber_perCapita" id="naklady_tridenySber_perCapita" />
+								</div>
+								<div class="field half">
+									<label for="naklady_sko_tuny">Náklady za SKO <br>(Kč/t)</label>
+									<input type="text" name="naklady_sko_tuny" id="naklady_sko_tuny" />
+								</div>
+								<div class="field half">
+									<label for="naklady_sko_perCapita">Náklady za SKO <br>(Kč/obyvatele)</label>
+									<input type="text" name="naklady_sko_perCapita" id="naklady_sko_perCapita" />
+								</div>
+								<div class="field half">
+									<label for="produkce_odpady">Produkce odpadů - celková <br>(kg/obyvatele)</label>
+									<input type="text" name="prijmy_oh" id="prijmy_oh" />
+								</div>
+								<div class="field half">
+									<label for="prijmy_oh">Produkce O odpadů  <br>(kg/obyvatele)</label>
+									<input type="text" name="prijmy_oh" id="prijmy_oh" />
+								</div>
+							 
+							<!-- </section> -->
+
+							<!-- <section class="formToghlerPanel itemPanel2"> --> <!-- second part of the form -->
+								
+									<!-- CONTENT second part of the form -->
+								
+							<!-- </section> -->
+
+							<!-- <section class="formToghlerPanel itemPanel3"> --> <!-- third part - form results -->
+								
+									<!-- CONTENT second part of the form -->
+								
+							<!-- </section> -->
+							
+							<!--<div class="field">
 								<label for="message">Message</label>
 								<textarea name="message" id="message" rows="4"></textarea>
 							</div> -->
