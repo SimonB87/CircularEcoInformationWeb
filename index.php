@@ -728,7 +728,7 @@
 				  <h2 class="major">Odpadová kalkulačka</h2>
 
 					<form method="post" action="#">
-						<div class="fields">
+						<div class="fields form_style">
 							<div class="field half">
 								<label for="region_cr">Kraj ČR </label>
 								<select name="region_cr" id="region_cr">
@@ -755,66 +755,94 @@
 								</ul>
 							</div>
 
-							<!-- <section class="formToghlerPanel itemPanel1">  --><!-- first part of the form -->
+							<!-- formTogler_panel1 childs -->
 							 
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="naklady_oh">Náklady na OH <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_oh" id="naklady_oh" />
 								</div>
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
 									<input type="text" name="prijmy_oh" id="prijmy_oh" />
 								</div>
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_tuny">Náklady na tříděný sběr <br>(Kč/t)</label>
 									<input type="text" name="naklady_tridenySber_tuny" id="naklady_tridenySber_tuny" />
 								</div>
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_perCapita">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_tridenySber_perCapita" id="naklady_tridenySber_perCapita" />
 								</div>
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_tuny">Náklady za SKO <br>(Kč/t)</label>
 									<input type="text" name="naklady_sko_tuny" id="naklady_sko_tuny" />
 								</div>
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_perCapita">Náklady za SKO <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_sko_perCapita" id="naklady_sko_perCapita" />
 								</div>
-								<div class="field half">
+								<div class="field half formTogler_panel1">
 									<label for="produkce_odpady">Produkce odpadů - celková <br>(kg/obyvatele)</label>
-									<input type="text" name="prijmy_oh" id="prijmy_oh" />
+									<input type="text" name="produkce_odpady" id="produkce_odpady" />
 								</div>
-								<div class="field half">
-									<label for="prijmy_oh">Produkce O odpadů  <br>(kg/obyvatele)</label>
-									<input type="text" name="prijmy_oh" id="prijmy_oh" />
+								<div class="field half formTogler_panel1">
+									<label for="produkce_o_odpadu">Produkce O odpadů  <br>(kg/obyvatele)</label>
+									<input type="text" name="produkce_o_odpadu" id="produkce_o_odpadu" />
 								</div>
-							 
-							<!-- </section> -->
-
-							<!-- <section class="formToghlerPanel itemPanel2"> --> <!-- second part of the form -->
-								
-									<!-- CONTENT second part of the form -->
-								
-							<!-- </section> -->
-
-							<!-- <section class="formToghlerPanel itemPanel3"> --> <!-- third part - form results -->
-								
-									<!-- CONTENT second part of the form -->
-								
-							<!-- </section> -->
-							
-							<!--<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div> -->
-
+							<!-- formTogler_panel2 childs -->
+							<div class="field half formTogler_panel2">
+								<label for="produkce_n_odpadu">Produkce N odpadů <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_n_odpadu" id="produkce_n_odpadu" />
+							</div>
+							<div class="field half formTogler_panel2">
+								<label for="produkce_komun_odpadu">Produkce komunálních odpadů (skupina 20) <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_komun_odpadu" id="produkce_komun_odpadu" />
+							</div>
+							<div class="field half formTogler_panel2">
+								<label for="produkce_sko">Produkce SKO <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_sko" id="produkce_sko" />
+							</div>
+							<div class="field half formTogler_panel2">
+								<label for="produkce_plast">Produkce plast <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_plast" id="produkce_plast" />
+							</div>
+							<div class="field half formTogler_panel2">
+								<label for="produkce_papir">Produkce papír <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_papir" id="produkce_papir" />
+							</div>
+							<div class="field half formTogler_panel2">
+								<label for="produkce_sklo">Produkce sklo <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_sklo" id="produkce_sklo" />
+							</div>
+							<div class="field half formTogler_panel2">
+								<label for="produkce_kovy">Produkce kovy <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_kovy" id="produkce_kovy" />
+							</div> 
+							<div class="field half formTogler_panel2">
+								<label for="produkce_bro_zahrady">Produkce BRO ze zahrad a parků <br>(kg/obyvatele)</label>
+								<input type="text" name="produkce_bro_zahrady" id="produkce_bro_zahrady" />
+							</div>
 						</div>
 						<ul class="actions">
 							<li><input type="submit" value="Send Message" class="primary" /></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
+
+					<div class="results formTogler_panel3">
+
+					  <div class="row_panel">
+
+						  <div class="result">
+							  <div class="gauge">gauge 1</div>
+							</div>
+							<div class="result">
+							  <div class="gauge">gauge 2</div>
+							</div>
+
+						</div>
+
+					</div>
 
 				</article>
         
@@ -1109,6 +1137,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-	<script src="assets/js/topicselect.js"></script>
+		<script src="assets/js/topicselect.js" defer></script>
+		<script src="assets/js/wasteCalcManagement.js"></script>
   </body>
 </html>
