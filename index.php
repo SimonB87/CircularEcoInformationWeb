@@ -78,10 +78,10 @@
 						</div>	
 					</a>
 
-					<a href="#calc_input" class="big"> 
+					<a href="calculate.php#calc_input" class="big"> 
 						<div class="mainIconNavigation--link">
-							<div class="mainIconNavigation--link--icon unfinished">
-								<i class="fas fa-chart-pie unfinished"></i>
+							<div class="mainIconNavigation--link--icon">
+								<i class="fas fa-chart-pie"></i>
 							</div>
 							<div class="mainIconNavigation--link--decription">
 								<span class="boldText">Chci porovnávat </span>
@@ -733,9 +733,21 @@
 								<label for="region_cr">Kraj ČR </label>
 								<select name="region_cr" id="region_cr">
 									<option value="Vyberte ...">Vyberte ...</option>
-									<option value="Jihomoravský">Jihomoravský</option>
-									<option value="Královéhradecký">Královéhradecký</option>
-									<option value="Moravskoslezský">Moravskoslezský</option>
+									<option value="jm">Jihomoravský</option>
+									<option value="kr">Královéhradecký</option>
+									<option value="ms">Moravskoslezský</option>
+									<option value="zl">Zlínský</option>
+									<option value="vy">Vysočina</option>
+									<option value="ol">Olomoucký</option>
+									<option value="pa">Pardubický</option>
+									<option value="us">Ústecký</option>
+									<option value="ka">Karlovarský</option>
+									<option value="li">Liberecký</option>
+									<option value="pl">Plzeňský</option>
+									<option value="sc">Středočeský</option>
+									<option value="jc">Jihočeský</option>
+									<option value="cr">Průměr ČR</option>
+
 								</select>
 							</div>
 							<div class="field half">
@@ -824,7 +836,9 @@
 							</div>
 						</div>
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><span class="button primary disabled">Zpět</span></li>
+							<li><span class="button primary">Dále</span></li>
+							<li><input type="submit" value="Send Message" class="primary disabled" /></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
@@ -1139,5 +1153,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/main.js"></script>
 		<script src="assets/js/topicselect.js" defer></script>
 		<script src="assets/js/wasteCalcManagement.js"></script>
+		<script src="assets/js/wasteCalcData.js"></script>
   </body>
 </html>
