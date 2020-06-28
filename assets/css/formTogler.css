@@ -27,3 +27,20 @@ ul.formToglerControls__itemNumbers {
 .formTogler_panel3 {
   display: none;
 }
+
+#main article.calcArticle {
+  opacity: 1;
+}
+
+.actions.formToglerControls_items {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.actions.formToglerControls_items li:first-child {
+  margin-left: auto;
+}
+
+.actions.formToglerControls_items li:last-child {
+  margin-right: auto;
+}
