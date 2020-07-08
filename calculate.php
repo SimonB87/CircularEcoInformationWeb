@@ -140,7 +140,8 @@
 						<ul class="actions formToglerActions">
 							<li id="formToglerActions__back" onclick="toggleForm(2,1)"><span class="button primary disabled">Zpět</span></li>
 							<li id="formToglerActions__forward" onclick="toggleForm(1,2)"><span class="button primary">Dále</span></li>
-							<li id="formToglerActions__send"><input type="submit" value="Send Message" class="primary disabled" /></li>
+							<li id="formToglerActions__send">
+								<span class="button primary submitButton disabled" onclick="calculateWaste()">Spočítat</span>
 							<li id="formToglerActions__reset"><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
@@ -149,11 +150,18 @@
 
 					  <div class="row_panel">
 
-						  <div class="result">
-							  <div class="gauge">gauge 1</div>
+						  <div class="result1">
+							  <div class="gauge">
+									<h2>Gauge 1</h2>
+									<div id="wasteResultNotice1"></div>
+								</div>
+
 							</div>
-							<div class="result">
-							  <div class="gauge">gauge 2</div>
+							<div class="result2">
+							  <div class="gauge">
+									<h2>Gauge 2</h2>
+									<div id="wasteResultNotice2"></div>
+								</div>
 							</div>
 
 						</div>
