@@ -22,8 +22,8 @@
 				<article id="calc_input" class="calcArticle"> 
           <div class="close">Close</div>
 				  <h2 class="major">Odpadová kalkulačka</h2>
-
-					<form method="post" action="#">
+					<p>Porovnejte Vaše výsledky s Vaším krajem nebo s celou republikou.</p>
+					<form method="post" action="#" class="wasteCaclForm">
 						<div class="fields form_style">
 							<div class="field half">
 								<label for="region_cr">Kraj ČR </label>
@@ -138,11 +138,11 @@
 							</div>
 						</div>
 						<ul class="actions formToglerActions">
-							<li id="formToglerActions__back" onclick="toggleForm(2,1)"><span class="button primary disabled">Zpět</span></li>
-							<li id="formToglerActions__forward" onclick="toggleForm(1,2)"><span class="button primary">Dále</span></li>
+							<li id="formToglerActions__back" onclick="toggleForm(1,2);"><span class="button primary disabled">Zpět</span></li>
+							<li id="formToglerActions__forward" onclick="toggleForm(2,1);"><span class="button primary">Dále</span></li>
 							<li id="formToglerActions__send">
 								<span class="button primary submitButton disabled" onclick="calculateWaste()">Spočítat</span>
-							<li id="formToglerActions__reset"><input type="reset" value="Reset" /></li>
+							<li id="formToglerActions__reset"><input type="reset" onclick="resetForm();" value="Reset" /></li>
 						</ul>
 					</form>
 
