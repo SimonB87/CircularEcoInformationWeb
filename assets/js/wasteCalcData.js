@@ -38,3 +38,22 @@ const wasteData = {
   produkceKovy: {},
   produkceBro: {}
 };
+
+let formValueResult = {
+  wasteResult01: "",
+  wasteResult02: "",
+  wasteResult03: "",
+  wasteResult04: "",
+  wasteResult05: "",
+  wasteResult06: "",
+  wasteResult07: "",
+  wasteResult08: "",
+  wasteResult09: "",
+  wasteResult10: "",
+  wasteResult11: "",
+  wasteResult12: "",
+  wasteResult13: "",
+  wasteResult14: "",
+  wasteResult15: "",
+  wasteResult16: ""
+}

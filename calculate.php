@@ -54,9 +54,9 @@
 
 							<div class="formToglerControls">
               <ul class="actions formToglerControls_items">
-                <li id="formToglerControls_item1"><a href="#" class="button primary">1</a></li>
-                <li id="formToglerControls_item2"><a href="#" class="button">2</a></li>
-                <li id="formToglerControls_item3"><a href="#" class="button">3</a></li>
+                <li id="formToglerControls_item1"><a href="#" class="button primary" onclick="switchFormView(1);">1</a></li>
+                <li id="formToglerControls_item2"><a href="#" class="button" onclick="switchFormView(2);">2</a></li>
+                <li id="formToglerControls_item3"><a href="#" class="button" onclick="switchFormView(3);">3</a></li>
               </ul>
 
 <!-- 								<ul class="formToglerControls__itemNumbers">
@@ -73,68 +73,68 @@
 							 
 								<div class="field half formTogler_panel1">
 									<label for="naklady_oh">Náklady na OH <br>(Kč/obyvatele)</label>
-									<input type="text" name="naklady_oh" id="naklady_oh" />
+									<input type="text" name="naklady_oh" id="naklady_oh" class="wasteResult01"/>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
-									<input type="text" name="prijmy_oh" id="prijmy_oh" />
+									<input type="text" name="prijmy_oh" id="prijmy_oh" class="wasteResult02"/>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_tuny">Náklady na tříděný sběr <br>(Kč/t)</label>
-									<input type="text" name="naklady_tridenySber_tuny" id="naklady_tridenySber_tuny" />
+									<input type="text" name="naklady_tridenySber_tuny" id="naklady_tridenySber_tuny" class="wasteResult03"/>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_perCapita">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
-									<input type="text" name="naklady_tridenySber_perCapita" id="naklady_tridenySber_perCapita" />
+									<input type="text" name="naklady_tridenySber_perCapita" id="naklady_tridenySber_perCapita" class="wasteResult04"/>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_tuny">Náklady za SKO <br>(Kč/t)</label>
-									<input type="text" name="naklady_sko_tuny" id="naklady_sko_tuny" />
+									<input type="text" name="naklady_sko_tuny" id="naklady_sko_tuny" class="wasteResult05" />
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_perCapita">Náklady za SKO <br>(Kč/obyvatele)</label>
-									<input type="text" name="naklady_sko_perCapita" id="naklady_sko_perCapita" />
+									<input type="text" name="naklady_sko_perCapita" id="naklady_sko_perCapita" class="wasteResult06"/>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="produkce_odpady">Produkce odpadů - celková <br>(kg/obyvatele)</label>
-									<input type="text" name="produkce_odpady" id="produkce_odpady" />
+									<input type="text" name="produkce_odpady" id="produkce_odpady" class="wasteResult07"/>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="produkce_o_odpadu">Produkce O odpadů  <br>(kg/obyvatele)</label>
-									<input type="text" name="produkce_o_odpadu" id="produkce_o_odpadu" />
+									<input type="text" name="produkce_o_odpadu" id="produkce_o_odpadu" class="wasteResult08"/>
 								</div>
 							<!-- formTogler_panel2 childs -->
 							<div class="field half formTogler_panel2">
 								<label for="produkce_n_odpadu">Produkce N odpadů <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_n_odpadu" id="produkce_n_odpadu" />
+								<input type="text" name="produkce_n_odpadu" id="produkce_n_odpadu" class="wasteResult09"/>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_komun_odpadu">Produkce komunálních odpadů (skupina 20) <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_komun_odpadu" id="produkce_komun_odpadu" />
+								<input type="text" name="produkce_komun_odpadu" id="produkce_komun_odpadu" class="wasteResult10"/>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_sko">Produkce SKO <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_sko" id="produkce_sko" />
+								<input type="text" name="produkce_sko" id="produkce_sko" class="wasteResult11"/>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_plast">Produkce plast <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_plast" id="produkce_plast" />
+								<input type="text" name="produkce_plast" id="produkce_plast" class="wasteResult12"/>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_papir">Produkce papír <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_papir" id="produkce_papir" />
+								<input type="text" name="produkce_papir" id="produkce_papir" class="wasteResult13"/>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_sklo">Produkce sklo <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_sklo" id="produkce_sklo" />
+								<input type="text" name="produkce_sklo" id="produkce_sklo" class="wasteResult14"/>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_kovy">Produkce kovy <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_kovy" id="produkce_kovy" />
+								<input type="text" name="produkce_kovy" id="produkce_kovy" class="wasteResult15"/>
 							</div> 
 							<div class="field half formTogler_panel2">
 								<label for="produkce_bro_zahrady">Produkce BRO ze zahrad a parků <br>(kg/obyvatele)</label>
-								<input type="text" name="produkce_bro_zahrady" id="produkce_bro_zahrady" />
+								<input type="text" name="produkce_bro_zahrady" id="produkce_bro_zahrady" class="wasteResult16"/>
 							</div>
 						</div>
 						<ul class="actions formToglerActions">
@@ -147,20 +147,20 @@
 					</form>
 
 					<div class="results formTogler_panel3">
-
+						<h3>Výsledky porovnání:</h3>
 					  <div class="row_panel">
 
-						  <div class="result1">
+						  <div class="field half result1">
 							  <div class="gauge">
 									<h2>Gauge 1</h2>
-									<div id="wasteResultNotice1"></div>
+									<p>Value: <span id="wasteResultNotice1"></span></p>
 								</div>
 
 							</div>
-							<div class="result2">
+							<div class="field half result2">
 							  <div class="gauge">
 									<h2>Gauge 2</h2>
-									<div id="wasteResultNotice2"></div>
+									<p>Value: <span id="wasteResultNotice2"></span></p>
 								</div>
 							</div>
 

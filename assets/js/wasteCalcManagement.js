@@ -4,6 +4,8 @@ function toggleForm(show, hide) {
   const targetsShow = document.querySelectorAll(targetSelectorShow);
   const targetsHide = document.querySelectorAll(targetSelectorHide);
 
+  storeValues();
+
   for (let i = 0; i < targetsHide.length; i++) {
     targetsHide[i].style.display = "none";
   }
@@ -30,8 +32,6 @@ function toggleForm(show, hide) {
     document.querySelector("#formToglerControls_item3 .button").classList.remove("primary");
     document.querySelector("#formToglerActions__forward .button").classList.remove("disabled");
   }
-  //test
-  console.log(show);//test
 }
 
 function calculateWaste() {
@@ -40,7 +40,7 @@ function calculateWaste() {
   hideInputs(1);
 
   manageResults();
-  showResuts(3);
+  displayResuts(3, "block");
 
   document.querySelector("#formToglerActions__back .button").classList.add("disabled");
   document.querySelector("#formToglerControls_item1 .button").classList.remove("primary");
@@ -50,28 +50,33 @@ function calculateWaste() {
   function manageResults() {
     const targetEl = document.querySelector("#formToglerActions__send .submitButton");
     const valueEl = targetEl.classList.contains("disabled");
+    const wasteResult1 = formValueResult.wasteResult01;
+    const wasteResult2 = formValueResult.wasteResult02;
+
     if (!valueEl) {
-      document.querySelector("#wasteResultNotice1").innerHTML = document.querySelector("#naklady_oh").value;
-      document.querySelector("#wasteResultNotice2").innerHTML = document.querySelector("#prijmy_oh").value;
+      document.querySelector("#wasteResultNotice1").innerHTML = wasteResult1;
+      document.querySelector("#wasteResultNotice2").innerHTML = wasteResult2;
     }
   }
+}
 
-  function hideInputs(hide) {
-    const targetSelectorHide = ".formTogler_panel" + hide;
-    const targetsHide = document.querySelectorAll(targetSelectorHide);
+function hideInputs(hide) {
+  const targetSelectorHide = ".formTogler_panel" + hide;
+  const targetsHide = document.querySelectorAll(targetSelectorHide);
 
-    for (let i = 0; i < targetsHide.length; i++) {
-      targetsHide[i].style.display = "none";
-    }
+  storeValues();
+
+  for (let i = 0; i < targetsHide.length; i++) {
+    targetsHide[i].style.display = "none";
   }
+}
 
-  function showResuts(show) {
-    const targetSelectorShow = ".formTogler_panel" + show;
-    const targetsShow = document.querySelectorAll(targetSelectorShow);
+function displayResuts(show, displayCss) {
+  const targetSelectorShow = ".formTogler_panel" + show;
+  const targetsShow = document.querySelectorAll(targetSelectorShow);
 
-    for (let i = 0; i < targetsShow.length; i++) {
-      targetsShow[i].style.display = "block";
-    }
+  for (let i = 0; i < targetsShow.length; i++) {
+    targetsShow[i].style.display = displayCss;
   }
 }
 
@@ -82,7 +87,53 @@ function resetForm() {
 
   let allInputs = document.querySelectorAll(".wasteCaclForm input[type = text]");
   let allInputsCount = allInputs.length;
+
+  for (let k = 1; k < 17; k++) {
+    if (k < 10) {
+      formValueResult["wasteResult0" + k] = "";
+    } else if (k < 18) {
+      formValueResult["wasteResult" + k] = "";
+    }
+
+  }
+
   for (let i = 0; i < allInputsCount; i++) {
     allInputas[i].value = "0";
+  }
+}
+
+function switchFormView(number) {
+
+  if (number === 1) {
+
+    toggleForm(1, 2);
+    displayResuts(3, "none");
+
+  } else if (number === 2) {
+
+    toggleForm(2, 1);
+    displayResuts(3, "none");
+
+  } else if (number === 3) {
+
+    hideInputs(2);
+    hideInputs(1);
+    displayResuts(3, "block");
+
+    document.querySelector("#formToglerControls_item1 .button").classList.remove("primary");
+    document.querySelector("#formToglerControls_item2 .button").classList.remove("primary");
+    document.querySelector("#formToglerControls_item3 .button").classList.add("primary");
+  }
+}
+
+function storeValues() {
+  for (let k = 1; k < 17; k++) {
+    if (k < 10) {
+      let selector = "wasteResult0" + k;
+      formValueResult[selector] = document.querySelector("." + selector).value;
+    } else if (k < 17) {
+      let selector = "wasteResult" + k;
+      formValueResult[selector] = document.querySelector("." + selector).value;
+    }
   }
 }
