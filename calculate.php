@@ -59,16 +59,7 @@
                 <li id="formToglerControls_item3"><a href="#" class="button" onclick="switchFormView(3);">3</a></li>
               </ul>
 
-<!-- 								<ul class="formToglerControls__itemNumbers">
-									<li class="formToglerControls__itemNumber itemNumber1 active">1
-									</li>
-									<li class="formToglerControls__itemNumber itemNumber2">2
-									</li>
-									<li class="formToglerControls__itemNumber itemNumber3">3
-									</li>
-								</ul> -->
 							</div>
-
 							<!-- formTogler_panel1 childs -->
 							 
 								<div class="field half formTogler_panel1">
@@ -145,27 +136,110 @@
 							<li id="formToglerActions__reset"><input type="reset" onclick="resetForm();" value="Reset" /></li>
 						</ul>
 					</form>
-
+					<!-- formTogler_panel3 childs -->
 					<div class="results formTogler_panel3">
-						<h3>Výsledky porovnání:</h3>
-					  <div class="row_panel">
+						<form>
+							<div class="fields">
+							<div class="field full"><h2 class="align-center">Výsledky porovnání:</h2></div>
 
-						  <div class="field half result1">
-							  <div class="gauge">
-									<h2>Gauge 1</h2>
-									<p>Value: <span id="wasteResultNotice1"></span></p>
+								<div class="field half result1">
+									<div class="gauge">
+										<h3>Náklady na OH <br>(Kč/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice01"></span></p>
+									</div>
 								</div>
-
-							</div>
-							<div class="field half result2">
-							  <div class="gauge">
-									<h2>Gauge 2</h2>
-									<p>Value: <span id="wasteResultNotice2"></span></p>
+								<div class="field half result2">
+									<div class="gauge">
+										<h3>Přijmy z OH <br>(Kč/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice02"></span></p>
+									</div>
+								</div>
+								<div class="field half result3">
+									<div class="gauge">
+										<h3>Náklady na tříděný sběr <br>(Kč/t)</h3>
+										<p>Value: <span id="wasteResultNotice03"></span></p>
+									</div>
+								</div>
+								<div class="field half result4">
+									<div class="gauge">
+										<h3>Náklady na tříděný sběr <br>(Kč/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice04"></span></p>
+									</div>
+								</div>
+								<div class="field half result5">
+									<div class="gauge">
+										<h3>Náklady za SKO <br>(Kč/t)</h3>
+										<p>Value: <span id="wasteResultNotice05"></span></p>
+									</div>
+								</div>
+								<div class="field half result6">
+									<div class="gauge">
+										<h3>Náklady za SKO <br>(Kč/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice06"></span></p>
+									</div>
+								</div>
+								<div class="field half result7">
+									<div class="gauge">
+										<h3>Produkce odpadů - celková <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice07"></span></p>
+									</div>
+								</div>
+								<div class="field half result8">
+									<div class="gauge">
+										<h3>Produkce O odpadů  <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice08"></span></p>
+									</div>
+								</div>
+								<div class="field half result9">
+									<div class="gauge">
+										<h3>Produkce N odpadů <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice09"></span></p>
+									</div>
+								</div>
+								<div class="field half result10">
+									<div class="gauge">
+										<h3>Produkce komunálních odpadů (skupina 20) <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice10"></span></p>
+									</div>
+								</div>
+								<div class="field half result11">
+									<div class="gauge">
+										<h3>Produkce SKO <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice11"></span></p>
+									</div>
+								</div>
+								<div class="field half result12">
+									<div class="gauge">
+										<h3>Produkce plast <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice12"></span></p>
+									</div>
+								</div>
+								<div class="field half result13">
+									<div class="gauge">
+										<h3>Produkce papír <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice13"></span></p>
+									</div>
+								</div>
+								<div class="field half result14">
+									<div class="gauge">
+										<h3>Produkce sklo <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice14"></span></p>
+									</div>
+								</div>
+								<div class="field half result15">
+									<div class="gauge">
+										<h3>Produkce kovy <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice15"></span></p>
+									</div>
+								</div>
+								<div class="field half result16">
+									<div class="gauge">
+										<h3>Produkce BRO ze zahrad a parků <br>(kg/obyvatele)</h3>
+										<p>Value: <span id="wasteResultNotice16"></span></p>
+									</div>
 								</div>
 							</div>
-
-						</div>
-
+						</form>
 					</div>
 
 				</article>

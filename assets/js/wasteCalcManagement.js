@@ -50,12 +50,18 @@ function calculateWaste() {
   function manageResults() {
     const targetEl = document.querySelector("#formToglerActions__send .submitButton");
     const valueEl = targetEl.classList.contains("disabled");
-    const wasteResult1 = formValueResult.wasteResult01;
-    const wasteResult2 = formValueResult.wasteResult02;
 
     if (!valueEl) {
-      document.querySelector("#wasteResultNotice1").innerHTML = wasteResult1;
-      document.querySelector("#wasteResultNotice2").innerHTML = wasteResult2;
+
+      for (let k = 1; k < 17; k++) {
+        if (k < 10) {
+          let selector = "wasteResult0" + k;
+          document.querySelector("#wasteResultNotice0" + k).innerText = formValueResult[selector];
+        } else if (k < 17) {
+          let selector = "wasteResult" + k;
+          document.querySelector("#wasteResultNotice" + k).innerText = formValueResult[selector];
+        }
+      }
     }
   }
 }
