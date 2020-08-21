@@ -46,6 +46,10 @@ function calculateWaste() {
   document.querySelector("#formToglerControls_item1 .button").classList.remove("primary");
   document.querySelector("#formToglerControls_item2 .button").classList.remove("primary");
   document.querySelector("#formToglerControls_item3 .button").classList.add("primary");
+  document.getElementById("region_cr").classList.add("disabled");
+
+  displayComparisonValues();
+
 
   function manageResults() {
     const targetEl = document.querySelector("#formToglerActions__send .submitButton");
@@ -53,14 +57,89 @@ function calculateWaste() {
 
     if (!valueEl) {
 
-      for (let k = 1; k < 17; k++) {
+      for (let k = 1; k < 16; k++) {
         if (k < 10) {
           let selector = "wasteResult0" + k;
           document.querySelector("#wasteResultNotice0" + k).innerText = formValueResult[selector];
-        } else if (k < 17) {
+        } else if (k < 16) {
           let selector = "wasteResult" + k;
           document.querySelector("#wasteResultNotice" + k).innerText = formValueResult[selector];
         }
+      }
+    }
+  }
+
+
+  function displayComparisonValues() {
+    let choosenRegion = document.getElementById("region_cr").value;
+    let showRegions = true;
+
+    if (choosenRegion === "default") {
+      choosenRegion = "cr";
+      showRegions = false;
+    }
+
+    if (showRegions) {
+      for (let k = 1; k < 12; k++) {
+        let comparisonRegionSelector;
+        if (k < 10) {
+          comparisonRegionSelector = "#valueCompariosonRegion0" + k;
+        } else if (k < 12) {//the regional values ends with cathegory number 12
+          comparisonRegionSelector = "#valueCompariosonRegion" + k;
+        }
+        let cathegory = getWasteCategory(k);
+        let comparisonRegionValue = wasteData[cathegory][choosenRegion];
+        document.querySelector(comparisonRegionSelector).innerText = comparisonRegionValue;
+      }
+    }
+
+    for (let j = 1; j < 16; j++) {
+      let countrySelector;
+      if (j < 10) {
+        countrySelector = "#valueCompariosonCountry0" + j;
+      } else if (j < 16) {
+        countrySelector = "#valueCompariosonCountry" + j;
+      }
+      let cathegoryName = getWasteCategory(j);
+      let comparisonCountryObject = wasteData[cathegoryName];
+      let comparisonCountryValue = comparisonCountryObject.cr;
+      document.querySelector(countrySelector).innerText = comparisonCountryValue;
+    }
+
+
+    function getWasteCategory(cathegoryNumber) {
+      if (cathegoryNumber == 1) {
+        return "nakladyNaOhKc";
+      } else if (cathegoryNumber == 2) {
+        return "nakladyZOhKc";
+      } else if (cathegoryNumber == 3) {
+        return "nakladyTridenySberTun";
+      } else if (cathegoryNumber == 4) {
+        return "nakladyTridenySberKc";
+      } else if (cathegoryNumber == 5) {
+        return "nakladySkoTun";
+      } else if (cathegoryNumber == 6) {
+        return "nakladyNaOhKc";
+      } else if (cathegoryNumber == 7) {
+        return "produkceOdpadCelkova";
+      } else if (cathegoryNumber == 8) {
+        return "produkceOdpadO";
+      } else if (cathegoryNumber == 9) {
+        return "produkceOdpadN";
+      } else if (cathegoryNumber == 10) {
+        return "produkceKomunal";
+      } else if (cathegoryNumber == 11) {
+        return "produkceSko";
+      } else if (cathegoryNumber == 12) {
+        return "produkcePlast";
+      } else if (cathegoryNumber == 13) {
+        return "produkcePapir";
+      } else if (cathegoryNumber == 14) {
+        return "produkceSklo";
+      } else if (cathegoryNumber == 15) {
+        return "produkceKovy";
+      } else if (cathegoryNumber == 16) {
+        return "produkceBro";
       }
     }
   }

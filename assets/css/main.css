@@ -2046,3 +2046,7 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 .fieldsForm .field.half:nth-child(even) {
   padding-left: 0.25rem;
 }
+
+.hideElement {
+  opacity: 0;
+}

@@ -28,7 +28,7 @@
 							<div class="field half">
 								<label for="region_cr">Kraj ČR </label>
 								<select name="region_cr" id="region_cr">
-									<option value="Vyberte ...">Vyberte ...</option>
+									<option value="default">Vyberte ...</option>
 									<option value="jm">Jihomoravský</option>
 									<option value="kr">Královéhradecký</option>
 									<option value="ms">Moravskoslezský</option>
@@ -123,7 +123,7 @@
 								<label for="produkce_kovy">Produkce kovy <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_kovy" id="produkce_kovy" class="wasteResult15"/>
 							</div> 
-							<div class="field half formTogler_panel2">
+							<div class="field half formTogler_panel2 hideElement">
 								<label for="produkce_bro_zahrady">Produkce BRO ze zahrad a parků <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_bro_zahrady" id="produkce_bro_zahrady" class="wasteResult16"/>
 							</div>
@@ -145,97 +145,129 @@
 								<div class="field half result1">
 									<div class="gauge">
 										<h3>Náklady na OH <br>(Kč/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice01"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice01"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion01"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry01"></span></p>
 									</div>
 								</div>
 								<div class="field half result2">
 									<div class="gauge">
 										<h3>Přijmy z OH <br>(Kč/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice02"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice02"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion02"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry02"></span></p>
 									</div>
 								</div>
 								<div class="field half result3">
 									<div class="gauge">
 										<h3>Náklady na tříděný sběr <br>(Kč/t)</h3>
-										<p>Value: <span id="wasteResultNotice03"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice03"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion03"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry03"></span></p>
 									</div>
 								</div>
 								<div class="field half result4">
 									<div class="gauge">
 										<h3>Náklady na tříděný sběr <br>(Kč/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice04"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice04"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion04"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry04"></span></p>
 									</div>
 								</div>
 								<div class="field half result5">
 									<div class="gauge">
 										<h3>Náklady za SKO <br>(Kč/t)</h3>
-										<p>Value: <span id="wasteResultNotice05"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice05"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion05"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry05"></span></p>
 									</div>
 								</div>
 								<div class="field half result6">
 									<div class="gauge">
 										<h3>Náklady za SKO <br>(Kč/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice06"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice06"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion06"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry06"></span></p>
 									</div>
 								</div>
 								<div class="field half result7">
 									<div class="gauge">
 										<h3>Produkce odpadů - celková <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice07"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice07"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion07"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry07"></span></p>
 									</div>
 								</div>
 								<div class="field half result8">
 									<div class="gauge">
 										<h3>Produkce O odpadů  <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice08"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice08"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion08"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry08"></span></p>
 									</div>
 								</div>
 								<div class="field half result9">
 									<div class="gauge">
 										<h3>Produkce N odpadů <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice09"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice09"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion09"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry09"></span></p>
 									</div>
 								</div>
 								<div class="field half result10">
 									<div class="gauge">
 										<h3>Produkce komunálních odpadů (skupina 20) <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice10"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice10"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion10"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry10"></span></p>
 									</div>
 								</div>
 								<div class="field half result11">
 									<div class="gauge">
 										<h3>Produkce SKO <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice11"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice11"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion11"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry11"></span></p>
 									</div>
 								</div>
 								<div class="field half result12">
 									<div class="gauge">
 										<h3>Produkce plast <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice12"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice12"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion12"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry12"></span></p>
 									</div>
 								</div>
 								<div class="field half result13">
 									<div class="gauge">
 										<h3>Produkce papír <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice13"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice13"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion13"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry13"></span></p>
 									</div>
 								</div>
 								<div class="field half result14">
 									<div class="gauge">
 										<h3>Produkce sklo <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice14"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice14"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion14"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry14"></span></p>
 									</div>
 								</div>
 								<div class="field half result15">
 									<div class="gauge">
 										<h3>Produkce kovy <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice15"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice15"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion15"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry15"></span></p>
 									</div>
 								</div>
-								<div class="field half result16">
+								<div class="field half result16 hideElement">
 									<div class="gauge">
 										<h3>Produkce BRO ze zahrad a parků <br>(kg/obyvatele)</h3>
-										<p>Value: <span id="wasteResultNotice16"></span></p>
+										<p>Hodnota: <span id="wasteResultNotice16"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion16"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry16"></span></p>
 									</div>
 								</div>
 							</div>
