@@ -46,7 +46,10 @@ function calculateWaste() {
   document.querySelector("#formToglerControls_item1 .button").classList.remove("primary");
   document.querySelector("#formToglerControls_item2 .button").classList.remove("primary");
   document.querySelector("#formToglerControls_item3 .button").classList.add("primary");
-  document.getElementById("region_cr").classList.add("disabled");
+  document.getElementById("region_cr").setAttribute("disabled", "");
+  document.getElementById("region_cr").classList.add("valueDisabled");
+  document.getElementById("town_name").setAttribute("disabled", "");
+  document.getElementById("town_name").classList.add("valueDisabled");
 
   displayComparisonValues();
 
@@ -169,6 +172,10 @@ function resetForm() {
   toggleForm(1, 2);
 
   document.querySelector(".results.formTogler_panel3").style.display = "none";
+  document.getElementById("region_cr").removeAttribute("disabled")
+  document.getElementById("region_cr").classList.remove("valueDisabled");
+  document.getElementById("town_name").removeAttribute("disabled")
+  document.getElementById("town_name").classList.remove("valueDisabled");
 
   let allInputs = document.querySelectorAll(".wasteCaclForm input[type = text]");
   let allInputsCount = allInputs.length;

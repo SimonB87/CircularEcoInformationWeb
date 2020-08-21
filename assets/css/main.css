@@ -2027,7 +2027,6 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 }
 
 /* CSS for the form */
-
 .fieldsForm {
   margin: 2rem 0;
   display: flex;
@@ -2049,4 +2048,11 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 
 .hideElement {
   opacity: 0;
+}
+
+.valueDisabled {
+  opacity: 0.75;
+  font-weight: 600;
+  padding-left: 2rem;
+  font-style: italic;
 }

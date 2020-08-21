@@ -27,7 +27,7 @@
 						<div class="fields form_style">
 							<div class="field half">
 								<label for="region_cr">Kraj ČR </label>
-								<select name="region_cr" id="region_cr">
+								<select name="region_cr" id="region_cr" class>
 									<option value="default">Vyberte ...</option>
 									<option value="jm">Jihomoravský</option>
 									<option value="kr">Královéhradecký</option>
@@ -48,7 +48,7 @@
 							</div>
 							<div class="field half">
 								<label for="town_name">Název obce </label>
-								<input type="text" name="town_name" id="town_name" />
+								<input type="text" name="town_name" id="town_name" class/>
 							</div>
 						
 
