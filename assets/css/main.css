@@ -2050,7 +2050,7 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   opacity: 0;
 }
 
-.valueDisabled {
+.wasteCaclForm .valueDisabled {
   opacity: 0.75;
   font-weight: 600;
   padding-left: 2rem;
