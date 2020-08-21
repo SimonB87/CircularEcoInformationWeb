@@ -12,7 +12,7 @@ const wasteData = {
     jm: 628, kr: 521, ms: 569, zl: 536, vy: 623, ol: 747, pa: 696, us: 474, ka: 460, li: 543, pl: 587, sc: 732, jc: 661, cr: 612
   },
   nakladyTridenySberTun: {
-    jm: 3293, kr: 4294, ms: 3933, zl: 3970, vy: 3854, ol: 3212, pa: 3976, us: 5466, ka: 3615, li: 5414, pl: 5056, sc: 4806, jc: 4918, cr: null
+    jm: 3293, kr: 4294, ms: 3933, zl: 3970, vy: 3854, ol: 3212, pa: 3976, us: 5466, ka: 3615, li: 5414, pl: 5056, sc: 4806, jc: 4918, cr: 3760
   },
   nakladyTridenySberKc: {
     jm: 109, kr: 181, ms: 146, zl: 137, vy: 170, ol: 123, pa: 146, us: 157, ka: 149, li: 181, pl: 219, sc: 215, jc: 196, cr: 164
@@ -29,14 +29,30 @@ const wasteData = {
   produkceOdpadO: {
     jm: 4286, kr: 2933, ms: 3528, zl: 2353, vy: 3136, ol: 3752, pa: 2721, us: 3419, ka: 2968, li: 2142, pl: 3255, sc: 3414, jc: 3189, cr: 3161
   },
-  produkceOdpadN: {},
-  produkceKomunal: {},
-  produkceSko: {},
-  produkcePlast: {},
-  produkcePapir: {},
-  produkceSklo: {},
-  produkceKovy: {},
-  produkceBro: {}
+  produkceOdpadN: {
+    jm: 151, kr: 112, ms: 316, zl: 154, vy: 140, ol: 116, pa: 168, us: 151, ka: 166, li: 196, pl: 116, sc: 199, jc: 139, cr: 163
+  },
+  produkceKomunal: {
+    jm: 512, kr: 553, ms: 542, zl: 500, vy: 556, ol: 580, pa: 571, us: 523, ka: 494, li: 533, pl: 538, sc: 591, jc: 557, cr: 542
+  },
+  produkceSko: {
+    jm: 251, kr: 259, ms: 245, zl: 226, vy: 238, ol: 259, pa: 247, us: 277, ka: 268, li: 287, pl: 260, sc: 299, jc: 254, cr: 259
+  },
+  produkcePlast: {
+    cr: 25.2
+  },
+  produkcePapir: {
+    cr: 49.8
+  },
+  produkceSklo: {
+    cr: 20.5
+  },
+  produkceKovy: {
+    cr: 7.5
+  },
+  produkceBro: {
+    cr: null
+  }
 };
 
 let formValueResult = {
