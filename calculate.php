@@ -319,6 +319,6 @@
 		<script src="assets/js/wasteCalcManagement.js" defer></script>
 		<script src="assets/js/wasteCalcData.js" defer></script>
 		<script src="assets/js/googleChartsLib.js" defer></script>
-		<script src="assets/js/googleChartsSetUp.js" defer></script>
+		<script src="assets/js/googleChartsDrawGauges.js" defer></script>
   </body>
 </html>
