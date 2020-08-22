@@ -40,12 +40,6 @@ var gaugeData2 = {
   x15_gaugeMinorTicks: ""
 };
 
-//test
-object1 = JSON.stringify(gaugeData1);
-console.log("00" + object1);
-object2 = JSON.stringify(gaugeData2);
-console.log("00" + object2);
-//test
 
 /**
  * Functions for edits of objects
@@ -151,26 +145,21 @@ function gaugeAction_calculateBorderValue(giverValue, difference, minOrMax) {
   } else if (minOrMax == "max") {
     let supportValue3 = parseFloat(giverValue);
     let supportValue4 = parseFloat(difference);
-    calcResult = supportValue3 - (2 * supportValue4);
+    calcResult = supportValue3 + (2 * supportValue4);
   }
   return calcResult;
 }
 
 function prepareGaugesObjects() {
   var selectedRegion = document.getElementById("region_cr").value;
-  //test
-  object1 = JSON.stringify(gaugeData1);
-  console.log("1a" + object1);
-  object2 = JSON.stringify(gaugeData2);
-  console.log("2a" + object2);
-  //test
+
   gaugeData1.x02_gaugeMainValue = gaugeAction_getMainGaugeValue(gaugeData1.gaugeNumber)
   gaugeData1.x03_wasteCategory = gaugeAction_getWasteCategory(gaugeData1.gaugeNumber);
   gaugeData1.x04_difference = gaugeAction_getDifferenceValue(gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
   gaugeData1.x05_lowerComparisonValue = gaugeAction_getValueFromWasteData("lower", gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
   gaugeData1.x06_upperComparisonValue = gaugeAction_getValueFromWasteData("upper", gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
-  gaugeData1.x07_gaugeMinimum = gaugeAction_calculateBorderValue(gaugeData1.lowerComparisonValue, gaugeData1.x04_difference, "min");
-  gaugeData1.x08_gaugeMaximum = gaugeAction_calculateBorderValue(gaugeData1.lowerComparisonValue, gaugeData1.x04_difference, "max");
+  gaugeData1.x07_gaugeMinimum = gaugeAction_calculateBorderValue(gaugeData1.x05_lowerComparisonValue, gaugeData1.x04_difference, "min");
+  gaugeData1.x08_gaugeMaximum = gaugeAction_calculateBorderValue(gaugeData1.x06_upperComparisonValue, gaugeData1.x04_difference, "max");
   gaugeData1.x09_gaugeGreenFrom = gaugeData1.x05_lowerComparisonValue;
   gaugeData1.x10_gaugeGreenTo = gaugeData1.x06_upperComparisonValue;
   gaugeData1.x11_gaugeYellowFrom = gaugeData1.x10_gaugeGreenTo;
@@ -184,8 +173,8 @@ function prepareGaugesObjects() {
   gaugeData2.x04_difference = gaugeAction_getDifferenceValue(gaugeData2.x03_wasteCategory, selectedRegion, gaugeData2.gaugeNumber);
   gaugeData2.x05_lowerComparisonValue = gaugeAction_getValueFromWasteData("lower", gaugeData2.x03_wasteCategory, selectedRegion, gaugeData2.gaugeNumber);
   gaugeData2.x06_upperComparisonValue = gaugeAction_getValueFromWasteData("upper", gaugeData2.x03_wasteCategory, selectedRegion, gaugeData2.gaugeNumber);
-  gaugeData2.x07_gaugeMinimum = gaugeAction_calculateBorderValue(gaugeData2.lowerComparisonValue, gaugeData2.x04_difference, "min");
-  gaugeData2.x08_gaugeMaximum = gaugeAction_calculateBorderValue(gaugeData2.lowerComparisonValue, gaugeData2.x04_difference, "max");
+  gaugeData2.x07_gaugeMinimum = gaugeAction_calculateBorderValue(gaugeData2.x05_lowerComparisonValue, gaugeData2.x04_difference, "min");
+  gaugeData2.x08_gaugeMaximum = gaugeAction_calculateBorderValue(gaugeData2.x06_upperComparisonValue, gaugeData2.x04_difference, "max");
   gaugeData2.x09_gaugeGreenFrom = gaugeData2.x05_lowerComparisonValue;
   gaugeData2.x10_gaugeGreenTo = gaugeData2.x06_upperComparisonValue;
   gaugeData2.x11_gaugeYellowFrom = gaugeData2.x10_gaugeGreenTo;
@@ -199,20 +188,14 @@ function prepareGaugesObjects() {
  * Old function for drawing
  */
 function drawChart() {
-  //test
-  object1 = JSON.stringify(gaugeData1);
-  console.log("1b" + object1);
-  object2 = JSON.stringify(gaugeData2);
-  console.log("2b" + object2);
-  //test
 
   var data1 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData1.labelName, gaugeData1.gaugeMainValue],
+    [gaugeData1.x01_labelName(), gaugeData1.x02_gaugeMainValue],
   ]);
   var data2 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData2.labelName, gaugeData2.gaugeMainValue],
+    [gaugeData2.x01_labelName(), gaugeData2.x02_gaugeMainValue],
   ]);
 
   var options1 = {
