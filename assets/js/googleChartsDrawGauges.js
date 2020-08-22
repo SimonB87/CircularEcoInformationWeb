@@ -1,100 +1,51 @@
-var selectedRegion = document.getElementById("region_cr").value;
+var selectedRegion;
 var gaugeData1 = {
   gaugeNumber: 1,
   x01_labelName: function () {
     return gaugeAction_getLabelNameTitle(this.gaugeNumber);
   },
-  x02_gaugeMainValue: function () {
-    return gaugeAction_getMainGaugeValue(this.gaugeNumber);
-  },
-  x03_wasteCategory: function () {
-    return gaugeAction_getWasteCategory(this.gaugeNumber);
-  },
-  x04_difference: function () {
-    return gaugeAction_getDifferenceValue(this.x03_wasteCategory(), selectedRegion, this.gaugeNumber);
-  },
-  x05_lowerComparisonValue: function () {
-    return gaugeAction_getValueFromWasteData("lower", this.x03_wasteCategory(), selectedRegion, this.gaugeNumber);
-  },
-  x06_upperComparisonValue: function () {
-    return gaugeAction_getValueFromWasteData("upper", this.x03_wasteCategory(), selectedRegion, this.gaugeNumber);
-  },
-  x07_gaugeMinimum: function () {
-    return this.lowerComparisonValue - 2 * this.x04_difference();
-  },
-  x08_gaugeMaximum: function () {
-    return this.upperComparisonValue + 2 * this.x04_difference();
-  },
-  x09_gaugeGreenFrom: function () {
-    return this.x05_lowerComparisonValue();
-  },
-  x10_gaugeGreenTo: function () {
-    return this.x06_upperComparisonValue();
-  },
-  x11_gaugeYellowFrom: function () {
-    return this.x10_gaugeGreenTo();
-  },
-  x12_gaugeYellowTo: function () {
-    return this.x11_gaugeYellowFrom();
-  },
-  x13_gaugeRedFrom: function () {
-    return this.x12_gaugeYellowTo();
-  },
-  x14_gaugeRedTo: function () {
-    return this.x8_gaugeMaximum();
-  },
-  x15_gaugeMinorTicks: function () {
-    return parseInt(Number(this.x04_difference()) / 4);
-  }
+  x02_gaugeMainValue: "",
+  x03_wasteCategory: "",
+  x04_difference: "",
+  x05_lowerComparisonValue: "",
+  x06_upperComparisonValue: "",
+  x07_gaugeMinimum: "",
+  x08_gaugeMaximum: "",
+  x09_gaugeGreenFrom: "",
+  x10_gaugeGreenTo: "",
+  x11_gaugeYellowFrom: "",
+  x12_gaugeYellowTo: "",
+  x13_gaugeRedFrom: "",
+  x14_gaugeRedTo: "",
+  x15_gaugeMinorTicks: ""
 };
 var gaugeData2 = {
   gaugeNumber: 2,
   x01_labelName: function () {
     return gaugeAction_getLabelNameTitle(this.gaugeNumber);
   },
-  x02_gaugeMainValue: function () {
-    return gaugeAction_getMainGaugeValue(this.gaugeNumber);
-  },
-  x03_wasteCategory: function () {
-    return gaugeAction_getWasteCategory(this.gaugeNumber);
-  },
-  x04_difference: function () {
-    return gaugeAction_getDifferenceValue(this.x03_wasteCategory(), selectedRegion, this.gaugeNumber);
-  },
-  x05_lowerComparisonValue: function () {
-    return gaugeAction_getValueFromWasteData("lower", this.x03_wasteCategory(), selectedRegion, this.gaugeNumber);
-  },
-  x06_upperComparisonValue: function () {
-    return gaugeAction_getValueFromWasteData("upper", this.x03_wasteCategory(), selectedRegion, this.gaugeNumber);
-  },
-  x07_gaugeMinimum: function () {
-    return this.lowerComparisonValue - 2 * this.x04_difference();
-  },
-  x08_gaugeMaximum: function () {
-    return this.upperComparisonValue + 2 * this.x04_difference();
-  },
-  x09_gaugeGreenFrom: function () {
-    return this.x05_lowerComparisonValue();
-  },
-  x10_gaugeGreenTo: function () {
-    return this.x06_upperComparisonValue();
-  },
-  x11_gaugeYellowFrom: function () {
-    return this.x10_gaugeGreenTo();
-  },
-  x12_gaugeYellowTo: function () {
-    return this.x11_gaugeYellowFrom();
-  },
-  x13_gaugeRedFrom: function () {
-    return this.x12_gaugeYellowTo();
-  },
-  x14_gaugeRedTo: function () {
-    return this.x8_gaugeMaximum();
-  },
-  x15_gaugeMinorTicks: function () {
-    return parseInt(Number(this.x04_difference()) / 4);
-  }
+  x02_gaugeMainValue: "",
+  x03_wasteCategory: "",
+  x04_difference: "",
+  x05_lowerComparisonValue: "",
+  x06_upperComparisonValue: "",
+  x07_gaugeMinimum: "",
+  x08_gaugeMaximum: "",
+  x09_gaugeGreenFrom: "",
+  x10_gaugeGreenTo: "",
+  x11_gaugeYellowFrom: "",
+  x12_gaugeYellowTo: "",
+  x13_gaugeRedFrom: "",
+  x14_gaugeRedTo: "",
+  x15_gaugeMinorTicks: ""
 };
+
+//test
+object1 = JSON.stringify(gaugeData1);
+console.log("00" + object1);
+object2 = JSON.stringify(gaugeData2);
+console.log("00" + object2);
+//test
 
 /**
  * Functions for edits of objects
@@ -191,10 +142,69 @@ function gaugeAction_getValueFromWasteData(valueKind, wasteCathegoryNaming, sele
   }
 }
 
+function gaugeAction_calculateBorderValue(giverValue, difference, minOrMax) {
+  let calcResult;
+  if (minOrMax == "min") {
+    let supportValue1 = parseFloat(giverValue);
+    let supportValue2 = parseFloat(difference);
+    calcResult = supportValue1 - (2 * supportValue2);
+  } else if (minOrMax == "max") {
+    let supportValue3 = parseFloat(giverValue);
+    let supportValue4 = parseFloat(difference);
+    calcResult = supportValue3 - (2 * supportValue4);
+  }
+  return calcResult;
+}
+
+function prepareGaugesObjects() {
+  var selectedRegion = document.getElementById("region_cr").value;
+  //test
+  object1 = JSON.stringify(gaugeData1);
+  console.log("1a" + object1);
+  object2 = JSON.stringify(gaugeData2);
+  console.log("2a" + object2);
+  //test
+  gaugeData1.x02_gaugeMainValue = gaugeAction_getMainGaugeValue(gaugeData1.gaugeNumber)
+  gaugeData1.x03_wasteCategory = gaugeAction_getWasteCategory(gaugeData1.gaugeNumber);
+  gaugeData1.x04_difference = gaugeAction_getDifferenceValue(gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
+  gaugeData1.x05_lowerComparisonValue = gaugeAction_getValueFromWasteData("lower", gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
+  gaugeData1.x06_upperComparisonValue = gaugeAction_getValueFromWasteData("upper", gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
+  gaugeData1.x07_gaugeMinimum = gaugeAction_calculateBorderValue(gaugeData1.lowerComparisonValue, gaugeData1.x04_difference, "min");
+  gaugeData1.x08_gaugeMaximum = gaugeAction_calculateBorderValue(gaugeData1.lowerComparisonValue, gaugeData1.x04_difference, "max");
+  gaugeData1.x09_gaugeGreenFrom = gaugeData1.x05_lowerComparisonValue;
+  gaugeData1.x10_gaugeGreenTo = gaugeData1.x06_upperComparisonValue;
+  gaugeData1.x11_gaugeYellowFrom = gaugeData1.x10_gaugeGreenTo;
+  gaugeData1.x12_gaugeYellowTo = gaugeData1.x11_gaugeYellowFrom;
+  gaugeData1.x13_gaugeRedFrom = gaugeData1.x12_gaugeYellowTo;
+  gaugeData1.x14_gaugeRedTo = gaugeData1.x8_gaugeMaximum;
+  gaugeData1.x15_gaugeMinorTicks = parseInt(Number(gaugeData1.x04_difference) / 4);
+
+  gaugeData2.x02_gaugeMainValue = gaugeAction_getMainGaugeValue(gaugeData2.gaugeNumber)
+  gaugeData2.x03_wasteCategory = gaugeAction_getWasteCategory(gaugeData2.gaugeNumber);
+  gaugeData2.x04_difference = gaugeAction_getDifferenceValue(gaugeData2.x03_wasteCategory, selectedRegion, gaugeData2.gaugeNumber);
+  gaugeData2.x05_lowerComparisonValue = gaugeAction_getValueFromWasteData("lower", gaugeData2.x03_wasteCategory, selectedRegion, gaugeData2.gaugeNumber);
+  gaugeData2.x06_upperComparisonValue = gaugeAction_getValueFromWasteData("upper", gaugeData2.x03_wasteCategory, selectedRegion, gaugeData2.gaugeNumber);
+  gaugeData2.x07_gaugeMinimum = gaugeAction_calculateBorderValue(gaugeData2.lowerComparisonValue, gaugeData2.x04_difference, "min");
+  gaugeData2.x08_gaugeMaximum = gaugeAction_calculateBorderValue(gaugeData2.lowerComparisonValue, gaugeData2.x04_difference, "max");
+  gaugeData2.x09_gaugeGreenFrom = gaugeData2.x05_lowerComparisonValue;
+  gaugeData2.x10_gaugeGreenTo = gaugeData2.x06_upperComparisonValue;
+  gaugeData2.x11_gaugeYellowFrom = gaugeData2.x10_gaugeGreenTo;
+  gaugeData2.x12_gaugeYellowTo = gaugeData2.x11_gaugeYellowFrom;
+  gaugeData2.x13_gaugeRedFrom = gaugeData2.x12_gaugeYellowTo;
+  gaugeData2.x14_gaugeRedTo = gaugeData2.x8_gaugeMaximum;
+  gaugeData2.x15_gaugeMinorTicks = parseInt(Number(gaugeData2.x04_difference) / 4);
+}
+
 /** 
  * Old function for drawing
  */
 function drawChart() {
+  //test
+  object1 = JSON.stringify(gaugeData1);
+  console.log("1b" + object1);
+  object2 = JSON.stringify(gaugeData2);
+  console.log("2b" + object2);
+  //test
 
   var data1 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
@@ -207,31 +217,31 @@ function drawChart() {
 
   var options1 = {
     optionsNumber: 1,
-    min: gaugeData1.x07_gaugeMinimum(),
-    max: gaugeData1.x08_gaugeMaximum(),
+    min: gaugeData1.x07_gaugeMinimum,
+    max: gaugeData1.x08_gaugeMaximum,
     width: 300,
     height: 300,
-    redFrom: gaugeData1.x13_gaugeRedFrom(),
-    redTo: gaugeData1.x14_gaugeRedTo(),
-    yellowFrom: gaugeData1.x12_gaugeYellowFrom(),
-    yellowTo: gaugeData1.x12_gaugeYellowTo(),
-    greenFrom: gaugeData1.x09_gaugeGreenFrom(),
-    greenTo: gaugeData1.x10_gaugeGreenTo(),
-    minorTicks: gaugeData1.x15_gaugeMinorTicks()
+    redFrom: gaugeData1.x13_gaugeRedFrom,
+    redTo: gaugeData1.x14_gaugeRedTo,
+    yellowFrom: gaugeData1.x12_gaugeYellowFrom,
+    yellowTo: gaugeData1.x12_gaugeYellowTo,
+    greenFrom: gaugeData1.x09_gaugeGreenFrom,
+    greenTo: gaugeData1.x10_gaugeGreenTo,
+    minorTicks: gaugeData1.x15_gaugeMinorTicks
   };
   var options2 = {
     optionsNumber: 2,
-    min: gaugeData2.x07_gaugeMinimum(),
-    max: gaugeData2.x08_gaugeMaximum(),
+    min: gaugeData2.x07_gaugeMinimum,
+    max: gaugeData2.x08_gaugeMaximum,
     width: 300,
     height: 300,
-    redFrom: gaugeData2.x13_gaugeRedFrom(),
-    redTo: gaugeData2.x14_gaugeRedTo(),
-    yellowFrom: gaugeData2.x12_gaugeYellowFrom(),
-    yellowTo: gaugeData2.x12_gaugeYellowTo(),
-    greenFrom: gaugeData2.x09_gaugeGreenFrom(),
-    greenTo: gaugeData2.x10_gaugeGreenTo(),
-    minorTicks: gaugeData2.x15_gaugeMinorTicks()
+    redFrom: gaugeData2.x13_gaugeRedFrom,
+    redTo: gaugeData2.x14_gaugeRedTo,
+    yellowFrom: gaugeData2.x12_gaugeYellowFrom,
+    yellowTo: gaugeData2.x12_gaugeYellowTo,
+    greenFrom: gaugeData2.x09_gaugeGreenFrom,
+    greenTo: gaugeData2.x10_gaugeGreenTo,
+    minorTicks: gaugeData2.x15_gaugeMinorTicks
   };
 
   var chart1 = new google.visualization.Gauge(document.getElementById("google_gauge_chart1"));

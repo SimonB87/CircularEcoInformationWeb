@@ -52,6 +52,8 @@ function calculateWaste() {
   document.getElementById("town_name").classList.add("valueDisabled");
 
   displayComparisonValues();
+
+  prepareGaugesObjects();
   drawGauges();
 
 
