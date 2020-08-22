@@ -52,6 +52,7 @@ function calculateWaste() {
   document.getElementById("town_name").classList.add("valueDisabled");
 
   displayComparisonValues();
+  drawGauges();
 
 
   function manageResults() {
@@ -146,6 +147,11 @@ function calculateWaste() {
       }
     }
   }
+
+  function drawGauges() {
+    google.charts.load('current', { 'packages': ['gauge'] });
+    google.charts.setOnLoadCallback(drawChart);
+  }
 }
 
 function hideInputs(hide) {
@@ -192,7 +198,18 @@ function resetForm() {
   for (let i = 0; i < allInputsCount; i++) {
     allInputas[i].value = "0";
   }
+
+  removePreviousGauges();
+
+  function removePreviousGauges() {
+    const gaugesArray = document.querySelectorAll(".google_gauge table");
+    for (i = 0; i < gaugesArray.length; i++) {
+      gaugesArray[i].remove();
+    }
+  }
 }
+
+
 
 function switchFormView(number) {
 

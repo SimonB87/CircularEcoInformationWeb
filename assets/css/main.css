@@ -2056,3 +2056,7 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   padding-left: 2rem;
   font-style: italic;
 }
+
+.google_gauge table div div {
+  margin: 0 auto;
+}
