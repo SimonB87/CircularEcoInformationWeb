@@ -2060,3 +2060,34 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 .google_gauge table div div {
   margin: 0 auto;
 }
+
+.wasteCaclForm .field {
+  position: relative;
+}
+
+.wasteCaclForm .field .tooltip {
+  position: absolute;
+  top: 9.5rem;
+  opacity: 0;
+  padding: 0.6rem;
+  transform: translate(1rem, -0.5rem);
+  pointer-events: none;
+  transition: opacity 0.5s linear 0.2s;
+}
+
+.wasteCaclForm .field:hover .tooltip {
+  opacity: 1;
+  width: 90%;
+  background-color: rgba(8, 56, 21, 0.8);
+  padding: 0.5rem;
+  border: 0.1rem solid #fff;
+  color: #fff;
+  z-index: 10;
+  border-radius: 0.5rem;
+  transform: translate(1rem, -0.5rem);
+  pointer-events: auto;
+}
+
+.wasteCaclForm .field .tooltip.tooltip-bottom {
+  top: -2.5rem;
+}

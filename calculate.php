@@ -65,67 +65,83 @@
 								<div class="field half formTogler_panel1">
 									<label for="naklady_oh">Náklady na Odpadové hospodářství (OH)<br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_oh" id="naklady_oh" class="wasteResult01"/>
+									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 1106</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
 									<input type="text" name="prijmy_oh" id="prijmy_oh" class="wasteResult02"/>
+									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 612</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_tuny">Náklady na tříděný sběr <br>(Kč/t)</label>
 									<input type="text" name="naklady_tridenySber_tuny" id="naklady_tridenySber_tuny" class="wasteResult03"/>
+									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 3760</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_perCapita">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_tridenySber_perCapita" id="naklady_tridenySber_perCapita" class="wasteResult04"/>
+									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 164</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_tuny">Náklady za Směsný komunální odpad (SKO) <br>(Kč/t)</label>
 									<input type="text" name="naklady_sko_tuny" id="naklady_sko_tuny" class="wasteResult05" />
+									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 2605</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_perCapita">Náklady za SKO <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_sko_perCapita" id="naklady_sko_perCapita" class="wasteResult06"/>
+									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 501</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="produkce_odpady">Produkce odpadů - celková <br>(kg/obyvatele)</label>
 									<input type="text" name="produkce_odpady" id="produkce_odpady" class="wasteResult07"/>
+									<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota je: 3325</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="produkce_o_odpadu">Produkce ostatních (O) odpadů <br>(kg/obyvatele)</label>
 									<input type="text" name="produkce_o_odpadu" id="produkce_o_odpadu" class="wasteResult08"/>
+									<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota je: 3161</p>
 								</div>
 							<!-- formTogler_panel2 childs -->
 							<div class="field half formTogler_panel2">
 								<label for="produkce_n_odpadu">Produkce nebezpečných (N) odpadů <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_n_odpadu" id="produkce_n_odpadu" class="wasteResult09"/>
+								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 163</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_komun_odpadu">Produkce komunálních odpadů (skupina 20) <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_komun_odpadu" id="produkce_komun_odpadu" class="wasteResult10"/>
+								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 542</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_sko">Produkce SKO <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_sko" id="produkce_sko" class="wasteResult11"/>
+								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 259</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_plast">Produkce plast <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_plast" id="produkce_plast" class="wasteResult12"/>
+								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 25,2</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_papir">Produkce papír <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_papir" id="produkce_papir" class="wasteResult13"/>
+								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 49,8</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_sklo">Produkce sklo <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_sklo" id="produkce_sklo" class="wasteResult14"/>
+								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota je: 20,5</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_kovy">Produkce kovy <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_kovy" id="produkce_kovy" class="wasteResult15"/>
+								<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota je: 7,5</p>
 							</div> 
 							<div class="field half formTogler_panel2 hideElement">
 								<label for="produkce_bro_zahrady">Produkce biologicky rozložitelných odpadů (BRO) ze zahrad a parků <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_bro_zahrady" id="produkce_bro_zahrady" class="wasteResult16"/>
+								<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota je: neznámo</p>
 							</div>
 						</div>
 						<ul class="actions formToglerActions">
@@ -171,7 +187,8 @@
 										<p>Hodnota: <span id="wasteResultNotice03"></span></p>
 										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion03"></span></p>
 										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry03"></span></p>
-
+										<div id="google_gauge_chart3" class="google_gauge">
+  									</div>
 									</div>
 								</div>
 								<div class="field half result4">
@@ -181,6 +198,8 @@
 										<p>Hodnota: <span id="wasteResultNotice04"></span></p>
 										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion04"></span></p>
 										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry04"></span></p>
+										<div id="google_gauge_chart4" class="google_gauge">
+  									</div>
 									</div>
 								</div>
 								<div class="field half result5">
@@ -190,6 +209,8 @@
 										<p>Hodnota: <span id="wasteResultNotice05"></span></p>
 										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion05"></span></p>
 										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry05"></span></p>
+										<div id="google_gauge_chart5" class="google_gauge">
+  									</div>
 									</div>
 								</div>
 								<div class="field half result6">
@@ -199,6 +220,8 @@
 										<p>Hodnota: <span id="wasteResultNotice06"></span></p>
 										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion06"></span></p>
 										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry06"></span></p>
+										<div id="google_gauge_chart6" class="google_gauge">
+  									</div>
 									</div>
 								</div>
 								<div class="field half result7">
@@ -208,6 +231,8 @@
 										<p>Hodnota: <span id="wasteResultNotice07"></span></p>
 										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion07"></span></p>
 										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry07"></span></p>
+										<div id="google_gauge_chart7" class="google_gauge">
+  									</div>
 									</div>
 								</div>
 								<div class="field half result8">
@@ -217,6 +242,8 @@
 										<p>Hodnota: <span id="wasteResultNotice08"></span></p>
 										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion08"></span></p>
 										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry08"></span></p>
+										<div id="google_gauge_chart8" class="google_gauge">
+  									</div>
 									</div>
 								</div>
 								<div class="field half result9">
