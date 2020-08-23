@@ -374,7 +374,12 @@ function gaugeAction_getMainGaugeValue(gaugeUnitNumber) {
   } else {
     return 0;
   }
-  let resultValue = Number(document.getElementById(selectorMainValue).innerText)
+  let inputValue = document.getElementById(selectorMainValue).innerText;
+  let containsComa = inputValue.includes(",");
+  if (containsComa) {
+    inputValue = inputValue.replace(",", ".");
+  }
+  let resultValue = Number(inputValue);
   return resultValue;
 }
 
