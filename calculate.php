@@ -20,7 +20,7 @@
       <div id="main">
 
 				<article id="calc_input" class="calcArticle"> 
-          <div class="close">Close</div>
+          <div class="close"> <a class="closeLink" href="index.php"> Close</a></div>
 				  <h2 class="major">Odpadová kalkulačka</h2>
 					<p>Porovnejte Vaše výsledky s Vaším krajem nebo s celou republikou.</p>
 					<form method="post" action="#" class="wasteCaclForm">
@@ -150,6 +150,7 @@
 							<li id="formToglerActions__send">
 								<span class="button primary submitButton disabled" onclick="calculateWaste()">Spočítat</span>
 							<li id="formToglerActions__reset"><input type="reset" onclick="resetForm();" value="Reset" /></li>
+							<li class="formActions_goHome"><a href="index.php">Domů</a> </li>
 						</ul>
 					</form>
 					<!-- formTogler_panel3 childs -->
@@ -335,6 +336,9 @@
 									</div>
 								</div>
 							</div>
+							<ul class="actions formToglerActions">
+								<li class="formActions_goHome"><a href="index.php">Domů</a> </li>
+						  </ul>
 						</form>
 					</div>
 

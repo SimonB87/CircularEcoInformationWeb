@@ -78,7 +78,7 @@
 						</div>	
 					</a>
 
-					<a href="calculate.php#calc_input" class="big"> 
+					<a href="calculate.php#calc_input" target="_blank" class="big"> 
 						<div class="mainIconNavigation--link">
 							<div class="mainIconNavigation--link--icon">
 								<i class="fas fa-chart-pie"></i>
