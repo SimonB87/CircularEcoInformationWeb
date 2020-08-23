@@ -125,7 +125,7 @@ function calculateWaste() {
       } else if (cathegoryNumber == 5) {
         return "nakladySkoTun";
       } else if (cathegoryNumber == 6) {
-        return "nakladyNaOhKc";
+        return "nakladySkoKc";
       } else if (cathegoryNumber == 7) {
         return "produkceOdpadCelkova";
       } else if (cathegoryNumber == 8) {
@@ -198,7 +198,7 @@ function resetForm() {
   }
 
   for (let i = 0; i < allInputsCount; i++) {
-    allInputas[i].value = "0";
+    allInputs[i].value = "0";
   }
 
   removePreviousGauges();

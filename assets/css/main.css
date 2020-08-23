@@ -1983,6 +1983,12 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   }
 }
 
+/* Other */
+.hideThisElement {
+  display: none;
+  visibility: hidden;
+}
+
 /* styles of messages for users */
 
 .userquestionsIcon {
@@ -2055,6 +2061,9 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   font-weight: 600;
   padding-left: 2rem;
   font-style: italic;
+  color: #99cdcd;
+  background-color: #003434;
+  cursor: not-allowed;
 }
 
 .results .google_gauge table div div {
@@ -2079,10 +2088,10 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   transition: opacity 0.5s linear 0.2s;
 }
 
+.wasteCaclForm .field:focus .tooltip,
 .wasteCaclForm .field:hover .tooltip {
-  opacity: 1;
   width: 90%;
-  background-color: rgba(8, 56, 21, 0.8);
+  background-color: rgba(8, 56, 21, 0.95);
   padding: 0.5rem;
   border: 0.1rem solid #fff;
   color: #fff;
@@ -2090,6 +2099,7 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   border-radius: 0.5rem;
   transform: translate(1rem, -0.5rem);
   pointer-events: auto;
+  letter-spacing: 0.5px;
 }
 
 .wasteCaclForm .field .tooltip.tooltip-bottom {

@@ -322,7 +322,7 @@ function gaugeAction_getWasteCategory(cathegoryNumber) {
   } else if (cathegoryNumber == 5) {
     return "nakladySkoTun";
   } else if (cathegoryNumber == 6) {
-    return "nakladyNaOhKc";
+    return "nakladySkoKc";
   } else if (cathegoryNumber == 7) {
     return "produkceOdpadCelkova";
   } else if (cathegoryNumber == 8) {
@@ -358,11 +358,18 @@ function gaugeAction_getDifferenceValue(wasteCathegoryName, selectedRegion, gaug
   if (differenceValue < 0) {
     differenceValue = (-1) * differenceValue;
   }
-  if (differenceValue < 21) {
-    differenceValue = 20;
+
+  let checkRatioOfDiffToBase = differenceValue / countryValue;
+  if (checkRatioOfDiffToBase < 0.2) {
+    if (differenceValue < 21) {
+      differenceValue = 20;
+    }
+  } else if (checkRatioOfDiffToBase < 0.4) {
+    if (differenceValue < 11) {
+      differenceValue = 10;
+    }
   }
   return differenceValue;
-
 }
 
 function gaugeAction_getMainGaugeValue(gaugeUnitNumber) {
@@ -375,6 +382,9 @@ function gaugeAction_getMainGaugeValue(gaugeUnitNumber) {
     return 0;
   }
   let inputValue = document.getElementById(selectorMainValue).innerText;
+  if ((inputValue == undefined) || (inputValue == undefined)) {
+    inputValue = 0;
+  }
   let containsComa = inputValue.includes(",");
   if (containsComa) {
     inputValue = inputValue.replace(",", ".");
@@ -659,10 +669,6 @@ function prepareGaugesObjects() {
   gaugeData15.x13_gaugeRedFrom = (gaugeData15.x12_gaugeYellowTo);
   gaugeData15.x14_gaugeRedTo = (gaugeData15.x13_gaugeRedFrom) + (gaugeData15.x04_difference);
   gaugeData15.x15_gaugeMinorTicks = gaugeAction_calculateMinorTicks(gaugeData15.x04_difference);
-
-  //test
-  console.log("gaugeData15 :  " + JSON.stringify(gaugeData15));
-  //test
 }
 
 /** 
@@ -819,7 +825,8 @@ function drawChart() {
     redTo: gaugeData7.x14_gaugeRedTo,
     yellowFrom: gaugeData7.x11_gaugeYellowFrom,
     yellowTo: gaugeData7.x12_gaugeYellowTo,
-    greenFrom: gaugeData7.x09_gaugeGreenFrom
+    greenFrom: gaugeData7.x09_gaugeGreenFrom,
+    greenTo: gaugeData7.x10_gaugeGreenTo
   };
   var options8 = {
     optionsNumber: 8,
@@ -831,7 +838,8 @@ function drawChart() {
     redTo: gaugeData8.x14_gaugeRedTo,
     yellowFrom: gaugeData8.x11_gaugeYellowFrom,
     yellowTo: gaugeData8.x12_gaugeYellowTo,
-    greenFrom: gaugeData8.x09_gaugeGreenFrom
+    greenFrom: gaugeData8.x09_gaugeGreenFrom,
+    greenTo: gaugeData8.x10_gaugeGreenTo
   };
   var options9 = {
     optionsNumber: 9,
@@ -843,7 +851,8 @@ function drawChart() {
     redTo: gaugeData9.x14_gaugeRedTo,
     yellowFrom: gaugeData9.x11_gaugeYellowFrom,
     yellowTo: gaugeData9.x12_gaugeYellowTo,
-    greenFrom: gaugeData9.x09_gaugeGreenFrom
+    greenFrom: gaugeData9.x09_gaugeGreenFrom,
+    greenTo: gaugeData9.x10_gaugeGreenTo
   };
   var options10 = {
     optionsNumber: 10,
@@ -855,7 +864,8 @@ function drawChart() {
     redTo: gaugeData10.x14_gaugeRedTo,
     yellowFrom: gaugeData10.x11_gaugeYellowFrom,
     yellowTo: gaugeData10.x12_gaugeYellowTo,
-    greenFrom: gaugeData10.x09_gaugeGreenFrom
+    greenFrom: gaugeData10.x09_gaugeGreenFrom,
+    greenTo: gaugeData10.x10_gaugeGreenTo
   };
   var options11 = {
     optionsNumber: 11,
@@ -867,7 +877,8 @@ function drawChart() {
     redTo: gaugeData11.x14_gaugeRedTo,
     yellowFrom: gaugeData11.x11_gaugeYellowFrom,
     yellowTo: gaugeData11.x12_gaugeYellowTo,
-    greenFrom: gaugeData11.x09_gaugeGreenFrom
+    greenFrom: gaugeData11.x09_gaugeGreenFrom,
+    greenTo: gaugeData11.x10_gaugeGreenTo
   };
   var options12 = {
     optionsNumber: 12,
@@ -879,7 +890,8 @@ function drawChart() {
     redTo: gaugeData12.x14_gaugeRedTo,
     yellowFrom: gaugeData12.x11_gaugeYellowFrom,
     yellowTo: gaugeData12.x12_gaugeYellowTo,
-    greenFrom: gaugeData12.x09_gaugeGreenFrom
+    greenFrom: gaugeData12.x09_gaugeGreenFrom,
+    greenTo: gaugeData12.x10_gaugeGreenTo
   };
   var options13 = {
     optionsNumber: 13,
@@ -891,31 +903,34 @@ function drawChart() {
     redTo: gaugeData13.x14_gaugeRedTo,
     yellowFrom: gaugeData13.x11_gaugeYellowFrom,
     yellowTo: gaugeData13.x12_gaugeYellowTo,
-    greenFrom: gaugeData13.x09_gaugeGreenFrom
+    greenFrom: gaugeData13.x09_gaugeGreenFrom,
+    greenTo: gaugeData13.x10_gaugeGreenTo
   };
   var options14 = {
     optionsNumber: 14,
-    min: gaugeData14.x07_gaugeMinimum,
-    max: gaugeData14.x08_gaugeMaximum,
+    min: 10,
+    max: 27,
     width: 280,
     height: 280,
-    redFrom: gaugeData14.x13_gaugeRedFrom,
-    redTo: gaugeData14.x14_gaugeRedTo,
-    yellowFrom: gaugeData14.x11_gaugeYellowFrom,
-    yellowTo: gaugeData14.x12_gaugeYellowTo,
-    greenFrom: gaugeData14.x09_gaugeGreenFrom
+    redFrom: 24,
+    redTo: 27,
+    yellowFrom: 21,
+    yellowTo: 24,
+    greenFrom: 15,
+    greenTo: 21
   };
   var options15 = {
     optionsNumber: 15,
-    min: gaugeData15.x07_gaugeMinimum,
-    max: gaugeData15.x08_gaugeMaximum,
+    min: 0,
+    max: 12,
     width: 280,
     height: 280,
-    redFrom: gaugeData15.x13_gaugeRedFrom,
-    redTo: gaugeData15.x14_gaugeRedTo,
-    yellowFrom: gaugeData15.x11_gaugeYellowFrom,
-    yellowTo: gaugeData15.x12_gaugeYellowTo,
-    greenFrom: gaugeData15.x09_gaugeGreenFrom
+    redFrom: 9,
+    redTo: 12,
+    yellowFrom: 7.5,
+    yellowTo: 9,
+    greenFrom: gaugeData15.x09_gaugeGreenFrom,
+    greenTo: gaugeData15.x10_gaugeGreenTo
   };
 
   var chart1 = new google.visualization.Gauge(document.getElementById("google_gauge_chart1"));
