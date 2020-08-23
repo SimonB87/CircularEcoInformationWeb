@@ -654,6 +654,10 @@ function prepareGaugesObjects() {
   gaugeData15.x13_gaugeRedFrom = (gaugeData15.x12_gaugeYellowTo);
   gaugeData15.x14_gaugeRedTo = (gaugeData15.x13_gaugeRedFrom) + (gaugeData15.x04_difference);
   gaugeData15.x15_gaugeMinorTicks = gaugeAction_calculateMinorTicks(gaugeData15.x04_difference);
+
+  //test
+  console.log("gaugeData15 :  " + JSON.stringify(gaugeData15));
+  //test
 }
 
 /** 

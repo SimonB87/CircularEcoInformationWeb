@@ -2057,8 +2057,12 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   font-style: italic;
 }
 
-.google_gauge table div div {
+.results .google_gauge table div div {
   margin: 0 auto;
+}
+
+.results .google_gauge {
+  margin-bottom: 3rem;
 }
 
 .wasteCaclForm .field {
@@ -2090,4 +2094,12 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 
 .wasteCaclForm .field .tooltip.tooltip-bottom {
   top: -2.5rem;
+}
+
+.results .field .valueHighlight {
+  color: #99cdcd;
+  padding: 1px 0.5rem 1px 0.5rem;
+  background-color: #003434;
+  font-weight: 600;
+  letter-spacing: 2px;
 }

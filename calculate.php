@@ -162,9 +162,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Náklady na OH</h3>
 										<h4 class="result_unit">(Kč/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice01"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion01"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry01"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice01" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion01" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry01" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart1" class="google_gauge">
   									</div>
 									</div>
@@ -173,9 +173,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Přijmy z OH</h3>
 										<h4 class="result_unit">(Kč/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice02"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion02"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry02"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice02" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion02" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry02" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart2" class="google_gauge">
   									</div>
 									</div>
@@ -184,9 +184,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Náklady na tříděný sběr</h3>
 										<h4 class="result_unit">(Kč/t)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice03"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion03"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry03"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice03" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion03" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry03" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart3" class="google_gauge">
   									</div>
 									</div>
@@ -195,9 +195,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Náklady na tříděný sběr</h3>
 										<h4 class="result_unit">(Kč/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice04"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion04"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry04"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice04" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion04" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry04" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart4" class="google_gauge">
   									</div>
 									</div>
@@ -206,9 +206,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Náklady za SKO</h3>
 										<h4 class="result_unit">(Kč/t)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice05"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion05"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry05"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice05" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion05" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry05" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart5" class="google_gauge">
   									</div>
 									</div>
@@ -217,9 +217,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Náklady za SKO</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice06"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion06"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry06"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice06" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion06" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry06" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart6" class="google_gauge">
   									</div>
 									</div>
@@ -228,9 +228,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce odpadů - celková</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice07"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion07"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry07"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice07" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion07" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry07" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart7" class="google_gauge">
   									</div>
 									</div>
@@ -239,9 +239,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce O odpadů</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice08"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion08"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry08"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice08" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion08" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry08" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart8" class="google_gauge">
   									</div>
 									</div>
@@ -250,9 +250,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce N odpadů</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice09"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion09"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry09"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice09" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion09" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry09" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart9" class="google_gauge">
   									</div>
 									</div>
@@ -261,9 +261,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce komunálních odpadů (skupina 20)</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice10"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion10"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry10"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice10" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion10" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry10" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart10" class="google_gauge">
   									</div>
 									</div>
@@ -272,9 +272,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce SKO</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice11"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion11"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry11"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice11" class="valueHighlight"></span></p>
+										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion11" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry11" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart11" class="google_gauge">
   									</div>
 									</div>
@@ -283,9 +283,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce plast</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice12"></span></p>
-										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion12"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry12"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice12" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion12" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry12" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart12" class="google_gauge">
   									</div>
 									</div>
@@ -294,9 +294,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce papír</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice13"></span></p>
-										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion13"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry13"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice13" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion13" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry13" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart13" class="google_gauge">
   									</div>
 									</div>
@@ -305,20 +305,20 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce sklo</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice14"></span></p>
-										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion14"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry14"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice14" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion14" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry14" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart14" class="google_gauge">
   									</div>
 									</div>
 								</div>
 								<div class="field half result15">
 									<div class="gauge">
-										<h3 class="result_title">Produkce kovy <br>(kg/obyvatele)</h3>
+										<h3 class="result_title">Produkce kovy</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice15"></span></p>
-										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion15"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry15"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice15" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion15" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry15" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart15" class="google_gauge">
   									</div>
 									</div>
@@ -327,9 +327,9 @@
 									<div class="gauge">
 										<h3 class="result_title">Produkce BRO ze zahrad a parků</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
-										<p>Vaše hodnota: <span id="wasteResultNotice16"></span></p>
-										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion16"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry16"></span></p>
+										<p>Vaše hodnota: <span id="wasteResultNotice16" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion16" class="valueHighlight"></span></p>
+										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry16" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart16" class="google_gauge">
   									</div>
 									</div>
