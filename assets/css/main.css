@@ -2155,3 +2155,26 @@ li.formActions_goHome a {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 600px) {
+  .wasteCaclForm .formToglerControls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wasteCaclForm ul.actions.formToglerControls_items {
+    display: flex;
+    flex-direction: row;
+    width: 200px !important;
+  }
+  .wasteCaclForm ul.actions.formToglerControls_items li {
+    width: 50px;
+    padding: 1rem 0.5rem 0rem 0;
+  }
+  .wasteCaclForm li.formActions_goHome {
+    margin-top: 1rem;
+    margin-left: 0;
+    padding-top: 0;
+    padding-top: 0 !important;
+  }
+}
