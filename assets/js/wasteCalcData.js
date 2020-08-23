@@ -39,16 +39,16 @@ const wasteData = {
     jm: 251, kr: 259, ms: 245, zl: 226, vy: 238, ol: 259, pa: 247, us: 277, ka: 268, li: 287, pl: 260, sc: 299, jc: 254, cr: 259
   },
   produkcePlast: {
-    cr: 25.2
+    cr: 25.2, fakeDataPoint: 20
   },
   produkcePapir: {
-    cr: 49.8
+    cr: 49.8, fakeDataPoint: 40
   },
   produkceSklo: {
-    cr: 20.5
+    cr: 20.5, fakeDataPoint: 15
   },
   produkceKovy: {
-    cr: 7.5
+    cr: 7.5, fakeDataPoint: 4
   },
   produkceBro: {
     cr: null
