@@ -444,6 +444,7 @@ function gaugeAction_calculateMinorTicks(gaugeDifference) {
 
 function prepareGaugesObjects() {
   var selectedRegion = document.getElementById("region_cr").value;
+  if ( selectedRegion == "default" ) { selectedRegion = "cr" }
 
   gaugeData1.x02_gaugeMainValue = gaugeAction_getMainGaugeValue(gaugeData1.gaugeNumber)
   gaugeData1.x03_wasteCategory = gaugeAction_getWasteCategory(gaugeData1.gaugeNumber);
@@ -756,10 +757,10 @@ function drawChart() {
     max: gaugeData2.x08_gaugeMaximum,
     width: 280,
     height: 280,
-    redFrom: gaugeData2.x13_gaugeRedFrom,
-    redTo: gaugeData2.x14_gaugeRedTo,
-    yellowFrom: gaugeData2.x11_gaugeYellowFrom,
-    yellowTo: gaugeData2.x12_gaugeYellowTo,
+    redFrom: gaugeData2.x07_gaugeMinimum,
+    redTo: (gaugeData2.x07_gaugeMinimum + gaugeData2.x14_gaugeRedTo - gaugeData2.x13_gaugeRedFrom),
+    yellowFrom: (gaugeData2.x07_gaugeMinimum + gaugeData2.x14_gaugeRedTo - gaugeData2.x13_gaugeRedFrom),
+    yellowTo: gaugeData2.x09_gaugeGreenFrom,
     greenFrom: gaugeData2.x09_gaugeGreenFrom,
     greenTo: gaugeData2.x10_gaugeGreenTo
   };
