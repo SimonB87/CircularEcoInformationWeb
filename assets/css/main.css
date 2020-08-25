@@ -2126,7 +2126,7 @@ li.formActions_goHome a {
   padding: 0.6rem;
   transform: translate(1rem, -0.5rem);
   pointer-events: none;
-  transition: opacity 0.5s linear 0.2s;
+  transition: all 0.75s linear 1.5s;
 }
 
 .wasteCaclForm .field:focus .tooltip,
