@@ -82,6 +82,7 @@ function calculateWaste() {
 
     if (choosenRegion === "default") {
       choosenRegion = "cr";
+      document.getElementById("region_cr").value = "cr";
       showRegions = false;
     }
 
@@ -96,6 +97,16 @@ function calculateWaste() {
         let cathegory = getWasteCategory(k);
         let comparisonRegionValue = wasteData[cathegory][choosenRegion];
         document.querySelector(comparisonRegionSelector).innerText = comparisonRegionValue;
+      }
+    } else {
+      for (let i = 1; i < 12; i++) {
+        let comparisonRegionSelector;
+        if (i < 10) {
+          comparisonRegionSelector = "#valueCompariosonRegion0" + i;
+        } else if (i < 12) {//the regional values ends with cathegory number 12
+          comparisonRegionSelector = "#valueCompariosonRegion" + i;
+        }
+        document.querySelector(comparisonRegionSelector).innerText = " ---";
       }
     }
 
