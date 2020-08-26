@@ -1,4 +1,5 @@
 var selectedRegion;
+//TODO refactor declaring new objects with class
 var gaugeData1 = {
   gaugeNumber: 1,
   x01_labelName: function () {
@@ -300,6 +301,8 @@ var gaugeData15 = {
   x15_gaugeMinorTicks: ""
 };
 
+//TODO refactor by bringing these functions into an support object
+
 /**
  * Functions for edits of objects
  */
@@ -446,6 +449,7 @@ function prepareGaugesObjects() {
   var selectedRegion = document.getElementById("region_cr").value;
   if ( selectedRegion == "default" ) { selectedRegion = "cr" }
 
+  //TODO refactor this by calling objects from the window objects
   gaugeData1.x02_gaugeMainValue = gaugeAction_getMainGaugeValue(gaugeData1.gaugeNumber)
   gaugeData1.x03_wasteCategory = gaugeAction_getWasteCategory(gaugeData1.gaugeNumber);
   gaugeData1.x04_difference = gaugeAction_getDifferenceValue(gaugeData1.x03_wasteCategory, selectedRegion, gaugeData1.gaugeNumber);
@@ -676,6 +680,7 @@ function prepareGaugesObjects() {
  * Old function for drawing
  */
 function drawChart() {
+  //TODO refactor declaring new objects with class
 
   var data1 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
@@ -737,6 +742,7 @@ function drawChart() {
     ['Label', 'Value'],
     [gaugeData15.x01_labelName(), gaugeData15.x02_gaugeMainValue],
   ]);
+  //TODO refactor declaring new objects with class
 
   var options1 = {
     optionsNumber: 1,
@@ -751,6 +757,7 @@ function drawChart() {
     greenFrom: gaugeData1.x09_gaugeGreenFrom,
     greenTo: gaugeData1.x10_gaugeGreenTo
   };
+  //this is specific object!
   var options2 = {
     optionsNumber: 2,
     min: gaugeData2.x07_gaugeMinimum,
@@ -907,6 +914,7 @@ function drawChart() {
     greenFrom: gaugeData13.x09_gaugeGreenFrom,
     greenTo: gaugeData13.x10_gaugeGreenTo
   };
+  //this is specific object!
   var options14 = {
     optionsNumber: 14,
     min: 10,
@@ -920,6 +928,7 @@ function drawChart() {
     greenFrom: 15,
     greenTo: 21
   };
+  //this is specific object!
   var options15 = {
     optionsNumber: 15,
     min: 0,
