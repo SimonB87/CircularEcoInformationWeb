@@ -218,63 +218,63 @@ function drawChart() {
 
   var data1 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData1.x01_labelName(), gaugeData1.x02_gaugeMainValue],
+    [gaugeData1.x01_labelName(), gaugeData1.x07_gaugeMinimum],
   ]);
   var data2 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData2.x01_labelName(), gaugeData2.x02_gaugeMainValue],
+    [gaugeData2.x01_labelName(), gaugeData2.x07_gaugeMinimum],
   ]);
   var data3 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData3.x01_labelName(), gaugeData3.x02_gaugeMainValue],
+    [gaugeData3.x01_labelName(), gaugeData3.x07_gaugeMinimum],
   ]);
   var data4 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData4.x01_labelName(), gaugeData4.x02_gaugeMainValue],
+    [gaugeData4.x01_labelName(), gaugeData4.x07_gaugeMinimum],
   ]);
   var data5 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData5.x01_labelName(), gaugeData5.x02_gaugeMainValue],
+    [gaugeData5.x01_labelName(), gaugeData5.x07_gaugeMinimum],
   ]);
   var data6 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData6.x01_labelName(), gaugeData6.x02_gaugeMainValue],
+    [gaugeData6.x01_labelName(), gaugeData6.x07_gaugeMinimum],
   ]);
   var data7 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData7.x01_labelName(), gaugeData7.x02_gaugeMainValue],
+    [gaugeData7.x01_labelName(), gaugeData7.x07_gaugeMinimum],
   ]);
   var data8 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData8.x01_labelName(), gaugeData8.x02_gaugeMainValue],
+    [gaugeData8.x01_labelName(), gaugeData8.x07_gaugeMinimum],
   ]);
   var data9 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData9.x01_labelName(), gaugeData9.x02_gaugeMainValue],
+    [gaugeData9.x01_labelName(), gaugeData9.x07_gaugeMinimum],
   ]);
   var data10 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData10.x01_labelName(), gaugeData10.x02_gaugeMainValue],
+    [gaugeData10.x01_labelName(), gaugeData10.x07_gaugeMinimum],
   ]);
   var data11 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData11.x01_labelName(), gaugeData11.x02_gaugeMainValue],
+    [gaugeData11.x01_labelName(), gaugeData11.x07_gaugeMinimum],
   ]);
   var data12 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData12.x01_labelName(), gaugeData12.x02_gaugeMainValue],
+    [gaugeData12.x01_labelName(), gaugeData12.x07_gaugeMinimum],
   ]);
   var data13 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData13.x01_labelName(), gaugeData13.x02_gaugeMainValue],
+    [gaugeData13.x01_labelName(), gaugeData13.x07_gaugeMinimum],
   ]);
   var data14 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData14.x01_labelName(), gaugeData14.x02_gaugeMainValue],
+    [gaugeData14.x01_labelName(), gaugeData14.x07_gaugeMinimum],
   ]);
   var data15 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData15.x01_labelName(), gaugeData15.x02_gaugeMainValue],
+    [gaugeData15.x01_labelName(), gaugeData15.x07_gaugeMinimum],
   ]);
   //TODO refactor declaring new objects with class
 
@@ -343,4 +343,81 @@ function drawChart() {
   chart14.draw(data14, options14);
   chart15.draw(data15, options15);
 
+  var data1ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData1.x01_labelName(), gaugeData1.x02_gaugeMainValue],
+  ]);
+  var data2ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData2.x01_labelName(), gaugeData2.x02_gaugeMainValue],
+  ]);
+  var data3ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData3.x01_labelName(), gaugeData3.x02_gaugeMainValue],
+  ]);
+  var data4ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData4.x01_labelName(), gaugeData4.x02_gaugeMainValue],
+  ]);
+  var data5ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData5.x01_labelName(), gaugeData5.x02_gaugeMainValue],
+  ]);
+  var data6ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData6.x01_labelName(), gaugeData6.x02_gaugeMainValue],
+  ]);
+  var data7ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData7.x01_labelName(), gaugeData7.x02_gaugeMainValue],
+  ]);
+  var data8ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData8.x01_labelName(), gaugeData8.x02_gaugeMainValue],
+  ]);
+  var data9ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData9.x01_labelName(), gaugeData9.x02_gaugeMainValue],
+  ]);
+  var data10ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData10.x01_labelName(), gaugeData10.x02_gaugeMainValue],
+  ]);
+  var data11ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData11.x01_labelName(), gaugeData11.x02_gaugeMainValue],
+  ]);
+  var data12ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData12.x01_labelName(), gaugeData12.x02_gaugeMainValue],
+  ]);
+  var data13ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData13.x01_labelName(), gaugeData13.x02_gaugeMainValue],
+  ]);
+  var data14ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData14.x01_labelName(), gaugeData14.x02_gaugeMainValue],
+  ]);
+  var data15ed = google.visualization.arrayToDataTable([
+    ['Label', 'Value'],
+    [gaugeData15.x01_labelName(), gaugeData15.x02_gaugeMainValue],
+  ]);
+  //var chart1 = new google.visualization.Gauge(document.getElementById("google_gauge_chart1"));
+
+  setTimeout(function(){ chart1.draw(data1ed, options1); }, 1500);
+  setTimeout(function(){ chart2.draw(data2ed, options2); }, 1800);
+  setTimeout(function(){ chart3.draw(data3ed, options3); }, 2100);
+  setTimeout(function(){ chart4.draw(data4ed, options4); }, 2400);
+  setTimeout(function(){ chart5.draw(data5ed, options5); }, 3000);
+  setTimeout(function(){ chart6.draw(data6ed, options6); }, 3000);
+  setTimeout(function(){ chart7.draw(data7ed, options7); }, 3500);
+  setTimeout(function(){ chart8.draw(data8ed, options8); }, 4000);
+  setTimeout(function(){ chart9.draw(data9ed, options9); }, 4500);
+  setTimeout(function(){ chart10.draw(data10ed, options10); }, 5000);
+  setTimeout(function(){ chart11.draw(data11ed, options11); }, 5500);
+  setTimeout(function(){ chart12.draw(data12ed, options12); }, 6500);
+  setTimeout(function(){ chart13.draw(data13ed, options13); }, 7000);
+  setTimeout(function(){ chart14.draw(data14ed, options14); }, 7500);
+  setTimeout(function(){ chart15.draw(data15ed, options15); }, 7900);
 }
