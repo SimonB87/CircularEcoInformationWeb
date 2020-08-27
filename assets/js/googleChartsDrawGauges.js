@@ -1,5 +1,5 @@
 var selectedRegion;
-//TODO refactor declaring new objects with class
+
 class Gauge {
   constructor(gaugeIndex) {
     this.gaugeNumber = gaugeIndex;
@@ -278,204 +278,38 @@ function drawChart() {
   ]);
   //TODO refactor declaring new objects with class
 
-  var options1 = {
-    optionsNumber: 1,
-    min: gaugeData1.x07_gaugeMinimum,
-    max: gaugeData1.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData1.x13_gaugeRedFrom,
-    redTo: gaugeData1.x14_gaugeRedTo,
-    yellowFrom: gaugeData1.x11_gaugeYellowFrom,
-    yellowTo: gaugeData1.x12_gaugeYellowTo,
-    greenFrom: gaugeData1.x09_gaugeGreenFrom,
-    greenTo: gaugeData1.x10_gaugeGreenTo
-  };
-  //this is specific object!
-  var options2 = {
-    optionsNumber: 2,
-    min: gaugeData2.x07_gaugeMinimum,
-    max: gaugeData2.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData2.x07_gaugeMinimum,
-    redTo: (gaugeData2.x07_gaugeMinimum + gaugeData2.x14_gaugeRedTo - gaugeData2.x13_gaugeRedFrom),
-    yellowFrom: (gaugeData2.x07_gaugeMinimum + gaugeData2.x14_gaugeRedTo - gaugeData2.x13_gaugeRedFrom),
-    yellowTo: gaugeData2.x09_gaugeGreenFrom,
-    greenFrom: gaugeData2.x09_gaugeGreenFrom,
-    greenTo: gaugeData2.x10_gaugeGreenTo
-  };
-  var options3 = {
-    optionsNumber: 3,
-    min: gaugeData3.x07_gaugeMinimum,
-    max: gaugeData3.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData3.x13_gaugeRedFrom,
-    redTo: gaugeData3.x14_gaugeRedTo,
-    yellowFrom: gaugeData3.x11_gaugeYellowFrom,
-    yellowTo: gaugeData3.x12_gaugeYellowTo,
-    greenFrom: gaugeData3.x09_gaugeGreenFrom,
-    greenTo: gaugeData3.x10_gaugeGreenTo
-  };
-  var options4 = {
-    optionsNumber: 4,
-    min: gaugeData4.x07_gaugeMinimum,
-    max: gaugeData4.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData4.x13_gaugeRedFrom,
-    redTo: gaugeData4.x14_gaugeRedTo,
-    yellowFrom: gaugeData4.x11_gaugeYellowFrom,
-    yellowTo: gaugeData4.x12_gaugeYellowTo,
-    greenFrom: gaugeData4.x09_gaugeGreenFrom,
-    greenTo: gaugeData4.x10_gaugeGreenTo
-  };
-  var options5 = {
-    optionsNumber: 5,
-    min: gaugeData5.x07_gaugeMinimum,
-    max: gaugeData5.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData5.x13_gaugeRedFrom,
-    redTo: gaugeData5.x14_gaugeRedTo,
-    yellowFrom: gaugeData5.x11_gaugeYellowFrom,
-    yellowTo: gaugeData5.x12_gaugeYellowTo,
-    greenFrom: gaugeData5.x09_gaugeGreenFrom,
-    greenTo: gaugeData5.x10_gaugeGreenTo
-  };
-  var options6 = {
-    optionsNumber: 6,
-    min: gaugeData6.x07_gaugeMinimum,
-    max: gaugeData6.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData6.x13_gaugeRedFrom,
-    redTo: gaugeData6.x14_gaugeRedTo,
-    yellowFrom: gaugeData6.x11_gaugeYellowFrom,
-    yellowTo: gaugeData6.x12_gaugeYellowTo,
-    greenFrom: gaugeData6.x09_gaugeGreenFrom,
-    greenTo: gaugeData6.x10_gaugeGreenTo
-  };
-  var options7 = {
-    optionsNumber: 7,
-    min: gaugeData7.x07_gaugeMinimum,
-    max: gaugeData7.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData7.x13_gaugeRedFrom,
-    redTo: gaugeData7.x14_gaugeRedTo,
-    yellowFrom: gaugeData7.x11_gaugeYellowFrom,
-    yellowTo: gaugeData7.x12_gaugeYellowTo,
-    greenFrom: gaugeData7.x09_gaugeGreenFrom,
-    greenTo: gaugeData7.x10_gaugeGreenTo
-  };
-  var options8 = {
-    optionsNumber: 8,
-    min: gaugeData8.x07_gaugeMinimum,
-    max: gaugeData8.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData8.x13_gaugeRedFrom,
-    redTo: gaugeData8.x14_gaugeRedTo,
-    yellowFrom: gaugeData8.x11_gaugeYellowFrom,
-    yellowTo: gaugeData8.x12_gaugeYellowTo,
-    greenFrom: gaugeData8.x09_gaugeGreenFrom,
-    greenTo: gaugeData8.x10_gaugeGreenTo
-  };
-  var options9 = {
-    optionsNumber: 9,
-    min: gaugeData9.x07_gaugeMinimum,
-    max: gaugeData9.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData9.x13_gaugeRedFrom,
-    redTo: gaugeData9.x14_gaugeRedTo,
-    yellowFrom: gaugeData9.x11_gaugeYellowFrom,
-    yellowTo: gaugeData9.x12_gaugeYellowTo,
-    greenFrom: gaugeData9.x09_gaugeGreenFrom,
-    greenTo: gaugeData9.x10_gaugeGreenTo
-  };
-  var options10 = {
-    optionsNumber: 10,
-    min: gaugeData10.x07_gaugeMinimum,
-    max: gaugeData10.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData10.x13_gaugeRedFrom,
-    redTo: gaugeData10.x14_gaugeRedTo,
-    yellowFrom: gaugeData10.x11_gaugeYellowFrom,
-    yellowTo: gaugeData10.x12_gaugeYellowTo,
-    greenFrom: gaugeData10.x09_gaugeGreenFrom,
-    greenTo: gaugeData10.x10_gaugeGreenTo
-  };
-  var options11 = {
-    optionsNumber: 11,
-    min: gaugeData11.x07_gaugeMinimum,
-    max: gaugeData11.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData11.x13_gaugeRedFrom,
-    redTo: gaugeData11.x14_gaugeRedTo,
-    yellowFrom: gaugeData11.x11_gaugeYellowFrom,
-    yellowTo: gaugeData11.x12_gaugeYellowTo,
-    greenFrom: gaugeData11.x09_gaugeGreenFrom,
-    greenTo: gaugeData11.x10_gaugeGreenTo
-  };
-  var options12 = {
-    optionsNumber: 12,
-    min: gaugeData12.x07_gaugeMinimum,
-    max: gaugeData12.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData12.x13_gaugeRedFrom,
-    redTo: gaugeData12.x14_gaugeRedTo,
-    yellowFrom: gaugeData12.x11_gaugeYellowFrom,
-    yellowTo: gaugeData12.x12_gaugeYellowTo,
-    greenFrom: gaugeData12.x09_gaugeGreenFrom,
-    greenTo: gaugeData12.x10_gaugeGreenTo
-  };
-  var options13 = {
-    optionsNumber: 13,
-    min: gaugeData13.x07_gaugeMinimum,
-    max: gaugeData13.x08_gaugeMaximum,
-    width: 280,
-    height: 280,
-    redFrom: gaugeData13.x13_gaugeRedFrom,
-    redTo: gaugeData13.x14_gaugeRedTo,
-    yellowFrom: gaugeData13.x11_gaugeYellowFrom,
-    yellowTo: gaugeData13.x12_gaugeYellowTo,
-    greenFrom: gaugeData13.x09_gaugeGreenFrom,
-    greenTo: gaugeData13.x10_gaugeGreenTo
-  };
-  //this is specific object!
-  var options14 = {
-    optionsNumber: 14,
-    min: 10,
-    max: 27,
-    width: 280,
-    height: 280,
-    redFrom: 24,
-    redTo: 27,
-    yellowFrom: 21,
-    yellowTo: 24,
-    greenFrom: 15,
-    greenTo: 21
-  };
-  //this is specific object!
-  var options15 = {
-    optionsNumber: 15,
-    min: 0,
-    max: 12,
-    width: 280,
-    height: 280,
-    redFrom: 9,
-    redTo: 12,
-    yellowFrom: 7.5,
-    yellowTo: 9,
-    greenFrom: gaugeData15.x09_gaugeGreenFrom,
-    greenTo: gaugeData15.x10_gaugeGreenTo
-  };
+  class OptionObject {
+    constructor(indexValue, minimum, maximum, sizeWidth, sizeHeight, colorRedStart, colorRedEnd, colorYellowStart, colorYellowEnd, colorGreenStart, colorGreenEnd) {
+      this.optionsNumber  = indexValue;
+      this.min = minimum;
+      this.max = maximum;
+      this.width = sizeWidth;
+      this.height = sizeHeight;
+      this.redFrom = colorRedStart;
+      this.redTo = colorRedEnd;
+      this.yellowFrom  = colorYellowStart;
+      this.yellowTo  = colorYellowEnd;
+      this.greenFrom  = colorGreenStart;
+      this.greenTo  = colorGreenEnd;
+    }
+  }
+
+  var options1 = new OptionObject(1, gaugeData1.x07_gaugeMinimum, gaugeData1.x08_gaugeMaximum, 280, 280, gaugeData1.x13_gaugeRedFrom, gaugeData1.x14_gaugeRedTo, gaugeData1.x11_gaugeYellowFrom, gaugeData1.x12_gaugeYellowTo, gaugeData1.x09_gaugeGreenFrom, gaugeData1.x10_gaugeGreenTo);
+  var options2 = new OptionObject(2, gaugeData2.x07_gaugeMinimum, gaugeData2.x08_gaugeMaximum, 280, 280, gaugeData2.x07_gaugeMinimum, (gaugeData2.x07_gaugeMinimum + gaugeData2.x14_gaugeRedTo - gaugeData2.x13_gaugeRedFrom), (gaugeData2.x07_gaugeMinimum + gaugeData2.x14_gaugeRedTo - gaugeData2.x13_gaugeRedFrom), gaugeData2.x09_gaugeGreenFrom, gaugeData2.x09_gaugeGreenFrom, gaugeData2.x10_gaugeGreenTo);
+  var options3 = new OptionObject(3, gaugeData3.x07_gaugeMinimum, gaugeData3.x08_gaugeMaximum, 280, 280, gaugeData3.x13_gaugeRedFrom, gaugeData3.x14_gaugeRedTo, gaugeData3.x11_gaugeYellowFrom, gaugeData3.x12_gaugeYellowTo, gaugeData3.x09_gaugeGreenFrom, gaugeData3.x10_gaugeGreenTo);
+  var options4 = new OptionObject(4, gaugeData4.x07_gaugeMinimum, gaugeData4.x08_gaugeMaximum, 280, 280, gaugeData4.x13_gaugeRedFrom, gaugeData4.x14_gaugeRedTo, gaugeData4.x11_gaugeYellowFrom, gaugeData4.x12_gaugeYellowTo, gaugeData4.x09_gaugeGreenFrom, gaugeData4.x10_gaugeGreenTo);
+  var options5 = new OptionObject(5, gaugeData5.x07_gaugeMinimum, gaugeData5.x08_gaugeMaximum, 280, 280, gaugeData5.x13_gaugeRedFrom, gaugeData5.x14_gaugeRedTo, gaugeData5.x11_gaugeYellowFrom, gaugeData5.x12_gaugeYellowTo, gaugeData5.x09_gaugeGreenFrom, gaugeData5.x10_gaugeGreenTo);
+  var options6 = new OptionObject(6, gaugeData6.x07_gaugeMinimum, gaugeData6.x08_gaugeMaximum, 280, 280, gaugeData6.x13_gaugeRedFrom, gaugeData6.x14_gaugeRedTo, gaugeData6.x11_gaugeYellowFrom, gaugeData6.x12_gaugeYellowTo, gaugeData6.x09_gaugeGreenFrom, gaugeData6.x10_gaugeGreenTo);
+  var options7 = new OptionObject(7, gaugeData7.x07_gaugeMinimum, gaugeData7.x08_gaugeMaximum, 280, 280, gaugeData7.x13_gaugeRedFrom, gaugeData7.x14_gaugeRedTo, gaugeData7.x11_gaugeYellowFrom, gaugeData7.x12_gaugeYellowTo, gaugeData7.x09_gaugeGreenFrom, gaugeData7.x10_gaugeGreenTo);
+  var options8 = new OptionObject(8, gaugeData8.x07_gaugeMinimum, gaugeData8.x08_gaugeMaximum, 280, 280, gaugeData8.x13_gaugeRedFrom, gaugeData8.x14_gaugeRedTo, gaugeData8.x11_gaugeYellowFrom, gaugeData8.x12_gaugeYellowTo, gaugeData8.x09_gaugeGreenFrom, gaugeData8.x10_gaugeGreenTo);
+  var options9 = new OptionObject(9, gaugeData9.x07_gaugeMinimum, gaugeData9.x08_gaugeMaximum, 280, 280, gaugeData9.x13_gaugeRedFrom, gaugeData9.x14_gaugeRedTo, gaugeData9.x11_gaugeYellowFrom, gaugeData9.x12_gaugeYellowTo, gaugeData9.x09_gaugeGreenFrom, gaugeData9.x10_gaugeGreenTo);
+  var options10 = new OptionObject(10, gaugeData10.x07_gaugeMinimum, gaugeData10.x08_gaugeMaximum, 280, 280, gaugeData10.x13_gaugeRedFrom, gaugeData10.x14_gaugeRedTo, gaugeData10.x11_gaugeYellowFrom, gaugeData10.x12_gaugeYellowTo, gaugeData10.x09_gaugeGreenFrom, gaugeData10.x10_gaugeGreenTo);
+  var options11 = new OptionObject(11, gaugeData11.x07_gaugeMinimum, gaugeData11.x08_gaugeMaximum, 280, 280, gaugeData11.x13_gaugeRedFrom, gaugeData11.x14_gaugeRedTo, gaugeData11.x11_gaugeYellowFrom, gaugeData11.x12_gaugeYellowTo, gaugeData11.x09_gaugeGreenFrom, gaugeData11.x10_gaugeGreenTo);
+  var options12 = new OptionObject(12, gaugeData12.x07_gaugeMinimum, gaugeData12.x08_gaugeMaximum, 280, 280, gaugeData12.x13_gaugeRedFrom, gaugeData12.x14_gaugeRedTo, gaugeData12.x11_gaugeYellowFrom, gaugeData12.x12_gaugeYellowTo, gaugeData12.x09_gaugeGreenFrom, gaugeData12.x10_gaugeGreenTo);
+  var options13 = new OptionObject(13, gaugeData13.x07_gaugeMinimum, gaugeData13.x08_gaugeMaximum, 280, 280, gaugeData13.x13_gaugeRedFrom, gaugeData13.x14_gaugeRedTo, gaugeData13.x11_gaugeYellowFrom, gaugeData13.x12_gaugeYellowTo, gaugeData13.x09_gaugeGreenFrom, gaugeData13.x10_gaugeGreenTo);
+  var options14 = new OptionObject(14, 10, 27, 280, 280, 24, 27, 21, 24, 15, 21);
+  var options15 = new OptionObject(15, 0, 12, 280, 280, 9, 12, 7.5, 9, gaugeData15.x09_gaugeGreenFrom,gaugeData15.x10_gaugeGreenTo);
+
 
   var chart1 = new google.visualization.Gauge(document.getElementById("google_gauge_chart1"));
   var chart2 = new google.visualization.Gauge(document.getElementById("google_gauge_chart2"));
