@@ -1,5 +1,8 @@
 <?php
+//TODO - set UTF 8 according to http://zaachi.com/2008/09/02/fpdf-jak-na-ceske-znaky.html
+
 //set initial PDF library
+
 require("includes/fpdf182/fpdf.php");
 $pdf = new FPDF();
 $pdf->AddPage();
@@ -98,13 +101,22 @@ echo "<br>";
 echo "Kategorie: " . $kategorie;
 */
 
+$plnyNazev = utf8_decode($plnyNazev);
+$popis = utf8_decode($popis);
+$podminky = utf8_decode($podminky);
+
+//$plnyNazev = iconv('UTF-8', 'windows-1252', $plnyNazev);
+//$popis = iconv('UTF-8', 'windows-1252', $popis);
+//$podminky = iconv('UTF-8', 'windows-1252', $podminky);
+
+$pdf->AddPage();
+$pdf->SetFont('Arial','',12);
+$pdf->Ln(10);
+$pdf->Write(8,$plnyNazev);
+$pdf->Write(8,$popis);
+$pdf->Write(8,$podminky);
+
 //add content to PDF
-$pdf->AddPage();
-$pdf->Cell(40,10, $plnyNazev);
-$pdf->AddPage();
-$pdf->Cell(40,10, $popis);
-$pdf->AddPage();
-$pdf->Cell(40,10, $podminky);
 $pdf->Output();
 
 
