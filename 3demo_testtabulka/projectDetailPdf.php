@@ -72,33 +72,7 @@ if ($results-> num_rows > 0 ) {
       $projectInfo_pravni = $row["pravni_aspekty"];
       $projectInfo_prikladyPraxe = $row["priklad_praxe"];
       $projectInfo_souvisejiciKategorie = $row["souvisejici_kategorie"];
-      /*
-      echo "<p id='projectDetailDesc--nazevTypovehoReseni' style='display:none; visibility:hidden;'>Název typového řešení</p>";
-
-      echo "<h2 id='projectDetail--titul'>".$row["plny_nazev"]."</h2>";
-
-      echo "<div> <strong id='projectDetailDesc--kategorie'> Kategorie: </strong></div><div id='projectDetail--kategorie'>" .$row["kategorie"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--plny_popis'> Plný popis: </strong></div><div id='projectDetail--plny_popis'>" .$row["plny_popis"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--podminky_vyuziti'> Podmínky využití / bariéry: </strong></div><div id='projectDetail--podminky_vyuziti'>" .$row["podminky_vyuziti"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--vyuzitelne_produkty'> Využitelné typy produktů/ odpadů: </strong></div><div id='projectDetail--vyuzitelne_produkty'>" .$row["vyuzitelne_produkty"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--SWOT_analyza'> SWOT analýza: </strong></div><div id='projectDetail--SWOT_analyza'>" .$row["SWOT_analyza"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--cilova_skupina'> Cílová skupina: </strong></div><div id='projectDetail--cilova_skupina'>" .$row["cilova_skupina"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--ekonomicke_podminky'> Ekonomické podmínky a přínosy: </strong></div><div id='projectDetail--ekonomicke_podminky'>" .$row["ekonomicke_podminky"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--personálni_narocnost'> Personální náročnost: </strong></div><div id='projectDetail--personálni_narocnost'>" .$row["personálni_narocnost"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--pravni_aspekty'> Právní aspekty: </strong></div><div id='projectDetail--pravni_aspekty'>" .$row["pravni_aspekty"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--priklad_praxe'> Příklad z praxe: </strong></div><div id='projectDetail--priklad_praxe'>" .$row["priklad_praxe"]. "</div><br>";
-
-      echo "<div> <strong id='projectDetailDesc--souvisejici_kategorie'> Související kategorie </strong></div><div id='projectDetail--souvisejici_kategorie'>" .$row["souvisejici_kategorie"]. "</div><br>";
-      */
+      
   }
   echo "";
 }
