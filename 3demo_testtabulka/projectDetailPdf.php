@@ -63,7 +63,6 @@ if ($results-> num_rows > 0 ) {
       $projectInfo_kategorie = $row["kategorie"];
       $projectInfo_popis = $row["plny_popis"];
       $projectInfo_podminky = $row["podminky_vyuziti"];
-
       $projectInfo_vyuzitelneProdukty = $row["vyuzitelne_produkty"];
       $projectInfo_swot = $row["SWOT_analyza"];
       $projectInfo_cilovaSkupina = $row["cilova_skupina"];
@@ -90,12 +89,10 @@ $projectInfo_vyuzitelneProdukty = str_replace("<br>","",utf8_decode($projectInfo
 $projectInfo_swot = str_replace("<br>","",utf8_decode($projectInfo_swot));
 $projectInfo_cilovaSkupina = str_replace("<br>","",utf8_decode($projectInfo_cilovaSkupina));
 $projectInfo_ekonomickePodminky = str_replace("<br>","",utf8_decode($projectInfo_ekonomickePodminky));
-/* //TODO
-$projectInfo_personal;
-$projectInfo_pravni;
-$projectInfo_prikladyPraxe;
-$projectInfo_souvisejiciKategorie;
-*/
+$projectInfo_personal = str_replace("<br>","",utf8_decode($projectInfo_personal));
+$projectInfo_pravni = str_replace("<br>","",utf8_decode($projectInfo_pravni));
+$projectInfo_prikladyPraxe = str_replace("<br>","",utf8_decode($projectInfo_prikladyPraxe));
+$projectInfo_souvisejiciKategorie = str_replace("<br>","",utf8_decode($projectInfo_souvisejiciKategorie));
 
 //$plnyNazev = iconv('UTF-8', 'windows-1252', $plnyNazev);
 //$popis = iconv('UTF-8', 'windows-1252', $popis);
@@ -138,6 +135,26 @@ $pdf->SetFont('Arial','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("EKONOMICKÉ PODMÍNKY") . "\n" ));
 $pdf->SetFont('Arial','',12);
 $pdf->Write(8,$projectInfo_ekonomickePodminky);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PERSONÁLNÍ NÁROČNOST") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_personal);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PRÁVNÍ ASPEKTY") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_pravni);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PŘÍKLADY DOBRÉ PRAXE") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_prikladyPraxe);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("SOUVISEJÍCÍ KATEGORIE") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_souvisejiciKategorie);
 
 //add content to PDF
 $pdf->Output();
