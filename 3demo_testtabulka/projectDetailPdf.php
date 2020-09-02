@@ -3,38 +3,39 @@
 
 //set initial PDF library - this has to be on top of the file
 require("includes/fpdf182/fpdf.php");
-$pdf = new FPDF();
-
-//set PDF header and footer
-
 class PDF extends FPDF
 {
-// Page header
-function Header()
-{
+  // Page header
+  function Header()
+  {
     // Logo
-    $this->Image('includes/fpdf182/logoPrint.png',10,6,30);
+    $this->Image("includes/fpdf182/logoprint.png",10,6,20);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Move to the right
     $this->Cell(80);
     // Title
-    $this->Cell(30,10,'Title',1,0,'C');
+    $this->Cell(50,10,'Obcevkruhu.cz',1,0,'C');
     // Line break
-    $this->Ln(20);
-}
+    $this->Ln(15);
+    $this->SetFont('Arial','B',10);
+    $this->Cell(0, 10, $this->title, 1, 1, 'C');
+  }
 
-// Page footer
-function Footer()
-{
+  // Page footer
+  function Footer()
+  {
     // Position at 1.5 cm from bottom
-    $this->SetY(-15);
+    $this->SetY(-30);
     // Arial italic 8
     $this->SetFont('Arial','I',8);
+    $this->Cell(0,15,'www.Obcevkruhu.cz',0,0,'C');
+    $this->Ln(10);
     // Page number
-    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+    $this->Cell(0,10,'Strana '.$this->PageNo().'/{nb}',0,0,'C');
+  }
 }
-}
+$pdf = new PDF();
 
 //! this is custom for each built location!
 require 'config/config2.php';
@@ -89,18 +90,18 @@ $results = $con-> query($sql);
 if ($results-> num_rows > 0 ) {
   while ($row = $results-> fetch_assoc()) {
 
-      $projectInfo_plnyNazev = $row["plny_nazev"];
-      $projectInfo_kategorie = $row["kategorie"];
-      $projectInfo_popis = $row["plny_popis"];
-      $projectInfo_podminky = $row["podminky_vyuziti"];
-      $projectInfo_vyuzitelneProdukty = $row["vyuzitelne_produkty"];
-      $projectInfo_swot = $row["SWOT_analyza"];
-      $projectInfo_cilovaSkupina = $row["cilova_skupina"];
-      $projectInfo_ekonomickePodminky = $row["ekonomicke_podminky"];
-      $projectInfo_personal = $row["personálni_narocnost"];
-      $projectInfo_pravni = $row["pravni_aspekty"];
-      $projectInfo_prikladyPraxe = $row["priklad_praxe"];
-      $projectInfo_souvisejiciKategorie = $row["souvisejici_kategorie"];
+    $projectInfo_plnyNazev = $row["plny_nazev"];
+    $projectInfo_kategorie = $row["kategorie"];
+    $projectInfo_popis = $row["plny_popis"];
+    $projectInfo_podminky = $row["podminky_vyuziti"];
+    $projectInfo_vyuzitelneProdukty = $row["vyuzitelne_produkty"];
+    $projectInfo_swot = $row["SWOT_analyza"];
+    $projectInfo_cilovaSkupina = $row["cilova_skupina"];
+    $projectInfo_ekonomickePodminky = $row["ekonomicke_podminky"];
+    $projectInfo_personal = $row["personálni_narocnost"];
+    $projectInfo_pravni = $row["pravni_aspekty"];
+    $projectInfo_prikladyPraxe = $row["priklad_praxe"];
+    $projectInfo_souvisejiciKategorie = $row["souvisejici_kategorie"];
 
   }
   echo "";
@@ -128,6 +129,10 @@ $projectInfo_souvisejiciKategorie = str_replace("<br>","",utf8_decode($projectIn
 //$popis = iconv('UTF-8', 'windows-1252', $popis);
 //$podminky = iconv('UTF-8', 'windows-1252', $podminky);
 
+
+$pdf->title = utf8_decode("Typové řešení: ") . $projectInfo_plnyNazev;
+
+$pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->Ln(10);
 
