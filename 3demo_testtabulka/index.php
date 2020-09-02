@@ -142,8 +142,8 @@ include("includes/tableprojectswebmenu.php");
             //conect to the database
             //old: $conn = mysqli_conect("md54.wedos.net", "a223948_sbforum", "phx5EXKm", "d223948_sbforum");
             //in case of error during conecting to the database display error
-            if ($con_projects-> conect_error) {
-                die("conection Failed:". $con_projects-> conect_error);
+            if($con->connect_error) {
+              die("Connection failed: " . $con->connect_error);
             }
 
             //truncate a string only at a whitespace (by nogdog)
