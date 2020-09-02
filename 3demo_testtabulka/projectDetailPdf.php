@@ -5,6 +5,36 @@
 require("includes/fpdf182/fpdf.php");
 $pdf = new FPDF();
 
+//set PDF header and footer
+
+class PDF extends FPDF
+{
+// Page header
+function Header()
+{
+    // Logo
+    $this->Image('includes/fpdf182/logoPrint.png',10,6,30);
+    // Arial bold 15
+    $this->SetFont('Arial','B',15);
+    // Move to the right
+    $this->Cell(80);
+    // Title
+    $this->Cell(30,10,'Title',1,0,'C');
+    // Line break
+    $this->Ln(20);
+}
+
+// Page footer
+function Footer()
+{
+    // Position at 1.5 cm from bottom
+    $this->SetY(-15);
+    // Arial italic 8
+    $this->SetFont('Arial','I',8);
+    // Page number
+    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+}
+}
 
 //! this is custom for each built location!
 require 'config/config2.php';
@@ -63,7 +93,6 @@ if ($results-> num_rows > 0 ) {
       $projectInfo_kategorie = $row["kategorie"];
       $projectInfo_popis = $row["plny_popis"];
       $projectInfo_podminky = $row["podminky_vyuziti"];
-
       $projectInfo_vyuzitelneProdukty = $row["vyuzitelne_produkty"];
       $projectInfo_swot = $row["SWOT_analyza"];
       $projectInfo_cilovaSkupina = $row["cilova_skupina"];
@@ -90,12 +119,10 @@ $projectInfo_vyuzitelneProdukty = str_replace("<br>","",utf8_decode($projectInfo
 $projectInfo_swot = str_replace("<br>","",utf8_decode($projectInfo_swot));
 $projectInfo_cilovaSkupina = str_replace("<br>","",utf8_decode($projectInfo_cilovaSkupina));
 $projectInfo_ekonomickePodminky = str_replace("<br>","",utf8_decode($projectInfo_ekonomickePodminky));
-/* //TODO
-$projectInfo_personal;
-$projectInfo_pravni;
-$projectInfo_prikladyPraxe;
-$projectInfo_souvisejiciKategorie;
-*/
+$projectInfo_personal = str_replace("<br>","",utf8_decode($projectInfo_personal));
+$projectInfo_pravni = str_replace("<br>","",utf8_decode($projectInfo_pravni));
+$projectInfo_prikladyPraxe = str_replace("<br>","",utf8_decode($projectInfo_prikladyPraxe));
+$projectInfo_souvisejiciKategorie = str_replace("<br>","",utf8_decode($projectInfo_souvisejiciKategorie));
 
 //$plnyNazev = iconv('UTF-8', 'windows-1252', $plnyNazev);
 //$popis = iconv('UTF-8', 'windows-1252', $popis);
@@ -138,6 +165,26 @@ $pdf->SetFont('Arial','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("EKONOMICKÉ PODMÍNKY") . "\n" ));
 $pdf->SetFont('Arial','',12);
 $pdf->Write(8,$projectInfo_ekonomickePodminky);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PERSONÁLNÍ NÁROČNOST") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_personal);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PRÁVNÍ ASPEKTY") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_pravni);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PŘÍKLADY DOBRÉ PRAXE") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_prikladyPraxe);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("SOUVISEJÍCÍ KATEGORIE") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_souvisejiciKategorie);
 
 //add content to PDF
 $pdf->Output();
