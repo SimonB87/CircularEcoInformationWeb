@@ -1,14 +1,10 @@
 <?php
 //TODO - set UTF 8 according to http://zaachi.com/2008/09/02/fpdf-jak-na-ceske-znaky.html
 
-//set initial PDF library
-
+//set initial PDF library - this has to be on top of the file
 require("includes/fpdf182/fpdf.php");
 $pdf = new FPDF();
-$pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10,'Hello World 1!');
-$pdf->Cell(40,10,'Hello World 1!');
+
 
 
 require 'config/config2.php';
@@ -41,10 +37,18 @@ if (!mysqli_set_charset($con, "utf8")) {
 }
 
 //prepare variables to store values
-$plnyNazev = "";
-$kategorie = "";
-$popis = "";
-$podminky = "";
+$projectInfo_plnyNazev = "";
+$projectInfo_kategorie = "";
+$projectInfo_popis = "";
+$projectInfo_podminky = "";
+$projectInfo_vyuzitelneProdukty = "";
+$projectInfo_swot = "";
+$projectInfo_cilovaSkupina = "";
+$projectInfo_ekonomickePodminky = "";
+$projectInfo_personal = "";
+$projectInfo_pravni = "";
+$projectInfo_prikladyPraxe = "";
+$projectInfo_souvisejiciKategorie = "";
 
 
 //Select columns named from "a" to "e" from a database
@@ -55,12 +59,21 @@ $results = $con-> query($sql);
 if ($results-> num_rows > 0 ) {
   while ($row = $results-> fetch_assoc()) {
 
-      $plnyNazev = $row["plny_nazev"];
-      $kategorie = $row["kategorie"];
-      $popis = $row["plny_popis"];
-      $podminky = $row["podminky_vyuziti"];
+      $projectInfo_plnyNazev = $row["plny_nazev"];
+      $projectInfo_kategorie = $row["kategorie"];
+      $projectInfo_popis = $row["plny_popis"];
+      $projectInfo_podminky = $row["podminky_vyuziti"];
 
-      /*echo "<p id='projectDetailDesc--nazevTypovehoReseni' style='display:none; visibility:hidden;'>Název typového řešení</p>";
+      $projectInfo_vyuzitelneProdukty = $row["vyuzitelne_produkty"];
+      $projectInfo_swot = $row["SWOT_analyza"];
+      $projectInfo_cilovaSkupina = $row["cilova_skupina"];
+      $projectInfo_ekonomickePodminky = $row["ekonomicke_podminky"];
+      $projectInfo_personal = $row["personálni_narocnost"];
+      $projectInfo_pravni = $row["pravni_aspekty"];
+      $projectInfo_prikladyPraxe = $row["priklad_praxe"];
+      $projectInfo_souvisejiciKategorie = $row["souvisejici_kategorie"];
+      /*
+      echo "<p id='projectDetailDesc--nazevTypovehoReseni' style='display:none; visibility:hidden;'>Název typového řešení</p>";
 
       echo "<h2 id='projectDetail--titul'>".$row["plny_nazev"]."</h2>";
 
@@ -95,30 +108,64 @@ else {
 //Close the variable after finishing
 $con-> close();
 
-/* //check what is in database
-echo "Plny nazev: " . $plnyNazev;
-echo "<br>";
-echo "Kategorie: " . $kategorie;
-*/
 
-$plnyNazev = utf8_decode($plnyNazev);
-$popis = utf8_decode($popis);
-$podminky = utf8_decode($podminky);
+$projectInfo_plnyNazev = str_replace("<br>","",utf8_decode($projectInfo_plnyNazev));
+$projectInfo_popis = str_replace("<br>","",utf8_decode($projectInfo_popis));
+$projectInfo_podminky = str_replace("<br>","",utf8_decode($projectInfo_podminky));
+$projectInfo_vyuzitelneProdukty = str_replace("<br>","",utf8_decode($projectInfo_vyuzitelneProdukty));
+$projectInfo_swot = str_replace("<br>","",utf8_decode($projectInfo_swot));
+$projectInfo_cilovaSkupina = str_replace("<br>","",utf8_decode($projectInfo_cilovaSkupina));
+$projectInfo_ekonomickePodminky = str_replace("<br>","",utf8_decode($projectInfo_ekonomickePodminky));
+/* //TODO
+$projectInfo_personal;
+$projectInfo_pravni;
+$projectInfo_prikladyPraxe;
+$projectInfo_souvisejiciKategorie;
+*/
 
 //$plnyNazev = iconv('UTF-8', 'windows-1252', $plnyNazev);
 //$popis = iconv('UTF-8', 'windows-1252', $popis);
 //$podminky = iconv('UTF-8', 'windows-1252', $podminky);
 
 $pdf->AddPage();
-$pdf->SetFont('Arial','',12);
 $pdf->Ln(10);
-$pdf->Write(8,$plnyNazev);
-$pdf->Write(8,$popis);
-$pdf->Write(8,$podminky);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PLNÝ NÁZEV") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_plnyNazev);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("POPIS PROJEKTU") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_popis);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("PODMÍNKY VYUŽITÍ") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_podminky);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("VYUŽITELNÉ PRODUKTY") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_vyuzitelneProdukty);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("SWOT ANALÝZA") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_swot);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("CÍLOVÁ SKUPINA") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_cilovaSkupina);
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Write(8,("\n" . "\n" . utf8_decode("EKONOMICKÉ PODMÍNKY") . "\n" ));
+$pdf->SetFont('Arial','',12);
+$pdf->Write(8,$projectInfo_ekonomickePodminky);
 
 //add content to PDF
 $pdf->Output();
 
-
 ?>
-
