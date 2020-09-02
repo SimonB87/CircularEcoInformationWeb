@@ -17,7 +17,7 @@ include("includes/tableprojectswebmenu.php");
   </div>
   <div class="row">
     <div id="projectDetailBody" class="col-md-12">
-      <a href="#" class="projectDetailPdfDowload" onclick="htmlToPdf();"> <img src="assets/images/pdfDownload.png" alt="Stáhni PDF" width="50" height="50" class=""> * PDF * test!!!</a>
+      
       <br>
 
         <div>
@@ -30,6 +30,11 @@ include("includes/tableprojectswebmenu.php");
             <a href="http://www.obcevkruhu.cz/index.php#jakNaTo_starosta" style="color:#fff">
               Jsem <strong> starosta </strong>, jak dál? &nbsp; <i class="fas fa-users"></i>
             </a></button>
+            &nbsp; &nbsp; 
+            <button type="button" class="btn btn-info">
+            <a id="pdfLink" href="" style="color:#fff">
+              Uložit <strong> PDF </strong> &nbsp; <i class="fa fa-file-pdf-o"></i>
+            </a></button> 
         </div>
 
         <?php
@@ -46,8 +51,8 @@ include("includes/tableprojectswebmenu.php");
         //conect to the database
         //old: $conn = mysqli_conect("md54.wedos.net", "a223948_sbforum", "phx5EXKm", "d223948_sbforum");
         //in case of error during conecting to the database display error
-        if ($con-> conect_error) {
-          die("conection Failed:". $con-> conect_error);
+        if($con->connect_error) {
+          die("Connection failed: " . $con->connect_error);
         }
 
         //print the used character set - just for testing
@@ -60,7 +65,9 @@ include("includes/tableprojectswebmenu.php");
         } else {
               //printf("Current character set: %s\n", mysqli_character_set_name($con));//used only for testing
         }
-
+        
+        $getProjectIdForAhrefLink = $project_number;
+        echo "<div id='project_number_value' style='display:none; visibility:hidden'>" . $getProjectIdForAhrefLink ."</div>";
 
         //Select columns named from "a" to "e" from a database
         $sql = "SELECT kategorie, plny_nazev, plny_popis, podminky_vyuziti, vyuzitelne_produkty, SWOT_analyza, cilova_skupina, ekonomicke_podminky, personálni_narocnost, pravni_aspekty, priklad_praxe, souvisejici_kategorie FROM projety_ce WHERE id='$project_number'";
@@ -106,6 +113,7 @@ include("includes/tableprojectswebmenu.php");
 
         ?>
 
+
         <div>
           <button type="button" class="btn btn-success">
             <a href="http://www.obcevkruhu.cz/index.php#jakNaTo_obcan" style="color:#fff">
@@ -116,6 +124,12 @@ include("includes/tableprojectswebmenu.php");
             <a href="http://www.obcevkruhu.cz/index.php#jakNaTo_starosta" style="color:#fff">
               Jsem <strong> starosta </strong>, jak dál? &nbsp; <i class="fas fa-users"></i>
             </a></button>
+            &nbsp; &nbsp;
+            <button type="button" class="btn btn-info">
+            <a id="pdfLink" href="" style="color:#fff">
+              Uložit <strong> PDF </strong> &nbsp; <i class="fa fa-file-pdf-o"></i>
+            </a></button> 
+
         </div>
 
     <!-- web to PDF -->
@@ -125,6 +139,14 @@ include("includes/tableprojectswebmenu.php");
     <script src="assets/js/pdfgeneration/package/jspdf.min.js"></script>
     <script src="assets/js/pdfgeneration/simon/fontfreeserifnormal.js"></script>
     <script src="assets/js/pdfgeneration/simon/pdffromhtml.js"></script> 
+    <script> 
+      var projectNumber = document.querySelector('#project_number_value').innerText;
+      var urlString = "projectdetailpdf.php?projectnumber=" + projectNumber;
+      console.log(projectNumber);
+      console.log(urlString);
+      document.querySelector('#pdfLink').setAttribute('href', urlString);
+      document.querySelector('#pdfLink2').setAttribute('href', urlString);
+    </script>";
 
     </div>
   </div>
