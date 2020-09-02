@@ -6,7 +6,7 @@ require("includes/fpdf182/fpdf.php");
 $pdf = new FPDF();
 
 
-
+//! this is custom for each built location!
 require 'config/config2.php';
 
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -72,7 +72,7 @@ if ($results-> num_rows > 0 ) {
       $projectInfo_pravni = $row["pravni_aspekty"];
       $projectInfo_prikladyPraxe = $row["priklad_praxe"];
       $projectInfo_souvisejiciKategorie = $row["souvisejici_kategorie"];
-      
+
   }
   echo "";
 }
