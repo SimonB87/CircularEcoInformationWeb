@@ -126,7 +126,7 @@ include("includes/tableprojectswebmenu.php");
             </a></button>
             &nbsp; &nbsp;
             <button type="button" class="btn btn-info">
-            <a id="pdfLink" href="" style="color:#fff">
+            <a id="pdfLink2" href="" style="color:#fff">
               Uložit <strong> PDF </strong> &nbsp; <i class="fa fa-file-pdf-o"></i>
             </a></button> 
 
