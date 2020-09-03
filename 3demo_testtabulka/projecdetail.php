@@ -32,8 +32,8 @@ include("includes/tableprojectswebmenu.php");
             </a></button>
             &nbsp; &nbsp; 
             <button type="button" class="btn btn-info">
-            <a id="pdfLink" href="" style="color:#fff">
-              Uložit <strong> PDF </strong> &nbsp; <i class="fa fa-file-pdf-o"></i>
+            <a id="pdfLink" href="" style="color:#fff" target="_blank">
+              Uložit <strong> PDF </strong> &nbsp; <i class="far fa-file-pdf"></i>
             </a></button> 
         </div>
 
@@ -126,8 +126,8 @@ include("includes/tableprojectswebmenu.php");
             </a></button>
             &nbsp; &nbsp;
             <button type="button" class="btn btn-info">
-            <a id="pdfLink2" href="" style="color:#fff">
-              Uložit <strong> PDF </strong> &nbsp; <i class="fa fa-file-pdf-o"></i>
+            <a id="pdfLink2" href="" style="color:#fff" target="_blank">
+              Uložit <strong> PDF </strong> &nbsp; <i class="far fa-file-pdf"></i>
             </a></button> 
 
         </div>
