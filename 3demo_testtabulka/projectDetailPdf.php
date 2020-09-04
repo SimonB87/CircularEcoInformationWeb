@@ -11,7 +11,8 @@ class PDF extends FPDF
     // Logo
     $this->Image("includes/fpdf182/logoprint.png",10,6,20);
     // Arial bold 15
-    $this->SetFont('Arial','B',15);
+    $this->AddFont('ArialCZ','B','arialb.php');
+    $this->SetFont('ArialCZ','B',15);
     // Move to the right
     $this->Cell(80);
     // Title
@@ -27,8 +28,9 @@ class PDF extends FPDF
   {
     // Position at 1.5 cm from bottom
     $this->SetY(-30);
-    // Arial italic 8
-    $this->SetFont('Arial','I',8);
+    // Arial italic 8,
+    $this->AddFont('ArialCZ','','arial.php');
+    $this->SetFont('ArialCZ','',8);
     $this->Cell(0,15,'www.Obcevkruhu.cz',0,0,'C');
     $this->Ln(10);
     // Page number
@@ -113,8 +115,8 @@ else {
 $con-> close();
 
 
-$projectInfo_plnyNazev = str_replace("<br>","",utf8_decode($projectInfo_plnyNazev));
-$projectInfo_popis = str_replace("<br>","",utf8_decode($projectInfo_popis));
+//$projectInfo_plnyNazev = str_replace("<br>","",utf8_decode($projectInfo_plnyNazev));
+//$projectInfo_popis = str_replace("<br>","",utf8_decode($projectInfo_popis));
 $projectInfo_podminky = str_replace("<br>","",utf8_decode($projectInfo_podminky));
 $projectInfo_vyuzitelneProdukty = str_replace("<br>","",utf8_decode($projectInfo_vyuzitelneProdukty));
 $projectInfo_swot = str_replace("<br>","",utf8_decode($projectInfo_swot));
@@ -125,70 +127,79 @@ $projectInfo_pravni = str_replace("<br>","",utf8_decode($projectInfo_pravni));
 $projectInfo_prikladyPraxe = str_replace("<br>","",utf8_decode($projectInfo_prikladyPraxe));
 $projectInfo_souvisejiciKategorie = str_replace("<br>","",utf8_decode($projectInfo_souvisejiciKategorie));
 
-//$plnyNazev = iconv('UTF-8', 'windows-1252', $plnyNazev);
+
+$projectInfo_plnyNazev = str_replace("<br>","",iconv("UTF-8", "ISO-8859-2//TRANSLIT", $projectInfo_plnyNazev));
+$projectInfo_popis = str_replace("<br>","",iconv("UTF-8", "ISO-8859-2//TRANSLIT", $projectInfo_popis)); 
+
+//$projectInfo_plnyNazev = iconv('UTF-8', 'windows-1250', $projectInfo_plnyNazev); // iconv -i UTF-8 -t WINDOWS-1250
 //$popis = iconv('UTF-8', 'windows-1252', $popis);
 //$podminky = iconv('UTF-8', 'windows-1252', $podminky);
 
+//add custom fonts
+$pdf->AddFont('ArialCZ','','arial.php');
+$pdf->AddFont('ArialCZ','B','arialb.php');
 
-$pdf->title = utf8_decode("Typové řešení: ") . $projectInfo_plnyNazev;
+//title for header on top of page
+$pdf->title = iconv("UTF-8", "ISO-8859-2//TRANSLIT", "Typové řešení: ") . $projectInfo_plnyNazev;
+
 
 $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->Ln(10);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("PLNÝ NÁZEV") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_plnyNazev);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("POPIS PROJEKTU") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_popis);
 
-$pdf->SetFont('Arial','B',16);
-$pdf->Write(8,("\n" . "\n" . utf8_decode("PODMÍNKY VYUŽITÍ") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','B',16);
+$pdf->Write(8,("\n" . "\n" . iconv("UTF-8", "ISO-8859-2//TRANSLIT","PODMÍNKY VYUŽITÍ") . "\n" ));
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_podminky);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("VYUŽITELNÉ PRODUKTY") . "\n" ));
 $pdf->SetFont('Arial','',12);
 $pdf->Write(8,$projectInfo_vyuzitelneProdukty);
 
 $pdf->SetFont('Arial','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("SWOT ANALÝZA") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_swot);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("CÍLOVÁ SKUPINA") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_cilovaSkupina);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("EKONOMICKÉ PODMÍNKY") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_ekonomickePodminky);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("PERSONÁLNÍ NÁROČNOST") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_personal);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("PRÁVNÍ ASPEKTY") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_pravni);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("PŘÍKLADY DOBRÉ PRAXE") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_prikladyPraxe);
 
-$pdf->SetFont('Arial','B',16);
+$pdf->SetFont('ArialCZ','B',16);
 $pdf->Write(8,("\n" . "\n" . utf8_decode("SOUVISEJÍCÍ KATEGORIE") . "\n" ));
-$pdf->SetFont('Arial','',12);
+$pdf->SetFont('ArialCZ','',12);
 $pdf->Write(8,$projectInfo_souvisejiciKategorie);
 
 //add content to PDF
