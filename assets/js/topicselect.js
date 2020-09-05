@@ -53,7 +53,7 @@
 
     selectedTopicString = $("#submitresults").attr("data-selected");
     selectedTopicString =
-      "3demo_testtabulka/index.php?searchstring=[" + selectedTopicString + "]";
+      "sollution/index.php?searchstring=[" + selectedTopicString + "]";
     $("#submitresults").attr("href", selectedTopicString);
 
     if ($(".checkbox_target[status-checked=true]").length == 0) {
