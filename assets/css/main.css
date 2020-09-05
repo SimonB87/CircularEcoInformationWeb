@@ -287,6 +287,16 @@ h6 {
   letter-spacing: 0.2rem;
 }
 
+.inner.newHomePage h1,
+.inner.newHomePage h2,
+.inner.newHomePage h3,
+.inner.newHomePage h4,
+.inner.newHomePage h5,
+.inner.newHomePage h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 h1 a,
 h2 a,
 h3 a,
