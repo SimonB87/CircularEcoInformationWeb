@@ -42,7 +42,7 @@
               <strong>životní i sociální prostředí</strong>.
 			</p>
 			
-			<a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
+			<a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a>
 
           </div>
         </div>
@@ -72,7 +72,7 @@
               src="images/CircularniEkonomika-schema.jpg"
               alt="Schéma Cirkulární Ekonomiky"
 		  /></span>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a><p></p>
           <p>
             <strong>Oběhové hospodářství (circular economy, CE)</strong> je
             přirozený systém fungování přírodních a donedávna i antropogenních
@@ -111,7 +111,7 @@
             >. Aplikace bude uživatelům plně přístupná po skončení projektu a
             následně bude spravována aplikačním garantem.
 		  </p>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a>
         </article>
 
         <!-- Pohled EU na CE -->
@@ -121,7 +121,7 @@
             na Cirkulární Ekonomiku
           </h2>
 		  <span class="image main"><img src="images/circular_economy_closing_the_loop.png" alt="Cirkulární Ekonomika v EU"/></span>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a><p></p>
           <p>
             Při přechodu na oběhového hospodářství hrají klíčovou roli
             hospodářské subjekty a spotřebitelé, zatímco úkolem orgánů státní
@@ -201,7 +201,7 @@
             12 - zajistit udržitelné vzorce spotřeby a výroby) a plánu skupiny
             G7 o účinném využívání zdrojů (Evropská komise 2015).
 		  </p>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a>
         </article>
 
         <!-- CE a ČR -->
@@ -211,7 +211,7 @@
             a Česká Republika
           </h2>
 		  <span class="image main"><img src="images/pic03.jpg" alt=""/></span>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a><p></p>
           <p>
 			Prosazování principů cirkulární ekonomiky v České republice v návaznosti na Akční plán pro oběhové hospodářství prostřednictvím tzv. balíčku k oběhovému hospodářství, který byl schválen v květnu 2018 s transpoziční lhůtou dva roky, je na národní úrovni realizováno jak Ministerstvem průmyslu a obchodu (MPO), tak Ministerstvem životního prostředí (MŽP). Zatímco Ministerstvo průmyslu a obchodu nahlíží na přechod k oběhovému hospodářství zejména s ohledem na zajištění udržitelného růstu a posílení konkurenceschopnosti (nejen) České republiky cestou lepšího využívání zdrojů, snížení závislosti na primárních surovinách a vytvoření nových pracovních míst (MPO 2016) a věnuje se zejména odvětvím jako jsou plasty, potravinový odpad, kritické suroviny, příslušné problematice v oblasti stavebnictví a demolic nebo biomase a výrobkům z ní (MPO 2018), Ministerstvo životního prostředí se logicky zaměřuje na prosazování principů cirkulární ekonomiky jako na environmentálně šetrný způsob výroby, spotřeby a nakládání s odpady.
 			<p></p>
@@ -219,7 +219,7 @@
 			<p></p>
 			Jak už bylo popsáno, při prosazování principů oběhového hospodářství je zásadní role aktérů státní správy na všech úrovních, tedy i na regionální či lokální úrovni, stejně tak jako podniků a široké veřejnosti, kde je jedním z klíčových nástrojů šíření dobré praxe. 
 		  </p>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>			
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a>			
         </article>
 
         <!-- Principy CE ve výrobě -->
@@ -229,7 +229,7 @@
             ve výrobě
           </h2>
 		  <span class="image main"><img src="images/pic03.jpg" alt=""/></span>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a><p></p>
           <p>Principy oběhového hospodářství je nezbytné respektovat už na samém počátku životního cyklu výrobku, protože fáze návrhu i výrobní postupy mají dopad na získávání zdrojů, jejich využívání a vznik odpadu po celou dobu životnosti výrobku. Klíčová je zejména životnost výrobků, kdy lze dosáhnout delší doby životnosti či udržení výrobku ve fázi užití pomocí vhodného designu. Promyšlený design může vést také ke snadnější opravitelnosti, modernizaci či repasi výrobků, a může pomoci subjektům provádějícím recyklaci při rozmontování výrobků za účelem opětovného použití hodnotných surovin a součástí, kdy přímo napomáhá šetřit primární (nejen vzácné) zdroje  (Evropská komise 2015). </p><p>
 			Ačkoliv je tato skutečnost dobře známa, nejsou v rámci trhu požadavky na vhodný design dostatečně reflektovány. Jedním z cílů Evropské unie je proto podle Akčního plánu pro oběhové hospodářství poskytování pobídek pro zlepšení designu výrobků prostřednictvím jejich inovací při zachování podmínek jednotného trhu a hospodářské soutěže (Evropská komise 2015). </p><p>
 			S ohledem na vhodný ekodesign je pozornost věnována zejména elektrickým a elektronickým výrobkům, protože možnost jejich opravy  je výhodná pro spotřebitele, kdy zároveň dojde k udržení snadno opravitelných výrobků déle ve fázi užití,  a na konci jejich životnosti je klíčová jejich  snadná recyklovatelnost, zvláště s ohledem na cenné materiály, které jsou v těchto výrobcích zpravidla obsaženy (např. prvky vzácných zemin v elektronických zařízeních). Některé z požadavků na ekodesign elektrických a elektronických výrobků jsou již řešeny v rámci směrnice o ekodesignu 2009/125/ES, která se vztahuje na všechny výrobky spojené se spotřebou energie, a jejímž cílem je zlepšit účinnost a environmentální výkonnost výrobků spojených se spotřebou energie a klást důraz na aspekty oběhového hospodářství (Směrnice o ekodesignu 2009/125/ES). Zatímco však požadavky na ekodesign byly zaměřeny převážně na energetickou účinnost těchto výrobků, v budoucnu budou ze strany Evropské unie systematicky prozkoumávány otázky, jako je právě opravitelnost, trvanlivost, možnosti zdokonalení, recyklovatelnost či vymezení některých materiálů nebo látek, které tyto výrobky obsahují.  Podpora vhodného ekodesignu ze strany Evropské unie bude mimo jiné také zahrnovat stanovení výše finančního příspěvku, který hradí výrobci v rámci systémů rozšířené odpovědnosti výrobce, která bude stanovena na základě nákladů souvisejících s koncem životnosti jejich výrobků jako jeden z finančních nástrojů, jehož cílem je navrhování takových výrobků, které lze snadněji recyklovat nebo opětovně použít (Evropská komise 2015). </p><p>
@@ -245,7 +245,7 @@
         <article id="oprojektu">
           <h2 class="major">O projektu</h2>
 		  <span class="image main"><img src="images/pic03.jpg" alt=""/></span>
-		  <a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a><p></p>
+		  <a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a><p></p>
           <p>
 		  	Metodika vznikla jako hlavní výsledek řešení výzkumného projektu číslo TL01000217 s názvem Obce v
 			kruhu cirkulární ekonomiky, řešeného partnery: ECO trend Research centre s.r.o. a Vysoká škola
@@ -284,7 +284,7 @@
 			<strong>Doba řešení projektu:</strong> 01/2018 - 12/2020<br>
 		  </p>  
 
-			<a href="http://obcevkruhu.cz/0demo/register.php" class="button primary small">Přihlásit se</a>
+			<a href="http://obcevkruhu.cz/social/register.php" class="button primary small">Přihlásit se</a>
         </article>
 
 

@@ -102,7 +102,7 @@
             </li>
 			<li><a href="metodika.php">Metodika</a></li>
 			<li><a href="#oprojektu">O projektu</a></li>
-			<li><a href="0demo/register.php">Přihlásit se</a></li>
+			<li><a href="social/register.php">Přihlásit se</a></li>
 			<li><a href="#contact">Kontaktujte <br />nás</a></li>
 
           </ul>
