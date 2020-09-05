@@ -146,7 +146,7 @@ include("includes/tableprojectswebmenu.php");
       console.log(urlString);
       document.querySelector('#pdfLink').setAttribute('href', urlString);
       document.querySelector('#pdfLink2').setAttribute('href', urlString);
-    </script>";
+    </script>
 
     </div>
   </div>
