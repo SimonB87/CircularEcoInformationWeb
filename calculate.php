@@ -158,8 +158,8 @@
 						<form>
 							<div class="fields">
 							<div class="field full">
-								<h2 class="align-center">Výsledky porovnání </h2>
-								<h2 class="align-center">pro obec: <span id="townName"></span></h2>
+								<h2 class="align-center">Analýza odpadového hospodářství </h2>
+								<h2 class="align-center">pro obec: <span id="townName" class="valueHighlight"></span></h2>
 							</div>
 
 								<div class="field half result1">
