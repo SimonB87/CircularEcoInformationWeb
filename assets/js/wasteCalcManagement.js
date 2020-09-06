@@ -50,6 +50,7 @@ function calculateWaste() {
   document.getElementById("region_cr").classList.add("valueDisabled");
   document.getElementById("town_name").setAttribute("disabled", "");
   document.getElementById("town_name").classList.add("valueDisabled");
+  document.getElementById("townName").innerText = document.getElementById("town_name").value;
 
   displayComparisonValues();
 
