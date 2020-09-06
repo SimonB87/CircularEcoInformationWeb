@@ -65,83 +65,83 @@
 								<div class="field half formTogler_panel1">
 									<label for="naklady_oh">Náklady na Odpadové hospodářství (OH)<br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_oh" id="naklady_oh" class="wasteResult01"/>
-									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 1106</p>
+									<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 1106</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="prijmy_oh">Přijmy z OH <br>(Kč/obyvatele)</label>
 									<input type="text" name="prijmy_oh" id="prijmy_oh" class="wasteResult02"/>
-									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 612</p>
+									<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 612</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_tuny">Náklady na tříděný sběr <br>(Kč/t)</label>
 									<input type="text" name="naklady_tridenySber_tuny" id="naklady_tridenySber_tuny" class="wasteResult03"/>
-									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 3760</p>
+									<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 3760</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_tridenySber_perCapita">Náklady na tříděný sběr <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_tridenySber_perCapita" id="naklady_tridenySber_perCapita" class="wasteResult04"/>
-									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 164</p>
+									<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 164</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_tuny">Náklady za Směsný komunální odpad (SKO) <br>(Kč/t)</label>
 									<input type="text" name="naklady_sko_tuny" id="naklady_sko_tuny" class="wasteResult05" />
-									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 2605</p>
+									<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 2605</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="naklady_sko_perCapita">Náklady za SKO <br>(Kč/obyvatele)</label>
 									<input type="text" name="naklady_sko_perCapita" id="naklady_sko_perCapita" class="wasteResult06"/>
-									<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 501</p>
+									<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 501</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="produkce_odpady">Produkce odpadů - celková <br>(kg/obyvatele)</label>
 									<input type="text" name="produkce_odpady" id="produkce_odpady" class="wasteResult07"/>
-									<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 3325</p>
+									<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 3325</p>
 								</div>
 								<div class="field half formTogler_panel1">
 									<label for="produkce_o_odpadu">Produkce ostatních (O) odpadů <br>(kg/obyvatele)</label>
 									<input type="text" name="produkce_o_odpadu" id="produkce_o_odpadu" class="wasteResult08"/>
-									<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 3161</p>
+									<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 3161</p>
 								</div>
 							<!-- formTogler_panel2 childs -->
 							<div class="field half formTogler_panel2">
 								<label for="produkce_n_odpadu">Produkce nebezpečných (N) odpadů <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_n_odpadu" id="produkce_n_odpadu" class="wasteResult09"/>
-								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 163</p>
+								<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 163</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_komun_odpadu">Produkce komunálních odpadů (skupina 20) <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_komun_odpadu" id="produkce_komun_odpadu" class="wasteResult10"/>
-								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 542</p>
+								<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 542</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_sko">Produkce SKO <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_sko" id="produkce_sko" class="wasteResult11"/>
-								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 259</p>
+								<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 259</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_plast">Produkce plast <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_plast" id="produkce_plast" class="wasteResult12"/>
-								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 25,2</p>
+								<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 25,2</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_papir">Produkce papír <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_papir" id="produkce_papir" class="wasteResult13"/>
-								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 49,8</p>
+								<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 49,8</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_sklo">Produkce sklo <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_sklo" id="produkce_sklo" class="wasteResult14"/>
-								<p class="tooltip"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 20,5</p>
+								<p class="tooltip"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 20,5</p>
 							</div>
 							<div class="field half formTogler_panel2">
 								<label for="produkce_kovy">Produkce kovy <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_kovy" id="produkce_kovy" class="wasteResult15"/>
-								<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota za celý rok je: 7,5</p>
+								<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>celostátní průměr za celý rok je: 7,5</p>
 							</div> 
 							<div class="field half formTogler_panel2 hideElement">
 								<label for="produkce_bro_zahrady">Produkce biologicky rozložitelných odpadů (BRO) ze zahrad a parků <br>(kg/obyvatele)</label>
 								<input type="text" name="produkce_bro_zahrady" id="produkce_bro_zahrady" class="wasteResult16"/>
-								<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>republiková hodnota za celý rok je: neznámo</p>
+								<p class="tooltip tooltip-bottom"><strong>Nápověda: </strong>celostátní průměr za celý rok je: neznámo</p>
 							</div>
 						</div>
 						<ul class="actions formToglerActions">
@@ -164,8 +164,8 @@
 										<h3 class="result_title">Náklady na OH</h3>
 										<h4 class="result_unit">(Kč/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice01" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion01" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry01" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion01" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry01" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart1" class="google_gauge">
   									</div>
 									</div>
@@ -175,8 +175,8 @@
 										<h3 class="result_title">Přijmy z OH</h3>
 										<h4 class="result_unit">(Kč/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice02" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion02" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry02" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion02" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry02" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart2" class="google_gauge">
   									</div>
 									</div>
@@ -186,8 +186,8 @@
 										<h3 class="result_title">Náklady na tříděný sběr</h3>
 										<h4 class="result_unit">(Kč/t)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice03" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion03" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry03" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion03" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry03" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart3" class="google_gauge">
   									</div>
 									</div>
@@ -197,8 +197,8 @@
 										<h3 class="result_title">Náklady na tříděný sběr</h3>
 										<h4 class="result_unit">(Kč/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice04" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion04" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry04" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion04" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry04" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart4" class="google_gauge">
   									</div>
 									</div>
@@ -208,8 +208,8 @@
 										<h3 class="result_title">Náklady za SKO</h3>
 										<h4 class="result_unit">(Kč/t)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice05" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion05" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry05" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion05" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry05" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart5" class="google_gauge">
   									</div>
 									</div>
@@ -219,8 +219,8 @@
 										<h3 class="result_title">Náklady za SKO</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice06" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion06" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry06" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion06" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry06" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart6" class="google_gauge">
   									</div>
 									</div>
@@ -230,8 +230,8 @@
 										<h3 class="result_title">Produkce odpadů - celková</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice07" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion07" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry07" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion07" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry07" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart7" class="google_gauge">
   									</div>
 									</div>
@@ -241,8 +241,8 @@
 										<h3 class="result_title">Produkce O odpadů</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice08" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion08" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry08" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion08" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry08" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart8" class="google_gauge">
   									</div>
 									</div>
@@ -252,8 +252,8 @@
 										<h3 class="result_title">Produkce N odpadů</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice09" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion09" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry09" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion09" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry09" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart9" class="google_gauge">
   									</div>
 									</div>
@@ -263,8 +263,8 @@
 										<h3 class="result_title">Produkce komunálních odpadů (skupina 20)</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice10" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion10" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry10" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion10" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry10" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart10" class="google_gauge">
   									</div>
 									</div>
@@ -274,8 +274,8 @@
 										<h3 class="result_title">Produkce SKO</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice11" class="valueHighlight"></span></p>
-										<p class="regionalValue">Regionální hodnota: <span id="valueCompariosonRegion11" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry11" class="valueHighlight"></span></p>
+										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion11" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry11" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart11" class="google_gauge">
   									</div>
 									</div>
@@ -285,8 +285,8 @@
 										<h3 class="result_title">Produkce plast</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice12" class="valueHighlight"></span></p>
-										<p class="regionalValue hideElement">Regionální hodnota: <span id="valueCompariosonRegion12" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry12" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement">Krajský průměr: <span id="valueCompariosonRegion12" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry12" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart12" class="google_gauge">
   									</div>
 									</div>
@@ -296,8 +296,8 @@
 										<h3 class="result_title">Produkce papír</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice13" class="valueHighlight"></span></p>
-										<p class="regionalValue hideElement hideThisElement">Regionální hodnota: <span id="valueCompariosonRegion13" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry13" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion13" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry13" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart13" class="google_gauge">
   									</div>
 									</div>
@@ -307,8 +307,8 @@
 										<h3 class="result_title">Produkce sklo</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice14" class="valueHighlight"></span></p>
-										<p class="regionalValue hideElement hideThisElement">Regionální hodnota: <span id="valueCompariosonRegion14" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry14" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion14" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry14" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart14" class="google_gauge">
   									</div>
 									</div>
@@ -318,8 +318,8 @@
 										<h3 class="result_title">Produkce kovy</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice15" class="valueHighlight"></span></p>
-										<p class="regionalValue hideElement hideThisElement">Regionální hodnota: <span id="valueCompariosonRegion15" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry15" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion15" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry15" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart15" class="google_gauge">
   									</div>
 									</div>
@@ -329,8 +329,8 @@
 										<h3 class="result_title">Produkce BRO ze zahrad a parků</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
 										<p>Vaše hodnota: <span id="wasteResultNotice16" class="valueHighlight"></span></p>
-										<p class="regionalValue hideElement hideThisElement">Regionální hodnota: <span id="valueCompariosonRegion16" class="valueHighlight"></span></p>
-										<p class="countryValue">Republiková hodnota: <span id="valueCompariosonCountry16" class="valueHighlight"></span></p>
+										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion16" class="valueHighlight"></span></p>
+										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry16" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart16" class="google_gauge">
   									</div>
 									</div>
