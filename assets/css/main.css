@@ -2145,17 +2145,38 @@ li.formActions_goHome a {
   visibility: hidden;
 }
 
-.results.formTogler_panel3 .chartsSelection:hover p.chartsSelection__title {
+.results.formTogler_panel3 .chartsSelection:hover p.chartsSelection__title,
+.results.formTogler_panel3 .chartsSelection:focus p.chartsSelection__title {
   display: none;
   visibility: hidden;
 }
 
 .results.formTogler_panel3
   .chartsSelection:hover
+  ul.actions.chartsSelection__toglerActions,
+.results.formTogler_panel3
+  .chartsSelection:focus
   ul.actions.chartsSelection__toglerActions {
   display: flex;
   visibility: visible;
   justify-content: center;
+}
+
+@media screen and (max-width: 528px) {
+  .results.formTogler_panel3
+    .chartsSelection:hover
+    ul.actions.chartsSelection__toglerActions,
+  .results.formTogler_panel3
+    .chartsSelection:focus
+    ul.actions.chartsSelection__toglerActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .results.formTogler_panel3 ul.actions.chartsSelection__toglerActions li {
+    max-width: 4.5rem;
+    padding: 0 0.5rem;
+  }
 }
 
 .wasteCaclForm .field {
