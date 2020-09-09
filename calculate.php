@@ -162,6 +162,14 @@
 								<h2 class="align-center">pro obec: <span id="townName" class="valueHighlight"></span></h2>
 							</div>
 
+							<div class="chartsSelection field full">
+								<p class="chartsSelection__title align-center">Změnit druh grafu</p>
+								<ul class="actions chartsSelection__toglerActions align-center">
+									<li id="chartsToglerActions__gauge align-center" onclick="console.log('show gauges!')"><span class="button primary disabled"><i class="fas fa-tachometer-alt"></i></span></li>
+									<li id="chartsToglerActions__chart align-center" onclick="console.log('show charts!')"><span class="button primary"><i class="fas fa-chart-bar"></i></span></li>
+								</ul>
+							</div>
+
 								<div class="field half result1">
 									<div class="gauge">
 										<h3 class="result_title">Náklady na OH</h3>
