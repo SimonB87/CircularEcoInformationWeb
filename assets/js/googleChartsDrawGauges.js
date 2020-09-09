@@ -395,7 +395,7 @@ function drawChart() {
   if (! (gaugeData11.x02_gaugeMainValue == 0)) {
     chart11.draw(data11, options11);
   } else {
-    document.querySelector(".results.formTogler_panel3 .fields .field.half.result10").classList.add("displayNone");
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result11").classList.add("displayNone");
   }
 
   if (! (gaugeData12.x02_gaugeMainValue == 0)) {
