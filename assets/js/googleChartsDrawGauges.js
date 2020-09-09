@@ -254,7 +254,7 @@ function drawChart() {
   ]);
   var data10 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData10.x01_labelName(), gaugeData10.x07_gaugeMinimum],
+    ["PRODUKCE KOMUNÁLNÍCH ODPADŮ", gaugeData10.x07_gaugeMinimum],
   ]);
   var data11 = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
@@ -462,7 +462,7 @@ function drawChart() {
   ]);
   var data10ed = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    [gaugeData10.x01_labelName(), gaugeData10.x02_gaugeMainValue],
+    ["PRODUKCE KOMUNÁLNÍCH ODPADŮ", gaugeData10.x02_gaugeMainValue],
   ]);
   var data11ed = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
