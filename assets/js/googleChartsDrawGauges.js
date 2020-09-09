@@ -327,21 +327,102 @@ function drawChart() {
   var chart14 = new google.visualization.Gauge(document.getElementById("google_gauge_chart14"));
   var chart15 = new google.visualization.Gauge(document.getElementById("google_gauge_chart15"));
 
-  chart1.draw(data1, options1);
-  chart2.draw(data2, options2);
-  chart3.draw(data3, options3);
-  chart4.draw(data4, options4);
-  chart5.draw(data5, options5);
-  chart6.draw(data6, options6);
-  chart7.draw(data7, options7);
-  chart8.draw(data8, options8);
-  chart9.draw(data9, options9);
-  chart10.draw(data10, options10);
-  chart11.draw(data11, options11);
-  chart12.draw(data12, options12);
-  chart13.draw(data13, options13);
-  chart14.draw(data14, options14);
-  chart15.draw(data15, options15);
+  //draw gauges only their input value is set
+  for (let i = 1; i < 16; i++){
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result" + i).classList.remove("displayNone");
+  }
+
+  if (! (gaugeData1.x02_gaugeMainValue == 0)) {
+    chart1.draw(data1, options1);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result1").classList.add("displayNone");
+  }
+
+  if (! (gaugeData2.x02_gaugeMainValue == 0)) {
+    chart2.draw(data2, options2);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result2").classList.add("displayNone");
+  }
+
+  if (! (gaugeData3.x02_gaugeMainValue == 0)) {
+    chart3.draw(data3, options3);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result3").classList.add("displayNone");
+  }
+
+  if (! (gaugeData4.x02_gaugeMainValue == 0)) {
+    chart4.draw(data4, options4);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result4").classList.add("displayNone");
+  }
+
+  if (! (gaugeData5.x02_gaugeMainValue == 0)) {
+    chart5.draw(data5, options5);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result5").classList.add("displayNone");
+  }
+
+  if (! (gaugeData6.x02_gaugeMainValue == 0)) {
+    chart6.draw(data6, options6);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result6").classList.add("displayNone");
+  }
+
+  if (! (gaugeData7.x02_gaugeMainValue == 0)) {
+    chart7.draw(data7, options7);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result7").classList.add("displayNone");
+  }
+
+  if (! (gaugeData8.x02_gaugeMainValue == 0)) {
+    chart8.draw(data8, options8);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result8").classList.add("displayNone");
+  }
+
+  if (! (gaugeData9.x02_gaugeMainValue == 0)) {
+    chart9.draw(data9, options9);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result9").classList.add("displayNone");
+  }
+
+  if (! (gaugeData10.x02_gaugeMainValue == 0)) {
+    chart10.draw(data10, options10);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result10").classList.add("displayNone");
+  }
+
+  if (! (gaugeData11.x02_gaugeMainValue == 0)) {
+    chart11.draw(data11, options11);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result10").classList.add("displayNone");
+  }
+
+  if (! (gaugeData12.x02_gaugeMainValue == 0)) {
+    chart12.draw(data12, options12);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result12").classList.add("displayNone");
+  }
+
+  if (! (gaugeData13.x02_gaugeMainValue == 0)) {
+    chart13.draw(data13, options13);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result13").classList.add("displayNone");
+  }
+
+  if (! (gaugeData14.x02_gaugeMainValue == 0)) {
+    chart14.draw(data14, options14);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result14").classList.add("displayNone");
+  }
+
+  if (! (gaugeData15.x02_gaugeMainValue == 0)) {
+    chart15.draw(data15, options15);
+  } else {
+    document.querySelector(".results.formTogler_panel3 .fields .field.half.result15").classList.add("displayNone");
+  }
+
+
 
   var data1ed = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
@@ -405,19 +486,101 @@ function drawChart() {
   ]);
   //var chart1 = new google.visualization.Gauge(document.getElementById("google_gauge_chart1"));
 
-  setTimeout(function(){ chart1.draw(data1ed, options1); }, 1500);
-  setTimeout(function(){ chart2.draw(data2ed, options2); }, 1800);
-  setTimeout(function(){ chart3.draw(data3ed, options3); }, 2100);
-  setTimeout(function(){ chart4.draw(data4ed, options4); }, 2400);
-  setTimeout(function(){ chart5.draw(data5ed, options5); }, 3000);
-  setTimeout(function(){ chart6.draw(data6ed, options6); }, 3000);
-  setTimeout(function(){ chart7.draw(data7ed, options7); }, 3500);
-  setTimeout(function(){ chart8.draw(data8ed, options8); }, 4000);
-  setTimeout(function(){ chart9.draw(data9ed, options9); }, 4500);
-  setTimeout(function(){ chart10.draw(data10ed, options10); }, 5000);
-  setTimeout(function(){ chart11.draw(data11ed, options11); }, 5500);
-  setTimeout(function(){ chart12.draw(data12ed, options12); }, 6500);
-  setTimeout(function(){ chart13.draw(data13ed, options13); }, 7000);
-  setTimeout(function(){ chart14.draw(data14ed, options14); }, 7500);
-  setTimeout(function(){ chart15.draw(data15ed, options15); }, 7900);
+  //draw gauges only their input value is set
+  let timeDelay = 700;
+  if (! (gaugeData1.x02_gaugeMainValue == 0))  {
+    setTimeout(function(){ 
+      chart1.draw(data1ed, options1); 
+      timeDelay = timeDelay + 500;}, 
+      timeDelay);
+  }
+  
+  if (! (gaugeData2.x02_gaugeMainValue == 0))  {
+    setTimeout(function(){ 
+      chart2.draw(data2ed, options2); 
+      timeDelay = timeDelay + 500;}, 
+      timeDelay);
+  }
+  
+  if (! (gaugeData3.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart3.draw(data3ed, options3); 
+    timeDelay = timeDelay + 500;}, 
+    timeDelay);
+  }
+
+  if (! (gaugeData4.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart4.draw(data4ed, options4); 
+    timeDelay = timeDelay + 500;}, 
+    timeDelay);
+  }
+
+  if (! (gaugeData5.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart5.draw(data5ed, options5); 
+    timeDelay = timeDelay + 500;}, 
+    timeDelay);
+  }
+
+  if (! (gaugeData6.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart6.draw(data6ed, options6); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData7.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart7.draw(data7ed, options7); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData8.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart8.draw(data8ed, options8); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData9.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart9.draw(data9ed, options9); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData10.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart10.draw(data10ed, options10); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData11.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart11.draw(data11ed, options11); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData12.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart12.draw(data12ed, options12); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData13.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart13.draw(data13ed, options13); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData14.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart14.draw(data14ed, options14); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
+  if (! (gaugeData15.x02_gaugeMainValue == 0))  {
+  setTimeout(function(){ 
+    chart15.draw(data15ed, options15); 
+    timeDelay = timeDelay + 500;}, timeDelay);
+  }
+
 }

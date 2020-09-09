@@ -2107,6 +2107,11 @@ li.formActions_goHome a {
   opacity: 0;
 }
 
+.displayNone{
+  display: none;
+  visibility: hidden;
+}
+
 .wasteCaclForm .valueDisabled {
   opacity: 0.75;
   font-weight: 600;
