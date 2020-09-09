@@ -2107,7 +2107,7 @@ li.formActions_goHome a {
   opacity: 0;
 }
 
-.displayNone{
+.displayNone {
   display: none;
   visibility: hidden;
 }
@@ -2130,28 +2130,32 @@ li.formActions_goHome a {
   margin-bottom: 3rem;
 }
 
-
-.results.formTogler_panel3 .chartsSelection{
+.results.formTogler_panel3 .chartsSelection {
   line-height: 3rem;
 }
 
-.results.formTogler_panel3 .chartsSelection p.chartsSelection__title{
+.results.formTogler_panel3 .chartsSelection p.chartsSelection__title {
   color: #e5b896;
 }
 
-.results.formTogler_panel3 .chartsSelection ul.actions.chartsSelection__toglerActions{
+.results.formTogler_panel3
+  .chartsSelection
+  ul.actions.chartsSelection__toglerActions {
   display: none;
   visibility: hidden;
 }
 
-.results.formTogler_panel3 .chartsSelection:hover p.chartsSelection__title{
+.results.formTogler_panel3 .chartsSelection:hover p.chartsSelection__title {
   display: none;
   visibility: hidden;
 }
 
-.results.formTogler_panel3 .chartsSelection:hover ul.actions.chartsSelection__toglerActions{
+.results.formTogler_panel3
+  .chartsSelection:hover
+  ul.actions.chartsSelection__toglerActions {
   display: flex;
   visibility: visible;
+  justify-content: center;
 }
 
 .wasteCaclForm .field {
