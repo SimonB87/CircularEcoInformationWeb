@@ -1,0 +1,14 @@
+.charts{
+  height: 20rem;
+  width: 100%;
+}
+
+canvas.chartCanvas{
+  background-color: rgba(10, 10, 10, 0.85);
+  color: #fff;
+  flex: 1;
+  max-width: 45%;
+  margin: 20px;
+  width: 100% !important;
+  height: auto !important;
+}

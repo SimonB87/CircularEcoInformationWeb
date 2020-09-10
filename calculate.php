@@ -10,7 +10,7 @@
   <?php
 	include("includes/mainsitehead.php");
   ?>
-
+	<link rel="stylesheet" href="assets/css/chartsJs.css">
   </head>
   <body> <!-- class="is-preload" -->
     <!-- Wrapper -->
@@ -179,6 +179,9 @@
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry01" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart1" class="google_gauge">
   									</div>
+										<div class="google_column_chart1" class="google_column">
+										</div>
+										<div class="charts myChart1"> <canvas id="myChart1" class="chartCanvas"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result2">
@@ -189,7 +192,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion02" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry02" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart2" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart2"> <canvas id="myChart2" class="chartCanvas"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result3">
@@ -378,5 +382,7 @@
 		<script src="assets/js/wasteCalcData.js" defer></script>
 		<script src="assets/js/googleChartsLib.js" defer></script>
 		<script src="assets/js/googleChartsDrawGauges.js" defer></script>
+		<script src="assets/js/chartsJsLib.js" defer></script>
+		<script src="assets/js/chartsDrawColumns.js" defer></script>
   </body>
 </html>
