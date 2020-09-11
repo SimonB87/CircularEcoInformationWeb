@@ -1,6 +1,7 @@
 function htmlToPdf() {
+  
+  //console.log("fce htmlToPdf");
   /*
-  console.log("fce htmlToPdf");
   var pdf = new jsPDF("p", "pt", "letter");
   source = $("#HTMLtoPDF")[0];
   specialElementHandlers = {
@@ -25,10 +26,14 @@ function htmlToPdf() {
       // dispose: object with X, Y of the last line add to the PDF
       //          this allow the insertion of new lines after html
       pdf.save("html2pdf.pdf");
-      console.log("fce htmlToPdf 1");
+      //console.log("fce htmlToPdf 1");
     }
-  );
-  */
+  );*/
+
+  
+
+
+
 
   var currentdate = new Date();
   var datetime =
@@ -48,6 +53,16 @@ function htmlToPdf() {
   const docHeader =
     "Projekt Cirkulární ekonomika - Demo : PDF generování ." + datetime;
 
+
+
+
+
+
+
+
+
+
+  /*
   const titulek_nazevTypovehoReseni = document.getElementById(
     "projectDetailDesc--nazevTypovehoReseni"
   ).innerText;
@@ -95,7 +110,7 @@ function htmlToPdf() {
     "projectDetail--cilova_skupina"
   ).innerText;
 
-  /* some sections skipped */
+  //some sections skipped 
 
   const titulek_priklad_praxe = document.getElementById(
     "projectDetailDesc--priklad_praxe"
@@ -103,6 +118,26 @@ function htmlToPdf() {
   const text_priklad_praxe = document.getElementById(
     "projectDetail--priklad_praxe"
   ).innerText;
+  */
+  
+
+
+
+
+
+
+
+
+
+  //import { jsPDF } from "jspdf";
+
+
+
+
+
+
+
+
 
   let doc = new jsPDF();
   //set regular font style
@@ -112,6 +147,14 @@ function htmlToPdf() {
   doc.setFont("FreeSerif");
   doc.text(20, 12, docHeader);
 
+
+
+
+
+
+
+
+  /*
   doc.setFontSize(18);
   doc.setFont("FreeSerif");
   doc.text(20, 20, titulek_nazevTypovehoReseni);
@@ -172,7 +215,7 @@ function htmlToPdf() {
   doc.setFont("FreeSerif");
   doc.text(20, 250, text_cilova_skupina);
 
-  /* some sections skipped */
+  // some sections skipped
 
   //go to next page
   doc.addPage("a4", "portrait");
@@ -184,6 +227,10 @@ function htmlToPdf() {
   doc.setFontSize(13);
   doc.setFont("FreeSerif");
   doc.text(20, 30, text_priklad_praxe);
+  */
 
-  doc.save(text_nazevTypovehoReseni + ".pdf");
+
+  const fileName = "AnalyzaOH_" + document.getElementById("townName").innerText + ".pdf";
+  doc.save(fileName);
+
 }
