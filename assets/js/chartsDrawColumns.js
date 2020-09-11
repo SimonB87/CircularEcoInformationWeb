@@ -106,6 +106,38 @@ function drawChartColumns() {
     document.querySelector(".results.formTogler_panel3 .field .charts.myChart3").classList.add("displayNone");
   }
 
+  //chart 4
+  if (! (gaugeData4.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart4").classList.remove("displayNone");
+    var ctx4 = document.getElementById('myChart4').getContext('2d');
+    var myChart4 = new Chart(ctx4, {
+      chartId: 4,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels,
+          datasets: [{
+              data: [gaugeData4.x02_gaugeMainValue, getComparisonValues(4,"region"), getComparisonValues(4,"country")],
+              backgroundColor: myCustom_backgroundColor,
+              borderColor: myCustom_borderColor,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData4.x01_labelName(),
+          },     
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart4").classList.add("displayNone");
+  }
+
 
   function getComparisonValues(id, group){
     let selector = "valueComparioson";
@@ -129,12 +161,8 @@ function drawChartColumns() {
 
 function displayChartType(chartToHide, chartToShow){
 
-              //test
-              console.log(`fce: displayChartType < chartToHide:  ${chartToHide} > < chartToShow> ${chartToShow} >` );
-              //tets
-
   //hide Charts
-  if ( chartToHide = "gauges" ){
+  if ( chartToHide == "gauges" ){
 
     for (let index = 1; index < 16; index++){
       let gaugeNumber = "gaugeData" + index;
@@ -142,19 +170,13 @@ function displayChartType(chartToHide, chartToShow){
       
       if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0) ) {
         document.querySelector(selector).classList.add("displayNone");
-
-                    //test
-                    console.log("Add display none to gauges");
-                    console.log(gaugeNumber);
-                    console.log(selector);
-                    //tets
       }
     }
 
-    document.getElementById("chartsToglerActions__gauge").classList.add("disabled");
-    document.getElementById("chartsToglerActions__chart").classList.remove("disabled");
+    document.querySelector("#chartsToglerActions__gauge .button.primary").classList.remove("disabled");
+    document.querySelector("#chartsToglerActions__chart .button.primary").classList.add("disabled");
 
-  } else if ( chartToHide = "bars" ) {
+  } else if ( chartToHide == "bars" ) {
 
     for (var index = 1; index < 16; index++){
       let gaugeNumber = "gaugeData" + index;
@@ -162,22 +184,16 @@ function displayChartType(chartToHide, chartToShow){
 
       if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0 )) {
         document.querySelector(selector).classList.add("displayNone");
-
-                    //test
-                    console.log("Add display none to bars");
-                    console.log(gaugeNumber);
-                    console.log(selector);
-                    //tets
       }
     }
 
-    document.getElementById("chartsToglerActions__gauge").classList.remove("disabled");
-    document.getElementById("chartsToglerActions__chart").classList.add("disabled");
+    document.querySelector("#chartsToglerActions__gauge .button.primary").classList.add("disabled");
+    document.querySelector("#chartsToglerActions__chart .button.primary").classList.remove("disabled");
 
   }
 
   //show charts
-  if ( chartToShow = "gauges" ){
+  if ( chartToShow == "gauges" ){
 
     for (let index = 1; index < 16; index++){
       let gaugeNumber = "gaugeData" + index;
@@ -185,16 +201,10 @@ function displayChartType(chartToHide, chartToShow){
       
       if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0 )) {
         document.querySelector(selector).classList.remove("displayNone");
-
-                            //test
-                            console.log("remove display none to gauges");
-                            console.log(gaugeNumber);
-                            console.log(selector);
-                            //tets
       }
     }
 
-  } else if ( chartToShow = "bars" ) {
+  } else if ( chartToShow == "bars" ) {
 
     for (var index = 1; index < 16; index++){
       let gaugeNumber = "gaugeData" + index;
@@ -202,12 +212,6 @@ function displayChartType(chartToHide, chartToShow){
 
       if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0 )) {
         document.querySelector(selector).classList.remove("displayNone");
-
-                            //test
-                            console.log("remove display none to bars");
-                            console.log(gaugeNumber);
-                            console.log(selector);
-                            //tets
       }
     }
     

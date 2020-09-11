@@ -165,8 +165,8 @@
 							<div class="chartsSelection field full">
 								<p class="chartsSelection__title align-center">Změnit druh grafu</p>
 								<ul class="actions chartsSelection__toglerActions align-center">
-									<li id="chartsToglerActions__gauge" onclick="displayChartType('bars','gauges');"><span class="button primary disabled"><i class="fas fa-tachometer-alt"></i></span></li>
-									<li id="chartsToglerActions__chart" onclick="displayChartType('gauges','bars');"><span class="button primary"><i class="fas fa-chart-bar"></i></span></li>
+									<li id="chartsToglerActions__gauge" onclick="displayChartType('bars','gauges');"><span class="button primary"><i class="fas fa-tachometer-alt"></i></span></li>
+									<li id="chartsToglerActions__chart" onclick="displayChartType('gauges','bars');"><span class="button primary disabled"><i class="fas fa-chart-bar"></i></span></li>
 								</ul>
 							</div>
 
