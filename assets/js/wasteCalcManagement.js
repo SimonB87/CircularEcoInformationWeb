@@ -58,6 +58,10 @@ function calculateWaste() {
   drawGauges();
   drawChartColumns();
 
+  setTimeout(function(){ 
+    displayChartType("gauges","bars");}, 
+    300);
+
   function manageResults() {
     const targetEl = document.querySelector("#formToglerActions__send .submitButton");
     const valueEl = targetEl.classList.contains("disabled");

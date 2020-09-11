@@ -125,4 +125,92 @@ function drawChartColumns() {
     result = parseFloat(result);
     return result;
   }
-}  
+}
+
+function displayChartType(chartToHide, chartToShow){
+
+              //test
+              console.log(`fce: displayChartType < chartToHide:  ${chartToHide} > < chartToShow> ${chartToShow} >` );
+              //tets
+
+  //hide Charts
+  if ( chartToHide = "gauges" ){
+
+    for (let index = 1; index < 16; index++){
+      let gaugeNumber = "gaugeData" + index;
+      let selector = "#google_gauge_chart" + index;
+      
+      if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0) ) {
+        document.querySelector(selector).classList.add("displayNone");
+
+                    //test
+                    console.log("Add display none to gauges");
+                    console.log(gaugeNumber);
+                    console.log(selector);
+                    //tets
+      }
+    }
+
+    document.getElementById("chartsToglerActions__gauge").classList.add("disabled");
+    document.getElementById("chartsToglerActions__chart").classList.remove("disabled");
+
+  } else if ( chartToHide = "bars" ) {
+
+    for (var index = 1; index < 16; index++){
+      let gaugeNumber = "gaugeData" + index;
+      let selector = ".charts.myChart" + index;
+
+      if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0 )) {
+        document.querySelector(selector).classList.add("displayNone");
+
+                    //test
+                    console.log("Add display none to bars");
+                    console.log(gaugeNumber);
+                    console.log(selector);
+                    //tets
+      }
+    }
+
+    document.getElementById("chartsToglerActions__gauge").classList.remove("disabled");
+    document.getElementById("chartsToglerActions__chart").classList.add("disabled");
+
+  }
+
+  //show charts
+  if ( chartToShow = "gauges" ){
+
+    for (let index = 1; index < 16; index++){
+      let gaugeNumber = "gaugeData" + index;
+      let selector = "#google_gauge_chart" + index;
+      
+      if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0 )) {
+        document.querySelector(selector).classList.remove("displayNone");
+
+                            //test
+                            console.log("remove display none to gauges");
+                            console.log(gaugeNumber);
+                            console.log(selector);
+                            //tets
+      }
+    }
+
+  } else if ( chartToShow = "bars" ) {
+
+    for (var index = 1; index < 16; index++){
+      let gaugeNumber = "gaugeData" + index;
+      let selector = ".charts.myChart" + index;
+
+      if ( !(window[gaugeNumber]["x02_gaugeMainValue"] == 0 )) {
+        document.querySelector(selector).classList.remove("displayNone");
+
+                            //test
+                            console.log("remove display none to bars");
+                            console.log(gaugeNumber);
+                            console.log(selector);
+                            //tets
+      }
+    }
+    
+  }
+
+}
