@@ -5,8 +5,14 @@ function drawChartColumns() {
   //custom setting svalues
   var myCustom_backgroundColor = ['rgba(229, 184, 150, 0.8)', 'rgba(150, 229, 184, 0.8)','rgba(184, 150, 229, 0.8)'];
   var myCustom_borderColor = ['rgba(137, 110, 90, 1)','rgba(90, 137, 110, 1)','rgba(110, 90, 137, 1)'];
-  var myCustom_scales = { yAxes: [{gridLines: { color: "#D3D3D3" },ticks: { beginAtZero: true, fontSize: 15 }}] };
   var myCustom_labels = ['Vaše hodnota', 'Krajská hodnota', 'Celostátní hodnota'];
+
+  var myCustom_backgroundColor_noRegion = ['rgba(229, 184, 150, 0.8)','rgba(184, 150, 229, 0.8)'];
+  var myCustom_borderColor_noRegion  = ['rgba(137, 110, 90, 1)','rgba(110, 90, 137, 1)'];
+  var myCustom_labels_noRegion  = ['Vaše hodnota', 'Celostátní hodnota'];
+
+  var myCustom_scales = { yAxes: [{gridLines: { color: "#D3D3D3" },ticks: { beginAtZero: true, fontSize: 15 }}] };
+  
   
   //Chart 1
   if (! (gaugeData1.x02_gaugeMainValue == 0)) {
@@ -265,6 +271,230 @@ function drawChartColumns() {
 
   } else {
     document.querySelector(".results.formTogler_panel3 .field .charts.myChart8").classList.add("displayNone");
+  }
+
+  //Chart 9
+  if (! (gaugeData9.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart9").classList.remove("displayNone");
+    var ctx9 = document.getElementById('myChart9').getContext('2d');
+    var myChart9 = new Chart(ctx9, {
+      chartId: 9,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels,
+          datasets: [{
+              data: [gaugeData9.x02_gaugeMainValue, getComparisonValues(9,"region"), getComparisonValues(9,"country")],
+              backgroundColor: myCustom_backgroundColor,
+              borderColor: myCustom_borderColor,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData9.x00_fullLabelName(),
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart9").classList.add("displayNone");
+  }
+
+  //Chart 10
+  if (! (gaugeData10.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart10").classList.remove("displayNone");
+    var ctx10 = document.getElementById('myChart10').getContext('2d');
+    var myChart10 = new Chart(ctx10, {
+      chartId: 10,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels,
+          datasets: [{
+              data: [gaugeData10.x02_gaugeMainValue, getComparisonValues(10,"region"), getComparisonValues(10,"country")],
+              backgroundColor: myCustom_backgroundColor,
+              borderColor: myCustom_borderColor,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: "PRODUKCE KOMUNÁLNÍCH ODPADŮ (SK 20)",
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart10").classList.add("displayNone");
+  }
+
+  //Chart 11
+  if (! (gaugeData11.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart11").classList.remove("displayNone");
+    var ctx11 = document.getElementById('myChart11').getContext('2d');
+    var myChart11 = new Chart(ctx11, {
+      chartId: 11,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels,
+          datasets: [{
+              data: [gaugeData11.x02_gaugeMainValue, getComparisonValues(11,"region"), getComparisonValues(11,"country")],
+              backgroundColor: myCustom_backgroundColor,
+              borderColor: myCustom_borderColor,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData11.x00_fullLabelName(),
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart11").classList.add("displayNone");
+  }
+
+  //Chart 12
+  if (! (gaugeData12.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart12").classList.remove("displayNone");
+    var ctx12 = document.getElementById('myChart12').getContext('2d');
+    var myChart12 = new Chart(ctx12, {
+      chartId: 12,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels_noRegion,
+          datasets: [{
+              data: [gaugeData12.x02_gaugeMainValue, getComparisonValues(12,"country")],
+              backgroundColor: myCustom_backgroundColor_noRegion,
+              borderColor: myCustom_borderColor_noRegion,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData12.x00_fullLabelName(),
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart12").classList.add("displayNone");
+  }
+
+  //Chart 13
+  if (! (gaugeData13.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart13").classList.remove("displayNone");
+    var ctx13 = document.getElementById('myChart13').getContext('2d');
+    var myChart13 = new Chart(ctx13, {
+      chartId: 13,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels_noRegion,
+          datasets: [{
+              data: [gaugeData13.x02_gaugeMainValue, getComparisonValues(13,"country")],
+              backgroundColor: myCustom_backgroundColor_noRegion,
+              borderColor: myCustom_borderColor_noRegion,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData13.x00_fullLabelName(),
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart13").classList.add("displayNone");
+  }
+
+  //Chart 14
+  if (! (gaugeData14.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart14").classList.remove("displayNone");
+    var ctx14 = document.getElementById('myChart14').getContext('2d');
+    var myChart14 = new Chart(ctx14, {
+      chartId: 14,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels_noRegion,
+          datasets: [{
+              data: [gaugeData14.x02_gaugeMainValue, getComparisonValues(14,"country")],
+              backgroundColor: myCustom_backgroundColor_noRegion,
+              borderColor: myCustom_borderColor_noRegion,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData14.x00_fullLabelName(),
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart14").classList.add("displayNone");
+  }
+
+  //Chart 15
+  if (! (gaugeData15.x02_gaugeMainValue == 0)) {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart15").classList.remove("displayNone");
+    var ctx15 = document.getElementById('myChart15').getContext('2d');
+    var myChart15 = new Chart(ctx15, {
+      chartId: 15,
+      type: 'bar',
+      data: {
+          labels: myCustom_labels_noRegion,
+          datasets: [{
+              data: [gaugeData15.x02_gaugeMainValue, getComparisonValues(15,"country")],
+              backgroundColor: myCustom_backgroundColor_noRegion,
+              borderColor: myCustom_borderColor_noRegion,
+              borderWidth: 2
+          }]
+      },
+      options: {
+          title: {
+              display: true,
+              text: gaugeData15.x00_fullLabelName(),
+          },
+          legend: { display: false },
+          scales: myCustom_scales,
+          responsive: true,
+          maintainAspectRatio: false
+      }
+  });
+
+  } else {
+    document.querySelector(".results.formTogler_panel3 .field .charts.myChart15").classList.add("displayNone");
   }
 
 
