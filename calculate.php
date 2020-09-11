@@ -367,6 +367,7 @@
 							</div>
 							<ul class="actions formToglerActions">
 								<li class="formActions_goHome"><a href="index.php">Domů</a> </li>
+								<li id="downloadAsPdf" class="downLoadReportPDf"> <a href="#" onclick="htmlToPdf();"> Stáhni PDF </a><i class="far fa-file-pdf"></i></li>
 						  </ul>
 						</form>
 					</div>
@@ -398,5 +399,10 @@
 		<script src="assets/js/googleChartsDrawGauges.js" defer></script>
 		<script src="assets/js/chartsJsLib.js" defer></script>
 		<script src="assets/js/chartsDrawColumns.js" defer></script>
+
+    <script src="assets/js/pdfgeneration/package/jspdf.min.js"></script>
+    <script src="assets/js/pdfgeneration/simon/fontfreeserifnormal.js"></script>
+    <script src="assets/js/pdfgeneration/simon/pdffromhtml.js"></script> 
+
   </body>
 </html>

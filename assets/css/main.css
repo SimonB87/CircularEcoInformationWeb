@@ -2049,11 +2049,11 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 
 /* CSS for the form */
 
-li.formActions_goHome:hover {
+.actions.formToglerActions li.formActions_goHome:hover {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-li.formActions_goHome {
+.actions.formToglerActions .formActions_goHome, .actions.formToglerActions .downLoadReportPDf {
   margin-left: 1rem;
   appearance: none;
   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
