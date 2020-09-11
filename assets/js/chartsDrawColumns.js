@@ -29,7 +29,7 @@ function drawChartColumns() {
                 display: true,
                 text: gaugeData1.x01_labelName(),
                 fontSize: 14
-            },     
+            },
             legend: { display: false },
             tooltip: { enable: true },
             scales: myCustom_scales,
@@ -62,7 +62,7 @@ function drawChartColumns() {
           title: {
               display: true,
               text: gaugeData2.x01_labelName(),
-          },     
+          },
           legend: { display: false },
           scales: myCustom_scales,
           responsive: true,
@@ -94,7 +94,7 @@ function drawChartColumns() {
           title: {
               display: true,
               text: gaugeData3.x01_labelName(),
-          },     
+          },
           legend: { display: false },
           scales: myCustom_scales,
           responsive: true,
@@ -106,7 +106,7 @@ function drawChartColumns() {
     document.querySelector(".results.formTogler_panel3 .field .charts.myChart3").classList.add("displayNone");
   }
 
-  //chart 4
+  //Chart 4
   if (! (gaugeData4.x02_gaugeMainValue == 0)) {
     document.querySelector(".results.formTogler_panel3 .field .charts.myChart4").classList.remove("displayNone");
     var ctx4 = document.getElementById('myChart4').getContext('2d');
@@ -126,7 +126,7 @@ function drawChartColumns() {
           title: {
               display: true,
               text: gaugeData4.x01_labelName(),
-          },     
+          },
           legend: { display: false },
           scales: myCustom_scales,
           responsive: true,
