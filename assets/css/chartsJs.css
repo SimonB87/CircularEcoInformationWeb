@@ -1,14 +1,11 @@
-.charts{
-  height: 20rem;
-  width: 100%;
+.charts {
+  height: 20rem !important;
+  background-color: rgba(20, 20, 20, 0.3);
+  padding: 0.75rem;
 }
 
-canvas.chartCanvas{
-  background-color: rgba(10, 10, 10, 0.85);
+canvas.chartCanvas {
   color: #fff;
   flex: 1;
-  max-width: 45%;
-  margin: 20px;
-  width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
 }

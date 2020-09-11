@@ -21,6 +21,9 @@ class Gauge {
     x01_labelName() {  
       return gaugeAction_getLabelNameTitle(this.gaugeNumber);
     }
+    x00_fullLabelName() {  
+      return gaugeAction_getFullLabelNameTitle(this.gaugeNumber);
+    }
 }
 
 var gaugeData1 = new Gauge(1);
@@ -49,6 +52,15 @@ function gaugeAction_getLabelNameTitle(selectedLabelNumber) {
   let myQuerySelector = ".result" + selectedLabelNumber + " .gauge .result_title";
   let labelNameForGauge = document.querySelector(myQuerySelector).innerText;
   return labelNameForGauge;
+}
+
+function gaugeAction_getFullLabelNameTitle(selectedLabelNumber) {
+  let myQuerySelectorName = ".result" + selectedLabelNumber + " .gauge .result_title";
+  let myQuerySelectorUnit = ".result" + selectedLabelNumber + " .gauge .result_unit";
+  let labelName = document.querySelector(myQuerySelectorName).innerText;
+  let labelUnit = document.querySelector(myQuerySelectorUnit).innerText;
+  let fullLabelNameForGauge = labelName + " " + labelUnit;
+  return fullLabelNameForGauge;
 }
 
 function gaugeAction_getWasteCategory(cathegoryNumber) {
