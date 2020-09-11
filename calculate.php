@@ -181,7 +181,7 @@
   									</div>
 										<div class="google_column_chart1" class="google_column">
 										</div>
-										<div class="charts myChart1"> <canvas id="myChart1" class="chartCanvas"></canvas> </div>
+										<div class="charts myChart1"> <canvas id="myChart1" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result2">
@@ -193,7 +193,7 @@
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry02" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart2" class="google_gauge">
 										</div>
-										<div class="charts myChart2"> <canvas id="myChart2" class="chartCanvas"></canvas> </div>
+										<div class="charts myChart2"> <canvas id="myChart2" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result3">
@@ -204,7 +204,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion03" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry03" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart3" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart3"> <canvas id="myChart3" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result4">
@@ -215,7 +216,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion04" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry04" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart4" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart4"> <canvas id="myChart4" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result5">
@@ -226,7 +228,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion05" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry05" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart5" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart5"> <canvas id="myChart5" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result6">
@@ -237,7 +240,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion06" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry06" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart6" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart6"> <canvas id="myChart6" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result7">
@@ -248,7 +252,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion07" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry07" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart7" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart7"> <canvas id="myChart7" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result8">
@@ -259,7 +264,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion08" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry08" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart8" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart8"> <canvas id="myChart8" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result9">
@@ -270,7 +276,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion09" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry09" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart9" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart9"> <canvas id="myChart9" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result10">
@@ -281,7 +288,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion10" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry10" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart10" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart10"> <canvas id="myChart10" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result11">
@@ -292,7 +300,8 @@
 										<p class="regionalValue">Krajský průměr: <span id="valueCompariosonRegion11" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry11" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart11" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart11"> <canvas id="myChart11" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result12">
@@ -303,7 +312,8 @@
 										<p class="regionalValue hideElement">Krajský průměr: <span id="valueCompariosonRegion12" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry12" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart12" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart12"> <canvas id="myChart12" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result13">
@@ -314,7 +324,8 @@
 										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion13" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry13" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart13" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart13"> <canvas id="myChart13" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result14">
@@ -325,7 +336,8 @@
 										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion14" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry14" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart14" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart14"> <canvas id="myChart14" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 								<div class="field half result15">
@@ -336,10 +348,11 @@
 										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion15" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry15" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart15" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart15"> <canvas id="myChart15" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
-								<div class="field half result16 hideElement">
+								<div class="field half result16 displayNone">
 									<div class="gauge">
 										<h3 class="result_title">Produkce BRO ze zahrad a parků</h3>
 										<h4 class="result_unit">(kg/obyvatele)</h4>
@@ -347,7 +360,8 @@
 										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion16" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry16" class="valueHighlight"></span></p>
 										<div id="google_gauge_chart16" class="google_gauge">
-  									</div>
+										</div>
+										<div class="charts myChart16"> <canvas id="myChart16" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
 							</div>
