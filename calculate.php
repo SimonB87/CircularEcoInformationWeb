@@ -170,6 +170,8 @@
 								</ul>
 							</div>
 
+							<div id="results-content-body" class="results-content-body mobileWidth">
+
 								<div class="field half result1">
 									<div class="gauge">
 										<h3 class="result_title">Náklady na OH</h3>
@@ -359,15 +361,18 @@
 										<p>Vaše hodnota: <span id="wasteResultNotice16" class="valueHighlight"></span></p>
 										<p class="regionalValue hideElement hideThisElement">Krajský průměr: <span id="valueCompariosonRegion16" class="valueHighlight"></span></p>
 										<p class="countryValue">Celostátní průměr: <span id="valueCompariosonCountry16" class="valueHighlight"></span></p>
-										<div id="google_gauge_chart16" class="google_gauge">
-										</div>
+										<div id="google_gauge_chart16" class="google_gauge"> </div>
 										<div class="charts myChart16"> <canvas id="myChart16" class="chartCanvas" height="500"></canvas> </div>
 									</div>
 								</div>
+
+							</div>
+
 							</div>
 							<ul class="actions formToglerActions">
 								<li class="formActions_goHome"><a href="index.php">Domů</a> </li>
-								<li id="downloadAsPdf" class="downLoadReportPDf"> <a href="#" onclick="htmlToPdf();"> Stáhni PDF </a><i class="far fa-file-pdf"></i></li>
+								<li id="downloadAsPdf" class="downLoadReportPDf actionButton"> <a href="#" onclick="getPDFFileButton();"> Stáhni PDF </a><i class="far fa-file-pdf"></i></li>
+								<li id="resetViewfterPdfConversion" class="actionButton displayNone"> <a onclick="cleanAfterPdfConversion();"> Opravit vzhled </a><i class="far fa-eye"></i></li>
 						  </ul>
 						</form>
 					</div>
@@ -400,10 +405,12 @@
 		<script src="assets/js/chartsJsLib.js" defer></script>
 		<script src="assets/js/chartsDrawColumns.js" defer></script>
 
-    <script src="assets/js/pdfgeneration/package/jspdf.min.js"></script>
-    <script src="assets/js/pdfgeneration/simon/fontfreeserifnormal.js"></script>
-		<script src="assets/js/pdfgeneration/simon/pdffromhtml.js"></script>
-		<script src="assets/js/pdfgeneration/html2canvas.js"></script> 
+    <script src="assets/js/pdfgeneration/package/jspdf.min.js" defer></script>
+		<script src="assets/js/pdfgeneration/simon/fontFreeSerifNormal.js" defer></script>
+		<script src="assets/js/pdfgeneration/html2canvas.js" defer></script> 
+<!-- 		<script src="assets/js/pdfgeneration/simon/pdfFromHtml.js" defer></script> -->
+		<script src="assets/js/pdfgeneration/simon/webToPdf.js" defer></script>
+
 
 
   </body>
