@@ -2053,7 +2053,7 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-.actions.formToglerActions .formActions_goHome, .actions.formToglerActions .downLoadReportPDf {
+.actions.formToglerActions .formActions_goHome, .actions.formToglerActions .actionButton {
   margin-left: 1rem;
   appearance: none;
   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2224,6 +2224,37 @@ li.formActions_goHome a {
   font-size: 0.8rem;
 }
 
+.formTogler_panel3 .results-content-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.formTogler_panel3 .results-content-body .field.half{
+  width: 50%;
+  padding: 0 0.5rem;
+}
+
+.formTogler_panel3 .results-content-body .field.half .gauge .result_title,
+.formTogler_panel3 .results-content-body .field.half .gauge .result_unit,
+.formTogler_panel3 .results-content-body .field.half .gauge p {
+  padding: 0 0.5rem;
+}
+
+.results-content-body.pdfPrint .field.half .gauge h3,
+.results-content-body.pdfPrint .field.half .gauge h4,
+.results-content-body.pdfPrint .field.half .gauge p {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.results-content-body.pdfPrint .field.half .gauge .charts {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 600px) {
   .wasteCaclForm .formToglerControls {
     width: 100%;
@@ -2244,6 +2275,9 @@ li.formActions_goHome a {
     margin-left: 0;
     padding-top: 0;
     padding-top: 0 !important;
+  }
+  .formTogler_panel3 .results-content-body.mobileWidth .field.half{
+    width: 100%;
   }
 }
 
