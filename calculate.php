@@ -402,7 +402,9 @@
 
     <script src="assets/js/pdfgeneration/package/jspdf.min.js"></script>
     <script src="assets/js/pdfgeneration/simon/fontfreeserifnormal.js"></script>
-    <script src="assets/js/pdfgeneration/simon/pdffromhtml.js"></script> 
+		<script src="assets/js/pdfgeneration/simon/pdffromhtml.js"></script>
+		<script src="assets/js/pdfgeneration/html2canvas.js"></script> 
+
 
   </body>
 </html>
