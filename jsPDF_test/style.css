@@ -1,0 +1,15 @@
+.container{
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2{
+  color: blue;
+}
+
+.charts canvas{
+  width: 90%;
+  margin: 0 auto;
+  max-height: 500px;
+}

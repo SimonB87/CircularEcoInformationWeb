@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello world</h1>
+        <p id="ignorePDF">don't print this to pdf</p>
+    </div>
+
+    <div>
+        <div class="content-body container">
+            <h2>Introduction</h2>
+            <p class="text-normal">The order in which commands to download external Cascading Style Sheets (CSS) files and JavaScript files are placed in an HTML page can affect how quickly the page is rendered and even whether the page is rendered at all.</p>
+            <p class="text-normal">When a CSS file is loaded before a JavaScript file, the page can begin rendering and the file downloads can happen in parallel which speeds up the rendering time.</p>
+            <p class="text-normal">If the order is reversed, the files are downloaded sequentially and the JavaScript file must finish loading completely before any other file can be downloaded. This means that the page cannot begin rendering until the JavaScript download is complete and the CSS file can begin loading.</p>
+            <p class="text-normal">This Best Practice Deep Dive looks at the issues involved with the order in which files are downloaded, tells you how AT&amp;T ARO can help identify when certain files are loaded in an inefficient order, and provides recommendations for downloading style sheets and scripts.</p>
+            <h2>Background</h2>
+            <p class="text-normal">As a developer building HTML 5 style apps or webpages, you can control the order that files are requested by your mobile app. It is important to consider the order you request the files in, because some ways are faster than others.</p>
+            <h2>The Issue</h2>
+            <p class="text-normal">Script files (such as JavaScript) are loaded sequentially unless asynchronous downloading is specified (for more information, see Asynchronous Load of JavaScript in HTML). Sequential (synchronous) download means that the entire script file must be downloaded before any other files can be downloaded and before any other instructions on the page, such as inline code or HTML, can be executed.</p>
+            <p class="text-normal">Another issue that can occur when a JavaScript file is loaded before a CSS file, is that any JavaScript code which relies on properties set in that CSS file can't be executed until both files have finished loading.</p>
+            <h2>Charts.js</h2>
+            <div class="charts"> <canvas id="myChart" width="400" height="400"></canvas> </div>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+                <script>
+                  Chart.defaults.global.defaultFontColor = '#000';
+                  Chart.defaults.global.defaultFontSize = 14;
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        },
+                        responsive: false,
+                        maintainAspectRatio: true
+                    }
+                });
+                </script>
+
+            <h2>Best Practice Recommendation</h2>
+            <p class="text-normal">The Best Practice Recommendation is to download CSS before script files, and to move SCRIPT tags to the bottom of the page whenever possible.</p>
+            <p class="text-normal">The AT&amp;T Application Resource Optimizer (ARO) can help you identify this potential file order problem. AT&amp;T ARO tests the HTML documents in your app and if a JavaScript file is loaded before a CSS file in the HEAD of an HTML document, the test fails and the name of the file is listed in the rest results.</p>
+
+            <h2>Plain text</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores accusantium dignissimos corrupti quia. Unde voluptates doloribus sit aliquam mollitia hic obcaecati sequi ut optio! Culpa aliquid delectus suscipit magnam ratione asperiores quo veritatis ex ipsum adipisci reiciendis atque ut architecto dolorum autem nulla exercitationem, temporibus quis. Architecto non ad quidem modi accusantium sunt qui fuga, vero fugiat. Fugit beatae eos repellat. Id error hic enim eligendi quod. Consectetur, praesentium deleniti minus deserunt assumenda veniam quas quod aliquid accusamus magnam vero reiciendis ea blanditiis maxime perferendis officia. Quas obcaecati quos adipisci alias rem magnam doloremque, dignissimos voluptas voluptate deserunt aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores accusantium dignissimos corrupti quia. Unde voluptates doloribus sit aliquam mollitia hic obcaecati sequi ut optio! Culpa aliquid delectus suscipit magnam ratione asperiores quo veritatis ex ipsum adipisci reiciendis atque ut architecto dolorum autem nulla exercitationem, temporibus quis. Architecto non ad quidem modi accusantium sunt qui fuga, vero fugiat. Fugit beatae eos repellat. Id error hic enim eligendi quod. Consectetur, praesentium deleniti minus deserunt assumenda veniam quas quod aliquid accusamus magnam vero reiciendis ea blanditiis maxime perferendis officia. Quas obcaecati quos adipisci alias rem magnam doloremque, dignissimos voluptas voluptate deserunt aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores accusantium dignissimos corrupti quia. Unde voluptates doloribus sit aliquam mollitia hic obcaecati sequi ut optio! Culpa aliquid delectus suscipit magnam ratione asperiores quo veritatis ex ipsum adipisci reiciendis atque ut architecto dolorum autem nulla exercitationem, temporibus quis. Architecto non ad quidem modi accusantium sunt qui fuga, vero fugiat. Fugit beatae eos repellat. Id error hic enim eligendi quod. Consectetur, praesentium deleniti minus deserunt assumenda veniam quas quod aliquid accusamus magnam vero reiciendis ea blanditiis maxime perferendis officia. Quas obcaecati quos adipisci alias rem magnam doloremque, dignissimos voluptas voluptate deserunt aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores accusantium dignissimos corrupti quia. Unde voluptates doloribus sit aliquam mollitia hic obcaecati sequi ut optio! Culpa aliquid delectus suscipit magnam ratione asperiores quo veritatis ex ipsum adipisci reiciendis atque ut architecto dolorum autem nulla exercitationem, temporibus quis. Architecto non ad quidem modi accusantium sunt qui fuga, vero fugiat. Fugit beatae eos repellat. Id error hic enim eligendi quod. Consectetur, praesentium deleniti minus deserunt assumenda veniam quas quod aliquid accusamus magnam vero reiciendis ea blanditiis maxime perferendis officia. Quas obcaecati quos adipisci alias rem magnam doloremque, dignissimos voluptas voluptate deserunt aperiam!</p>
+        </div>
+    </div>
+    <div class="container">
+        <input type="button" value="Print Div Contents" id="btnPrint" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script type="text/javascript" src="arrayTest.js"></script>
+
+    <script type="text/javascript">
+        function getPDFFileButton () {
+			// here printing div with content ".content-body"
+            // using html canvas to save as required pdf to image to preserve css
+            return html2canvas(document.querySelector(".content-body"), {
+				background: "#ffffff",
+				onrendered: function(canvas) {
+					var myImage = canvas.toDataURL("image/jpeg,1.0");
+					// Adjust width and height
+					var imgWidth = (canvas.width * 20) / 120;
+					var imgHeight = (canvas.height * 20) / 120; 
+					// jspdf changes
+					var pdf = new jsPDF('p', 'mm', 'a4');
+					pdf.addImage(myImage, 'JPEG', 15, 2, imgWidth, imgHeight); // 2: 19
+					pdf.save('Download.pdf');
+				}
+            });
+        }
+        $("#btnPrint").on("click", function () {
+            getPDFFileButton ()
+        });
+    </script>
+</body>
+
+</html>
