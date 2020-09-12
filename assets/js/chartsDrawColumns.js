@@ -1,5 +1,10 @@
-function drawChartColumns() {
-  Chart.defaults.global.defaultFontColor = 'white';
+function drawChartColumns(style) {
+  if ( style == "webView") {
+    Chart.defaults.global.defaultFontColor = 'white';
+  } else if ( style == "pdfPrint" ) {
+    Chart.defaults.global.defaultFontColor = '#000';
+  }
+
   Chart.defaults.global.defaultFontSize = 16;
 
   //custom setting svalues
@@ -11,7 +16,18 @@ function drawChartColumns() {
   var myCustom_borderColor_noRegion  = ['rgba(137, 110, 90, 1)','rgba(110, 90, 137, 1)'];
   var myCustom_labels_noRegion  = ['Vaše hodnota', 'Celostátní hodnota'];
 
-  var myCustom_scales = { yAxes: [{gridLines: { color: "#D3D3D3" },ticks: { beginAtZero: true, fontSize: 15 }}] };
+  var myCustom_scales = {};
+  var animationDuration;
+
+  if ( style == "webView") {
+    myCustom_scales = { yAxes: [{gridLines: { color: "#D3D3D3" },ticks: { beginAtZero: true, fontSize: 15 }}] };
+    animationDuration = 1500;
+  } else if ( style == "pdfPrint" ) {
+    myCustom_scales = { yAxes: [{ticks: { beginAtZero: true, fontSize: 15 }}] };
+    animationDuration = 0;
+  }
+
+
   
   
   //Chart 1
@@ -31,6 +47,7 @@ function drawChartColumns() {
             }]
         },
         options: {
+            animation: { duration: animationDuration },
             title: {
                 display: true,
                 text: gaugeData1.x00_fullLabelName(),
@@ -65,6 +82,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+          animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData2.x00_fullLabelName(),
@@ -97,6 +115,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+          animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData3.x00_fullLabelName(),
@@ -129,6 +148,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData4.x00_fullLabelName(),
@@ -161,6 +181,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData5.x00_fullLabelName(),
@@ -193,6 +214,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData6.x00_fullLabelName(),
@@ -225,6 +247,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData7.x00_fullLabelName(),
@@ -258,6 +281,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData8.x00_fullLabelName(),
@@ -290,6 +314,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData9.x00_fullLabelName(),
@@ -322,6 +347,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: "PRODUKCE KOMUNÁLNÍCH ODPADŮ (SK 20)",
@@ -354,6 +380,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData11.x00_fullLabelName(),
@@ -386,6 +413,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData12.x00_fullLabelName(),
@@ -418,6 +446,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData13.x00_fullLabelName(),
@@ -450,6 +479,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData14.x00_fullLabelName(),
@@ -482,6 +512,7 @@ function drawChartColumns() {
           }]
       },
       options: {
+        animation: { duration: animationDuration },
           title: {
               display: true,
               text: gaugeData15.x00_fullLabelName(),

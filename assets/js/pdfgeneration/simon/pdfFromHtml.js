@@ -1,5 +1,7 @@
 function htmlToPdf() {
-  
+
+  const arrayWithUsedChartsNumbers = "arrayWithUsedChartsNumbers" + getNumberOfUsedCharts();
+
   //console.log("fce htmlToPdf");
   /*
   var pdf = new jsPDF("p", "pt", "letter");
@@ -34,28 +36,29 @@ function htmlToPdf() {
 
 
 
-
-  var currentdate = new Date();
-  var datetime =
+  let currentDate = new Date();
+  let dateTime =
     "Datum: " +
-    currentdate.getDate() +
+    currentDate.getDate() +
     "." +
-    (currentdate.getMonth() + 1) +
+    (currentDate.getMonth() + 1) +
     "." +
-    currentdate.getFullYear() +
+    currentDate.getFullYear() +
     " Čas: " +
-    currentdate.getHours() +
+    currentDate.getHours() +
     ":" +
-    currentdate.getMinutes() +
+    currentDate.getMinutes() +
     ":" +
-    currentdate.getSeconds();
+    currentDate.getSeconds();
+  
+  const townName = document.getElementById("townName").innerHTML
 
-  const docHeader =
-    "Projekt Cirkulární ekonomika - Demo : PDF generování ." + datetime;
+  const docHeader = `Obcevkruhu.cz - Analýza Odpadového hospodářství obce ${townName} | ${dateTime}`;
 
+  const usedChartsNumbers = getNumberOfUsedCharts();
+  const arrayOfPairs = splitArrayIntoArrayOfPairs(usedChartsNumbers);
 
-
-
+  document.getElementById("results-content-body").classList.remove("mobileWidth");
 
 
 
@@ -124,19 +127,7 @@ function htmlToPdf() {
 
 
 
-
-
-
-
-
   //import { jsPDF } from "jspdf";
-
-
-
-
-
-
-
 
 
   let doc = new jsPDF();
@@ -147,8 +138,23 @@ function htmlToPdf() {
   doc.setFont("FreeSerif");
   doc.text(20, 12, docHeader);
 
-
-
+  html2canvas(document.querySelector("#results-content-body"), {
+    background: "#ffffff",
+    onrendered: function(canvas) {
+      var myImage = canvas.toDataURL("image/jpeg,1.0");
+      // Adjust width and height
+      var imgWidth = (canvas.width * 20) / 120;
+      var imgHeight = (canvas.height * 20) / 120; 
+      // jspdf changes
+      doc.addImage(myImage, 'JPEG', 25, 12, imgWidth, imgHeight);
+    }
+  });
+  
+  /* //test
+  doc.setFontSize(18);
+  doc.setFont("FreeSerif");
+  doc.text(20, 20, arrayWithUsedChartsNumbers);
+  */  //test
 
 
 
@@ -229,8 +235,47 @@ function htmlToPdf() {
   doc.text(20, 30, text_priklad_praxe);
   */
 
-
   const fileName = "AnalyzaOH_" + document.getElementById("townName").innerText + ".pdf";
   doc.save(fileName);
 
+  document.getElementById("results-content-body").classList.add("mobileWidth");
+}
+
+function getNumberOfUsedCharts(){
+  let outputArray = [];
+  for ( var i = 1; i < 16; i++ ) {
+
+    let selector = "gaugeData" + i;
+
+    if (! (window[selector]["x02_gaugeMainValue"] == 0)) {
+      outputArray.push(i);
+    }
+
+  }
+  return outputArray;
+}
+
+function splitArrayIntoArrayOfPairs(inputArray) {
+  
+  let outputArray = [];
+
+  for(var i = 0; i< inputArray.length; i = i + 2){
+    let row = [];
+    let firstItem;
+    let secondItem;
+    let pairArray = [];
+    if ( i < inputArray.length - 2 ) {
+      firstItem = inputArray[i];
+      secondItem = inputArray[(i + 1)];
+      pairArray = [firstItem, secondItem]
+    } else {
+      firstItem = inputArray[i];
+      pairArray = [firstItem]
+    }
+    
+    row.push(pairArray);
+    outputArray.push(row);
+  }
+
+  return outputArray;
 }
