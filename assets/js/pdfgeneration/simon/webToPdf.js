@@ -68,15 +68,3 @@ function cleanAfterPdfConversion() {
   document.getElementById("resetViewfterPdfConversion").classList.remove("visible");
   drawChartColumns("webView");
 }
-
-setInterval(
-  function(){ 
-    let resetViewButton_classes = document.getElementById("resetViewfterPdfConversion").classList;
-    //test
-    console.log(resetViewButton_classes.value);
-    //test
-    let isResetViewVisible = resetViewButton_classes.value.search("visible");
-    if (isResetViewVisible > 0) {
-      cleanAfterPdfConversion();
-    }
-  }, 2000);
