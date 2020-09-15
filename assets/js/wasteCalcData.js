@@ -55,6 +55,8 @@ const wasteData = {
   }
 };
 
+Object.freeze(wasteData);
+
 let formValueResult = {
   wasteResult01: "",
   wasteResult02: "",

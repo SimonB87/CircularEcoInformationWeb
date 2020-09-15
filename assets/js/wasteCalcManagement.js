@@ -56,7 +56,7 @@ function calculateWaste() {
 
   prepareGaugesObjects();
   drawGauges();
-  drawChartColumns();
+  drawChartColumns("webView");
   displayChartType("gauges","bars"); 
 
 

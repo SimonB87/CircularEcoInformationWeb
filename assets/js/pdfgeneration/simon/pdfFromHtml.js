@@ -1,6 +1,9 @@
 function htmlToPdf() {
+
+  const arrayWithUsedChartsNumbers = "arrayWithUsedChartsNumbers" + getNumberOfUsedCharts();
+
+  //console.log("fce htmlToPdf");
   /*
-  console.log("fce htmlToPdf");
   var pdf = new jsPDF("p", "pt", "letter");
   source = $("#HTMLtoPDF")[0];
   specialElementHandlers = {
@@ -25,29 +28,44 @@ function htmlToPdf() {
       // dispose: object with X, Y of the last line add to the PDF
       //          this allow the insertion of new lines after html
       pdf.save("html2pdf.pdf");
-      console.log("fce htmlToPdf 1");
+      //console.log("fce htmlToPdf 1");
     }
-  );
-  */
+  );*/
 
-  var currentdate = new Date();
-  var datetime =
+  
+
+
+
+  let currentDate = new Date();
+  let dateTime =
     "Datum: " +
-    currentdate.getDate() +
+    currentDate.getDate() +
     "." +
-    (currentdate.getMonth() + 1) +
+    (currentDate.getMonth() + 1) +
     "." +
-    currentdate.getFullYear() +
+    currentDate.getFullYear() +
     " Čas: " +
-    currentdate.getHours() +
+    currentDate.getHours() +
     ":" +
-    currentdate.getMinutes() +
+    currentDate.getMinutes() +
     ":" +
-    currentdate.getSeconds();
+    currentDate.getSeconds();
+  
+  const townName = document.getElementById("townName").innerHTML
 
-  const docHeader =
-    "Projekt Cirkulární ekonomika - Demo : PDF generování ." + datetime;
+  const docHeader = `Obcevkruhu.cz - Analýza Odpadového hospodářství obce ${townName} | ${dateTime}`;
 
+  const usedChartsNumbers = getNumberOfUsedCharts();
+  const arrayOfPairs = splitArrayIntoArrayOfPairs(usedChartsNumbers);
+
+  document.getElementById("results-content-body").classList.remove("mobileWidth");
+
+
+
+
+
+
+  /*
   const titulek_nazevTypovehoReseni = document.getElementById(
     "projectDetailDesc--nazevTypovehoReseni"
   ).innerText;
@@ -95,7 +113,7 @@ function htmlToPdf() {
     "projectDetail--cilova_skupina"
   ).innerText;
 
-  /* some sections skipped */
+  //some sections skipped 
 
   const titulek_priklad_praxe = document.getElementById(
     "projectDetailDesc--priklad_praxe"
@@ -103,6 +121,14 @@ function htmlToPdf() {
   const text_priklad_praxe = document.getElementById(
     "projectDetail--priklad_praxe"
   ).innerText;
+  */
+  
+
+
+
+
+  //import { jsPDF } from "jspdf";
+
 
   let doc = new jsPDF();
   //set regular font style
@@ -112,6 +138,29 @@ function htmlToPdf() {
   doc.setFont("FreeSerif");
   doc.text(20, 12, docHeader);
 
+  html2canvas(document.querySelector("#results-content-body"), {
+    background: "#ffffff",
+    onrendered: function(canvas) {
+      var myImage = canvas.toDataURL("image/jpeg,1.0");
+      // Adjust width and height
+      var imgWidth = (canvas.width * 20) / 120;
+      var imgHeight = (canvas.height * 20) / 120; 
+      // jspdf changes
+      doc.addImage(myImage, 'JPEG', 25, 12, imgWidth, imgHeight);
+    }
+  });
+  
+  /* //test
+  doc.setFontSize(18);
+  doc.setFont("FreeSerif");
+  doc.text(20, 20, arrayWithUsedChartsNumbers);
+  */  //test
+
+
+
+
+
+  /*
   doc.setFontSize(18);
   doc.setFont("FreeSerif");
   doc.text(20, 20, titulek_nazevTypovehoReseni);
@@ -172,7 +221,7 @@ function htmlToPdf() {
   doc.setFont("FreeSerif");
   doc.text(20, 250, text_cilova_skupina);
 
-  /* some sections skipped */
+  // some sections skipped
 
   //go to next page
   doc.addPage("a4", "portrait");
@@ -184,6 +233,49 @@ function htmlToPdf() {
   doc.setFontSize(13);
   doc.setFont("FreeSerif");
   doc.text(20, 30, text_priklad_praxe);
+  */
 
-  doc.save(text_nazevTypovehoReseni + ".pdf");
+  const fileName = "AnalyzaOH_" + document.getElementById("townName").innerText + ".pdf";
+  doc.save(fileName);
+
+  document.getElementById("results-content-body").classList.add("mobileWidth");
+}
+
+function getNumberOfUsedCharts(){
+  let outputArray = [];
+  for ( var i = 1; i < 16; i++ ) {
+
+    let selector = "gaugeData" + i;
+
+    if (! (window[selector]["x02_gaugeMainValue"] == 0)) {
+      outputArray.push(i);
+    }
+
+  }
+  return outputArray;
+}
+
+function splitArrayIntoArrayOfPairs(inputArray) {
+  
+  let outputArray = [];
+
+  for(var i = 0; i< inputArray.length; i = i + 2){
+    let row = [];
+    let firstItem;
+    let secondItem;
+    let pairArray = [];
+    if ( i < inputArray.length - 2 ) {
+      firstItem = inputArray[i];
+      secondItem = inputArray[(i + 1)];
+      pairArray = [firstItem, secondItem]
+    } else {
+      firstItem = inputArray[i];
+      pairArray = [firstItem]
+    }
+    
+    row.push(pairArray);
+    outputArray.push(row);
+  }
+
+  return outputArray;
 }

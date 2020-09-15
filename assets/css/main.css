@@ -2052,11 +2052,11 @@ a.big:hover .mainIconNavigation--link--icon.unfinished {
 
 /* CSS for the form */
 
-li.formActions_goHome:hover {
+.actions.formToglerActions li.formActions_goHome:hover {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-li.formActions_goHome {
+.actions.formToglerActions .formActions_goHome, .actions.formToglerActions .actionButton {
   margin-left: 1rem;
   appearance: none;
   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2227,6 +2227,47 @@ li.formActions_goHome a {
   font-size: 0.8rem;
 }
 
+.formTogler_panel3 .results-content-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.formTogler_panel3 .results-content-body .field.half{
+  width: 50%;
+  padding: 0 0.5rem;
+}
+
+.formTogler_panel3 .results-content-body .field.half .gauge .result_title,
+.formTogler_panel3 .results-content-body .field.half .gauge .result_unit,
+.formTogler_panel3 .results-content-body .field.half .gauge p {
+  padding: 0 0.5rem;
+}
+
+/* Styles for Web To PDF generation - necessary class " .pdfPrint " */
+.formTogler_panel3 .results-content-body.pdfPrint {
+  min-width: 1000px;
+  max-width: 1001px;
+}
+
+.results-content-body.pdfPrint .field.half .gauge{
+  margin-top: 0.5rem;
+}
+
+.results-content-body.pdfPrint .field.half .gauge h3,
+.results-content-body.pdfPrint .field.half .gauge h4,
+.results-content-body.pdfPrint .field.half .gauge p {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.results-content-body.pdfPrint .field.half .gauge .charts {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 600px) {
   .wasteCaclForm .formToglerControls {
     width: 100%;
@@ -2247,6 +2288,9 @@ li.formActions_goHome a {
     margin-left: 0;
     padding-top: 0;
     padding-top: 0 !important;
+  }
+  .formTogler_panel3 .results-content-body.mobileWidth .field.half{
+    width: 100%;
   }
 }
 
