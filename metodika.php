@@ -54,7 +54,7 @@
             <li><a href="#ometodice">O metodice</a></li>
             <li><a href="#krok_A">Projít metodiku</a></li>
             <li>
-              <a href="0demo/register.php">Přihlásit se</a>
+              <a href="social/register.php">Přihlásit se</a>
             </li>
           </ul>
         </nav>
