@@ -48,6 +48,8 @@ function getPDFFileButton() {
           pdf.addImage(myImage, 'JPEG', 15, 45, imgWidth, imgHeight); // 2: 19
 
           pdf.save(fileName);
+
+          cleanAfterPdfConversion();
         }
     });
 
@@ -104,15 +106,9 @@ function getPDFFileButton() {
   }
 }
 
-$("#btnPrint").on("click", function () {
-  getPDFFileButton();
-  cleanAfterPdfConversion();
-
-});
-
 function cleanAfterPdfConversion() {
-  document.querySelector("#results-content-body").classList.remove("pdfPrint");
-  document.querySelector("#results-content-body").classList.add("mobileWidth");
+  document.getElementById("results-content-body").classList.remove("pdfPrint");
+  document.getElementById("results-content-body").classList.add("mobileWidth");
   document.getElementById("resetViewfterPdfConversion").classList.add("displayNone");
   document.getElementById("resetViewfterPdfConversion").classList.remove("visible");
   drawChartColumns("webView");
