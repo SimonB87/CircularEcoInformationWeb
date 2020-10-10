@@ -34,22 +34,35 @@ function getPDFFileButton() {
   return html2canvas(document.querySelector("#results-content-body"), {
         background: "#ffffff",
         onrendered: function(canvas) {
-          var myImage = canvas.toDataURL("image/jpeg,1.0");
-          // Adjust width and height
-          var imgWidth = (canvas.width * 22) / 120;
-          var imgHeight = (canvas.height * 22) / 120; 
 
-          // jspdf changes
-          var pdf = new jsPDF('p', 'mm', 'a4');
-          pdf.setFont("FreeSerif");
-          pdf.setFontSize(14);
-          pdf.text(docHeader, 15, 25);
-          pdf.text(displayDateTime, 15, 35);
-          pdf.addImage(myImage, 'JPEG', 15, 45, imgWidth, imgHeight); // 2: 19
+          fetch(renderPdfFile())
+          .then(cleanAfterPdfConversion())
 
-          pdf.save(fileName);
+          function renderPdfFile() {
+            var myImage = canvas.toDataURL("image/jpeg,1.0");
+            // Adjust width and height
+            var imgWidth = (canvas.width * 22) / 120;
+            var imgHeight = (canvas.height * 22) / 120; 
 
-          cleanAfterPdfConversion();
+            // jspdf changes
+            var pdf = new jsPDF('p', 'mm', 'a4');
+            pdf.setFont("FreeSerif");
+            pdf.setFontSize(14);
+            pdf.text(docHeader, 15, 25);
+            pdf.text(displayDateTime, 15, 35);
+            pdf.addImage(myImage, 'JPEG', 15, 45, imgWidth, imgHeight); // 2: 19
+  
+            pdf.save(fileName);
+          }
+
+          function cleanAfterPdfConversion() {
+            document.getElementById("results-content-body").classList.remove("pdfPrint");
+            document.getElementById("results-content-body").classList.add("mobileWidth");
+            document.getElementById("resetViewfterPdfConversion").classList.add("displayNone");
+            document.getElementById("resetViewfterPdfConversion").classList.remove("visible");
+            drawChartColumns("webView");
+          }
+
         }
     });
 
@@ -106,10 +119,3 @@ function getPDFFileButton() {
   }
 }
 
-function cleanAfterPdfConversion() {
-  document.getElementById("results-content-body").classList.remove("pdfPrint");
-  document.getElementById("results-content-body").classList.add("mobileWidth");
-  document.getElementById("resetViewfterPdfConversion").classList.add("displayNone");
-  document.getElementById("resetViewfterPdfConversion").classList.remove("visible");
-  drawChartColumns("webView");
-}
