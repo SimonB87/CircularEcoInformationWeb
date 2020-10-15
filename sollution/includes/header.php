@@ -66,7 +66,7 @@ include("includes/classes/User.php");
   <!-- temporarly project table menu styles -->
   <link rel="stylesheet" type="text/css" href="assets/css/table_list_typova_reseni_style.css">
 
-
+  <link rel="stylesheet" type="text/css" href="assets/libs/footablebootstrap/css/footable.bootstrap.min.css">
 
 
   <!------ Include the above in your HEAD tag ---------->
