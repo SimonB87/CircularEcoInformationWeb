@@ -29,48 +29,48 @@ include("includes/tableprojectswebmenu.php");
   
         <div class="project_table_info">Stránka je optimalizována pro rozlišení s šířkou 1000px a větší.</div>
         <br>
-            <input type="text" id="mySearchInput" onkeyup="mySearchFunction()" placeholder="Hledej v projektech.." title="Hledat v projektech">
+            <input type="text" id="mySearchInput" placeholder="Hledej v projektech.." title="Hledat v projektech"> <!-- onkeyup="mySearchFunction()" -->
         <br>
 
         <br>
 
-        <table id="mySearchTable" class="search_project_table">
+        <table id="mySearchTable" class="table search_project_table">
             <tr class="mySearchTable_header">
                 <th>Plný název 
                   <br>
-                  <span onclick="sortTable(0)"><i>Seřadit</i></span>
+                  <span><i>Seřadit</i></span> <!-- onclick="sortTable(0)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput0" onkeyup="mySearchColumnFunction(0)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th>Plný popis 
+                <th data-breakpoints="md">Plný popis 
                   <br>
-                  <span onclick="sortTable(1)"><i>Seřadit</i></span>
+                  <span onclick="sortTable(1)"><i>Seřadit</i></span> <!-- onclick="sortTable(1)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput1" onkeyup="mySearchColumnFunction(1)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
 
-                <th>Kategorie
+                <th data-breakpoints="xs sm">Kategorie
                   <br>
-                  <span onclick="sortTable(2)"><i>Seřadit</i></span>
+                  <span onclick="sortTable(2)"><i>Seřadit</i></span> <!-- onclick="sortTable(2)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput4" onkeyup="mySearchColumnFunction(2)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
 
-                <th>Cílová skupina 
+                <th data-breakpoints="xs sm md">Cílová skupina 
                   <br>
-                  <span onclick="sortTable(3)"><i>Seřadit</i></span>
+                  <span onclick="sortTable(3)"><i>Seřadit</i></span> <!-- onclick="sortTable(3)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput2" onkeyup="mySearchColumnFunction(3)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th>Související kategorie 
+                <th >Související kategorie 
                   <br>
-                  <span onclick="sortTable(4)"><i>Seřadit</i></span>
+                  <span onclick="sortTable(4)"><i>Seřadit</i></span> <!-- onclick="sortTable(4)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput3" onkeyup="mySearchColumnFunction(4)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th>Využitelné produkty
+                <th data-breakpoints="xs sm md">Využitelné produkty
                   <br>
-                  <span onclick="sortTable(5)"><i>Seřadit</i></span>
+                  <span onclick="sortTable(5)"><i>Seřadit</i></span> <!-- onclick="sortTable(5)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput4" onkeyup="mySearchColumnFunction(5)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
@@ -207,7 +207,7 @@ include("includes/tableprojectswebmenu.php");
                     $rowEdit_plny_popis = truncate($row["plny_popis"], 600);
                     $rowEdit_vyuzitelne_produkty = truncate($row["vyuzitelne_produkty"], 600);
                     
-                    echo "<tr class='tableProjectRowStart'><td><strong> <a href='projecdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td></tr>";
+                    echo "<tr data-expanded='false' class='tableProjectRowStart'><td><strong> <a href='projecdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td></tr>";
                 }
                 echo "";
             }
@@ -219,9 +219,9 @@ include("includes/tableprojectswebmenu.php");
 
             ?>
 
-            <tr>
+<!--             <tr>
                 <td>KONEC TABULKY</td>
-            </tr>
+            </tr> -->
 
         </table>
 
@@ -234,6 +234,16 @@ include("includes/tableprojectswebmenu.php");
 </div> <!-- closing of the wrapper div, this div stars in the included header file-->
 
 <script src="assets/js/projectSearchTable.js"></script>
+<script src="assets/libs/footablebootstrap/js/footable.js" defer></script>
+<script defer>
+jQuery(function($){
+    $('.table').footable();
+  });
+/*
+Sollution guide 15.10.2020: http://fooplugins.github.io/FooTable/docs/examples/basic/single-header.html
+*/
+</script>
+
 
 </body>
 </html>
