@@ -42,35 +42,35 @@ include("includes/tableprojectswebmenu.php");
                   <br>
                   <input type="text" class="hledej form-control" id="myInput0" onkeyup="mySearchColumnFunction(0)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th data-breakpoints="md">Plný popis 
+                <th data-breakpoints="xs sm md">Plný popis 
                   <br>
-                  <span onclick="sortTable(1)"><i>Seřadit</i></span> <!-- onclick="sortTable(1)" -->
+                  <span><i>Seřadit</i></span> <!-- onclick="sortTable(1)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput1" onkeyup="mySearchColumnFunction(1)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
 
                 <th data-breakpoints="xs sm">Kategorie
                   <br>
-                  <span onclick="sortTable(2)"><i>Seřadit</i></span> <!-- onclick="sortTable(2)" -->
+                  <span><i>Seřadit</i></span> <!-- onclick="sortTable(2)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput4" onkeyup="mySearchColumnFunction(2)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
 
-                <th data-breakpoints="xs sm md">Cílová skupina 
+                <th data-breakpoints="xs sm">Cílová skupina 
                   <br>
-                  <span onclick="sortTable(3)"><i>Seřadit</i></span> <!-- onclick="sortTable(3)" -->
+                  <span><i>Seřadit</i></span> <!-- onclick="sortTable(3)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput2" onkeyup="mySearchColumnFunction(3)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th >Související kategorie 
+                <th data-breakpoints="xs sm md">Související kategorie 
                   <br>
-                  <span onclick="sortTable(4)"><i>Seřadit</i></span> <!-- onclick="sortTable(4)" -->
+                  <span><i>Seřadit</i></span> <!-- onclick="sortTable(4)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput3" onkeyup="mySearchColumnFunction(4)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th data-breakpoints="xs sm md">Využitelné produkty
+                <th data-breakpoints="xs">Využitelné produkty
                   <br>
-                  <span onclick="sortTable(5)"><i>Seřadit</i></span> <!-- onclick="sortTable(5)" -->
+                  <span><i>Seřadit</i></span> <!-- onclick="sortTable(5)" -->
                   <br>
                   <input type="text" class="hledej form-control" id="myInput4" onkeyup="mySearchColumnFunction(5)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
