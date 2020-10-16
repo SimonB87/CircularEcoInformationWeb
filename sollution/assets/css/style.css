@@ -825,19 +825,39 @@ button.btn.btn-info a {
   /*font-size: 18px;*/
 }
 
-table.table.search_project_table>tbody>tr>td>span.footable-toggle {
-  margin-right: 8px;
-  opacity: .8;
-  color: #28a745;
+table.table.search_project_table > tbody > tr > td > span.footable-toggle {
+  margin-right: 0.5rem;
+  opacity: 0.8;
+  color: #004620;
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  table.table.search_project_table > tbody > tr > td > span.footable-toggle {
+    margin-right: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.table span.fooicon {
+  margin-right: 0.5rem;
+}
+
+table.table.search_project_table
+  table.footable-details
+  input.hledej.form-control {
+  display: none;
+  visibility: hidden;
+}
+
 .mySearchTable_header {
-  background-color: var(--main-light-color);
+  background-color: #006930;
   color: #fff;
 }
 
-.mySearchTable_header:hover {
+.mySearchTable_header:hover,
+.mySearchTable_header:focus {
+  background-color: #66cf96;
   color: #000;
 }
 
@@ -852,8 +872,9 @@ table.table.search_project_table>tbody>tr>td>span.footable-toggle {
   border-bottom: 1px solid #ddd;
 }
 
-#mySearchTable tr:hover {
-  background-color: #8aed8a;
+table.search_project_table > tbody > tr:hover:not(.footable-detail-row),
+table.search_project_table > tbody > tr:focus:not(.footable-detail-row) {
+  background-color: #99dfb9;
 }
 
 tr:nth-child(even) {
