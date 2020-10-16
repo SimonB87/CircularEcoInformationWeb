@@ -825,6 +825,13 @@ button.btn.btn-info a {
   /*font-size: 18px;*/
 }
 
+table.table.search_project_table>tbody>tr>td>span.footable-toggle {
+  margin-right: 8px;
+  opacity: .8;
+  color: #28a745;
+  font-size: 1rem;
+}
+
 .mySearchTable_header {
   background-color: var(--main-light-color);
   color: #fff;
