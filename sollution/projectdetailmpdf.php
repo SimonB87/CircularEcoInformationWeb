@@ -104,7 +104,7 @@ $text_projectInfo_souvisejiciKategorie = "<h3 style='font-size:1.5rem'>SouvisejÃ
 
 $all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_projectInfo_souvisejiciKategorie;
 
-$mpdf->SetHeader("www.obcevkruhu.cz: " . $projectInfo_plnyNazev);
+$mpdf->SetHeader("<p style='margin: 0.5rem 0.5rem'> www.obcevkruhu.cz: " . $projectInfo_plnyNazev . "</p>");
 //$mpdf->defaultheaderline=0;
 $mpdf->setFooter("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 //$mpdf->defaultfooterline=0;
