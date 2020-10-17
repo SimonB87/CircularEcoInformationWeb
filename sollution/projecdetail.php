@@ -141,7 +141,7 @@ include("includes/tableprojectswebmenu.php");
     <script src="assets/js/pdfgeneration/simon/pdffromhtml.js"></script> 
     <script> 
       var projectNumber = document.querySelector('#project_number_value').innerText;
-      var urlString = "projectdetailpdf.php?projectnumber=" + projectNumber;
+      var urlString = "projectdetailmpdf.php?projectnumber=" + projectNumber;
       console.log(projectNumber);
       console.log(urlString);
       document.querySelector('#pdfLink').setAttribute('href', urlString);
