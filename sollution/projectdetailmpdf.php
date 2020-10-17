@@ -88,18 +88,18 @@ else {
 //Close the variable after finishing
 $con->close();
 
-$text_projectInfo_plnyNazev = "<p style='font-size:1.2rem'><strong>Plný název typového řešení:</strong></p> <h3>" . $projectInfo_plnyNazev . "</h3>";
+$text_projectInfo_plnyNazev = "<p style='font-size:1.2rem'><strong>Plný název typového řešení:</strong></p> <h3 style='color:#28a745;'>" . $projectInfo_plnyNazev . "</h3>";
 $text_projectInfo_kategorie = "<p style='font-size:1.2rem'><strong>Kategorie:</strong></p> <h3>" . $projectInfo_kategorie. "</h3>";
-$text_projectInfo_popis = "<h3 style='font-size:1.5rem'>Plný popis typového řešení:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_popis . "</p>";
-$text_projectInfo_podminky = "<h3 style='font-size:1.5rem'>Podmínky využití:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_podminky . "</p>";
-$text_projectInfo_vyuzitelneProdukty = "<h3 style='font-size:1.5rem'>Využitelné produkty:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_vyuzitelneProdukty . "</p>" ;
-$text_projectInfo_swot = "<h3 style='font-size:1.5rem'>SWOT analýza:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_swot . "</p>";
-$text_projectInfo_cilovaSkupina  = "<h3 style='font-size:1.5rem'>Cílová skupina:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_cilovaSkupina . "</p>";
-$text_projectInfo_ekonomickePodminky = "<h3 style='font-size:1.5rem'>Ekonomické podmínky:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_ekonomickePodminky . "</p>";
-$text_projectInfo_personal = "<h3 style='font-size:1.5rem'>Personální náročnost:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_personal . "</p>";
-$text_projectInfo_pravni = "<h3 style='font-size:1.5rem'>Právní aspekty:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_pravni . "</p>";
-$text_projectInfo_prikladyPraxe = "<h3 style='font-size:1.5rem'>Příklady praxe:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_prikladyPraxe . "</p>";
-$text_projectInfo_souvisejiciKategorie = "<h3 style='font-size:1.5rem'>Související kategorie:</h3><p style='font-weight: 500;font-size:1rem'>" . $projectInfo_souvisejiciKategorie . "</p>";
+$text_projectInfo_popis = "<h3 style='font-size:1.5rem'>Plný popis typového řešení:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_popis . "</p>";
+$text_projectInfo_podminky = "<h3 style='font-size:1.5rem'>Podmínky využití:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_podminky . "</p>";
+$text_projectInfo_vyuzitelneProdukty = "<h3 style='font-size:1.5rem'>Využitelné produkty:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_vyuzitelneProdukty . "</p>" ;
+$text_projectInfo_swot = "<h3 style='font-size:1.5rem'>SWOT analýza:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_swot . "</p>";
+$text_projectInfo_cilovaSkupina  = "<h3 style='font-size:1.5rem'>Cílová skupina:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_cilovaSkupina . "</p>";
+$text_projectInfo_ekonomickePodminky = "<h3 style='font-size:1.5rem'>Ekonomické podmínky:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_ekonomickePodminky . "</p>";
+$text_projectInfo_personal = "<h3 style='font-size:1.5rem'>Personální náročnost:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_personal . "</p>";
+$text_projectInfo_pravni = "<h3 style='font-size:1.5rem'>Právní aspekty:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_pravni . "</p>";
+$text_projectInfo_prikladyPraxe = "<h3 style='font-size:1.5rem'>Příklady praxe:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_prikladyPraxe . "</p>";
+$text_projectInfo_souvisejiciKategorie = "<h3 style='font-size:1.5rem'>Související kategorie:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_souvisejiciKategorie . "</p>";
 
 
 $all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_projectInfo_souvisejiciKategorie;
@@ -109,7 +109,7 @@ $mpdf->SetHeader("www.obcevkruhu.cz: " . $projectInfo_plnyNazev);
 $mpdf->setFooter("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 //$mpdf->defaultfooterline=0;
 
-$mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem'>Obce v kruhu.cz - typové řešení</h2>");
+$mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem;text-align: center;'>Typové řešení pro obce</h2>");
 
 $mpdf->WriteHTML($all_text);
 
