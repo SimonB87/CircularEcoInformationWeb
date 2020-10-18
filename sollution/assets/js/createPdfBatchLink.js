@@ -1,20 +1,25 @@
-var solutionCheckboxes;
+function addTypeIDtoLink(indexValue){
+  const element = document.getElementById(`type_${indexValue}`);
+  const valueCheck = element.checked;
+  if (valueCheck == true) {
+    
+    const link = document.getElementById("pdfBatchDownload");
+    const solutionsString = link.getAttribute("solutions");
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  var solutionCheckboxes = document.querySelectorAll(".table input.includeSolutionToPdf");
-  for(var i = 0; i < solutionCheckboxes.length; i++) {
-    solutionCheckboxes[i].addEventListener("click", displayValue);
-    let output = solutionCheckboxes[i].getAttribute("solutionId");
+    const checkString = solutionsString.includes(indexValue);
+    let newSolutionsString = "";
 
-    function displayValue() {
-      let outputValue = "X";
-      //let outputValue = solutionCheckboxes[i].getAttribute("solutionId");
-      console.log(output);
-      if ( solutionCheckboxes[i].checked ) {
-        console.log(`is checked: ${outputValue}`);
+    if ( checkString == false ) {
+      if (solutionsString.length < 3) {
+        newSolutionsString = indexValue;
       } else {
-        console.log(`not checked: ${outputValue}`);
+        newSolutionsString = solutionsString + "," + indexValue;
       }
+
+
+      link.setAttribute("solutions", newSolutionsString)
     }
+
+    link.setAttribute("href", "projectdetailmpdfbatch.php?types=[" + newSolutionsString +"]"); 
   }
-});
+}
