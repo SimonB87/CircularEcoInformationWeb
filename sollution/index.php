@@ -74,7 +74,7 @@ include("includes/tableprojectswebmenu.php");
                   <br>
                   <input type="text" class="hledej form-control" id="myInput4" onkeyup="mySearchColumnFunction(5)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th class="headerIcon"> Stáhnout vybraná řešení <span class="pdfIcon headerIcon textCenter"><i class="far fa-file-pdf"></i> <span> 
+                <th class="headerIcon"> <a id="pdfBatchDownload" href="#"> Stáhnout vybraná řešení <span class="pdfIcon headerIcon textCenter"><i class="far fa-file-pdf"></i> <span> </a> 
                 </th>
             </tr>
 
@@ -209,7 +209,7 @@ include("includes/tableprojectswebmenu.php");
                     $rowEdit_plny_popis = truncate($row["plny_popis"], 600);
                     $rowEdit_vyuzitelne_produkty = truncate($row["vyuzitelne_produkty"], 600);
                     
-                    echo "<tr data-expanded='false' class='tableProjectRowStart'><td><strong> <a href='projecdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td> <td> <input type='checkbox' id='" . $row["id"] . "' name='Typ_". $row["id"] ."' value='PDF'> <label for='typ_". $row["id"] ."'> <span class='addToPDF'> <i class='fas fa-plus plusIcon addIcon'></i> <i class='fas fa-minus minusIcon addIcon displayNone'></i> <i class='far fa-file-pdf pdfIcon'></i> </span></label></td> </tr>";;
+                    echo "<tr data-expanded='false' class='tableProjectRowStart'><td><strong> <a href='projecdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td> <td> <input type='checkbox' id='type_" . $row["id"] . "' name='Typ_". $row["id"] ."' solutionid='". $row["id"] ."' class='includeSolutionToPdf'> <label for='typ_". $row["id"] ."'> <span class='addToPDF'> <i class='fas fa-plus plusIcon addIcon'></i> <i class='fas fa-minus minusIcon addIcon displayNone'></i> <i class='far fa-file-pdf pdfIcon'></i> </span></label></td> </tr>";;
                 }
                 echo "";
             }
@@ -245,7 +245,7 @@ jQuery(function($){
 Sollution guide 15.10.2020: http://fooplugins.github.io/FooTable/docs/examples/basic/single-header.html
 */
 </script>
-
+<script src="assets/js/createPdfBatchLink.js" defer></script>
 
 </body>
 </html>
