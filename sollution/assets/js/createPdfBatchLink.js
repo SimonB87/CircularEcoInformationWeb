@@ -20,6 +20,6 @@ function addTypeIDtoLink(indexValue){
       link.setAttribute("solutions", newSolutionsString)
     }
 
-    link.setAttribute("href", "projectdetailmpdfbatch.php?types=[" + newSolutionsString +"]"); 
+    link.setAttribute("href", "solutionmpdfbatch.php?types=[" + newSolutionsString +"]"); 
   }
 }
