@@ -2,7 +2,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-
 $mpdf = new \Mpdf\Mpdf([
   'mode' => 'utf-8',
   'format' => 'A4',
@@ -11,31 +10,12 @@ $mpdf = new \Mpdf\Mpdf([
   'orientation' => 'P'
 ]);
 
-
 //! this is custom for each built location!
-require 'config/config2.php';
-
-// security function for injections
-$link = $con;
-$actual_link = "Odkaz: " . mysqli_real_escape_string($link,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-
-//url for footer inside bottom of page
-$pdf->urlLink = $actual_link;
-
-$position_in_string = strpos($actual_link, "number=");
-$project_number = substr($actual_link, $position_in_string + 7);
-$project_number = mysqli_real_escape_string($link, $project_number);
-// just work with first 5 characters
-$project_number = substr($project_number, 0, 5);
-
-//conect to the database
+require 'config/config3.php';
 
 if($con->connect_error) {
   die("Connection failed: " . $con->connect_error);
 }
-
-//print the used character set - just for testing
-//printf("Initial character set: %s\n", mysqli_character_set_name($con));
 
 // change character set to utf8 - before "utf8"
 if (!mysqli_set_charset($con, "utf8")) {
@@ -45,13 +25,10 @@ if (!mysqli_set_charset($con, "utf8")) {
       //printf("Current character set: %s\n", mysqli_character_set_name($con));//used only for testing
 }
 
-
 /**
  * Search DB
 */
 
-
-require 'config/config.php';
 include("includes/classes/User.php");
 
 //echo "Work in progress";
@@ -72,27 +49,22 @@ $search_columns = array();
 
 //change codes for columns
 foreach ($search_query_array as $item) {
-  $item = intval($item);
-  /*
+
   if ( ($item > 999) || ($item < 2999) ) {
-    //echo "<p>Item: <br>" . $item . "</p>";
+    echo "<p>Item: <br>" . $item . "</p>";
   } else {
-    //echo "<br><h4 style='color:red;'>Jsou zadány ve vyhledávání špatné hodnoty!</h4><br>";
-  }*/
-  array_push($search_columns, $item);
+    echo "<br><h4 style='color:red;'>Jsou zadány ve vyhledávání špatné hodnoty!</h4><br>";
+  }
 }
+
 
 /** 
  * Prepare PDF head and footer
 */
 
 $mpdf->SetHeader("<p style='margin: 0.5rem 0.5rem'> www.obcevkruhu.cz: " . $projectInfo_plnyNazev . "</p>");
-
 $mpdf->setFooter("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
-
 $mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem;text-align: center;'>Typové řešení pro obce</h2>");
-
-
 
 /** 
  * Get text from db to pdf - ittirate for each item in DB
@@ -114,12 +86,18 @@ $projectInfo_souvisejiciKategorie = "";
 
 
 foreach ($search_query_array as $item) {
-  
+ 
   //Select columns named from "a" to "e" from a database
-  $sql = "SELECT kategorie, plny_nazev, plny_popis, podminky_vyuziti, vyuzitelne_produkty, SWOT_analyza, cilova_skupina, ekonomicke_podminky, personálni_narocnost, pravni_aspekty, priklad_praxe, souvisejici_kategorie FROM projety_ce WHERE id='$item'";
+  $sql = "SELECT kategorie, plny_nazev, plny_popis, podminky_vyuziti, vyuzitelne_produkty, SWOT_analyza, cilova_skupina, ekonomicke_podminky, personálni_narocnost, pravni_aspekty, priklad_praxe, souvisejici_kategorie FROM typova_reseni WHERE id='$item'";
   //variable to catch the results
   $results = $con-> query($sql);
   //function to fatch the data
+
+  //debug db connection
+  //if (!$result) {
+  //  trigger_error('Invalid query: ' . $con->error);
+  //}
+
   if ($results-> num_rows > 0 ) {
     while ($row = $results-> fetch_assoc()) {
 
@@ -153,22 +131,21 @@ foreach ($search_query_array as $item) {
 
       $all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_projectInfo_souvisejiciKategorie;
 
+      //echo $all_text . "<br><br><br><br><br><br><br><br><br><br><br>";
       $mpdf->WriteHTML($all_text);
       //Add page for a new project
       $mpdf->AddPage();
     }
     echo "";
-  }
-  else {
-    echo "<h3 style='text-align: center; color: coral'>Projekt s vybraným číslem není v databázi. Vyberte existující projekt!</h3>";
+  } else {
+    echo "<h3 style='text-align: center; color: coral'>Nastala chyba - Projekt s vybraným číslem není v databázi. Vyberte existující projekt!</h3>";
   }
   //Close the variable after finishing
-  $con->close();
 
 }
 
+$con->close();
 
 $mpdf->Output();
-
 
 ?>
