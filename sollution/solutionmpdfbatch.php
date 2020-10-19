@@ -31,8 +31,6 @@ if (!mysqli_set_charset($con, "utf8")) {
 
 include("includes/classes/User.php");
 
-//echo "Work in progress";
-
 //sanitize string
 $linkDb = $con;
 $url_project_search = mysqli_real_escape_string($linkDb, "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
@@ -46,17 +44,6 @@ $search_query = substr($search_query, 0, -1);
 $search_query_array = explode(',', $search_query);
 
 $search_columns = array();
-
-//change codes for columns
-foreach ($search_query_array as $item) {
-
-  if ( ($item > 999) || ($item < 2999) ) {
-    echo "<p>Item: <br>" . $item . "</p>";
-  } else {
-    echo "<br><h4 style='color:red;'>Jsou zadány ve vyhledávání špatné hodnoty!</h4><br>";
-  }
-}
-
 
 /** 
  * Prepare PDF head and footer
@@ -84,6 +71,7 @@ $projectInfo_pravni = "";
 $projectInfo_prikladyPraxe = "";
 $projectInfo_souvisejiciKategorie = "";
 
+$lastElement = end($search_query_array);
 
 foreach ($search_query_array as $item) {
  
@@ -134,7 +122,14 @@ foreach ($search_query_array as $item) {
       //echo $all_text . "<br><br><br><br><br><br><br><br><br><br><br>";
       $mpdf->WriteHTML($all_text);
       //Add page for a new project
-      $mpdf->AddPage();
+
+      if ($item == $lastElement) {
+        $mpdf->WriteHTML("<br><p style='color: gray; font-size: 0.75rem;'>Konec záznamu typového řešení</p>");
+      } else {
+        $mpdf->WriteHTML("<br><p style='color: gray; font-size: 0.75rem;'>Konec záznamu typového řešení</p><br>");
+        $mpdf->AddPage();
+      }
+
     }
     echo "";
   } else {
