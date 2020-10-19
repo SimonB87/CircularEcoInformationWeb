@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+
 $mpdf = new \Mpdf\Mpdf([
   'mode' => 'utf-8',
   'format' => 'A4',
@@ -9,6 +10,7 @@ $mpdf = new \Mpdf\Mpdf([
   'margin_footer' => 8,     // 10mm
   'orientation' => 'P'
 ]);
+
 
 //! this is custom for each built location!
 require 'config/config2.php';
