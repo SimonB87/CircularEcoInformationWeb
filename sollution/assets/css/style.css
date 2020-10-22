@@ -877,6 +877,31 @@ table.search_project_table > tbody > tr:focus:not(.footable-detail-row) {
   background-color: #99dfb9;
 }
 
+.table .pdfIcon {
+  font-size: 2rem;
+}
+
+.table .headerIcon{
+  min-width: 6rem;
+}
+
+.table .addToPDF .addIcon {
+  position: absolute;
+  bottom: -0.6rem;
+  left: -0.6rem;
+  background: #fff;
+  /* margin: 0.5rem; */
+  padding: 2px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  font-size: 0.7em;
+}
+
+.table .addToPDF {
+  position: relative;
+  margin-left: 1.25rem;
+}
+
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
@@ -884,6 +909,17 @@ tr:nth-child(even) {
 #projectDetailBody #projectDetail--titul {
   text-align: center;
   color: coral;
+}
+
+/* generic styles */
+
+.textCenter{
+  text-align: center;
+}
+
+.displayNone{
+  display: none;
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 768px) {
