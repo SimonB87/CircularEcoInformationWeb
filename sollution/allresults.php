@@ -32,7 +32,18 @@ include("includes/tableprojectswebmenu.php");
             <input type="text" id="mySearchInput" onkeyup="mySearchFunction()" placeholder="Hledej v projektech.." title="Hledat v projektech">
         <br>
 
-        <br>
+        <div class="row actionButtons">
+          <div class="actionButtons--itemWrapper col-sm-12 col-md-4 col-lg-4 col-xl-4">
+           <button type="button" class="btn btn-success" onclick="setAllSolutionCheckboxes(true);">Přidat všechna řešení <i class="far fa-file-pdf"></i></button>
+          </div>
+          <div class="actionButtons--itemWrapper col-sm-12 col-md-4 col-lg-4 col-xl-4">
+           <button type="button" class="btn btn-primary"><a href="solutionmpdfbatch.php?types=[1002,1003,1203,1204,2202,2204,1105,2003,2303,1103,1207,2002,1201,2102,1001,1107,1102,1101,1205,2103,1106,2301,1104,1202,2201,1302,2001,1206,1303,1301,2203,2101,1006,1004,1005,2302,2304]" target="_blank" style="text-decoration:none;color:#fff;"> 
+           Stáhnout všechna řešení v katalogu <i class="far fa-file-pdf"></i></a></button>
+          </div>
+          <div class="actionButtons--itemWrapper col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <button type="button" class="btn btn-warning" onclick="setAllSolutionCheckboxes(false);">Pročistit výběr řešení</button>
+          </div>
+        </div>
 
         <table id="mySearchTable" class="table search_project_table">
             <tr class="mySearchTable_header">
