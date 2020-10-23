@@ -131,10 +131,6 @@ include("includes/tableprojectswebmenu.php");
 
             ?>
 
-            <tr>
-                <td>KONEC TABULKY</td>
-            </tr>
-
         </table>
 
     </div>
