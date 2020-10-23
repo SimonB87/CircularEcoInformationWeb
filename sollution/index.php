@@ -27,7 +27,7 @@ include("includes/tableprojectswebmenu.php");
             </a></button>
         </div>
   
-        <div class="project_table_info">Stránka je optimalizována pro rozlišení s šířkou 1000px a větší.</div>
+<!--         <div class="project_table_info">Stránka je optimalizována pro rozlišení s šířkou 1000px a větší.</div> -->
         <br>
             <input type="text" id="mySearchInput" placeholder="Hledej v projektech.." title="Hledat v projektech"> <!-- onkeyup="mySearchFunction()" -->
         <br>
