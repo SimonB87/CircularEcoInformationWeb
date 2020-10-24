@@ -5,8 +5,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $mpdf = new \Mpdf\Mpdf([
   'mode' => 'utf-8',
   'format' => 'A4',
-  'margin_header' => 10,     // 30mm not pixel
-  'margin_footer' => 8,     // 10mm
+  'margin-top' => 8,
+  'margin_header' => 8,     // 30mm not pixel
+  'margin_footer' => 6,     // 10mm
   'orientation' => 'P'
 ]);
 
@@ -49,8 +50,12 @@ $search_columns = array();
  * Prepare PDF head and footer
 */
 
-$mpdf->SetHeader("<p style='margin: 0.5rem 0.5rem'> www.obcevkruhu.cz: " . $projectInfo_plnyNazev . "</p>");
-$mpdf->setFooter("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
+$actual_link = "ODKAZ: " . mysqli_real_escape_string($linkDb,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+//there is no $projectInfo_plnyNazev in group of PDFs
+
+$mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
+$mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'>" . $actual_link . "</p>");
+
 $mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem;text-align: center;'>Typové řešení pro obce</h2>");
 
 /** 
