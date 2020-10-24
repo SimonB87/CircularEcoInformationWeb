@@ -56,6 +56,7 @@ $actual_link = "ODKAZ: " . mysqli_real_escape_string($linkDb,"http://$_SERVER[HT
 $mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 $mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'>" . $actual_link . "</p>");
 
+$mpdf->WriteHTML("<p style='margin: 0.5rem 0.5rem;text-align: center;'> <img src='assets/images/logoobcevkruhu2020small.png' alt='Logo ObceVkruhu.cz'></p>");
 $mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem;text-align: center;'>Typové řešení pro obce</h2>");
 
 /** 
@@ -108,7 +109,7 @@ foreach ($search_query_array as $item) {
       $projectInfo_souvisejiciKategorie = $row["souvisejici_kategorie"];
 
 
-      $text_projectInfo_plnyNazev = "<p style='font-size:1.2rem'><strong>Plný název typového řešení:</strong></p> <h3 style='color:#28a745;'>" . $projectInfo_plnyNazev . "</h3>";
+      $text_projectInfo_plnyNazev = "<p style='font-size:1.2rem'><strong>Plný název typového řešení:</strong></p> <h3 style='color:#78b053;'>" . $projectInfo_plnyNazev . "</h3>";
       $text_projectInfo_kategorie = "<p style='font-size:1.2rem'><strong>Kategorie:</strong></p> <h3>" . $projectInfo_kategorie. "</h3>";
       $text_projectInfo_popis = "<h3 style='font-size:1.5rem'>Plný popis typového řešení:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_popis . "</p>";
       $text_projectInfo_podminky = "<h3 style='font-size:1.5rem'>Podmínky využití:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_podminky . "</p>";
