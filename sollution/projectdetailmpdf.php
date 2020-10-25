@@ -100,10 +100,12 @@ $text_projectInfo_ekonomickePodminky = "<h3 style='font-size:1.5rem'>Ekonomické
 $text_projectInfo_personal = "<h3 style='font-size:1.5rem'>Personální náročnost:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_personal . "</p>";
 $text_projectInfo_pravni = "<h3 style='font-size:1.5rem'>Právní aspekty:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_pravni . "</p>";
 $text_projectInfo_prikladyPraxe = "<h3 style='font-size:1.5rem'>Příklady praxe:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_prikladyPraxe . "</p>";
+$text_findOtherPublicExamples = "<div style='padding: 0 0.75rem; border-left: 0.25rem solid #404040; '> <h4 style='font-size:1.25rem; color: #303030;'>Další příklady dobré praxe:</h4><p style='font-weight: 500;font-size:1rem; text-align: justify; color: #404040;'>Další příklady dobré praxe naleznete v sekci <strong>Přidané projekty od veřejnosti</strong> na adrese <em>http://www.obcevkruhu.cz/social/projecdetail.php?projectnumber=" . $project_number . "</em></p></div>";
 $text_projectInfo_souvisejiciKategorie = "<h3 style='font-size:1.5rem'>Související kategorie:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_souvisejiciKategorie . "</p>";
 
 
-$all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_projectInfo_souvisejiciKategorie;
+
+$all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_findOtherPublicExamples . $text_projectInfo_souvisejiciKategorie;
 
 $mpdf->setHeader("<p><span style='margin: 0.5rem 0rem'> www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 
