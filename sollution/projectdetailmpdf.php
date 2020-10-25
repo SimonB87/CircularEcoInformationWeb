@@ -19,7 +19,7 @@ $link = $con;
 $actual_link = "ODKAZ: " . mysqli_real_escape_string($link,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 
 $linkForPdfHeaderUrl = mysqli_real_escape_string($link,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-$linkForPdfHeader = "ODKAZ: " . $linkForPdfHeaderUrl;
+$linkForPdfHeader = "ZDROJ: " . $linkForPdfHeaderUrl;
 
 $position_in_string = strpos($actual_link, "number=");
 $project_number = substr($actual_link, $position_in_string + 7);
