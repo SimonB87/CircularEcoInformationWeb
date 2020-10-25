@@ -19,7 +19,7 @@ $link = $con;
 $actual_link = "ODKAZ: " . mysqli_real_escape_string($link,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 
 $linkForPdfHeaderUrl = mysqli_real_escape_string($link,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-$linkForPdfHeader = "ODKAZ: <a href='" . $linkForPdfUrl . "' target='_blank'>" . $linkForPdfUrl . "</a>";
+$linkForPdfHeader = "ODKAZ: " . $linkForPdfHeaderUrl;
 
 $position_in_string = strpos($actual_link, "number=");
 $project_number = substr($actual_link, $position_in_string + 7);
@@ -88,9 +88,10 @@ else {
 }
 //Close the variable after finishing
 $con->close();
+$link->close();
 
 $text_projectInfo_plnyNazev = "<p style='font-size:1.2rem'><strong>Plný název typového řešení:</strong></p> <h3 style='color:#78b053;'>" . $projectInfo_plnyNazev . "</h3>";
-$text_projectInfo_kategorie = "<p style='font-size:1.2rem'><strong>Kategorie:</strong></p> <h3>" . $projectInfo_kategorie. "</h3>";
+$text_projectInfo_kategorie = "<p style='font-size:1.2rem'><strong>Kategorie:</strong></p> <p>" . $projectInfo_kategorie. "</p>";
 $text_projectInfo_popis = "<h3 style='font-size:1.5rem'>Plný popis typového řešení:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_popis . "</p>";
 $text_projectInfo_podminky = "<h3 style='font-size:1.5rem'>Podmínky využití:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_podminky . "</p>";
 $text_projectInfo_vyuzitelneProdukty = "<h3 style='font-size:1.5rem'>Využitelné produkty:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_vyuzitelneProdukty . "</p>" ;
@@ -107,13 +108,14 @@ $text_projectInfo_souvisejiciKategorie = "<h3 style='font-size:1.5rem'>Souvisej�
 
 $all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_findOtherPublicExamples . $text_projectInfo_souvisejiciKategorie;
 
-$mpdf->setHeader("<p><span style='margin: 0.5rem 0rem'> www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
+$mpdf->setHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 
 $mpdf->setFooter("<p style='font-size:0.65rem;margin-bottom: 0.5rem;'>" . $linkForPdfHeader . "</p>");
 
 //$mpdf->Image('files/images/frontcover.jpg', 0, 0, 210, 297, 'jpg', '', true, true);
 $mpdf->WriteHTML("<p style='margin: 0.5rem 0.5rem;text-align: center;'> <img src='assets/images/logoobcevkruhu2020small.png' alt='Logo ObceVkruhu.cz'></p>");
-$mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem;text-align: center;'>Typové řešení pro obce</h2>");
+$mpdf->WriteHTML("<h4 style='margin: 0.25rem 0.5rem 1rem 0.5rem;text-align: center;font-size:0.8rem;color:#96dd68;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;'><em>Typová řešení pro podporu cirkulární ekonomiky</em></h4>");
+$mpdf->WriteHTML("<h2 style='margin: 2rem 1rem;text-align: center;'>Typové řešení</h2>");
 
 $mpdf->WriteHTML($all_text);
 

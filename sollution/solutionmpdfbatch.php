@@ -50,14 +50,15 @@ $search_columns = array();
  * Prepare PDF head and footer
 */
 
-$actual_link = "ODKAZ: " . mysqli_real_escape_string($linkDb,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+$actual_link = "ODKAZ: " . mysqli_real_escape_string($con,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 //there is no $projectInfo_plnyNazev in group of PDFs
 
-$mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'>Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
+$mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 $mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'>" . $actual_link . "</p>");
 
 $mpdf->WriteHTML("<p style='margin: 0.5rem 0.5rem;text-align: center;'> <img src='assets/images/logoobcevkruhu2020small.png' alt='Logo ObceVkruhu.cz'></p>");
-$mpdf->WriteHTML("<h2 style='margin: 0.5rem 0.5rem;text-align: center;'>Typové řešení pro obce</h2>");
+$mpdf->WriteHTML("<h4 style='margin: 0.25rem 0.5rem 1rem 0.5rem;text-align: center;font-size:0.8rem;color:#96dd68;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;'><em>Typová řešení pro podporu cirkulární ekonomiky</em></h4>");
+$mpdf->WriteHTML("<h2 style='margin: 2rem 1rem;text-align: center;'>Výpis z katalogu typových řešení</h2>");
 
 /** 
  * Get text from db to pdf - ittirate for each item in DB
@@ -110,7 +111,7 @@ foreach ($search_query_array as $item) {
 
 
       $text_projectInfo_plnyNazev = "<p style='font-size:1.2rem'><strong>Plný název typového řešení:</strong></p> <h3 style='color:#78b053;'>" . $projectInfo_plnyNazev . "</h3>";
-      $text_projectInfo_kategorie = "<p style='font-size:1.2rem'><strong>Kategorie:</strong></p> <h3>" . $projectInfo_kategorie. "</h3>";
+      $text_projectInfo_kategorie = "<p style='font-size:1.2rem'><strong>Kategorie:</strong></p> <p>" . $projectInfo_kategorie. "</p>";
       $text_projectInfo_popis = "<h3 style='font-size:1.5rem'>Plný popis typového řešení:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_popis . "</p>";
       $text_projectInfo_podminky = "<h3 style='font-size:1.5rem'>Podmínky využití:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_podminky . "</p>";
       $text_projectInfo_vyuzitelneProdukty = "<h3 style='font-size:1.5rem'>Využitelné produkty:</h3><p style='font-weight: 500;font-size:1rem; text-align: justify;'>" . $projectInfo_vyuzitelneProdukty . "</p>" ;
@@ -147,6 +148,7 @@ foreach ($search_query_array as $item) {
 }
 
 $con->close();
+$linkDb->close();
 
 $mpdf->Output();
 
