@@ -85,7 +85,15 @@ include("includes/tableprojectswebmenu.php");
                   <br>
                   <input type="text" class="hledej form-control" id="myInput4" onkeyup="mySearchColumnFunction(5)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th class="headerIcon"> <a id="pdfBatchDownload" target="_blank" href="#" solutions=""> Stáhnout vybraná řešení <span class="pdfIcon headerIcon textCenter"><i class="far fa-file-pdf"></i> <span> </a> 
+                <th class="headerIcon"> 
+                  <a id="pdfBatchDownload" target="_blank" href="#" solutions="">
+                    <button type="button" class="btn btn-primary" >
+                        Stáhnout vybraná řešení 
+                        <span class="pdfIcon headerIcon textCenter">
+                          <i class="far fa-file-pdf"></i> 
+                        <span>
+                      </button>
+                  </a> 
                 </th>
             </tr>
 
