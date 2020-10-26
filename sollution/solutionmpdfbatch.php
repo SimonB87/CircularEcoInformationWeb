@@ -53,6 +53,9 @@ $search_columns = array();
 $actual_link = "ZDROJ: " . mysqli_real_escape_string($con,"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 //there is no $projectInfo_plnyNazev in group of PDFs
 
+//test
+//$mpdf->SetTitle('Katalog typových řešení pro podporu cirkulární ekonomiky v obcích');
+
 $mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 $mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'>" . $actual_link . "</p>");
 
@@ -151,5 +154,7 @@ $con->close();
 $linkDb->close();
 
 $mpdf->Output();
+//test
+//$mpdf->Output('katalogTypovychReseni_obceVkruhuCz.pdf');
 
 ?>

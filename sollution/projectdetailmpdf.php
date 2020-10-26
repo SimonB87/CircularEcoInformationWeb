@@ -108,6 +108,8 @@ $text_projectInfo_souvisejiciKategorie = "<h3 style='font-size:1.5rem'>Souvisej�
 
 $all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_projectInfo_popis . $text_projectInfo_podminky . $text_projectInfo_vyuzitelneProdukty . $text_projectInfo_swot . $text_projectInfo_cilovaSkupina . $text_projectInfo_ekonomickePodminky . $text_projectInfo_personal . $text_projectInfo_pravni . $text_projectInfo_prikladyPraxe . $text_findOtherPublicExamples . $text_projectInfo_souvisejiciKategorie;
 
+//test
+//$mpdf->SetTitle($projectInfo_plnyNazev .' - Katalog typových řešení pro podporu cirkulární ekonomiky v obcích');
 $mpdf->setHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 
 $mpdf->setFooter("<p style='font-size:0.65rem;margin-bottom: 0.5rem;'>" . $linkForPdfHeader . "</p>");
@@ -120,6 +122,8 @@ $mpdf->WriteHTML("<h2 style='margin: 2rem 1rem;text-align: center;'>Typové ře�
 $mpdf->WriteHTML($all_text);
 
 $mpdf->Output();
+//test
+//$mpdf->Output('katalogTypovychReseni_obceVkruhuCz.pdf');
 
 ?>
 
