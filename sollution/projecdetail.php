@@ -110,9 +110,11 @@ include("includes/tableprojectswebmenu.php");
         }
         //Close the variable after finishing
         $con-> close();
-
         ?>
 
+        <?php
+        include("includes/displayAddedNewExampleProjects.php");
+        ?>
 
         <div>
           <button type="button" class="btn btn-success">
