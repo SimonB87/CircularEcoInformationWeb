@@ -34,7 +34,7 @@ if ($results-> num_rows > 0 ) {
       echo "<div class='projectDetail'>" . 
         "<a href='/../readSubmissionDetails.php?submissionid=%28x" .$row["id"]  . "%29y'><h4> Projekt ID:<strong> (" . $row["id"] . ")</strong> Název: <strong>" . $row["projectName"] . "</strong></h4></a>" .
         "<p style='color: grey;'> <i class='fas fa-exclamation-triangle'></i>" .
-        "Upozornění: <em>Pro zobrazení je nutné být nejdříve přihlášen do členské části webu.</em></p>".
+        "Upozornění: <em>Pro zobrazení je nutné být nejdříve přihlášen do <a href='/../social/register.php'>členské části </a>webu.</em></p>" .
         "<p><strong>Lokalita podaného projektu :</strong></p><p>" . $row["projectLocality"] . "</p>" .
         "<p><strong>Popis projektu:</strong></p>" . "<p>" . $row["projectDescription"] . "</p>" .
       "</div>";
@@ -48,6 +48,7 @@ else {
 $con-> close();
 ?>
 
+<button type="button" class="btn btn-primary" style="margin-bottom: 1.5rem;"> <a style="text-decoration: none; color:fff;" href= <?php echo "/../social/projecdetail.php?projectnumber=" . $project_number . "#submitNewProject"  ?>> Vyplnit přihlášku nového projektu <a> </button>
 <br>
 <hr>
 <br>
