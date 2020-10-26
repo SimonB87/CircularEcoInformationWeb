@@ -47,7 +47,7 @@ else {
 
 $con-> close();
 ?>
-
+<br>
 <button type="button" class="btn btn-primary" style="margin-bottom: 1.5rem;"> <a style="text-decoration: none; color:fff;" href= <?php echo "/../social/projecdetail.php?projectnumber=" . $project_number . "#submitNewProject"  ?>> Vyplnit přihlášku nového projektu <a> </button>
 <br>
 <hr>
