@@ -25,7 +25,7 @@ include("includes/tableprojectswebmenu.php");
 <div class="col-md-12 col-xs-12 col-md-push-1 main_column column extraDarkBack" id="main_column">
   <div class="table-wrapper">
     <div class="project_table">
-      <h1 style="text-align:center;">Typová řešení</h1>
+      <h1 class="textCenter paddingTopBottom_big">Typová řešení</h1>
 
         <div>
           <button type="button" class="btn btn-success">
