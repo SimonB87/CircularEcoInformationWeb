@@ -1029,4 +1029,8 @@ button.btn.btn-info a {
   padding: 1rem 0;
 }
 
+.textCenter{
+  text-align: center;
+}
+
 /* other generic styles - end */
