@@ -195,7 +195,7 @@ include("includes/tableprojectswebmenu.php");
                     $rowEdit_plny_popis = truncate($row["plny_popis"], 600);
                     $rowEdit_vyuzitelne_produkty = truncate($row["vyuzitelne_produkty"], 600);
                     
-                    echo "<tr class='tableProjectRowStart'><td><strong> <a href='projecdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td></tr>";
+                    echo "<tr class='tableProjectRowStart'><td><strong> <a href='projectdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td></tr>";
                 }
                 echo "";
             }
