@@ -1,7 +1,19 @@
 <?php
-include("includes/header.php");
+include("includes/element_html_head.php");
+
 ?>
-<!-- CSS for the table of projects -->
+  <title>Výběr typových řešení dle témat | Obce v kruhu.cz</title>
+  <link rel="stylesheet" href="assets/css/style_designed.css">
+  <link rel="stylesheet" href="assets/css/checkboxesStyle2019.css">
+  <link rel="stylesheet" href="assets/css/projecttablestyle2019.css">
+</head>
+<body>
+
+<?php
+
+include("includes/section_header_menu.php");
+
+?>
 
 <script src="assets/js/tabulka.js"></script>
 <script src="assets/js/filtertable.js"></script>
@@ -10,8 +22,8 @@ include("includes/header.php");
 include("includes/tableprojectswebmenu.php");
 ?>
 
-<div class="col-md-12 col-xs-12 main_column column">
-
+<div class="col-md-12 col-xs-12 col-md-push-1 main_column column extraDarkBack" id="main_column">
+  <div class="table-wrapper">
     <div class="project_table">
       <h1 style="text-align:center;">Typová řešení</h1>
 
@@ -45,7 +57,8 @@ include("includes/tableprojectswebmenu.php");
           </div>
         </div>
 
-        <table id="mySearchTable" class="table search_project_table">
+        <table id="mySearchTable" class="table tableDesign2019">
+          <tbody>
             <tr class="mySearchTable_header">
                 <th>Plný název 
                   <br>
@@ -101,8 +114,14 @@ include("includes/tableprojectswebmenu.php");
             //conect to the database
             //old: $conn = mysqli_conect("md54.wedos.net", "a223948_sbforum", "phx5EXKm", "d223948_sbforum");
             //in case of error during conecting to the database display error
-            if ($con_projects-> conect_error) {
-                die("conection Failed:". $con_projects-> conect_error);
+
+            /*
+            if ($con_projects->conect_error) {
+                die("conection Failed:". $con_projects->conect_error);
+            }*/
+
+            if (!$con_projects) {
+              die('Connect Error: ' . mysqli_connect_error());
             }
 
             //truncate a string only at a whitespace (by nogdog)
@@ -138,27 +157,27 @@ include("includes/tableprojectswebmenu.php");
                     $rowEdit_plny_popis = truncate($row["plny_popis"], 600);
                     $rowEdit_vyuzitelne_produkty = truncate($row["vyuzitelne_produkty"], 600);
                     
-                    echo "<tr class='tableProjectRowStart'><td><strong> <a href='projecdetail.php?projectnumber=".$row["id"]."'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td>" . "<td> <input type='checkbox' id='type_" . $row["id"] . "' onclick='addTypeIDtoLink(" . $row["id"] . ")' name='Typ_". $row["id"] ."' solutionid='". $row["id"] ."' class='includeSolutionToPdf'> <label for='typ_". $row["id"] ."'> <span class='addToPDF'> <i class='fas fa-plus plusIcon addIcon'></i> <i class='fas fa-minus minusIcon addIcon displayNone'></i> <i class='far fa-file-pdf pdfIcon'></i> </span></label></td>" . "</tr>";
+                    echo "<tr data-expanded='false' class='tableProjectRowStart'><td><strong> <a href='projectdetail.php?projectnumber=".$row["id"]."' target='_blank'>".$row["plny_nazev"]."</a></strong></td><td>".$rowEdit_plny_popis."</td> <td>".$row["kategorie"]."</td> <td>".$row["cilova_skupina"]."</td><td>".$row["souvisejici_kategorie"]."</td><td>". $rowEdit_vyuzitelne_produkty ."</td> <td> <input type='checkbox' id='type_" . $row["id"] . "' onclick='addTypeIDtoLink(" . $row["id"] . ")' name='Typ_". $row["id"] ."' solutionid='". $row["id"] ."' class='includeSolutionToPdf'>" . 
+                    " <label class='labelAddToPDF' onclick='clickCheckbox(". $row["id"] .");' for='typ_". $row["id"] ."'>" . 
+                    "<span class='addToPDF '> <i class='fas fa-plus plusIcon addIcon'></i> <i class='far fa-file-pdf pdfIcon checkboxIcon'></i> </span></label></td> </tr>";
                 }
                 echo "";
             }
             else {
-                echo "0 result";
+                echo "<em>Počet výsledků: 0 </em>";
             }
             //Close the variable after finishing
             $con_projects-> close();
 
             ?>
 
-        </table>
-
-    </div>
-
-
-</div>
-
-
-</div> <!-- closing of the wrapper div, this div stars in the included header file-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> <!-- closing of the wrapper div, this div stars in the included header file-->
+  </div> <!-- closing tag of background -->
+</div> <!-- closing tag of background -->
 
 <script src="assets/js/projectSearchTable.js"></script>
 <script src="assets/libs/footablebootstrap/js/footable.js" defer></script>

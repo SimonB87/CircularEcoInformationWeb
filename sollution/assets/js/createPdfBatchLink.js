@@ -80,3 +80,9 @@ function setAllSolutionCheckboxes(boolean){
   }
 
 }
+
+const clickCheckbox = (indexNumber) => {
+  const targetSelector = `type_${indexNumber}`;
+  const targetItem = document.getElementById(targetSelector);
+  targetItem.click();
+};
