@@ -27,9 +27,8 @@
       <!-- Header -->
       <header id="header">
         <div class="logo">
-          <!--<span class="icon fa-gem"></span>-->
-          <!--<span class="icon">&#xf1b8;</span>-->
-          <span class="icon fa" style="font-size:2.5rem; transform:translateY(6px);">&#xf1b8;</span>
+          <!-- <span class="icon fa" style="font-size:2.5rem; transform:translateY(6px);">&#xf1b8;</span> -->
+					<img src="assets/img/obceVKruhuLogo_big.png" alt="ObceVKruhu.cz logo">
         </div>
         <div class="content">
           <div class="inner newHomePage">
