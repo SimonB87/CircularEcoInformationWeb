@@ -1,4 +1,4 @@
-<title>ObceVkruhu.cz | Web o Cirkulární ekonomice v obcích ČR</title>
+<title>ObceVkruhu.cz | Domácí stránka | Web o Cirkulární ekonomice v obcích ČR</title>
 <meta charset="utf-8" />
 <meta
       name="viewport"
