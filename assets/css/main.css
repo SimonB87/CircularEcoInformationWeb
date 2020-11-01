@@ -9,7 +9,7 @@
 
 :root {
   --opposite-color: #e5b896;
-  --theme-color: #96e5b8;
+  --theme-color: #95dd68;
 }
 
 html,
@@ -1440,24 +1440,38 @@ body.is-preload #bg:before {
   max-width: 30rem;
 }
 
+.logo .logo__img {
+  background-image: url(../../assets/img/shadowBehindLogo2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+}
+
 .logo .logo__img img{
   max-width: 15rem;
-  padding-bottom: 2rem;
+}
+
+.logo .logo__horizontalline{
+  border-top: 1.5px solid #fff;
+  height: 2px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .logo__title .logo__title__heading1 {
   font-size: 1.5rem;
   letter-spacing: 2px;
-  padding-top: 1.75rem;
-  border-top: 1.5px solid #fff;
+  padding-top: 1.0rem;
 }
 
 
 #header .content {
-  border-style: solid;
-  border-color: #ffffff;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
   max-width: 100%;
 }
 
@@ -1483,11 +1497,42 @@ body.is-preload #bg:before {
   margin-bottom: 0;
 }
 
+
 #header .content p {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   line-height: 2;
+}
+
+.content .inner .mainNavSections{
+  display: block;
+  background-color: rgba(27, 31, 34, 0.85);
+}
+
+.content .inner .mainNavSections .mainPoints {
+  padding-top: 1rem;
+}
+
+.content .inner .mainNavSections .mainPoints {
+  display: block;
+}
+
+.mainPoints .mainPoints--dot {
+  width: 1rem;
+  height: 1rem;
+  color: var(--theme-color);
+}
+
+.mainPoints__devide {
+  margin: 3rem auto;
+  width: 75%;
+}
+
+.mainPoints--row1 .mainPoints--text, .mainPoints--row2 .mainPoints--text{
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 #header nav ul {
@@ -1576,6 +1621,19 @@ body.is-preload #header .content .inner {
   opacity: 0;
 }
 
+@media screen and (min-width: 1000px) {
+  .mainNavSections__items.mainIconNavigation--panel{
+    display: flex;
+  }
+  .mainNavSections__items.mainIconNavigation--panel .mainIconNavigation--panel--items{
+    display: flex;
+  }
+  .mainNavSections__items.mainIconNavigation--panel .mainIconNavigation--panel--items a{
+    padding: 0 1rem;
+  }
+
+}
+
 @media screen and (max-width: 980px) {
   #header .content p br {
     display: none;
@@ -1587,13 +1645,9 @@ body.is-preload #header .content .inner {
     margin-top: 2rem;
   }
 
-/*   #header > *:before {
-    top: calc(-2rem - 1px);
-    height: calc(2rem + 1px);
-  } */
-
-  #header .logo {
+  .logo .logo__img{
     width: 12rem;
+    height: 12rem;
   }
 
   #header .logo .icon:before {
@@ -1616,6 +1670,11 @@ body.is-preload #header .content .inner {
 
   #header .content .inner {
     padding: 2.5rem 0;
+  }
+
+  .logo .logo__img{
+    width: 10rem;
+    height: 10rem;
   }
 
   #header nav ul {
@@ -1917,10 +1976,12 @@ body.is-preload #footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px dotted #fff;
-  border-radius: 50%;
   height: 7rem;
   width: 7rem;
+}
+
+.mainNavSections__items.mainIconNavigation--panel{
+  display: flex;
 }
 
 a.big .mainIconNavigation--link--icon,
@@ -2311,4 +2372,11 @@ li.formActions_goHome a {
   .results .google_gauge {
     transform: scale(0.9);
   }
+}
+
+
+/* Other generic styles */
+
+.paddingBottom{
+  padding-bottom: 2rem;
 }

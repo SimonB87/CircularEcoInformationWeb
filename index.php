@@ -30,23 +30,39 @@
           <div class="logo__img">
 						<img src="assets/img/logoobcevkruhu2020mainstyle.png" alt="ObceVKruhu.cz logo">
 					</div>
+					<div class="logo__horizontalline">
+					</div>
 					<div class="logo__title">
-						<h1 class="logo__title__heading1">Cirkulární ekonomiky <br>v obcích ČR</h1>
+						<h1 class="logo__title__heading1">Cirkulární ekonomika <br>v obcích ČR</h1>
 					</div>
         </div>
         <div class="content">
           <div class="inner newHomePage">
-            
+						
+					<div class="mainNavSections">
 
-            <ul class="siteObjects">
-							<li class="siteObjects__item">Lepší nakládání se zdroji</li>
-							<li class="siteObjects__item">Nižší objem odpadu</li>
-							<li class="siteObjects__item">Nižší negativní vliv na životní prostředí</li>
-						</ul>
+						<div class="mainPoints">
 
-						<div class="mainIconNavigation--panel">
+							<div>
+								<p class="mainPoints--row1">
+									<span class="mainPoints--item1">
+										<span class="mainPoints--dot"><i class="far fa-dot-circle"></i> </span> <span class="mainPoints--text mainPoints--title1">Lepší nakládání se zdroji</span> 
+									</span>
+									<span class="mainPoints--item2">
+										<span class="mainPoints--dot"> <i class="far fa-dot-circle"></i> </span> <span class="mainPoints--text mainPoints--title2">Nižší objem odpadu</span>
+									</span>	
+								</p> 
+							</div>
 
-							<div class="width_xl_6 width_md_12 width_sm_12">
+							<div>
+								<p class="mainPoints--row2"> <span class="mainPoints--dot"> <i class="far fa-dot-circle"></i> </span> <span class="mainPoints--text">Nižší negativní vliv na životní prostředí</span>  </p>
+							</div>
+							<hr class="mainPoints__devide">
+						</div>
+
+						<div class="mainNavSections__items mainIconNavigation--panel paddingBottom">
+
+							<div class="mainIconNavigation--panel--items mainIconNavigation--panel--items1">
 
 								<a href="#jsemObcan" class="big"> 
 									<div class="mainIconNavigation--link">
@@ -72,31 +88,34 @@
 
 							</div>
 
-							<div class="width_xl_6 width_md_12 width_sm_12">
+							<div class="mainIconNavigation--panel--items mainIconNavigation--panel--items2">
 
-								<a href="#chciInformace" class="big"> 
-									<div class="mainIconNavigation--link ">
-										<div class="mainIconNavigation--link--icon">
-											<i class="fas fa-info-circle"></i>
-										</div>
-										<div class="mainIconNavigation--link--decription">
-											<span class="boldText">Chci informace </span>
-										</div>
-									</div>	
-								</a>
+							<a href="#chciInformace" class="big"> 
+								<div class="mainIconNavigation--link ">
+									<div class="mainIconNavigation--link--icon">
+										<i class="fas fa-info-circle"></i>
+									</div>
+									<div class="mainIconNavigation--link--decription">
+										<span class="boldText">Chci informace </span>
+									</div>
+								</div>	
+							</a>
 
-								<a href="calculate.php#calc_input" target="_blank" class="big"> 
-									<div class="mainIconNavigation--link">
-										<div class="mainIconNavigation--link--icon">
-											<i class="fas fa-chart-pie"></i>
-										</div>
-										<div class="mainIconNavigation--link--decription">
-											<span class="boldText">Chci porovnávat </span>
-										</div>
-									</div>	
-								</a>
+							<a href="calculate.php#calc_input" target="_blank" class="big"> 
+								<div class="mainIconNavigation--link">
+									<div class="mainIconNavigation--link--icon">
+										<i class="fas fa-chart-pie"></i>
+									</div>
+									<div class="mainIconNavigation--link--decription">
+										<span class="boldText">Chci porovnávat </span>
+									</div>
+								</div>	
+							</a>
 
 							</div>
+							
+
+
 
 						</div>
 
