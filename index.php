@@ -130,7 +130,7 @@
 						<div class="siteNavigation__blocks nav2020">
 							<li><a class="siteNavigation__item" href="sollution/allresults.php">Katalog typových řešení</a></li>
 							<li><a class="siteNavigation__item" href="social/register.php">Přihlásit se</a></li>
-							<li><a class="siteNavigation__item" href="#contact">Kontaktujte <br />nás</a></li>
+							<li><a class="siteNavigation__item" href="#contact">Kontaktujte nás</a></li>
 						</div>
           </ul>
 		</nav>
