@@ -50,6 +50,10 @@
   min-height: 100vh;
 }
 
+.background-seeThrough.fixed{
+  position: fixed;
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;

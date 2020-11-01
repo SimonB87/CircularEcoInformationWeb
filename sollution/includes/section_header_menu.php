@@ -1,5 +1,5 @@
 <div class="background">
-  <div class="background-seeThrough">
+  <div class="background-seeThrough fixed">
     <div class="top_bar" style="display:none; visibility:hidden">
     <!-- test end -->
     <div class="testHiddenMenu" style="visibility: none;">
