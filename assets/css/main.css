@@ -10,6 +10,7 @@
 :root {
   --opposite-color: #e5b896;
   --theme-color: #95dd68;
+  --dark-theme: rgba(27, 31, 34, 0.85);
 }
 
 html,
@@ -1513,7 +1514,7 @@ body.is-preload #bg:before {
   display: block;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  background-color: rgba(27, 31, 34, 0.85);
+  background-color: var(--dark-theme);
 }
 
 .content .inner .mainNavSections .mainPoints p{
@@ -1590,6 +1591,39 @@ body.is-preload #bg:before {
   border-left: 0;
 }
 
+.siteNavigation.nav2020{
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.siteNavigation.nav2020 .siteNavigation__blocks.nav2020 {
+  width: 100%;
+}
+
+#header .siteNavigation__blocks.nav2020 li a, 
+#header .siteNavigation.nav2020 .siteNavigation__parent, 
+#header .siteNavigation.nav2020 .siteNavigation__parent li{
+  border: 0;
+}
+
+#header .siteNavigation__blocks.nav2020 li{
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+#header .siteNavigation__blocks.nav2020 li a{
+  color: var(--dark-theme);
+  background-color: var(--theme-color);
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#header .siteNavigation__blocks.nav2020 li a:hover{
+  opacity: 1;
+  background-color: var(--opposite-color);
+}
+
 body.is-article-visible #header {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
@@ -1637,6 +1671,38 @@ body.is-preload #header .content .inner {
   #header .content p br {
     display: none;
   }
+}
+
+@media screen and (min-width: 769px) {
+  .siteNavigation.nav2020 .siteNavigation__blocks.nav2020 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1681px) {
+  #wrapper{
+    padding-top: 0.25rem;
+  }
+
+  #header .content{
+    margin-top: 0;
+  }
+
+  .inner.newHomePage {
+    padding: 0.25rem;
+  }
+
+  .logo .logo__title__heading1{
+    margin-bottom: 0;
+  }
+
+  .mainPoints--row1 .mainPoints--text, .mainPoints--row2 .mainPoints--text {
+    letter-spacing: 1.5px;
+    font-size: 1.0rem;
+    font-weight: 600;
+  }
+
+
 }
 
 @media screen and (max-width: 736px) {
@@ -1704,6 +1770,10 @@ body.is-preload #header .content .inner {
   #header nav.use-middle:after {
     display: none;
   }
+
+  .big .mainIconNavigation--link .mainIconNavigation--link--icon {
+    margin: 0 auto;
+  }
 }
 
 /* Main */
@@ -1752,7 +1822,7 @@ body.is-preload #header .content .inner {
   position: relative;
   width: 40rem;
   max-width: 100%;
-  background-color: rgba(27, 31, 34, 0.85);
+  background-color: var(--dark-theme);
   border-radius: 4px;
   opacity: 0;
 }
@@ -1937,7 +2007,7 @@ body.is-preload #footer {
 
 .mainNavSections__items.mainIconNavigation--panel{
   display: flex;
-  background-color: rgba(27, 31, 34, 0.85);
+  background-color: var(--dark-theme);
 }
 
 a.big .mainIconNavigation--link--icon,
