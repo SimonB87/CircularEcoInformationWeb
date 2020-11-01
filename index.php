@@ -27,82 +27,81 @@
       <!-- Header -->
       <header id="header">
         <div class="logo">
-          <!-- <span class="icon fa" style="font-size:2.5rem; transform:translateY(6px);">&#xf1b8;</span> -->
-					<img src="assets/img/obceVKruhuLogo_big.png" alt="ObceVKruhu.cz logo">
+          <div class="logo__img">
+						<img src="assets/img/logoobcevkruhu2020mainstyle.png" alt="ObceVKruhu.cz logo">
+					</div>
+					<div class="logo__title">
+						<h1 class="logo__title__heading1">Cirkulární ekonomiky <br>v obcích ČR</h1>
+					</div>
         </div>
         <div class="content">
           <div class="inner newHomePage">
-            <h3>Vítejte na webu</h3>
-            	<h1 class="mainTitle"> 
-					<span class="mainTitle--description">
-						www.<span class="mainTitle--description--name">Obce</span>V<span class="mainTitle--description--name">Kruhu</span>.cz
-					</span>
-				</h1>
-            <p>
-              Web o <strong><a href="#ocirkularni">Cirkulární ekonomice</a></strong> v obcích České republiky.
-            </p>
-            <p>
-			  Pomáháme Vám lépe nakládat se zdroji a snižovat objem odpadu <br />
-			  a negativní dopady na <strong>životní i sociální prostředí</strong> &nbsp; <i class="fab fa-envira"></i>.
-			</p>
-			
-			<div class="mainIconNavigation--panel">
-				<div class="width_xl_6 width_md_12 width_sm_12">
+            
 
-					<a href="#jsemObcan" class="big"> 
-						<div class="mainIconNavigation--link">
-							<div class="mainIconNavigation--link--icon">
-								<i class="fas fa-user-alt"></i>
+            <ul class="siteObjects">
+							<li class="siteObjects__item">Lepší nakládání se zdroji</li>
+							<li class="siteObjects__item">Nižší objem odpadu</li>
+							<li class="siteObjects__item">Nižší negativní vliv na životní prostředí</li>
+						</ul>
+
+						<div class="mainIconNavigation--panel">
+
+							<div class="width_xl_6 width_md_12 width_sm_12">
+
+								<a href="#jsemObcan" class="big"> 
+									<div class="mainIconNavigation--link">
+										<div class="mainIconNavigation--link--icon">
+											<i class="fas fa-user-alt"></i>
+										</div>
+										<div class="mainIconNavigation--link--decription">
+											<span class="boldText">Jsem občan</span>
+										</div>
+									</div>	
+								</a>
+
+								<a href="#jsemStarosta" class="big"> 
+									<div class="mainIconNavigation--link">
+										<div class="mainIconNavigation--link--icon">
+											<i class="fas fa-users"></i>
+										</div>
+										<div class="mainIconNavigation--link--decription">
+											<span class="boldText">Jsem starosta</span>
+										</div>
+									</div>	
+								</a>
+
 							</div>
-							<div class="mainIconNavigation--link--decription">
-								<span class="boldText">Jsem občan</span>
+
+							<div class="width_xl_6 width_md_12 width_sm_12">
+
+								<a href="#chciInformace" class="big"> 
+									<div class="mainIconNavigation--link ">
+										<div class="mainIconNavigation--link--icon">
+											<i class="fas fa-info-circle"></i>
+										</div>
+										<div class="mainIconNavigation--link--decription">
+											<span class="boldText">Chci informace </span>
+										</div>
+									</div>	
+								</a>
+
+								<a href="calculate.php#calc_input" target="_blank" class="big"> 
+									<div class="mainIconNavigation--link">
+										<div class="mainIconNavigation--link--icon">
+											<i class="fas fa-chart-pie"></i>
+										</div>
+										<div class="mainIconNavigation--link--decription">
+											<span class="boldText">Chci porovnávat </span>
+										</div>
+									</div>	
+								</a>
+
 							</div>
-						</div>	
-					</a>
 
-					<a href="#jsemStarosta" class="big"> 
-						<div class="mainIconNavigation--link">
-							<div class="mainIconNavigation--link--icon">
-								<i class="fas fa-users"></i>
-							</div>
-							<div class="mainIconNavigation--link--decription">
-								<span class="boldText">Jsem starosta</span>
-							</div>
-						</div>	
-					</a>
+						</div>
 
-				</div>
-
-				<div class="width_xl_6 width_md_12 width_sm_12">
-
-					<a href="#chciInformace" class="big"> 
-						<div class="mainIconNavigation--link ">
-							<div class="mainIconNavigation--link--icon">
-								<i class="fas fa-info-circle"></i>
-							</div>
-							<div class="mainIconNavigation--link--decription">
-								<span class="boldText">Chci informace </span>
-							</div>
-						</div>	
-					</a>
-
-					<a href="calculate.php#calc_input" target="_blank" class="big"> 
-						<div class="mainIconNavigation--link">
-							<div class="mainIconNavigation--link--icon">
-								<i class="fas fa-chart-pie"></i>
-							</div>
-							<div class="mainIconNavigation--link--decription">
-								<span class="boldText">Chci porovnávat </span>
-							</div>
-						</div>	
-					</a>
-
-				</div>	
-
-			</div>	
-
-          </div>
-        </div>
+      		</div>
+      	</div>
         <nav>
           <ul>
             <li>

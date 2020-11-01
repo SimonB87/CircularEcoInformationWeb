@@ -1417,7 +1417,7 @@ body.is-preload #bg:before {
   margin-top: 3.5rem;
 }
 
-#header > *:before {
+/* #header > *:before {
   content: "";
   display: block;
   position: absolute;
@@ -1426,7 +1426,7 @@ body.is-preload #bg:before {
   width: 1px;
   height: calc(3.5rem + 1px);
   background: #ffffff;
-}
+} */
 
 #header > :first-child {
   margin-top: 0;
@@ -1437,21 +1437,21 @@ body.is-preload #bg:before {
 }
 
 #header .logo {
-  width: 5.5rem;
-  height: 4rem;
-  line-height: 4rem;
-/*   border: solid 1px #ffffff;
-  border-radius: 100%; */
+  max-width: 30rem;
 }
 
-#header .logo img{
-  width: 100%;
-
+.logo .logo__img img{
+  max-width: 15rem;
+  padding-bottom: 2rem;
 }
 
-#header .logo .icon:before {
-  font-size: 2rem;
+.logo__title .logo__title__heading1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 1.75rem;
+  border-top: 1.5px solid #fff;
 }
+
 
 #header .content {
   border-style: solid;
@@ -1587,15 +1587,13 @@ body.is-preload #header .content .inner {
     margin-top: 2rem;
   }
 
-  #header > *:before {
+/*   #header > *:before {
     top: calc(-2rem - 1px);
     height: calc(2rem + 1px);
-  }
+  } */
 
   #header .logo {
-    width: 4.75rem;
-    height: 4.75rem;
-    line-height: 4.75rem;
+    width: 12rem;
   }
 
   #header .logo .icon:before {
