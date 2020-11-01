@@ -1445,7 +1445,7 @@ body.is-preload #bg:before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 1rem;
+  margin: 0 auto;
   border-radius: 50%;
   width: 16rem;
   height: 16rem;
@@ -1507,15 +1507,18 @@ body.is-preload #bg:before {
 
 .content .inner .mainNavSections{
   display: block;
-  background-color: rgba(27, 31, 34, 0.85);
-}
-
-.content .inner .mainNavSections .mainPoints {
-  padding-top: 1rem;
 }
 
 .content .inner .mainNavSections .mainPoints {
   display: block;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgba(27, 31, 34, 0.85);
+}
+
+.content .inner .mainNavSections .mainPoints p{
+  margin: 0;
+  padding: 0.5rem;
 }
 
 .mainPoints .mainPoints--dot {
@@ -1524,10 +1527,6 @@ body.is-preload #bg:before {
   color: var(--theme-color);
 }
 
-.mainPoints__devide {
-  margin: 3rem auto;
-  width: 75%;
-}
 
 .mainPoints--row1 .mainPoints--text, .mainPoints--row2 .mainPoints--text{
   letter-spacing: 1.5px;
@@ -1883,50 +1882,6 @@ body.is-preload #footer {
   min-height: 3rem;
 }
 
-.mainTitle .mainTitle--description {
-  animation: biggerFont 6s infinite;
-}
-
-.mainTitle .mainTitle--description--name {
-  animation: colorFont 6s infinite;
-}
-
-@keyframes colorFont {
-  0% {
-    color: #fff;
-  }
-  30% {
-    color: var(--opposite-color);
-  }
-  60% {
-    color: var(--opposite-color);
-  }
-  100% {
-    color: #fff;
-  }
-}
-
-@keyframes biggerFont {
-  0% {
-    font-size: 100%;
-  }
-  5% {
-    font-size: 100%;
-  }
-  30% {
-    font-size: 110%;
-  }
-  60% {
-    font-size: 95%;
-  }
-  90% {
-    font-size: 100%;
-  }
-  100% {
-    font-size: 100%;
-  }
-}
-
 #main article a.button.small {
   margin: 0.5rem 1rem;
 }
@@ -1982,6 +1937,7 @@ body.is-preload #footer {
 
 .mainNavSections__items.mainIconNavigation--panel{
   display: flex;
+  background-color: rgba(27, 31, 34, 0.85);
 }
 
 a.big .mainIconNavigation--link--icon,
@@ -1992,6 +1948,7 @@ a.big .mainIconNavigation--link--decription span {
 
 a.big:hover .mainIconNavigation--link--icon {
   border-color: var(--opposite-color);
+  z-index: 10;
 }
 
 a.big:hover .mainIconNavigation--link--icon i {

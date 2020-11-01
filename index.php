@@ -57,7 +57,6 @@
 							<div>
 								<p class="mainPoints--row2"> <span class="mainPoints--dot"> <i class="far fa-dot-circle"></i> </span> <span class="mainPoints--text">Nižší negativní vliv na životní prostředí</span>  </p>
 							</div>
-							<hr class="mainPoints__devide">
 						</div>
 
 						<div class="mainNavSections__items mainIconNavigation--panel paddingBottom">
@@ -121,16 +120,18 @@
 
       		</div>
       	</div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#ocirkularni">O cirkulární <br />ekonomice</a>
-            </li>
-			<li><a href="metodika.php">Metodika</a></li>
-			<li><a href="#oprojektu">O projektu</a></li>
-			<li><a href="social/register.php">Přihlásit se</a></li>
-			<li><a href="#contact">Kontaktujte <br />nás</a></li>
-
+        <nav class="siteNavigation nav2020">
+          <ul class="siteNavigation__parent nav2020">
+						<div class="siteNavigation__blocks nav2020">
+							<li><a class="siteNavigation__item" href="#ocirkularni">O cirkulární ekonomice</a></li>
+							<li><a class="siteNavigation__item" href="metodika.php">Metodika</a></li>
+							<li><a class="siteNavigation__item" href="#oprojektu">O projektu</a></li>
+						</div>
+						<div class="siteNavigation__blocks nav2020">
+							<li><a class="siteNavigation__item" href="sollution/allresults.php">Katalog typových řešení</a></li>
+							<li><a class="siteNavigation__item" href="social/register.php">Přihlásit se</a></li>
+							<li><a class="siteNavigation__item" href="#contact">Kontaktujte <br />nás</a></li>
+						</div>
           </ul>
 		</nav>
 	
