@@ -68,7 +68,8 @@ include("includes/tableprojectswebmenu.php");
                   <br>
                   <input type="text" class="hledej form-control" id="myInput0" onkeyup="mySearchColumnFunction(0)" placeholder="Hledej ..." title="Hledej ...">
                 </th>
-                <th data-breakpoints="xs sm md">Plný popis 
+                <th data-breakpoints="xs sm md">
+                  <strong class="">Plný popis</strong>
                   <br>
                   <span><i>Seřadit</i></span> <!-- onclick="sortTable(1)" -->
                   <br>
