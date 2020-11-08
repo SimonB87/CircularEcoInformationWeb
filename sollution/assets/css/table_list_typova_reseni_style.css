@@ -1,7 +1,4 @@
 #tableProjectsWeb_heading {
-    background: var(--main-dark-color);
-    border-radius: 5px;
-    padding: 10px;
     margin-bottom: 10px;
     display: flex;
 }
