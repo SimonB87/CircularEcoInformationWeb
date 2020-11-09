@@ -27,11 +27,11 @@
   src: url("../fonts/Bellota-BoldItalic.otf");
 }
 
-.body{
+.body {
   background: #000;
 }
 
-.background{
+.background {
   background-image: url(../images/backgrounds/desktop.jpg);
   background-position: top;
   background-size: contain;
@@ -42,15 +42,20 @@
   z-index: 1;
 }
 
-.background-seeThrough{
+.background-seeThrough {
   z-index: 2;
-  background-image: linear-gradient( to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5) ), url(../images/backgrounds/overlay.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(19, 21, 25, 0.5),
+      rgba(19, 21, 25, 0.5)
+    ),
+    url(../images/backgrounds/overlay.png);
   background-attachment: fixed;
   height: 100%;
   min-height: 100vh;
 }
 
-.background-seeThrough.fixed{
+.background-seeThrough.fixed {
   position: fixed;
 }
 
@@ -97,12 +102,12 @@ a:hover {
   width: 100%;
 }
 
-#tableProjectsWeb_heading.topNavigationDesign2020_heading{
+#tableProjectsWeb_heading.topNavigationDesign2020_heading {
   padding: 0;
   width: 100%;
 }
 
-nav.topNavigationDesign2020_heading_navigation{
+nav.topNavigationDesign2020_heading_navigation {
   width: 100%;
 }
 
@@ -113,8 +118,18 @@ nav.topNavigationDesign2020_heading_navigation{
   font-family: "Segoe UI";
 }
 
+.topNavigationDesign2020_heading_navigation .topnav .topnav__item {
+  min-height: 5rem;
+}
+
 .topnav .topnav_logo {
-  max-height: 1.6rem;
+  max-height: 4rem;
+}
+
+.topnav .logo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .topNavigationDesign2020_heading_navigation .topnav a {
@@ -128,7 +143,7 @@ nav.topNavigationDesign2020_heading_navigation{
 }
 
 .topNavigationDesign2020_heading_navigation .active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -140,6 +155,42 @@ nav.topNavigationDesign2020_heading_navigation{
   float: left;
   overflow: hidden;
   position: relative;
+}
+
+.topNavigationDesign2020_heading_navigation .topnav .topnav__navItem {
+  min-height: 5rem;
+}
+
+.topNavigationDesign2020_heading_navigation
+  .topnav
+  .topnav__navItem
+  .topnav__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.topNavigationDesign2020_heading_navigation
+  .topnav
+  .topnav__item
+  .topnav__item__icon,
+.topNavigationDesign2020_heading_navigation .topnav__item__icon {
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-self: center;
+}
+
+.topNavigationDesign2020_heading_navigation .topnav .dropdown.topnav__navItem {
+  min-height: 6rem;
+  padding: 0.75rem;
+}
+
+.topNavigationDesign2020_heading_navigation .topnav .topnav__navItem {
+  min-height: 5rem;
 }
 
 .topNavigationDesign2020_heading_navigation .topnav .dropdown .dropbtn {
@@ -158,7 +209,7 @@ nav.topNavigationDesign2020_heading_navigation{
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
@@ -171,7 +222,8 @@ nav.topNavigationDesign2020_heading_navigation{
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover,
+.dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
 }
@@ -185,26 +237,55 @@ nav.topNavigationDesign2020_heading_navigation{
   display: block;
 }
 
+.dropbtn.dropdown:hover .topnav__item__icon i {
+  transition: all 0.5s linear 0.1s;
+  font-size: 150%;
+}
+
+.dropdown-content .dropdown .topnav__item__icon {
+  text-align: center;
+}
+
 @media screen and (min-width: 801px) {
   .topnav .dropdown:hover .dropdown-content {
     display: block;
     position: fixed;
-    top: 4.5rem;
+    top: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav .topnav_logo {
+    max-height: 2rem;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .topNavigationDesign2020_heading_navigation .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topNavigationDesign2020_heading_navigation .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topNavigationDesign2020_heading_navigation .topnav a.icon {
     float: right;
     display: block;
   }
+  .topnav .topnav_logo {
+    max-height: 1.75rem;
+  }
+  .topnav__item .topnav__item__label {
+    text-align: center;
+  }
+  .dropbtn.dropdown .topnav__item__icon,
+  .dropbtn.dropdown .topnav__item__label,
+  .dropdown .dropdown-content .topnav__item__label {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .topNavigationDesign2020_heading_navigation .topnav.responsive {position: relative;}
+  .topNavigationDesign2020_heading_navigation .topnav.responsive {
+    position: relative;
+  }
   .topNavigationDesign2020_heading_navigation .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -215,9 +296,18 @@ nav.topNavigationDesign2020_heading_navigation{
     display: block;
     text-align: left;
   }
-  .topNavigationDesign2020_heading_navigation .topnav.responsive .dropdown {float: none;}
-  .topNavigationDesign2020_heading_navigation .topnav.responsive .dropdown-content {position: relative;}
-  .topNavigationDesign2020_heading_navigation .topnav.responsive .dropdown .dropbtn {
+  .topNavigationDesign2020_heading_navigation .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topNavigationDesign2020_heading_navigation
+    .topnav.responsive
+    .dropdown-content {
+    position: relative;
+  }
+  .topNavigationDesign2020_heading_navigation
+    .topnav.responsive
+    .dropdown
+    .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
@@ -296,9 +386,8 @@ nav a:hover .websiteMobileMenu--Description.projectContent {
   color: var(--secondary-complementary-color);
 }
 
-
 nav a:hover div i {
-  font-size: 175%;
+  font-size: 150%;
 }
 
 .content {
@@ -323,7 +412,6 @@ nav a:hover div i {
 
 .column.extraDarkBack {
   background-color: rgba(27, 31, 34, 0.94);
-
 }
 
 .user_details {
@@ -416,7 +504,7 @@ nav a:hover div i {
   margin-right: 7px;
 }
 
-.user_post_body_text{
+.user_post_body_text {
   padding: 0.5rem 0;
 }
 
@@ -564,11 +652,11 @@ iframe {
   background-color: #0043f0;
 }
 
-.brownBack{
+.brownBack {
   background-color: var(--main-opposite-brown);
 }
 
-button.brownBack i.fa-times{
+button.brownBack i.fa-times {
   color: #000;
 }
 
@@ -625,7 +713,7 @@ button.brownBack i.fa-times{
   position: relative;
 }
 
-.main_column.column hr{
+.main_column.column hr {
   width: 100%;
   padding: 0.5rem 0;
 }
@@ -1030,7 +1118,6 @@ button.btn.btn-info a {
   margin-bottom: 1rem;
 }
 
-
 @media only screen and (max-width: 768px) {
   /*
   nav {
@@ -1152,23 +1239,23 @@ button.btn.btn-info a {
 
 /* other generic styles - start */
 
-.paddingTopBottom_big{
+.paddingTopBottom_big {
   padding: 2rem 0;
 }
 
-.paddingBottom_big{
+.paddingBottom_big {
   padding-bottom: 2rem;
 }
 
-.paddingTopBottom_small{
+.paddingTopBottom_small {
   padding: 0.5rem 0;
 }
 
-.paddingTopBottom_medium{
+.paddingTopBottom_medium {
   padding: 1rem 0;
 }
 
-.textCenter{
+.textCenter {
   text-align: center;
 }
 /* other generic styles - end */
