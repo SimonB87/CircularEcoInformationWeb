@@ -3,7 +3,7 @@ include("includes/element_html_head.php");
 
 ?>
   <title>Výběr typových řešení dle témat | Obce v kruhu.cz</title>
-  <link rel="stylesheet" href="assets/css/style_designed.css">
+  <link rel="stylesheet" href="assets/css/style_designed.min.css">
   <link rel="stylesheet" href="assets/css/checkboxesStyle2019.css">
   <link rel="stylesheet" href="assets/css/projecttablestyle2019.css">
 </head>

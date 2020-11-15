@@ -4,7 +4,7 @@ include("includes/element_html_head.php");
 ?>
 
   <title>Detail typového řešení | Obce v kruhu.cz</title>
-  <link rel="stylesheet" href="assets/css/style_designed.css">
+  <link rel="stylesheet" href="assets/css/style_designed.min.css">
   <link rel="stylesheet" href="assets/css/projectDetailDesign2019.css">
 </head>
 

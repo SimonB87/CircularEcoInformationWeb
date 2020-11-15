@@ -18,10 +18,10 @@ class Gauge {
     this.x14_gaugeRedTo = "";
     this.x15_gaugeMinorTicks = "";
     }
-    x01_labelName() {  
+    x01_labelName() {
       return gaugeAction_getLabelNameTitle(this.gaugeNumber);
     }
-    x00_fullLabelName() {  
+    x00_fullLabelName() {
       return gaugeAction_getFullLabelNameTitle(this.gaugeNumber);
     }
 }
