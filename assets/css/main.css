@@ -2028,7 +2028,6 @@ a.big:hover .mainIconNavigation--link--icon i {
 
 a.big:hover .mainIconNavigation--link--decription span {
   color: var(--opposite-color);
-  font-size: 1.1rem;
 }
 
 a.big:hover .mainIconNavigation--link--icon i.unfinished {
