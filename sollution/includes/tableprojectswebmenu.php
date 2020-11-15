@@ -6,7 +6,7 @@
         <img src="assets/images/logoobcevkruhu_small_bw.png" alt="Obce v kruhu - logo" class="topnav_logo"></a>
       <a href="allresults.php" class="active topnav__navItem">
         <div class="topnav__item">
-          <div class="topnav__item__icon"> <i class="fas fa-thumbtack"></i></div>
+          <div class="topnav__item__icon"> <i class="fas fa-project-diagram"></i></div>
           <div class="topnav__item__label"> Všechna Typová řešení </div>
         </div>
       </a>
