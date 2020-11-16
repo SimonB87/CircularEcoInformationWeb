@@ -112,7 +112,7 @@ $all_text = $text_projectInfo_plnyNazev . $text_projectInfo_kategorie . $text_pr
 //$mpdf->SetTitle($projectInfo_plnyNazev .' - Katalog typových řešení pro podporu cirkulární ekonomiky v obcích');
 $mpdf->setHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
 
-$mpdf->setFooter("<p style='font-size:0.65rem;margin-bottom: 0.5rem;'>" . $linkForPdfHeader . "</p>");
+$mpdf->setFooter("<p style='font-size:0.65rem;margin-bottom: 0.5rem;'> Projekt TL01000217 - \"Obce v kruhu cirkulární ekonomiky\" je spolufinancován se státní podporou Technologické agentury ČR v rámci Programu ÉTA <br>" . $linkForPdfHeader . "</p>");
 
 //$mpdf->Image('files/images/frontcover.jpg', 0, 0, 210, 297, 'jpg', '', true, true);
 $mpdf->WriteHTML("<p style='margin: 0.5rem 0.5rem;text-align: center;'> <img src='assets/images/logoobcevkruhu2020small.png' alt='Logo ObceVkruhu.cz'></p>");

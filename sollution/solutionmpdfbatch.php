@@ -57,7 +57,7 @@ $actual_link = "ZDROJ: " . mysqli_real_escape_string($con,"http://$_SERVER[HTTP_
 //$mpdf->SetTitle('Katalog typových řešení pro podporu cirkulární ekonomiky v obcích');
 
 $mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
-$mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'>" . $actual_link . "</p>");
+$mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'> Projekt TL01000217 - \"Obce v kruhu cirkulární ekonomiky\" je spolufinancován se státní podporou Technologické agentury ČR v rámci Programu ÉTA <br>" . $actual_link . "</p>");
 
 $mpdf->WriteHTML("<p style='margin: 0.5rem 0.5rem;text-align: center;'> <img src='assets/images/logoobcevkruhu2020small.png' alt='Logo ObceVkruhu.cz'></p>");
 $mpdf->WriteHTML("<h4 style='margin: 0.25rem 0.5rem 1rem 0.5rem;text-align: center;font-size:0.8rem;color:#96dd68;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;'><em>Typová řešení pro podporu cirkulární ekonomiky</em></h4>");
