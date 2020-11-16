@@ -480,7 +480,7 @@
 						  <span style="color:var(--theme-color);"><a href="#">PDF Metodika <i class="fas fa-location-arrow"></i></a></span>
 					  </li>
 					  <li>V rámci projektu jsme uskutečnili workshopy a semináře – zde jsou prezentace k nahlédnutí:<br>
-					  	  <span style="color:var(--theme-color);"><a href="#">více PDF prezentací <i class="fas fa-location-arrow"></i> </a></span>
+					  	  <span style="color:var(--theme-color);"><a href="http://www.ecotrend.cz/projekty/aktualni-projekty/obce-v-kruhu-cirkularni-ekonomiky.html">více prezentací <i class="fas fa-location-arrow"></i> </a></span>
 					  </li>
 					  <li>Další informace k cirkulární ekonomice se dozvíte například na těchto webových stránkách:<br>
 						  <span style="color:var(--theme-color);"><a href="https://incien.org/">Institut Cirkulární Ekonomiky - Incien.org <i class="fas fa-location-arrow"></i> </a></span><br>
