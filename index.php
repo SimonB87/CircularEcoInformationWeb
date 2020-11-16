@@ -472,7 +472,7 @@
 						<a href="info.php">webová stránka <i class="fas fa-location-arrow"></i></a></span> &nbsp; řešeného projektu s podporou TAČR.
 					  </li>
 					  <li>Katalog typových řešení Vás může inspirovat k vlastní aktivitě (je složen z osmi tematických oblastí) <br>
-						  <span style="color:var(--theme-color);"><a href="3demo_testtabulka/allresults.php">Katalog <i class="fas fa-location-arrow"></i></a></span>
+						  <span style="color:var(--theme-color);"><a href="sollution/allresults.php">Katalog <i class="fas fa-location-arrow"></i></a></span>
 					  </li>
 					  <li>Metodika oběhového hospodářství měst a obcí Vám prozradí obecné základy cirkulární ekonomiky 
 						  a  provede Vás procesem vzniku, zpracování a realizace záměru, který přispěje k omezení vzniku odpadů 
@@ -483,8 +483,8 @@
 					  	  <span style="color:var(--theme-color);"><a href="#">více PDF prezentací <i class="fas fa-location-arrow"></i> </a></span>
 					  </li>
 					  <li>Další informace k cirkulární ekonomice se dozvíte například na těchto webových stránkách:<br>
-						  <span style="color:var(--theme-color);"><a href="#">Incien <i class="fas fa-location-arrow"></i> </a></span><br>
-						  <span style="color:var(--theme-color);"><a href="#">Čaobh <i class="fas fa-location-arrow"></i> </a></span><br>
+						  <span style="color:var(--theme-color);"><a href="https://incien.org/">Institut Cirkulární Ekonomiky - Incien.org <i class="fas fa-location-arrow"></i> </a></span><br>
+						  <span style="color:var(--theme-color);"><a href="http://www.caobh.cz/"> Česká asociace oběhového hospodářství - ČAOBH <i class="fas fa-location-arrow"></i> </a></span><br>
 					  </li>
 				</ol>
 		  </p>
