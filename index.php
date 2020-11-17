@@ -1160,26 +1160,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
   </article> 
   -->
- </div>
+		</div>
 
-	  <!-- Footer -->
-	  <?php
-	  include("includes/mainsitefooter.php");
-  	  ?>
+	</div>
 
-    </div>
+	<!-- BG -->
+	<div id="bg"></div>
 
-    <!-- BG -->
-    <div id="bg"></div>
+	<?php
+	include("includes/mainsitefooter.php");
+	?>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-		<script src="assets/js/topicselect.js" defer></script>
-		<script src="assets/js/wasteCalcManagement.js"></script>
-		<script src="assets/js/wasteCalcData.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/topicselect.js" defer></script>
+	<script src="assets/js/wasteCalcManagement.js"></script>
+	<script src="assets/js/wasteCalcData.js"></script>
   </body>
 </html>

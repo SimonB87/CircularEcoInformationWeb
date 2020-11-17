@@ -1899,23 +1899,26 @@ body.is-preload #header .content .inner {
 
 #footer {
   -moz-transition: -moz-transform 0.325s ease-in-out,
-    -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
   -webkit-transition: -webkit-transform 0.325s ease-in-out,
-    -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
   -ms-transition: -ms-transform 0.325s ease-in-out,
-    -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out,
-    opacity 0.325s ease-in-out;
+  opacity 0.325s ease-in-out;
   width: 100%;
   max-width: 100%;
   margin-top: 2rem;
   text-align: center;
+  z-index: 10;
+  position: absolute;
 }
 
 #footer .copyright {
-  letter-spacing: 0.2rem;
-  font-size: 0.6rem;
-  opacity: 0.75;
+  letter-spacing: .2rem;
+  font-size: .8rem;
+  font-weight: 600;
+  opacity: .75;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -1934,6 +1937,37 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
   opacity: 0;
+}
+
+.footer__mainSiteFooter{
+  color: #000;
+  background: var(--theme-color);
+}
+
+.footer__tacr{
+  background: #fff;
+  min-height: 4rem;
+}
+
+.footer__mainSiteFooter{
+  font-size: 1rem;
+  color: #000;
+  padding: 0.75rem;
+}
+
+.footer__tacr__dedication {
+  font-size: 1rem;
+  font-style: normal;
+  text-align: center;
+  font-weight: normal;
+  color: #000;
+  padding: 0.5rem;
+}
+
+.footer__tacr__dedication a.tacr__link{
+  text-decoration: none;
+  color: #f03741;
+  font-weight: bold;
 }
 
 /* Simon Styles Edits 2020 */

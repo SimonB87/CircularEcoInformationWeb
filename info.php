@@ -562,16 +562,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 							</article> -->
       </div>
-
-	  <!-- Footer -->
-	  <?php
-	  include("includes/mainsitefooter.php");
-  	  ?>
-
     </div>
 
     <!-- BG -->
     <div id="bg"></div>
+
+	<?php
+	include("includes/mainsitefooter.php");
+	?>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
