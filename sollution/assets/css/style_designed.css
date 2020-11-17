@@ -107,6 +107,23 @@ a:hover {
   width: 100%;
 }
 
+.project_table .tableProjectSearchInput {
+  background-image: url(/css/searchicon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #fff;
+  margin-bottom: 12px;
+  background: none;
+  color: #fff;
+}
+
+.project_table .tableProjectSearchInput:focus{
+  outline: none;
+}
+
 nav.topNavigationDesign2020_heading_navigation {
   width: 100%;
 }
