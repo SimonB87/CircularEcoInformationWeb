@@ -6,10 +6,12 @@ $mpdf = new \Mpdf\Mpdf([
   'mode' => 'utf-8',
   'format' => 'A4',
   'margin-top' => 8,
-  'margin_header' => 8,     // 30mm not pixel
-  'margin_footer' => 6,     // 10mm
+  'margin_header' => 10,     // 30mm not pixel
+  'margin_footer' => 10,     // 10mm
   'orientation' => 'P'
 ]);
+
+$mpdf->setAutoBottomMargin = 'stretch';
 
 //! this is custom for each built location!
 require 'config/config3.php';
@@ -56,8 +58,10 @@ $actual_link = "ZDROJ: " . mysqli_real_escape_string($con,"http://$_SERVER[HTTP_
 //test
 //$mpdf->SetTitle('Katalog typových řešení pro podporu cirkulární ekonomiky v obcích');
 
+$agencyFooter = "<img src='assets/images/tacr_logo.png' alt='Logo TACR.cz' style='float:left;height:4rem; margin-right: 0.5rem;'> <span style='font-size: 1rem;font-family: Arial;font-style: normal;text-align: left;font-weight: normal;'>Projekt TL01000217 - \"Obce v kruhu cirkulární ekonomiky\" je spolufinancován se státní podporou Technologické agentury ČR v rámci Programu ÉTA</span>";
+
 $mpdf->SetHeader("<p><span style='margin: 0.5rem 0rem'> | www.obcevkruhu.cz | Strana:" . "{PAGENO}" . "</span> <span style='margin: 0.5rem 0rem'>Datum:</span> ". "{DATE j-m-Y} </p>");
-$mpdf->SetFooter("<p style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'> Projekt TL01000217 - \"Obce v kruhu cirkulární ekonomiky\" je spolufinancován se státní podporou Technologické agentury ČR v rámci Programu ÉTA <br>" . $actual_link . "</p>");
+$mpdf->SetFooter("<div style='font-size:0.65rem;margin:0; padding: 0.5rem 0 0 0;'>" . "<p>" . $agencyFooter . "</p>". "<p>" . $actual_link . "</p>" . "</div>");
 
 $mpdf->WriteHTML("<p style='margin: 0.5rem 0.5rem;text-align: center;'> <img src='assets/images/logoobcevkruhu2020small.png' alt='Logo ObceVkruhu.cz'></p>");
 $mpdf->WriteHTML("<h4 style='margin: 0.25rem 0.5rem 1rem 0.5rem;text-align: center;font-size:0.8rem;color:#96dd68;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;'><em>Typová řešení pro podporu cirkulární ekonomiky</em></h4>");
