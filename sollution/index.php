@@ -40,7 +40,7 @@ include("includes/tableprojectswebmenu.php");
             </a></button>
         </div>
         <br>
-            <input type="text" id="mySearchInput" placeholder="Hledej v projektech.." title="Hledat v projektech" class="tableProjectSearchInput" onkeyup="mySearchFunction();">
+        <input type="text" id="mySearchInput" placeholder="Hledej v projektech.." title="Hledat v projektech" class="tableProjectSearchInput" onkeyup="mySearchFunction();">
         <br>
 
         <br>
