@@ -1458,6 +1458,12 @@ body.is-preload #bg:before {
   max-width: 15rem;
 }
 
+@media screen and (max-width: 700px) {
+  .logo .logo__img img.homeLogo {
+    width: 100%;
+  }
+}
+
 .logo .logo__horizontalline{
   border-top: 1.5px solid #fff;
   height: 2px;

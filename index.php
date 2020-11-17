@@ -28,7 +28,7 @@
       <header id="header">
         <div class="logo">
           <div class="logo__img">
-						<img src="assets/img/logoobcevkruhu2020mainstyle.png" alt="ObceVKruhu.cz logo">
+						<img src="assets/img/logoobcevkruhu2020mainstyle.png" alt="ObceVKruhu.cz logo" class="homeLogo">
 					</div>
 					<div class="logo__horizontalline">
 					</div>
