@@ -381,11 +381,6 @@
 
  </div>
 
-	  <!-- Footer -->
-	  <?php
-	  include("includes/mainsitefooter.php");
-  	  ?>
-
     </div>
 
     <!-- BG -->
