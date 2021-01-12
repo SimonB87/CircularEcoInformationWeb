@@ -40,7 +40,7 @@
               <strong>Vysoká škola ekonomická v Praze, Institut pro udržitelné podnikání</strong>
             </p>
 
-            <a href="#krok_A" class="button primary small">Projít metodiku</a>
+            <a href="#krok_A" class="button primary small">Projít proces</a>
           </div>
         </div>
 
@@ -50,7 +50,7 @@
               <a href="index.php">Domů</a>
             </li>
             <li><a href="#oprocesu">O procesu</a></li>
-            <li><a href="#krok_A">Projít metodiku</a></li>
+            <li><a href="#krok_A">Projít propces</a></li>
             <li>
               <a href="social/register.php">Přihlásit se</a>
             </li>
