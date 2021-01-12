@@ -29,17 +29,15 @@
         <div class="content">
           <div class="inner">
             <h3>Právě procházíte</h3>
-            <h1>METODIKU</h1>
+            <h1>PROCESNÍ SCHÉMA ŽIVOTNÍHO CYKLU OBECNÍHO NÁVRHU</h1>
             <h2>Obce v kruhu cirkulární ekonomiky</h2>
             <p>
-              Metodika vznikla jako hlavní výsledek řešení výzkumného projektu
+              V této části webu je prezentováno procesní schéma životního cyklu obecního návrhu pro relizaci veřejného záměru pro podporu projektů, které tradičně podporují cirkulární ekonomiku (CE) v obcích. <br />
+              Tento výsledek vznikl jako v rámci řešení výzkumného projektu Obce v kruhu cirkulární ekonomiky (TL01000217) s podporou veřejné agentury TAČR.
               <br />
-              <strong
-                >TL01000217 s názvem Obce v kruhu cirkulární ekonomiky</strong
-              >
-              řešeného partnery <br />
-              <strong>ECO trend Research centre s.r.o.</strong> a
-              <strong>Vysoká škola ekonomická v Praze.</strong>
+              Partneři projektu: <br />
+              <strong>ECO trend Research centre s.r.o.</strong> &
+              <strong>Vysoká škola ekonomická v Praze, Institut pro udržitelné podnikání</strong>
             </p>
 
             <a href="#krok_A" class="button primary small">Projít metodiku</a>
@@ -51,7 +49,7 @@
             <li>
               <a href="index.php">Domů</a>
             </li>
-            <li><a href="#ometodice">O metodice</a></li>
+            <li><a href="#oprocesu">O procesu</a></li>
             <li><a href="#krok_A">Projít metodiku</a></li>
             <li>
               <a href="social/register.php">Přihlásit se</a>
@@ -63,9 +61,9 @@
       <!-- Main -->
       <div id="main">
         <!-- O metodice -->
-        <article id="ometodice">
+        <article id="oprocesu">
           <h2 class="major" style="margin: 0 auto;">
-            O metodice CE
+            O procesu veřejných záměrů pro podporu CE
           </h2>
           <span class="image main"
             ><img class="metodikaImg" src="images/pic03.jpg" alt="obrázek"
