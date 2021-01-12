@@ -124,7 +124,7 @@
           <ul class="siteNavigation__parent nav2020">
 						<div class="siteNavigation__blocks nav2020">
 							<li><a class="siteNavigation__item" href="#ocirkularni">O cirkulární ekonomice</a></li>
-							<li><a class="siteNavigation__item" href="metodika.php">Metodika</a></li>
+							<li><a class="siteNavigation__item" href="metodika_ce.pdf" target="_blank">Metodika CE</a></li>
 							<li><a class="siteNavigation__item" href="#oprojektu">O projektu</a></li>
 						</div>
 						<div class="siteNavigation__blocks nav2020">
@@ -482,6 +482,8 @@
 					  <li>V rámci projektu jsme uskutečnili workshopy a semináře – zde jsou prezentace k nahlédnutí:<br>
 					  	  <span style="color:var(--theme-color);"><a href="http://www.ecotrend.cz/projekty/aktualni-projekty/obce-v-kruhu-cirkularni-ekonomiky.html">více prezentací <i class="fas fa-location-arrow"></i> </a></span>
 					  </li>
+						<li> Proces přijímání projektů podporujících Cirkulární ekonomiku je vizualizován na <a href="metodika.php" style="color:var(--theme-color);">odkaze</a>.
+						</li>
 					  <li>Další informace k cirkulární ekonomice se dozvíte například na těchto webových stránkách:<br>
 						  <span style="color:var(--theme-color);"><a href="https://incien.org/">Institut Cirkulární Ekonomiky - Incien.org <i class="fas fa-location-arrow"></i> </a></span><br>
 						  <span style="color:var(--theme-color);"><a href="http://www.caobh.cz/"> Česká asociace oběhového hospodářství - ČAOBH <i class="fas fa-location-arrow"></i> </a></span><br>
