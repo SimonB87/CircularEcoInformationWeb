@@ -890,25 +890,30 @@
 				</article>
         
 				<article id="contact">
-					<h2 class="major">Contact</h2>
-					<form method="post" action="#">
+				<?php include("includes/contactformhandler.php"); ?>
+					<h2 class="major">Kontaktovat správce</h2>
+					<form method="POST" class="contactForm">
+					<?php if (isset($msg)) { echo '<div id="formmessage" class="fields"><p>', $msg , '</p></div>'; } ?> <!-- div to print out errors  -->
 						<div class="fields">
 							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<label for="myname">Jméno</label>
+								<input type="text" name="myname" id="myname" placeholder="Vaše jméno..." value="<?php if (isset($myname)) { echo $myname; } ?>" required/>
+								<?php if (isset($err_myname)) { echo $err_myname; } ?>
 							</div>
 							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
+								<label for="myemail">E-mail</label>
+								<input type="email" name="myemail" id="myemail" value="<?php if (isset($myemail)) { echo $myemail; } else {echo "@";}?>" required/>
+								<?php if (isset($err_email)) { echo $err_email; } ?>
 							</div>
 							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
+								<label for="mycomment">Zpráva</label>
+								<textarea name="mycomment" id="mycomment" rows="4" required><?php if (isset($mycomment)) { echo $mycomment; } ?></textarea>
+								<?php if (isset($err_comment)) { echo $err_comment; } ?>
 							</div>
 						</div>
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Reset" /></li>
+							<li><input type="submit" name="contact_message" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" onclick="resetContactForm('contactForm');"/></li>
 						</ul>
 					</form>
 					<ul class="icons">
@@ -1181,5 +1186,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/topicselect.js" defer></script>
 	<script src="assets/js/wasteCalcManagement.js"></script>
 	<script src="assets/js/wasteCalcData.js"></script>
+	<script> 
+
+function resetContactForm(formName) {
+	const myname = document.getElementById("myname");
+	const myemail = document.getElementById("myemail");
+	const mycomment = document.getElementById("mycomment");
+
+	myemail.value = "@";
+	myname.value = null;
+	mycomment.innerHTML = null;
+}	
+	</script>
+
   </body>
 </html>
