@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="cs" style="scroll-behavior: smooth;">
   <head>
 
   <?php
@@ -148,7 +148,7 @@
 							<li id="formToglerActions__back" onclick="toggleForm(1,2);"><span class="button primary disabled">Zpět</span></li>
 							<li id="formToglerActions__forward" onclick="toggleForm(2,1);"><span class="button primary">Dále</span></li>
 							<li id="formToglerActions__send">
-								<span class="button primary submitButton disabled" onclick="calculateWaste()">Spočítat</span>
+								<span id="formToglerActions__send__button" class="button primary submitButton disabled" onclick="calculateWaste()">Spočítat</span>
 							<li id="formToglerActions__reset"><input type="reset" onclick="resetForm();" value="Reset" /></li>
 							<li class="formActions_goHome"><a href="index.php">Domů</a> </li>
 						</ul>
@@ -405,6 +405,7 @@
 		<script src="assets/js/pdfgeneration/html2canvas.js" defer></script> 
 <!-- 		<script src="assets/js/pdfgeneration/simon/pdfFromHtml.js" defer></script> -->
 		<script src="assets/js/pdfgeneration/simon/webToPdf.js" defer></script>
+		<script src="assets/js/postData.js" defer></script>
 
 
 
