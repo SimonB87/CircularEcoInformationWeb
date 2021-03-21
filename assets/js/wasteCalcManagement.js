@@ -59,6 +59,8 @@ function calculateWaste() {
   drawChartColumns("webView");
   displayChartType("gauges","bars"); 
 
+  postData();
+  
 
   function manageResults() {
     const targetEl = document.querySelector("#formToglerActions__send .submitButton");
