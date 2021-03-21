@@ -1,24 +1,24 @@
 <?php
 	include 'sollution/config/config4.php';
 
-	$region_cr = $_POST['region_cr'];
-  $town_name = $_POST['town_name'];
-  $naklady_oh = $_POST['naklady_oh'];
-  $prijmy_oh = $_POST['prijmy_oh'];
-  $naklady_tridenySber_tuny = $_POST['naklady_tridenySber_tuny'];
-  $naklady_tridenySber_perCapita = $_POST['naklady_tridenySber_perCapita'];
-  $naklady_sko_tuny = $_POST['naklady_sko_tuny'];
-  $naklady_sko_perCapita = $_POST['naklady_sko_perCapita'];
-  $produkce_odpady = $_POST['produkce_odpady'];
-  $produkce_o_odpadu = $_POST['produkce_o_odpadu'];
-  $produkce_n_odpadu = $_POST['produkce_n_odpadu'];
-  $produkce_komun_odpadu = $_POST['produkce_komun_odpadu'];
-  $produkce_sko = $_POST['produkce_sko'];
-  $produkce_plast = $_POST['produkce_plast'];
-  $produkce_papir = $_POST['produkce_papir'];
-  $produkce_sklo = $_POST['produkce_sklo'];
-  $produkce_kovy = $_POST['produkce_kovy'];
-  $date = $_POST['date'];
+	$region_cr = mysqli_real_escape_string($connector, $_POST['region_cr']);
+  $town_name = mysqli_real_escape_string($connector, $_POST['town_name']);
+  $naklady_oh = mysqli_real_escape_string($connector, $_POST['naklady_oh']);
+  $prijmy_oh = mysqli_real_escape_string($connector, $_POST['prijmy_oh']);
+  $naklady_tridenySber_tuny = mysqli_real_escape_string($connector, $_POST['naklady_tridenySber_tuny']);
+  $naklady_tridenySber_perCapita = mysqli_real_escape_string($connector, $_POST['naklady_tridenySber_perCapita']);
+  $naklady_sko_tuny = mysqli_real_escape_string($connector, $_POST['naklady_sko_tuny']);
+  $naklady_sko_perCapita = mysqli_real_escape_string($connector, $_POST['naklady_sko_perCapita']);
+  $produkce_odpady = mysqli_real_escape_string($connector, $_POST['produkce_odpady']);
+  $produkce_o_odpadu = mysqli_real_escape_string($connector, $_POST['produkce_o_odpadu']);
+  $produkce_n_odpadu = mysqli_real_escape_string($connector, $_POST['produkce_n_odpadu']);
+  $produkce_komun_odpadu = mysqli_real_escape_string($connector, $_POST['produkce_komun_odpadu']);
+  $produkce_sko = mysqli_real_escape_string($connector, $_POST['produkce_sko']);
+  $produkce_plast = mysqli_real_escape_string($connector, $_POST['produkce_plast']);
+  $produkce_papir = mysqli_real_escape_string($connector, $_POST['produkce_papir']);
+  $produkce_sklo = mysqli_real_escape_string($connector, $_POST['produkce_sklo']);
+  $produkce_kovy = mysqli_real_escape_string($connector, $_POST['produkce_kovy']);
+  $date = mysqli_real_escape_string($connector, $_POST['date']);
 
   if (!mysqli_set_charset($connector, "utf8")) {
     printf("Error loading character set utf8: %s\n", mysqli_error($con));
