@@ -7,9 +7,11 @@
 <html lang="cs" style="scroll-behavior: smooth;">
   <head>
 
-  <?php
-	include("includes/mainsitehead.php");
-  ?>
+	<?php
+		include("includes/mainsitehead.php");
+		?>
+		<meta name="robots" content="index, follow" />
+		
 	<link rel="stylesheet" href="assets/css/chartsJs.css">
   </head>
   <body> <!-- class="is-preload" -->

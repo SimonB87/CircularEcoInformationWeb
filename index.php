@@ -6,6 +6,10 @@
 -->
 <html lang="cs" style="scroll-behavior: smooth;">
   <head>
+		<?php
+		include("includes/mainsitehead.php");
+		?>
+		<meta name="robots" content="index, follow" />
 	  <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSE7MKYW1L"></script>
 		<script>
@@ -15,10 +19,6 @@
 
 			gtag('config', 'G-CSE7MKYW1L');
 		</script>
-
-  <?php
-	include("includes/mainsitehead.php");
-  ?>
 
   </head>
   <body class="is-preload">

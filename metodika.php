@@ -7,9 +7,10 @@
 <html lang="cs" style="scroll-behavior: smooth;">
   <head>
 	  
-  <?php
-	include("includes/mainsitehead.php");
-  ?>
+	  <?php
+		include("includes/mainsitehead.php");
+		?>
+		<meta name="robots" content="index, follow" />
 
   </head>
   <body class="is-preload">
